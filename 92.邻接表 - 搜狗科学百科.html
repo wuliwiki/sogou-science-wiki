@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)https://web.archive.org/web/20221028213047/https://baike.sogou.com/kexue/d10092.htm -->
+<html class="" data-reactroot=""><script async="false" type="text/javascript" src="chrome-extension://fnjhmkhhmkbjkkabndcnnogagogbneec/in-page.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./92.邻接表 - 搜狗科学百科_files/analytics.js.download" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app219.us.archive.org';v.server_ms=266;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="./92.邻接表 - 搜狗科学百科_files/bundle-playback.js.download" charset="utf-8"></script>
+<script type="text/javascript" src="./92.邻接表 - 搜狗科学百科_files/wombat.js.download" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://baike.sogou.com/kexue/d10092.htm","20221028213047","https://web.archive.org/","web","/_static/",
+	      "1666992647");
+</script>
+<link rel="stylesheet" type="text/css" href="./92.邻接表 - 搜狗科学百科_files/banner-styles.css">
+<link rel="stylesheet" type="text/css" href="./92.邻接表 - 搜狗科学百科_files/iconochive.css">
+<!-- End Wayback Rewrite JS Include -->
+<meta name="save" content="history"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="baidu-site-verification" content="VWGb6TyYx8"><meta content="邻接表 - 搜狗科学百科" name="keywords"><meta content="搜狗科学百科是一部有着平等、协作、分享、自由理念的网络科学全书，为每一个互联网用户创造一个涵盖所有领域知识、服务的中文知识性平台。" name="description"><meta http-equiv="x-dns-prefetch-control" content="on"><meta name="server" baike="235" ip="210" env="online"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028213047/https://cache.soso.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028213047/https://hhy.sogoucdn.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028213047/https://pic.baike.soso.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028213047/https://ugc.qpic.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028213047/https://xui.ptlogin2.qq.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028213047/https://q1.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028213047/https://q2.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028213047/https://q3.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028213047/https://q4.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028213047/https://q.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028213047/https://img01.sogoucdn.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028213047/https://img02.sogoucdn.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028213047/https://img03.sogoucdn.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028213047/https://img04.sogoucdn.com/"><link rel="Shortcut Icon" href="https://web.archive.org/web/20221028213047im_/https://www.sogou.com/images/logo/new/favicon.ico?v=4"><link rel="Bookmark" href="https://www.sogou.com/images/logo/new/favicon.ico?v=4"><link href="./92.邻接表 - 搜狗科学百科_files/base_b849887.css" rel="stylesheet"><link href="./92.邻接表 - 搜狗科学百科_files/detail_378aed5.css" rel="stylesheet"><link href="./92.邻接表 - 搜狗科学百科_files/inviteAudit_7894507.css" rel="stylesheet"><link rel="stylesheet" href="./92.邻接表 - 搜狗科学百科_files/highlight.min.css"><title>邻接表 - 搜狗科学百科</title><style>.onekey-close {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	width: 24px;
+	height: 24px;
+	background: url(//web.archive.org/web/20221028205211/https://hhy.sogoucdn.com/js/common/hhy/sprite_wap_baike_37443f3.png) no-repeat;
+	text-indent: -999em;
+	background-size: 84px;
+	background-position: -63px 0;
+}
+
+.onekey-login {
+	position: absolute;
+	top: 16.4%;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+
+/* .onekey-login-img {
+    width: 75px;
+    height: 75px;
+    background: url("https://web.archive.org/web/20221028213047/https://baike.sogou.com/kexue/images/sprite_wap_baike.png") no-repeat;
+    background-size: 100px 91px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+} */
+
+.onekey-login-title {
+	text-align: center;
+	padding-bottom: 3px;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 30px;
+	color: #000;
+}
+
+.onekey-login-txt {
+	text-align: center;
+	font-family: PingFangSC;
+	font-size: 14px;
+	line-height: 20px;
+	color: #8f8f8f;
+}
+
+.onekey-login-qq,
+.onekey-login-wx,
+.onekey-login-phone {
+	display: block;
+	width: 245px;
+	height: 54px;
+	border-radius: 45px;
+	text-align: center;
+
+	margin: 0 auto;
+	font-size: 17px;
+	line-height: 24px;
+	color: #000;
+	/* padding: 16px 77px; */
+	border-radius: 12px;
+	border: solid 1px #e0e0e0;
+}
+.onekey-qq-content,
+.onekey-vx-content,
+.onekey-phone-content {
+	display: inline-block;
+	margin-top: 16px;
+}
+.onekey-qq-content {
+	padding: 0 5px;
+}
+
+.onekey-login-qq {
+	margin-top: 48px;
+	margin-bottom: 24px;
+}
+
+.onekey-login-qq:before {
+	display: inline-block;
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: url(//web.archive.org/web/20221028205211/https://hhy.sogoucdn.com/js/common/hhy/sprite_wap_baike_37443f3.png) no-repeat;
+	background-size: 80px;
+	background-position: -20px 0;
+	vertical-align: top;
+	margin: 17px 8px 0 0;
+}
+
+.onekey-login-wx {
+	margin-bottom: 24px;
+}
+
+.onekey-login-wx:before {
+	display: inline-block;
+	content: "";
+	width: 21px;
+	height: 21px;
+	background: url(//web.archive.org/web/20221028205211/https://hhy.sogoucdn.com/js/common/hhy/sprite_wap_baike_37443f3.png) no-repeat;
+	background-size: 84px;
+	background-position: 0 0;
+	vertical-align: top;
+	margin: 17px 10px 0 0;
+}
+
+.onekey-login-phone {
+}
+
+.onekey-login-phone:before {
+	display: inline-block;
+	content: "";
+	width: 21px;
+	height: 21px;
+	background: url(//web.archive.org/web/20221028205211/https://hhy.sogoucdn.com/js/common/hhy/sprite_wap_baike_37443f3.png) no-repeat;
+	background-size: 84px;
+	background-position: -42px 0;
+	vertical-align: top;
+	margin: 17px 10px 0 0;
+}
+
+.onekey-fixed {
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	width: 100%;
+	height: 100%;
+}
+
+.onekey-fixed.forbid {
+	z-index: 100;
+	position: fixed;
+	top: auto;
+	bottom: 68px;
+	left: 9%;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	width: 82%;
+	height: 43px;
+	border-radius: 25px;
+	color: #ffffff;
+}
+.onekey-login-title.forbid {
+	text-align: center;
+	padding-bottom: 3px;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 30px;
+	color: white;
+}
+</style><style>#login_mask {
+  background: #000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  position: fixed;
+  /*fixed好像在哪个IE上有BUG，先用用*/
+  left: 0;
+  top: 0;
+  z-index: 999;
+  height: 100%;
+}
+
+#login_iframe_container {
+  position: fixed;
+  width: 550px;
+  height: 360px;
+  z-index: 1020;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 828px) {
+  #login_iframe_container {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+  }
+}
+
+#login_iframe_container.new-login {
+  width: 550px;
+  height: 360px;
+  background-image: url(//web.archive.org/web/20221028205211/https://hhy.sogoucdn.com/js/common/hhy/background_2a4a8a6.png);
+}
+
+#login_iframe_container.new-login.no-bg {
+  background: #fff;
+}
+
+#login_iframe_container.new-login .login-title {
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 0.19px;
+  color: #ffffff;
+  margin-top: 62px;
+}
+#login_iframe_container.new-login .forbid-title {
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 0.19px;
+  color: #333333;
+  margin-top: 150px;
+}
+
+#login_iframe_container.new-login.no-bg .login-title {
+  color: #333333;
+}
+
+#login_iframe_container.new-login .login-subtitle {
+  width: 100%;
+  height: 18px;
+  line-height: 18px;
+  font-size: 13px;
+  letter-spacing: 0.08px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 9px;
+  margin-bottom: 43px;
+}
+
+#login_iframe_container.new-login.no-bg .login-subtitle {
+  color: #999999;
+}
+
+#login_iframe_container.new-login .login-subtitle::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  background-color: #ffffff;
+  position: relative;
+  top: -4px;
+  left: -5px;
+}
+
+#login_iframe_container.new-login .login-subtitle::after {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  background-color: #ffffff;
+  position: relative;
+  top: -4px;
+  left: 5px;
+}
+
+#login_iframe_container.new-login.no-bg .login-subtitle::before {
+  background-color: #999999;
+}
+
+#login_iframe_container.new-login.no-bg .login-subtitle::after {
+  background-color: #999999;
+}
+
+#login_iframe_container.new-login .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 12px;
+  height: 12px;
+  background: url(//web.archive.org/web/20221028205211/https://hhy.sogoucdn.com/js/common/hhy/login-sprites_e3853e5.png) -59px -10px;
+  background-size: 81px 91px;
+  cursor: pointer;
+}
+
+#login_iframe_container.new-login .login-btn {
+  width: 220px;
+  height: 47px;
+  border-radius: 24px;
+  border: solid 1px #dddddd;
+  background-color: #ffffff;
+  margin: 0 auto;
+  margin-top: 28px;
+  position: relative;
+  display: block;
+}
+
+#login_iframe_container.new-login .login-btn .login-icon {
+  position: absolute;
+}
+
+#login_iframe_container.new-login .login-btn .login-text {
+  width: 61px;
+  height: 47px;
+  line-height: 47px;
+  vertical-align: middle;
+  font-size: 15px;
+  letter-spacing: 0.1px;
+  color: #666666;
+  position: absolute;
+  right: 62px;
+}
+
+#login_iframe_container.new-login .login-btn.qq-btn .login-icon {
+  width: 22px;
+  height: 27px;
+  top: 10px;
+  left: 67px;
+  background: url(//web.archive.org/web/20221028205211/https://hhy.sogoucdn.com/js/common/hhy/login-sprites_e3853e5.png) -10px -54px;
+  background-size: 81px 91px;
+}
+
+#login_iframe_container.new-login .login-btn.qq-btn .login-text {
+  right: 59px;
+}
+
+#login_iframe_container.new-login .login-btn.wechat-btn .login-icon {
+  width: 29px;
+  height: 24px;
+  top: 12px;
+  left: 62px;
+  background: url(//web.archive.org/web/20221028205211/https://hhy.sogoucdn.com/js/common/hhy/login-sprites_e3853e5.png) -10px -10px;
+  background-size: 81px 91px;
+}</style><style>/* -- container -- */
+.rodal,
+.rodal-mask {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.rodal {
+    position: fixed;
+}
+
+/* -- mask -- */
+.rodal-mask {
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+}
+
+/* -- dialog -- */
+.rodal-dialog {
+    position: absolute;
+    z-index: 101;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.rodal-center {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.rodal-bottom {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.rodal-top {
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}
+
+.rodal-left {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.rodal-right {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* -- close button -- */
+.rodal-close {
+    position: absolute;
+    cursor: pointer;
+    top: 16px;
+    right: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.rodal-close:before,
+.rodal-close:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: #999;
+    border-radius: 100%;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+}
+
+.rodal-close:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.rodal-close:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.rodal-close:hover:before,
+.rodal-close:hover:after {
+    background: #333;
+}
+
+/* -- fade -- */
+/* @-webkit-keyframes rodal-fade-enter {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes rodal-fade-enter {
+    from {
+        opacity: 0;
+    }
+}
+
+.rodal-fade-enter {
+    -webkit-animation: rodal-fade-enter both ease-in;
+    animation: rodal-fade-enter both ease-in;
+} */
+
+@-webkit-keyframes rodal-fade-leave {
+    to {
+        opacity: 0
+    }
+}
+
+@keyframes rodal-fade-leave {
+    to {
+        opacity: 0
+    }
+}
+
+.rodal-fade-leave {
+    -webkit-animation: rodal-fade-leave both ease-out;
+    animation: rodal-fade-leave both ease-out;
+}
+
+/* -- zoom -- */
+@-webkit-keyframes rodal-zoom-enter {
+    from {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-zoom-enter {
+    from {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-zoom-enter {
+    -webkit-animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-zoom-leave {
+    to {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-zoom-leave {
+    to {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-zoom-leave {
+    -webkit-animation: rodal-zoom-leave both;
+    animation: rodal-zoom-leave both;
+}
+
+/* -- slideDown -- */
+@-webkit-keyframes rodal-slideDown-enter {
+    from {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+@keyframes rodal-slideDown-enter {
+    from {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+.rodal-slideDown-enter {
+    -webkit-animation: rodal-slideDown-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideDown-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideDown-leave {
+    to {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+@keyframes rodal-slideDown-leave {
+    to {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+.rodal-slideDown-leave {
+    -webkit-animation: rodal-slideDown-leave both;
+    animation: rodal-slideDown-leave both;
+}
+
+/* -- slideLeft -- */
+@-webkit-keyframes rodal-slideLeft-enter {
+    from {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideLeft-enter {
+    from {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+.rodal-slideLeft-enter {
+    -webkit-animation: rodal-slideLeft-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideLeft-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideLeft-leave {
+    to {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideLeft-leave {
+    to {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+.rodal-slideLeft-leave {
+    -webkit-animation: rodal-slideLeft-leave both;
+    animation: rodal-slideLeft-leave both;
+}
+
+/* -- slideRight -- */
+@-webkit-keyframes rodal-slideRight-enter {
+    from {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideRight-enter {
+    from {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+.rodal-slideRight-enter {
+    -webkit-animation: rodal-slideRight-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideRight-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideRight-leave {
+    to {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideRight-leave {
+    to {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+.rodal-slideRight-leave {
+    -webkit-animation: rodal-slideRight-leave both;
+    animation: rodal-slideRight-leave both;
+}
+
+/* -- slideUp -- */
+@-webkit-keyframes rodal-slideUp-enter {
+    from {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+@keyframes rodal-slideUp-enter {
+    from {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+.rodal-slideUp-enter {
+    -webkit-animation: rodal-slideUp-enter both cubic-bezier(0.23, 1, 0.32, 1);
+    animation: rodal-slideUp-enter both cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@-webkit-keyframes rodal-slideUp-leave {
+    to {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+@keyframes rodal-slideUp-leave {
+    to {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+.rodal-slideUp-leave {
+    -webkit-animation: rodal-slideUp-leave both;
+    animation: rodal-slideUp-leave both;
+}
+
+/* -- flip -- */
+@-webkit-keyframes rodal-flip-enter {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+@keyframes rodal-flip-enter {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+.rodal-flip-enter {
+    -webkit-animation: rodal-flip-enter both ease-in;
+    animation: rodal-flip-enter both ease-in;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+}
+
+@-webkit-keyframes rodal-flip-leave {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+    }
+}
+
+@keyframes rodal-flip-leave {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+    }
+}
+
+.rodal-flip-leave {
+    -webkit-animation: rodal-flip-leave both;
+    animation: rodal-flip-leave both;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+}
+
+/* -- rotate -- */
+@-webkit-keyframes rodal-rotate-enter {
+    from {
+        -webkit-transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-rotate-enter {
+    from {
+        -webkit-transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-rotate-enter {
+    -webkit-animation: rodal-rotate-enter both;
+    animation: rodal-rotate-enter both;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+@-webkit-keyframes rodal-rotate-leave {
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-rotate-leave {
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-rotate-leave {
+    -webkit-animation: rodal-rotate-leave both;
+    animation: rodal-rotate-leave both;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+/* -- door -- */
+@-webkit-keyframes rodal-door-enter {
+    from {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+}
+
+@keyframes rodal-door-enter {
+    from {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+}
+
+.rodal-door-enter {
+    -webkit-animation: rodal-door-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-door-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-door-leave {
+    60% {
+        -webkit-transform: scale3d(.01, 1, 1);
+        transform: scale3d(.01, 1, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(0, 1, .1);
+        transform: scale3d(0, 1, .1);
+    }
+}
+
+@keyframes rodal-door-leave {
+    60% {
+        -webkit-transform: scale3d(.01, 1, 1);
+        transform: scale3d(.01, 1, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(0, 1, .1);
+        transform: scale3d(0, 1, .1);
+    }
+}
+
+.rodal-door-leave {
+    -webkit-animation: rodal-door-leave both;
+    animation: rodal-door-leave both;
+}</style><style>/* -- container -- */
+.rodal,
+.rodal-mask {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.rodal {
+    position: fixed;
+}
+
+/* -- mask -- */
+.rodal-mask {
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+}
+
+/* -- dialog -- */
+.rodal-dialog {
+    position: absolute;
+    z-index: 101;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.rodal-center {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.rodal-bottom {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.rodal-top {
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}
+
+.rodal-left {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.rodal-right {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* -- close button -- */
+.rodal-close {
+    position: absolute;
+    cursor: pointer;
+    top: 16px;
+    right: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.rodal-close:before,
+.rodal-close:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: #999;
+    border-radius: 100%;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+}
+
+.rodal-close:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.rodal-close:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.rodal-close:hover:before,
+.rodal-close:hover:after {
+    background: #333;
+}
+
+/* -- fade -- */
+/* @-webkit-keyframes rodal-fade-enter {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes rodal-fade-enter {
+    from {
+        opacity: 0;
+    }
+}
+
+.rodal-fade-enter {
+    -webkit-animation: rodal-fade-enter both ease-in;
+    animation: rodal-fade-enter both ease-in;
+} */
+
+@-webkit-keyframes rodal-fade-leave {
+    to {
+        opacity: 0
+    }
+}
+
+@keyframes rodal-fade-leave {
+    to {
+        opacity: 0
+    }
+}
+
+.rodal-fade-leave {
+    -webkit-animation: rodal-fade-leave both ease-out;
+    animation: rodal-fade-leave both ease-out;
+}
+
+/* -- zoom -- */
+@-webkit-keyframes rodal-zoom-enter {
+    from {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-zoom-enter {
+    from {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-zoom-enter {
+    -webkit-animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-zoom-leave {
+    to {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-zoom-leave {
+    to {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-zoom-leave {
+    -webkit-animation: rodal-zoom-leave both;
+    animation: rodal-zoom-leave both;
+}
+
+/* -- slideDown -- */
+@-webkit-keyframes rodal-slideDown-enter {
+    from {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+@keyframes rodal-slideDown-enter {
+    from {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+.rodal-slideDown-enter {
+    -webkit-animation: rodal-slideDown-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideDown-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideDown-leave {
+    to {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+@keyframes rodal-slideDown-leave {
+    to {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+.rodal-slideDown-leave {
+    -webkit-animation: rodal-slideDown-leave both;
+    animation: rodal-slideDown-leave both;
+}
+
+/* -- slideLeft -- */
+@-webkit-keyframes rodal-slideLeft-enter {
+    from {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideLeft-enter {
+    from {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+.rodal-slideLeft-enter {
+    -webkit-animation: rodal-slideLeft-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideLeft-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideLeft-leave {
+    to {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideLeft-leave {
+    to {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+.rodal-slideLeft-leave {
+    -webkit-animation: rodal-slideLeft-leave both;
+    animation: rodal-slideLeft-leave both;
+}
+
+/* -- slideRight -- */
+@-webkit-keyframes rodal-slideRight-enter {
+    from {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideRight-enter {
+    from {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+.rodal-slideRight-enter {
+    -webkit-animation: rodal-slideRight-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideRight-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideRight-leave {
+    to {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideRight-leave {
+    to {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+.rodal-slideRight-leave {
+    -webkit-animation: rodal-slideRight-leave both;
+    animation: rodal-slideRight-leave both;
+}
+
+/* -- slideUp -- */
+@-webkit-keyframes rodal-slideUp-enter {
+    from {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+@keyframes rodal-slideUp-enter {
+    from {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+.rodal-slideUp-enter {
+    -webkit-animation: rodal-slideUp-enter both cubic-bezier(0.23, 1, 0.32, 1);
+    animation: rodal-slideUp-enter both cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@-webkit-keyframes rodal-slideUp-leave {
+    to {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+@keyframes rodal-slideUp-leave {
+    to {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+.rodal-slideUp-leave {
+    -webkit-animation: rodal-slideUp-leave both;
+    animation: rodal-slideUp-leave both;
+}
+
+/* -- flip -- */
+@-webkit-keyframes rodal-flip-enter {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+@keyframes rodal-flip-enter {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+.rodal-flip-enter {
+    -webkit-animation: rodal-flip-enter both ease-in;
+    animation: rodal-flip-enter both ease-in;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+}
+
+@-webkit-keyframes rodal-flip-leave {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+    }
+}
+
+@keyframes rodal-flip-leave {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+    }
+}
+
+.rodal-flip-leave {
+    -webkit-animation: rodal-flip-leave both;
+    animation: rodal-flip-leave both;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+}
+
+/* -- rotate -- */
+@-webkit-keyframes rodal-rotate-enter {
+    from {
+        -webkit-transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-rotate-enter {
+    from {
+        -webkit-transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-rotate-enter {
+    -webkit-animation: rodal-rotate-enter both;
+    animation: rodal-rotate-enter both;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+@-webkit-keyframes rodal-rotate-leave {
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-rotate-leave {
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-rotate-leave {
+    -webkit-animation: rodal-rotate-leave both;
+    animation: rodal-rotate-leave both;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+/* -- door -- */
+@-webkit-keyframes rodal-door-enter {
+    from {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+}
+
+@keyframes rodal-door-enter {
+    from {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+}
+
+.rodal-door-enter {
+    -webkit-animation: rodal-door-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-door-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-door-leave {
+    60% {
+        -webkit-transform: scale3d(.01, 1, 1);
+        transform: scale3d(.01, 1, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(0, 1, .1);
+        transform: scale3d(0, 1, .1);
+    }
+}
+
+@keyframes rodal-door-leave {
+    60% {
+        -webkit-transform: scale3d(.01, 1, 1);
+        transform: scale3d(.01, 1, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(0, 1, .1);
+        transform: scale3d(0, 1, .1);
+    }
+}
+
+.rodal-door-leave {
+    -webkit-animation: rodal-door-leave both;
+    animation: rodal-door-leave both;
+}</style></head><body class=""><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+</style>
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display: block; direction: ltr;">
+</div><div id="wm-ipp-print">The Wayback Machine - https://web.archive.org/web/20221028213047/https://baike.sogou.com/kexue/d10092.htm</div>
+<script type="text/javascript">//<![CDATA[
+__wm.bt(675,27,25,2,"web","https://baike.sogou.com/kexue/d10092.htm","20221028213047",1996,"/_static/",["/_static/css/banner-styles.css?v=S1zqJCYt","/_static/css/iconochive.css?v=qtvMKcIJ"], false);
+  __wm.rw(1);
+//]]></script>
+<!-- END WAYBACK TOOLBAR INSERT --><script>window._gtag=window._gtag||{};window._gtag.shouldGrayed = false;if ('6ff6b5746d8b4028971edb2cb57b4290') window._gtag.traceId = '6ff6b5746d8b4028971edb2cb57b4290';if ({"illegality":true}) window.userInfo = {"illegality":true};</script><div class="topnavbox"><ul class="topnav"><li><a href="https://web.archive.org/web/20221028213047/https://www.sogou.com/web?query=">网页</a></li><li><a href="https://web.archive.org/web/20221028213047/https://weixin.sogou.com/weixin?p=75351201">微信</a></li><li><a href="https://web.archive.org/web/20221028213047/https://zhihu.sogou.com/zhihu?p=75351218">知乎</a></li><li><a href="https://web.archive.org/web/20221028213047/https://pic.sogou.com/pics?query=">图片</a></li><li><a href="https://web.archive.org/web/20221028213047/https://v.sogou.com/v?query=">视频</a></li><li><a href="https://web.archive.org/web/20221028213047/https://mingyi.sogou.com/">医疗</a></li><li class="cur"><strong>科学</strong></li><li><a href="https://web.archive.org/web/20221028213047/https://hanyu.sogou.com/">汉语</a></li><li><a href="https://web.archive.org/web/20221028213047/https://wenwen.sogou.com/">问问</a></li><li><a href="https://web.archive.org/web/20221028213047/https://www.sogou.com/docs/more.htm">更多<span class="topraquo">»</span></a></li></ul></div><div id="header"><div class="header-wrap"><a class="header-logo" href="https://web.archive.org/web/20221028213047/https://baike.sogou.com/kexue"></a><div class="header-search"><div class="querybox" id="suggBox"><form><input id="searchInput" class="query" type="text" placeholder="搜科学领域专业百科词条" name="query" autocomplete="off" value="" control-id="ControlID-1"><a href="javascript:;" class="query-search"></a></form></div></div><div class="header-rgt"><span class="btn-header-rgt btn-edit" id="editLemma">创建</span><div class="header-user no-login"></div></div></div></div><div class="fixed-placeholder" style="visibility:none"></div><div id="container" class=""><div class="content lemma-level1"><div class="detail-title" id="abstract-title"><h1>邻接表</h1><a href="https://web.archive.org/web/20221028213047/https://baike.sogou.com/kexue/d10092.htm#!" class="detail-edit">编辑</a></div><div class="section_content" data-id="14994942480876044"><div class="text_img ed_imgfloat_right"><a class="ed_image_link" data-src="https://img03.sogoucdn.com/app/a/200698/sogou_science_83" data-bigsrc="https://img03.sogoucdn.com/app/a/200698/sogou_science_83?w=120&amp;h=110&amp;titlename=%E8%AF%A5%E6%97%A0%E5%90%91%E5%BE%AA%E7%8E%AF%E5%9B%BE%E5%8F%AF%E4%BB%A5%E7%94%B1%E4%B8%89%E4%B8%AA%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8%7Bb%EF%BC%8Cc%7D%EF%BC%8C%7Ba%EF%BC%8Cc%7D%EF%BC%8C%7Ba%EF%BC%8Cb%7D%E6%9D%A5%E6%8F%8F%E8%BF%B0%E3%80%82" title="点击查看大图" data-w="120" data-h="110" style="background-image:url(https://web.archive.org/web/20221028213047im_/https://img03.sogoucdn.com/app/a/200698/sogou_science_83)" href="https://web.archive.org/web/20221028213047/https://baike.sogou.com/kexue/d10092.htm#!"></a><div class="text_img_title">该无向循环图可以由三个无序列表{b，c}，{a，c}，{a，b}来描述。</div></div><div><p></p> 
+<p>在图论和计算机科学中，邻接表是用来表示有限图的无序列表的集合，每个列表描述了图中相邻顶点的集合。邻接表是计算机程序中几种常用图的表示法之一。 </p></div></div><div id="catalog"><h2 class="title2">目录<a href="javascript:" class="detail-edit">编辑</a></h2><div class="catalog_wrap" style=""><ul class="catalog_list col1"><li><span class="order">1</span><a href="javascript:" data-level="1" data-id="14994942480876045">实施细节</a></li><li><span class="order">2</span><a href="javascript:" data-level="1" data-id="14994942480876046">操作</a></li><li><span class="order">3</span><a href="javascript:" data-level="1" data-id="14994942480876047">权衡</a></li><li><span class="order">4</span><a href="javascript:" data-level="1" data-id="14994942497653248">数据结构</a></li><li><span class="order">5</span><a href="javascript:" data-level="1" data-id="references">参考文献</a></li></ul></div></div><div id="paragraphs"><div><div id="par_14994942480876045"><h2 class="title">1 实施细节<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><table class="wikitable"> 
+ <tbody>
+  <tr> 
+   <td colspan="3">上图中的图表的邻接表表示: </td>
+  </tr> 
+  <tr> 
+   <td>a</td> 
+   <td>邻接于</td> 
+   <td>b, c </td>
+  </tr> 
+  <tr> 
+   <td>b</td> 
+   <td>邻接于</td> 
+   <td>a,c </td>
+  </tr> 
+  <tr> 
+   <td>c</td> 
+   <td>邻接于</td> 
+   <td>a,b </td>
+  </tr>
+ </tbody>
+</table> 
+<p>图的邻接表表示将图中的每个顶点与其相邻顶点或边的集合做关联。这一基本思想有许多变体，不同之处在于它们如何实现顶点和集合之间的关联、它们如何实现相邻顶点或边的集合、它们是同时包括顶点和边还是仅包括顶点并把它作为第一类对象，以及用什么样的对象来表示顶点和边。 </p> 
+<ul>
+ <li>吉多·范·罗苏姆建议的一种实现是使用散列表将图中的每个顶点与相邻顶点的数组做关联。在这个表示方法中，顶点可以由任何可散列的对象来表示。这种实现方法中没有将边明确表示为对象。<sup><a href="https://web.archive.org/web/20221028213047/https://baike.sogou.com/kexue/d10092.htm#quote_1" class="kx_ref">[1]</a></sup></li> 
+ <li>Cormen等人提出了一种实现方法，其中顶点由索引号表示。<sup><a href="https://web.archive.org/web/20221028213047/https://baike.sogou.com/kexue/d10092.htm#quote_2" class="kx_ref">[2]</a></sup> 他们的表示方法使用一个按顶点数索引的数组，其中每个顶点的数组单元指向该顶点的相邻顶点的单链表。在该表示方法中，单链表的节点可以被解释为边的对象；但是，它们并不存储关于每条边的全部信息(它们只存储边的两个端点之一)，并且在无向图中，每条边将有两个不同的链表节点(边的两个端点的列表中各有一个)。</li> 
+ <li>古德里奇和塔马西亚提出的面向对象关联列表结构用特殊类来表示顶点对象和边对象。每个顶点对象都有一个实例变量，该变量指向一个集合对象，该集合内列出了邻接边对象。反之，每个边对象在其端点指向两个顶点对象。<sup><a href="https://web.archive.org/web/20221028213047/https://baike.sogou.com/kexue/d10092.htm#quote_3" class="kx_ref">[3]</a></sup> 邻接表的这个实现版本比直接列出相邻顶点的版本占用更多的内存，但是显式边对象的存在使它在存储关于边的附加信息时具有额外的灵活性。</li>
+</ul></div></div><div id="par_14994942480876046"><h2 class="title">2 操作<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><p>邻接表数据结构执行的主要操作是给出给定顶点的邻接点列表。使用上面详述的任何实现方法，每个邻接点的该操作都可以在常数时间内完成。换句话说，给出顶点v的所有邻接点的总时间与顶点v的度成比例。 </p>
+<p>使用邻接表来测试两个指定顶点之间是否存在边也是可能的，但效率不高。在每个顶点的所有邻接点都未经排序的邻接表中，因为要对该顶点的邻接点集合使用顺序搜索，所以测试是否存在边的时间是与这两个给定顶点的度中较小的那个成正比。如果邻接点是有序的，则可以使用二分搜索来代替线性搜索，所花费的时间与顶点的度的对数成正比。 </p></div></div><div id="par_14994942480876047"><h2 class="title">3 权衡<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><p>邻接表的主要替代实现方法是邻接矩阵，这是行和列的索引为顶点一种矩阵，并且每个单元格中储存着一个布尔值，该布尔值表示与单元格的行和列相对应的顶点之间是否存在边。对于稀疏图而言(其中大多数顶点对都是没有边相连的图)，邻接表比邻接矩阵(存储为数组时)更节省空间：邻接表的空间使用与图中边和顶点的数量成正比，而对于以这种数组方式存储的邻接矩阵而言，空间与顶点数量的平方成正比。然而， 通过使用相连的顶点对的哈希表，而不是数组来储存邻接矩阵，可以使得邻接矩阵的储存更高效，可以获得与邻接表相似的线性空间使用率。 </p>
+<p>邻接表和邻接矩阵之间的另一个显著区别是它们执行操作的效率。在邻接表中，每个顶点的邻接点可以被高效地列出，在时间上与顶点的度成正比。在邻接矩阵中，该操作需要的时间与图中顶点的数量成正比，这可能明显高于度。另一方面，邻接矩阵可以在常数时间内测试两点是否相连；而邻接表进行此操作的速度较慢。 </p></div></div><div id="par_14994942497653248"><h2 class="title">4 数据结构<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><p>作为数据结构，邻接表的主要替代方法是邻接矩阵。因为邻接矩阵中的每个条目只需要一位，所以可以用非常紧凑的方式来表示，只占用|<i>V</i>|<sup>2</sup>/8字节的连续空间，其中|V|是图的顶点数。除了避免浪费空间，这种紧凑性还鼓励了引用的局部性。 </p>
+<p>然而，对于稀疏图而言，邻接表需要更少的空间，因为它们不会浪费任何空间来表示不存在的边。在32位计算机上使用简单的数组实现时，无向图的邻接表需要大约2·(32/8)|<i>E</i>| = 8|<i>E</i>| 字节的空间，其中 |<i>E</i>|是图的边数。 </p>
+<p>注意，一个无向简单图在允许出现环的情况下最多可以有 (|<i>V</i>|<sup>2</sup>-|<i>V</i>|)/2 ≈ <i>V</i> <sup>2</sup>条边，我们可以让<i>d</i> = |<i>E</i>|/|<i>V</i>|<sup>2</sup>表示图的密度。然后，当8|<i>E</i>| &gt; |<i>V</i>|<sup>2</sup>/8时， |<i>E</i>|/|<i>V</i>|<sup>2</sup> &gt; 1/64，即<i>d</i> &gt; 1/64时，邻接表比邻接矩阵占用更多的空间。因此，一个图必须足够稀疏，以证明邻接表表示的合理性（邻接表表示才是合理的）。 </p>
+<p>除了空间上的权衡之外，不同的数据结构也便于不同的操作。在邻接表中查找与给定顶点相邻的所有顶点就像读取列表一样简单。使用邻接矩阵，必须扫描整行，这需要<i>O</i>(|<i>V</i>|)时间。在确定两个给定顶点之间是否有边可以用邻接矩阵一次确定，然而在邻接表中则需要与两个顶点的较小度成正比的时间。 </p></div></div></div></div><div id="references"><h2 class="title" id="par_references">参考文献</h2><ul class="references"><li id="quote_1"><span class="references-num">[1]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Guido van Rossum (1998). "Python Patterns — Implementing Graphs"..</span></p></li><li id="quote_2"><span class="references-num">[2]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein (2001). Introduction to Algorithms, Second Edition. MIT Press and McGraw-Hill. pp. 527–529 of section 22.1: Representations of graphs. ISBN 0-262-03293-7..</span></p></li><li id="quote_3"><span class="references-num">[3]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Michael T. Goodrich and Roberto Tamassia (2002). Algorithm Design: Foundations, Analysis, and Internet Examples. John Wiley &amp; Sons. ISBN 0-471-38365-1..</span></p></li></ul></div><div class="read-num">阅读 <!-- -->4124</div></div><div class="right-side" id="rightSide"><div class="side" id="lemma-side"><div class="side-title">版本记录</div><ul class="side-lst"><li><p class="side-lst-txt">暂无</p></li></ul><div class="user-card userCard"></div></div><div class="side"><div class="side-event"></div></div></div></div><div class="footer-box"><div id="footer"><div class="footer-logo-wrap"><div class="footer-logo"></div><div class="footer-logo-text">知识·传播·科普</div></div><div class="footer-info">本网站内容采用<a target="_blank" href="https://web.archive.org/web/20221028213047/https://creativecommons.org/licenses/by-sa/3.0/deed.zh?tdsourcetag=s_pctim_aiomsg">CC-BY-SA 3.0</a>授权</div><div class="footer-btn-wrap"><a target="_blank" href="https://web.archive.org/web/20221028213047/https://baike.sogou.com/help/#user_protocol">用户协议</a><a target="_blank" href="https://web.archive.org/web/20221028213047/http://www.sogou.com/docs/terms.htm?v=1">免责声明</a><a target="_blank" href="https://web.archive.org/web/20221028213047/http://corp.sogou.com/private.html">隐私政策</a><a target="_blank" href="https://web.archive.org/web/20221028213047/https://baike.sogou.com/kexue/intro.htm">关于我们</a></div></div></div><script>window.lemmaInfo ={"lemmaId":"10092","versionId":"14994942480876038","title":"邻接表","subtitle":"","abstracts":{"paragraphId":"14994942480876044","title":"简介","versionId":"14994942480876039","lemmaId":10092,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":56906306,"name":"水吉","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1576233681,"comment":null,"dependVersionId":0,"contentType":2,"content":"<p></p> \n<p>在图论和计算机科学中，邻接表是用来表示有限图的无序列表的集合，每个列表描述了图中相邻顶点的集合。邻接表是计算机程序中几种常用图的表示法之一。 </p>","pics":[{"originalUrl":"https://web.archive.org/web/20221028213047/https://img03.sogoucdn.com/app/a/200698/sogou_science_83?w=120&h=110&titlename=%E8%AF%A5%E6%97%A0%E5%90%91%E5%BE%AA%E7%8E%AF%E5%9B%BE%E5%8F%AF%E4%BB%A5%E7%94%B1%E4%B8%89%E4%B8%AA%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8%7Bb%EF%BC%8Cc%7D%EF%BC%8C%7Ba%EF%BC%8Cc%7D%EF%BC%8C%7Ba%EF%BC%8Cb%7D%E6%9D%A5%E6%8F%8F%E8%BF%B0%E3%80%82","url":"https://web.archive.org/web/20221028213047/https://img03.sogoucdn.com/app/a/200698/sogou_science_83","rw":120,"rh":110,"title":"该无向循环图可以由三个无序列表{b，c}，{a，c}，{a，b}来描述。","alt":null,"width":0,"height":0}],"card":null,"references":[],"versionCount":0},"card":{"paragraphId":"0","title":null,"versionId":"0","lemmaId":0,"createType":0,"creator":null,"createTime":0,"versionEditor":null,"editTime":0,"comment":null,"dependVersionId":0,"contentType":0,"content":null,"pics":null,"card":null,"references":null,"versionCount":0},"categories":[{"id":1,"name":"计算机","parents":[]}],"creator":{"uid":56906306,"name":"水吉","pic":"https://web.archive.org/web/20221028213047/https://cache.soso.com/qlogo/g?b=oidb&k=LoUR4bkBHUmNBZIl7SebQA&s=100&t=1557753541","introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":"","jobBrief":"","role":0,"roleName":null,"title":"","professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":142,"partnerIdCreateTime":1595844881,"partnerIdPoped":false},"createTime":1571038051,"editor":{"uid":56906306,"name":"水吉","pic":"https://web.archive.org/web/20221028213047/https://cache.soso.com/qlogo/g?b=oidb&k=LoUR4bkBHUmNBZIl7SebQA&s=100&t=1557753541","introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":"","jobBrief":"","role":0,"roleName":null,"title":"","professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":142,"partnerIdCreateTime":1595844881,"partnerIdPoped":false},"editTime":1576233681,"state":1,"versionCount":1,"upNum":2,"downNum":0,"pics":[{"originalUrl":"https://web.archive.org/web/20221028213047/https://img03.sogoucdn.com/app/a/200698/sogou_science_83?w=120&h=110&titlename=%E8%AF%A5%E6%97%A0%E5%90%91%E5%BE%AA%E7%8E%AF%E5%9B%BE%E5%8F%AF%E4%BB%A5%E7%94%B1%E4%B8%89%E4%B8%AA%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8%7Bb%EF%BC%8Cc%7D%EF%BC%8C%7Ba%EF%BC%8Cc%7D%EF%BC%8C%7Ba%EF%BC%8Cb%7D%E6%9D%A5%E6%8F%8F%E8%BF%B0%E3%80%82","url":"https://web.archive.org/web/20221028213047/https://img03.sogoucdn.com/app/a/200698/sogou_science_83","rw":120,"rh":110,"title":"该无向循环图可以由三个无序列表{b，c}，{a，c}，{a，b}来描述。","alt":null,"width":0,"height":0}],"catalogs":[{"level":1,"title":"实施细节","paragraphId":"14994942480876045","subCatalogs":null},{"level":1,"title":"操作","paragraphId":"14994942480876046","subCatalogs":null},{"level":1,"title":"权衡","paragraphId":"14994942480876047","subCatalogs":null},{"level":1,"title":"数据结构","paragraphId":"14994942497653248","subCatalogs":null},{"level":1,"title":"参考文献","paragraphId":"-1","subCatalogs":null}],"paragraphs":[{"paragraphId":"14994942480876045","title":"实施细节","versionId":"14994942480876040","lemmaId":10092,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":56906306,"name":"水吉","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1576233681,"comment":null,"dependVersionId":0,"contentType":1,"content":"<table class=\"wikitable\"> \n <tbody>\n  <tr> \n   <td colspan=\"3\">上图中的图表的邻接表表示: </td>\n  </tr> \n  <tr> \n   <td>a</td> \n   <td>邻接于</td> \n   <td>b, c </td>\n  </tr> \n  <tr> \n   <td>b</td> \n   <td>邻接于</td> \n   <td>a,c </td>\n  </tr> \n  <tr> \n   <td>c</td> \n   <td>邻接于</td> \n   <td>a,b </td>\n  </tr>\n </tbody>\n</table> \n<p>图的邻接表表示将图中的每个顶点与其相邻顶点或边的集合做关联。这一基本思想有许多变体，不同之处在于它们如何实现顶点和集合之间的关联、它们如何实现相邻顶点或边的集合、它们是同时包括顶点和边还是仅包括顶点并把它作为第一类对象，以及用什么样的对象来表示顶点和边。 </p> \n<ul>\n <li>吉多·范·罗苏姆建议的一种实现是使用散列表将图中的每个顶点与相邻顶点的数组做关联。在这个表示方法中，顶点可以由任何可散列的对象来表示。这种实现方法中没有将边明确表示为对象。<sup><a href=\"#quote_1\" class=\"kx_ref\">[1]</a></sup></li> \n <li>Cormen等人提出了一种实现方法，其中顶点由索引号表示。<sup><a href=\"#quote_2\" class=\"kx_ref\">[2]</a></sup> 他们的表示方法使用一个按顶点数索引的数组，其中每个顶点的数组单元指向该顶点的相邻顶点的单链表。在该表示方法中，单链表的节点可以被解释为边的对象；但是，它们并不存储关于每条边的全部信息(它们只存储边的两个端点之一)，并且在无向图中，每条边将有两个不同的链表节点(边的两个端点的列表中各有一个)。</li> \n <li>古德里奇和塔马西亚提出的面向对象关联列表结构用特殊类来表示顶点对象和边对象。每个顶点对象都有一个实例变量，该变量指向一个集合对象，该集合内列出了邻接边对象。反之，每个边对象在其端点指向两个顶点对象。<sup><a href=\"#quote_3\" class=\"kx_ref\">[3]</a></sup> 邻接表的这个实现版本比直接列出相邻顶点的版本占用更多的内存，但是显式边对象的存在使它在存储关于边的附加信息时具有额外的灵活性。</li>\n</ul>","pics":null,"card":null,"references":[],"versionCount":0},{"paragraphId":"14994942480876046","title":"操作","versionId":"14994942480876041","lemmaId":10092,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":56906306,"name":"水吉","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1576233681,"comment":null,"dependVersionId":0,"contentType":1,"content":"<p>邻接表数据结构执行的主要操作是给出给定顶点的邻接点列表。使用上面详述的任何实现方法，每个邻接点的该操作都可以在常数时间内完成。换句话说，给出顶点v的所有邻接点的总时间与顶点v的度成比例。 </p>\n<p>使用邻接表来测试两个指定顶点之间是否存在边也是可能的，但效率不高。在每个顶点的所有邻接点都未经排序的邻接表中，因为要对该顶点的邻接点集合使用顺序搜索，所以测试是否存在边的时间是与这两个给定顶点的度中较小的那个成正比。如果邻接点是有序的，则可以使用二分搜索来代替线性搜索，所花费的时间与顶点的度的对数成正比。 </p>","pics":null,"card":null,"references":[],"versionCount":0},{"paragraphId":"14994942480876047","title":"权衡","versionId":"14994942480876042","lemmaId":10092,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":56906306,"name":"水吉","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1576233681,"comment":null,"dependVersionId":0,"contentType":1,"content":"<p>邻接表的主要替代实现方法是邻接矩阵，这是行和列的索引为顶点一种矩阵，并且每个单元格中储存着一个布尔值，该布尔值表示与单元格的行和列相对应的顶点之间是否存在边。对于稀疏图而言(其中大多数顶点对都是没有边相连的图)，邻接表比邻接矩阵(存储为数组时)更节省空间：邻接表的空间使用与图中边和顶点的数量成正比，而对于以这种数组方式存储的邻接矩阵而言，空间与顶点数量的平方成正比。然而， 通过使用相连的顶点对的哈希表，而不是数组来储存邻接矩阵，可以使得邻接矩阵的储存更高效，可以获得与邻接表相似的线性空间使用率。 </p>\n<p>邻接表和邻接矩阵之间的另一个显著区别是它们执行操作的效率。在邻接表中，每个顶点的邻接点可以被高效地列出，在时间上与顶点的度成正比。在邻接矩阵中，该操作需要的时间与图中顶点的数量成正比，这可能明显高于度。另一方面，邻接矩阵可以在常数时间内测试两点是否相连；而邻接表进行此操作的速度较慢。 </p>","pics":null,"card":null,"references":[],"versionCount":0},{"paragraphId":"14994942497653248","title":"数据结构","versionId":"14994942480876043","lemmaId":10092,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":56906306,"name":"水吉","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1576233681,"comment":null,"dependVersionId":0,"contentType":1,"content":"<p>作为数据结构，邻接表的主要替代方法是邻接矩阵。因为邻接矩阵中的每个条目只需要一位，所以可以用非常紧凑的方式来表示，只占用|<i>V</i>|<sup>2</sup>/8字节的连续空间，其中|V|是图的顶点数。除了避免浪费空间，这种紧凑性还鼓励了引用的局部性。 </p>\n<p>然而，对于稀疏图而言，邻接表需要更少的空间，因为它们不会浪费任何空间来表示不存在的边。在32位计算机上使用简单的数组实现时，无向图的邻接表需要大约2·(32/8)|<i>E</i>| = 8|<i>E</i>| 字节的空间，其中 |<i>E</i>|是图的边数。 </p>\n<p>注意，一个无向简单图在允许出现环的情况下最多可以有 (|<i>V</i>|<sup>2</sup>-|<i>V</i>|)/2 ≈ <i>V</i> <sup>2</sup>条边，我们可以让<i>d</i> = |<i>E</i>|/|<i>V</i>|<sup>2</sup>表示图的密度。然后，当8|<i>E</i>| &gt; |<i>V</i>|<sup>2</sup>/8时， |<i>E</i>|/|<i>V</i>|<sup>2</sup> &gt; 1/64，即<i>d</i> &gt; 1/64时，邻接表比邻接矩阵占用更多的空间。因此，一个图必须足够稀疏，以证明邻接表表示的合理性（邻接表表示才是合理的）。 </p>\n<p>除了空间上的权衡之外，不同的数据结构也便于不同的操作。在邻接表中查找与给定顶点相邻的所有顶点就像读取列表一样简单。使用邻接矩阵，必须扫描整行，这需要<i>O</i>(|<i>V</i>|)时间。在确定两个给定顶点之间是否有边可以用邻接矩阵一次确定，然而在邻接表中则需要与两个顶点的较小度成正比的时间。 </p>","pics":null,"card":null,"references":[],"versionCount":0}],"references":[{"id":1,"type":"book","title":"Guido van Rossum (1998). \"Python Patterns — Implementing Graphs\".","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":2,"type":"book","title":"Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein (2001). Introduction to Algorithms, Second Edition. MIT Press and McGraw-Hill. pp. 527–529 of section 22.1: Representations of graphs. ISBN 0-262-03293-7.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":3,"type":"book","title":"Michael T. Goodrich and Roberto Tamassia (2002). Algorithm Design: Foundations, Analysis, and Internet Examples. John Wiley & Sons. ISBN 0-471-38365-1.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false}],"recommendReferences":null,"auditState":2,"lemmaLevel":1,"origin":0,"originEnTitle":null,"originZhTitle":null,"pv":4124,"auditType":0,"synonyms":null,"showEditTime":"2019.12.13 18:41","auditors":[{"uid":0,"name":"Ki.κe","pic":"https://web.archive.org/web/20221028213047/https://wx.qlogo.cn/mmopen/vi_32/y67kfr32Doib4wg71Jiau7jVWvharic3nRKgdRRQSl6koeQJCo0GQs2Krw0vwdFRsOWnHIQOwAZsSg5lIkIrFCOcQ/132","introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":"","jobBrief":"","role":0,"roleName":null,"title":"","professionalTitle":null,"phoneNo":null,"editable":true,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false}],"hasZhishiNav":false,"auditInfos":{},"isHistory":false};</script><script crossorigin="anonymous" src="./92.邻接表 - 搜狗科学百科_files/aegis.min.js.download"></script><script crossorigin="anonymous" src="./92.邻接表 - 搜狗科学百科_files/main_2020092401.js.download"></script><script crossorigin="anonymous" src="./92.邻接表 - 搜狗科学百科_files/react.production.min.js.download"></script><script crossorigin="anonymous" src="./92.邻接表 - 搜狗科学百科_files/react-dom.production.min.js.download"></script><script crossorigin="anonymous" src="./92.邻接表 - 搜狗科学百科_files/jquery-1.11.1.min.js.download"></script><script crossorigin="anonymous" src="./92.邻接表 - 搜狗科学百科_files/main_2022062701.js.download"></script><script crossorigin="anonymous" src="./92.邻接表 - 搜狗科学百科_files/main_66bbe21.js.download"></script><script crossorigin="anonymous" src="./92.邻接表 - 搜狗科学百科_files/react.production.min.js.download"></script><script crossorigin="anonymous" src="./92.邻接表 - 搜狗科学百科_files/react-dom.production.min.js.download"></script><script crossorigin="anonymous" src="./92.邻接表 - 搜狗科学百科_files/main_edf0f08.js.download"></script><div id="popControl"><div class="pop-control-mask" style="display: none;"><div class="pop-container"><i class="close-icon"></i><div class="stop-title">搜狗科学百科停止服务运营公告</div><div class="stop-user">亲爱的用户：</div><div class="stop-content">因业务方向调整，搜狗科学百科将于2022年11月11日正式停止服务与运营。届时产品内所有数据将依据相关法律进行删除并关闭服务器，您将无法登录及使用搜狗科学百科，相关内容在平台下线后将无法找回。</div><div class="stop-content">搜狗科学百科是由搜狗推出的科学领域专业百科产品，与搜狗百科为两个独立产品，本次停止服务与运营仅对搜狗科学百科，并不影响搜狗百科产品正常使用，敬请知悉。</div><div class="stop-content">由此给您带来的不便我们深表歉意，敬请谅解。再次感谢您一直以来的陪伴与支持！</div><div class="stop-team">搜狗科学百科产品&amp;运营团队</div><div class="stop-time">2022年10月11日</div></div></div></div>
+</body></html>
