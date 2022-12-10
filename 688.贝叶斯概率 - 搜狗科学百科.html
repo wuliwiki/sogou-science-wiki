@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm -->
+<html class="" data-reactroot=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./688.贝叶斯概率 - 搜狗科学百科_files/analytics.js.download" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app223.us.archive.org';v.server_ms=211;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="./688.贝叶斯概率 - 搜狗科学百科_files/bundle-playback.js.download" charset="utf-8"></script>
+<script type="text/javascript" src="./688.贝叶斯概率 - 搜狗科学百科_files/wombat.js.download" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://baike.sogou.com/kexue/d10688.htm","20221025120729","https://web.archive.org/","web","/_static/",
+	      "1666699649");
+</script>
+<link rel="stylesheet" type="text/css" href="./688.贝叶斯概率 - 搜狗科学百科_files/banner-styles.css">
+<link rel="stylesheet" type="text/css" href="./688.贝叶斯概率 - 搜狗科学百科_files/iconochive.css">
+<!-- End Wayback Rewrite JS Include -->
+<meta name="save" content="history"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="baidu-site-verification" content="VWGb6TyYx8"><meta content="贝叶斯概率 - 搜狗科学百科" name="keywords"><meta content="搜狗科学百科是一部有着平等、协作、分享、自由理念的网络科学全书，为每一个互联网用户创造一个涵盖所有领域知识、服务的中文知识性平台。" name="description"><meta http-equiv="x-dns-prefetch-control" content="on"><meta name="server" baike="235" ip="210" env="online"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025120729/https://cache.soso.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025120729/https://hhy.sogoucdn.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025120729/https://pic.baike.soso.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025120729/https://ugc.qpic.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025120729/https://xui.ptlogin2.qq.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025120729/https://q1.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025120729/https://q2.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025120729/https://q3.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025120729/https://q4.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025120729/https://q.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025120729/https://img01.sogoucdn.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025120729/https://img02.sogoucdn.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025120729/https://img03.sogoucdn.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025120729/https://img04.sogoucdn.com/"><link rel="Shortcut Icon" href="https://web.archive.org/web/20221025120729im_/https://www.sogou.com/images/logo/new/favicon.ico?v=4"><link rel="Bookmark" href="https://www.sogou.com/images/logo/new/favicon.ico?v=4"><link href="./688.贝叶斯概率 - 搜狗科学百科_files/base_b849887.css" rel="stylesheet"><link href="./688.贝叶斯概率 - 搜狗科学百科_files/detail_378aed5.css" rel="stylesheet"><link href="./688.贝叶斯概率 - 搜狗科学百科_files/inviteAudit_7894507.css" rel="stylesheet"><link rel="stylesheet" href="./688.贝叶斯概率 - 搜狗科学百科_files/highlight.min.css"><title>贝叶斯概率 - 搜狗科学百科</title><style>.onekey-close {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	width: 24px;
+	height: 24px;
+	background: url(//web.archive.org/web/20221025113757/https://hhy.sogoucdn.com/js/common/hhy/sprite_wap_baike_37443f3.png) no-repeat;
+	text-indent: -999em;
+	background-size: 84px;
+	background-position: -63px 0;
+}
+
+.onekey-login {
+	position: absolute;
+	top: 16.4%;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+
+/* .onekey-login-img {
+    width: 75px;
+    height: 75px;
+    background: url("https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/images/sprite_wap_baike.png") no-repeat;
+    background-size: 100px 91px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+} */
+
+.onekey-login-title {
+	text-align: center;
+	padding-bottom: 3px;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 30px;
+	color: #000;
+}
+
+.onekey-login-txt {
+	text-align: center;
+	font-family: PingFangSC;
+	font-size: 14px;
+	line-height: 20px;
+	color: #8f8f8f;
+}
+
+.onekey-login-qq,
+.onekey-login-wx,
+.onekey-login-phone {
+	display: block;
+	width: 245px;
+	height: 54px;
+	border-radius: 45px;
+	text-align: center;
+
+	margin: 0 auto;
+	font-size: 17px;
+	line-height: 24px;
+	color: #000;
+	/* padding: 16px 77px; */
+	border-radius: 12px;
+	border: solid 1px #e0e0e0;
+}
+.onekey-qq-content,
+.onekey-vx-content,
+.onekey-phone-content {
+	display: inline-block;
+	margin-top: 16px;
+}
+.onekey-qq-content {
+	padding: 0 5px;
+}
+
+.onekey-login-qq {
+	margin-top: 48px;
+	margin-bottom: 24px;
+}
+
+.onekey-login-qq:before {
+	display: inline-block;
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: url(//web.archive.org/web/20221025113757/https://hhy.sogoucdn.com/js/common/hhy/sprite_wap_baike_37443f3.png) no-repeat;
+	background-size: 80px;
+	background-position: -20px 0;
+	vertical-align: top;
+	margin: 17px 8px 0 0;
+}
+
+.onekey-login-wx {
+	margin-bottom: 24px;
+}
+
+.onekey-login-wx:before {
+	display: inline-block;
+	content: "";
+	width: 21px;
+	height: 21px;
+	background: url(//web.archive.org/web/20221025113757/https://hhy.sogoucdn.com/js/common/hhy/sprite_wap_baike_37443f3.png) no-repeat;
+	background-size: 84px;
+	background-position: 0 0;
+	vertical-align: top;
+	margin: 17px 10px 0 0;
+}
+
+.onekey-login-phone {
+}
+
+.onekey-login-phone:before {
+	display: inline-block;
+	content: "";
+	width: 21px;
+	height: 21px;
+	background: url(//web.archive.org/web/20221025113757/https://hhy.sogoucdn.com/js/common/hhy/sprite_wap_baike_37443f3.png) no-repeat;
+	background-size: 84px;
+	background-position: -42px 0;
+	vertical-align: top;
+	margin: 17px 10px 0 0;
+}
+
+.onekey-fixed {
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	width: 100%;
+	height: 100%;
+}
+
+.onekey-fixed.forbid {
+	z-index: 100;
+	position: fixed;
+	top: auto;
+	bottom: 68px;
+	left: 9%;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	width: 82%;
+	height: 43px;
+	border-radius: 25px;
+	color: #ffffff;
+}
+.onekey-login-title.forbid {
+	text-align: center;
+	padding-bottom: 3px;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 30px;
+	color: white;
+}
+</style><style>#login_mask {
+  background: #000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  position: fixed;
+  /*fixed好像在哪个IE上有BUG，先用用*/
+  left: 0;
+  top: 0;
+  z-index: 999;
+  height: 100%;
+}
+
+#login_iframe_container {
+  position: fixed;
+  width: 550px;
+  height: 360px;
+  z-index: 1020;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 828px) {
+  #login_iframe_container {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+  }
+}
+
+#login_iframe_container.new-login {
+  width: 550px;
+  height: 360px;
+  background-image: url(//web.archive.org/web/20221025113757/https://hhy.sogoucdn.com/js/common/hhy/background_2a4a8a6.png);
+}
+
+#login_iframe_container.new-login.no-bg {
+  background: #fff;
+}
+
+#login_iframe_container.new-login .login-title {
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 0.19px;
+  color: #ffffff;
+  margin-top: 62px;
+}
+#login_iframe_container.new-login .forbid-title {
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 0.19px;
+  color: #333333;
+  margin-top: 150px;
+}
+
+#login_iframe_container.new-login.no-bg .login-title {
+  color: #333333;
+}
+
+#login_iframe_container.new-login .login-subtitle {
+  width: 100%;
+  height: 18px;
+  line-height: 18px;
+  font-size: 13px;
+  letter-spacing: 0.08px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 9px;
+  margin-bottom: 43px;
+}
+
+#login_iframe_container.new-login.no-bg .login-subtitle {
+  color: #999999;
+}
+
+#login_iframe_container.new-login .login-subtitle::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  background-color: #ffffff;
+  position: relative;
+  top: -4px;
+  left: -5px;
+}
+
+#login_iframe_container.new-login .login-subtitle::after {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  background-color: #ffffff;
+  position: relative;
+  top: -4px;
+  left: 5px;
+}
+
+#login_iframe_container.new-login.no-bg .login-subtitle::before {
+  background-color: #999999;
+}
+
+#login_iframe_container.new-login.no-bg .login-subtitle::after {
+  background-color: #999999;
+}
+
+#login_iframe_container.new-login .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 12px;
+  height: 12px;
+  background: url(//web.archive.org/web/20221025113757/https://hhy.sogoucdn.com/js/common/hhy/login-sprites_e3853e5.png) -59px -10px;
+  background-size: 81px 91px;
+  cursor: pointer;
+}
+
+#login_iframe_container.new-login .login-btn {
+  width: 220px;
+  height: 47px;
+  border-radius: 24px;
+  border: solid 1px #dddddd;
+  background-color: #ffffff;
+  margin: 0 auto;
+  margin-top: 28px;
+  position: relative;
+  display: block;
+}
+
+#login_iframe_container.new-login .login-btn .login-icon {
+  position: absolute;
+}
+
+#login_iframe_container.new-login .login-btn .login-text {
+  width: 61px;
+  height: 47px;
+  line-height: 47px;
+  vertical-align: middle;
+  font-size: 15px;
+  letter-spacing: 0.1px;
+  color: #666666;
+  position: absolute;
+  right: 62px;
+}
+
+#login_iframe_container.new-login .login-btn.qq-btn .login-icon {
+  width: 22px;
+  height: 27px;
+  top: 10px;
+  left: 67px;
+  background: url(//web.archive.org/web/20221025113757/https://hhy.sogoucdn.com/js/common/hhy/login-sprites_e3853e5.png) -10px -54px;
+  background-size: 81px 91px;
+}
+
+#login_iframe_container.new-login .login-btn.qq-btn .login-text {
+  right: 59px;
+}
+
+#login_iframe_container.new-login .login-btn.wechat-btn .login-icon {
+  width: 29px;
+  height: 24px;
+  top: 12px;
+  left: 62px;
+  background: url(//web.archive.org/web/20221025113757/https://hhy.sogoucdn.com/js/common/hhy/login-sprites_e3853e5.png) -10px -10px;
+  background-size: 81px 91px;
+}</style><style>/* -- container -- */
+.rodal,
+.rodal-mask {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.rodal {
+    position: fixed;
+}
+
+/* -- mask -- */
+.rodal-mask {
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+}
+
+/* -- dialog -- */
+.rodal-dialog {
+    position: absolute;
+    z-index: 101;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.rodal-center {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.rodal-bottom {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.rodal-top {
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}
+
+.rodal-left {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.rodal-right {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* -- close button -- */
+.rodal-close {
+    position: absolute;
+    cursor: pointer;
+    top: 16px;
+    right: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.rodal-close:before,
+.rodal-close:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: #999;
+    border-radius: 100%;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+}
+
+.rodal-close:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.rodal-close:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.rodal-close:hover:before,
+.rodal-close:hover:after {
+    background: #333;
+}
+
+/* -- fade -- */
+/* @-webkit-keyframes rodal-fade-enter {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes rodal-fade-enter {
+    from {
+        opacity: 0;
+    }
+}
+
+.rodal-fade-enter {
+    -webkit-animation: rodal-fade-enter both ease-in;
+    animation: rodal-fade-enter both ease-in;
+} */
+
+@-webkit-keyframes rodal-fade-leave {
+    to {
+        opacity: 0
+    }
+}
+
+@keyframes rodal-fade-leave {
+    to {
+        opacity: 0
+    }
+}
+
+.rodal-fade-leave {
+    -webkit-animation: rodal-fade-leave both ease-out;
+    animation: rodal-fade-leave both ease-out;
+}
+
+/* -- zoom -- */
+@-webkit-keyframes rodal-zoom-enter {
+    from {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-zoom-enter {
+    from {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-zoom-enter {
+    -webkit-animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-zoom-leave {
+    to {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-zoom-leave {
+    to {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-zoom-leave {
+    -webkit-animation: rodal-zoom-leave both;
+    animation: rodal-zoom-leave both;
+}
+
+/* -- slideDown -- */
+@-webkit-keyframes rodal-slideDown-enter {
+    from {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+@keyframes rodal-slideDown-enter {
+    from {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+.rodal-slideDown-enter {
+    -webkit-animation: rodal-slideDown-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideDown-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideDown-leave {
+    to {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+@keyframes rodal-slideDown-leave {
+    to {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+.rodal-slideDown-leave {
+    -webkit-animation: rodal-slideDown-leave both;
+    animation: rodal-slideDown-leave both;
+}
+
+/* -- slideLeft -- */
+@-webkit-keyframes rodal-slideLeft-enter {
+    from {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideLeft-enter {
+    from {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+.rodal-slideLeft-enter {
+    -webkit-animation: rodal-slideLeft-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideLeft-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideLeft-leave {
+    to {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideLeft-leave {
+    to {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+.rodal-slideLeft-leave {
+    -webkit-animation: rodal-slideLeft-leave both;
+    animation: rodal-slideLeft-leave both;
+}
+
+/* -- slideRight -- */
+@-webkit-keyframes rodal-slideRight-enter {
+    from {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideRight-enter {
+    from {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+.rodal-slideRight-enter {
+    -webkit-animation: rodal-slideRight-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideRight-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideRight-leave {
+    to {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideRight-leave {
+    to {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+.rodal-slideRight-leave {
+    -webkit-animation: rodal-slideRight-leave both;
+    animation: rodal-slideRight-leave both;
+}
+
+/* -- slideUp -- */
+@-webkit-keyframes rodal-slideUp-enter {
+    from {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+@keyframes rodal-slideUp-enter {
+    from {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+.rodal-slideUp-enter {
+    -webkit-animation: rodal-slideUp-enter both cubic-bezier(0.23, 1, 0.32, 1);
+    animation: rodal-slideUp-enter both cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@-webkit-keyframes rodal-slideUp-leave {
+    to {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+@keyframes rodal-slideUp-leave {
+    to {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+.rodal-slideUp-leave {
+    -webkit-animation: rodal-slideUp-leave both;
+    animation: rodal-slideUp-leave both;
+}
+
+/* -- flip -- */
+@-webkit-keyframes rodal-flip-enter {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+@keyframes rodal-flip-enter {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+.rodal-flip-enter {
+    -webkit-animation: rodal-flip-enter both ease-in;
+    animation: rodal-flip-enter both ease-in;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+}
+
+@-webkit-keyframes rodal-flip-leave {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+    }
+}
+
+@keyframes rodal-flip-leave {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+    }
+}
+
+.rodal-flip-leave {
+    -webkit-animation: rodal-flip-leave both;
+    animation: rodal-flip-leave both;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+}
+
+/* -- rotate -- */
+@-webkit-keyframes rodal-rotate-enter {
+    from {
+        -webkit-transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-rotate-enter {
+    from {
+        -webkit-transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-rotate-enter {
+    -webkit-animation: rodal-rotate-enter both;
+    animation: rodal-rotate-enter both;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+@-webkit-keyframes rodal-rotate-leave {
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-rotate-leave {
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-rotate-leave {
+    -webkit-animation: rodal-rotate-leave both;
+    animation: rodal-rotate-leave both;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+/* -- door -- */
+@-webkit-keyframes rodal-door-enter {
+    from {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+}
+
+@keyframes rodal-door-enter {
+    from {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+}
+
+.rodal-door-enter {
+    -webkit-animation: rodal-door-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-door-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-door-leave {
+    60% {
+        -webkit-transform: scale3d(.01, 1, 1);
+        transform: scale3d(.01, 1, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(0, 1, .1);
+        transform: scale3d(0, 1, .1);
+    }
+}
+
+@keyframes rodal-door-leave {
+    60% {
+        -webkit-transform: scale3d(.01, 1, 1);
+        transform: scale3d(.01, 1, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(0, 1, .1);
+        transform: scale3d(0, 1, .1);
+    }
+}
+
+.rodal-door-leave {
+    -webkit-animation: rodal-door-leave both;
+    animation: rodal-door-leave both;
+}</style><style>/* -- container -- */
+.rodal,
+.rodal-mask {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.rodal {
+    position: fixed;
+}
+
+/* -- mask -- */
+.rodal-mask {
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+}
+
+/* -- dialog -- */
+.rodal-dialog {
+    position: absolute;
+    z-index: 101;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.rodal-center {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.rodal-bottom {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.rodal-top {
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}
+
+.rodal-left {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.rodal-right {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* -- close button -- */
+.rodal-close {
+    position: absolute;
+    cursor: pointer;
+    top: 16px;
+    right: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.rodal-close:before,
+.rodal-close:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: #999;
+    border-radius: 100%;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+}
+
+.rodal-close:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.rodal-close:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.rodal-close:hover:before,
+.rodal-close:hover:after {
+    background: #333;
+}
+
+/* -- fade -- */
+/* @-webkit-keyframes rodal-fade-enter {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes rodal-fade-enter {
+    from {
+        opacity: 0;
+    }
+}
+
+.rodal-fade-enter {
+    -webkit-animation: rodal-fade-enter both ease-in;
+    animation: rodal-fade-enter both ease-in;
+} */
+
+@-webkit-keyframes rodal-fade-leave {
+    to {
+        opacity: 0
+    }
+}
+
+@keyframes rodal-fade-leave {
+    to {
+        opacity: 0
+    }
+}
+
+.rodal-fade-leave {
+    -webkit-animation: rodal-fade-leave both ease-out;
+    animation: rodal-fade-leave both ease-out;
+}
+
+/* -- zoom -- */
+@-webkit-keyframes rodal-zoom-enter {
+    from {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-zoom-enter {
+    from {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-zoom-enter {
+    -webkit-animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-zoom-leave {
+    to {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-zoom-leave {
+    to {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-zoom-leave {
+    -webkit-animation: rodal-zoom-leave both;
+    animation: rodal-zoom-leave both;
+}
+
+/* -- slideDown -- */
+@-webkit-keyframes rodal-slideDown-enter {
+    from {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+@keyframes rodal-slideDown-enter {
+    from {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+.rodal-slideDown-enter {
+    -webkit-animation: rodal-slideDown-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideDown-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideDown-leave {
+    to {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+@keyframes rodal-slideDown-leave {
+    to {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+.rodal-slideDown-leave {
+    -webkit-animation: rodal-slideDown-leave both;
+    animation: rodal-slideDown-leave both;
+}
+
+/* -- slideLeft -- */
+@-webkit-keyframes rodal-slideLeft-enter {
+    from {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideLeft-enter {
+    from {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+.rodal-slideLeft-enter {
+    -webkit-animation: rodal-slideLeft-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideLeft-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideLeft-leave {
+    to {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideLeft-leave {
+    to {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+.rodal-slideLeft-leave {
+    -webkit-animation: rodal-slideLeft-leave both;
+    animation: rodal-slideLeft-leave both;
+}
+
+/* -- slideRight -- */
+@-webkit-keyframes rodal-slideRight-enter {
+    from {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideRight-enter {
+    from {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+.rodal-slideRight-enter {
+    -webkit-animation: rodal-slideRight-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideRight-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideRight-leave {
+    to {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideRight-leave {
+    to {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+.rodal-slideRight-leave {
+    -webkit-animation: rodal-slideRight-leave both;
+    animation: rodal-slideRight-leave both;
+}
+
+/* -- slideUp -- */
+@-webkit-keyframes rodal-slideUp-enter {
+    from {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+@keyframes rodal-slideUp-enter {
+    from {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+.rodal-slideUp-enter {
+    -webkit-animation: rodal-slideUp-enter both cubic-bezier(0.23, 1, 0.32, 1);
+    animation: rodal-slideUp-enter both cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@-webkit-keyframes rodal-slideUp-leave {
+    to {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+@keyframes rodal-slideUp-leave {
+    to {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+.rodal-slideUp-leave {
+    -webkit-animation: rodal-slideUp-leave both;
+    animation: rodal-slideUp-leave both;
+}
+
+/* -- flip -- */
+@-webkit-keyframes rodal-flip-enter {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+@keyframes rodal-flip-enter {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+.rodal-flip-enter {
+    -webkit-animation: rodal-flip-enter both ease-in;
+    animation: rodal-flip-enter both ease-in;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+}
+
+@-webkit-keyframes rodal-flip-leave {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+    }
+}
+
+@keyframes rodal-flip-leave {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+    }
+}
+
+.rodal-flip-leave {
+    -webkit-animation: rodal-flip-leave both;
+    animation: rodal-flip-leave both;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+}
+
+/* -- rotate -- */
+@-webkit-keyframes rodal-rotate-enter {
+    from {
+        -webkit-transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-rotate-enter {
+    from {
+        -webkit-transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-rotate-enter {
+    -webkit-animation: rodal-rotate-enter both;
+    animation: rodal-rotate-enter both;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+@-webkit-keyframes rodal-rotate-leave {
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-rotate-leave {
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-rotate-leave {
+    -webkit-animation: rodal-rotate-leave both;
+    animation: rodal-rotate-leave both;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+/* -- door -- */
+@-webkit-keyframes rodal-door-enter {
+    from {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+}
+
+@keyframes rodal-door-enter {
+    from {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+}
+
+.rodal-door-enter {
+    -webkit-animation: rodal-door-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-door-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-door-leave {
+    60% {
+        -webkit-transform: scale3d(.01, 1, 1);
+        transform: scale3d(.01, 1, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(0, 1, .1);
+        transform: scale3d(0, 1, .1);
+    }
+}
+
+@keyframes rodal-door-leave {
+    60% {
+        -webkit-transform: scale3d(.01, 1, 1);
+        transform: scale3d(.01, 1, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(0, 1, .1);
+        transform: scale3d(0, 1, .1);
+    }
+}
+
+.rodal-door-leave {
+    -webkit-animation: rodal-door-leave both;
+    animation: rodal-door-leave both;
+}</style></head><body class=""><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+</style>
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display: block; direction: ltr;">
+</div><div id="wm-ipp-print">The Wayback Machine - https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm</div>
+<script type="text/javascript">//<![CDATA[
+__wm.bt(675,27,25,2,"web","https://baike.sogou.com/kexue/d10688.htm","20221025120729",1996,"/_static/",["/_static/css/banner-styles.css?v=S1zqJCYt","/_static/css/iconochive.css?v=qtvMKcIJ"], false);
+  __wm.rw(1);
+//]]></script>
+<!-- END WAYBACK TOOLBAR INSERT --><script>window._gtag=window._gtag||{};window._gtag.shouldGrayed = false;if ('4f75856e8da94ab6ac530615c2c113f1') window._gtag.traceId = '4f75856e8da94ab6ac530615c2c113f1';if ({"illegality":true}) window.userInfo = {"illegality":true};</script><div class="topnavbox"><ul class="topnav"><li><a href="https://web.archive.org/web/20221025120729/https://www.sogou.com/web?query=">网页</a></li><li><a href="https://web.archive.org/web/20221025120729/https://weixin.sogou.com/weixin?p=75351201">微信</a></li><li><a href="https://web.archive.org/web/20221025120729/https://zhihu.sogou.com/zhihu?p=75351218">知乎</a></li><li><a href="https://web.archive.org/web/20221025120729/https://pic.sogou.com/pics?query=">图片</a></li><li><a href="https://web.archive.org/web/20221025120729/https://v.sogou.com/v?query=">视频</a></li><li><a href="https://web.archive.org/web/20221025120729/https://mingyi.sogou.com/">医疗</a></li><li class="cur"><strong>科学</strong></li><li><a href="https://web.archive.org/web/20221025120729/https://hanyu.sogou.com/">汉语</a></li><li><a href="https://web.archive.org/web/20221025120729/https://wenwen.sogou.com/">问问</a></li><li><a href="https://web.archive.org/web/20221025120729/https://www.sogou.com/docs/more.htm">更多<span class="topraquo">»</span></a></li></ul></div><div id="header"><div class="header-wrap"><a class="header-logo" href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue"></a><div class="header-search"><div class="querybox" id="suggBox"><form><input id="searchInput" class="query" type="text" placeholder="搜科学领域专业百科词条" name="query" autocomplete="off" value=""><a href="javascript:;" class="query-search"></a></form></div></div><div class="header-rgt"><span class="btn-header-rgt btn-edit" id="editLemma">创建</span><div class="header-user no-login"></div></div></div></div><div class="fixed-placeholder" style="visibility:none"></div><div id="container" class=""><div class="content lemma-level1"><div class="detail-title" id="abstract-title"><h1>贝叶斯概率</h1><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#!" class="detail-edit">编辑</a></div><div class="section_content" data-id="14995461668602375"><div><p>贝叶斯概率是对概率概念的一种解释，其中概率被解释为一种代表知识<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_1" class="kx_ref">[1]</a></sup> 状态的合理期望<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_2" class="kx_ref">[2]</a></sup> 或个人信念的量化，而不是某种现象发生的频率或倾向。<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_3" class="kx_ref">[3]</a></sup> </p>
+<p>概率的贝叶斯解释可以被看作是命题逻辑的扩展，它支持用假设进行推理。也就是说，命题的真假是不确定的。在贝叶斯观点中，一个概率被分配给一个假设，而在频率推断下，一个假设通常在没有被分配概率的情况下被检验。 </p>
+<p>贝叶斯概率属于证据概率的范畴；为了评估假设的概率，贝叶斯概率学家指定一个先验概率。继而，又根据新的相关数据(证据)将其更新为后验概率。<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_4" class="kx_ref">[4]</a></sup> 贝叶斯解释提供了一套标准的程序和公式来进行这种计算。 </p>
+<p>贝叶斯一词源于18世纪的数学家和神学家托马斯·贝叶斯（Thomas Bayes），他首次用数学方法处理了一个重要的统计数据分析问题，该方法现在被称为贝叶斯推断(Bayesian inference)。<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_5" class="kx_ref">[5]</a></sup> 数学家皮埃尔·西蒙·拉普拉斯（Pierre-Simon Laplace）开创并推广了现在所谓的贝叶斯概率。<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_5" class="kx_ref">[5]</a></sup> </p></div></div><div id="catalog"><h2 class="title2">目录<a href="javascript:" class="detail-edit">编辑</a></h2><div class="catalog_wrap" style=""><ul class="catalog_list col2"><li><span class="order">1</span><a href="javascript:" data-level="1" data-id="14995461685379588">贝叶斯方法</a></li><li><span class="order">2</span><a href="javascript:" data-level="1" data-id="14995461685379589">客观和主观贝叶斯概率</a></li><li><span class="order">3</span><a href="javascript:" data-level="1" data-id="14995461685379590">历史</a></li><li><span class="order">4</span><a href="javascript:" data-level="1" data-id="14995461685379591">贝叶斯概率的证明</a></li><li class="secondary_catalog"><span>4.1 </span><a href="javascript:" data-id="14995461685379591">公理化方法</a></li></ul><ul class="catalog_list col2"><li class="secondary_catalog"><span>4.2 </span><a href="javascript:" data-id="14995461685379591">荷兰赌方法</a></li><li class="secondary_catalog"><span>4.3 </span><a href="javascript:" data-id="14995461685379591">决策理论方法</a></li><li><span class="order">5</span><a href="javascript:" data-level="1" data-id="14995461702156811">构建先验的个人概率和客观方法</a></li><li><span class="order">6</span><a href="javascript:" data-level="1" data-id="references">参考文献</a></li></ul></div></div><div id="paragraphs"><div><div id="par_14995461685379588"><h2 class="title">1 贝叶斯方法<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><p>概念和过程是贝叶斯方法的一大特点，如下: </p> 
+<ul>
+ <li>使用随机变量，或更一般的未知量，<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_6" class="kx_ref">[6]</a></sup> 对统计模型中的所有不确定性来源进行建模，包括因缺乏信息而导致的不确定性。</li> 
+ <li>需要考虑可用的(先验前的)信息来确定先验的概率分布。</li> 
+ <li>贝叶斯公式的计算顺序是:当更多数据可用时，使用贝叶斯公式计算后验分布；随后，后验分布成为下一个先验分布。</li> 
+ <li>而对于频率学派来说，假设是一个命题(必须是真或假)，因此假设的频率学派概率是0或1，在贝叶斯统计中，如果真值不确定，分配给假设的概率也可以在0到1的范围内。</li>
+</ul></div></div><div id="par_14995461685379589"><h2 class="title">2 客观和主观贝叶斯概率<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><p>从广义上讲，贝叶斯概率有两种解释。对于客观主义者来说，把概率解释为逻辑的延伸，概率量化合理的期望，每个共享相同知识的人（甚至是“机器人”）都应该按照贝叶斯统计的规则共享知识，这可以用考克斯定理（Cox's theorem）来证明。<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_2" class="kx_ref">[2]</a></sup><sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_7" class="kx_ref">[7]</a></sup> 对于主观主义者来说，概率相应于个人信仰。<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_3" class="kx_ref">[3]</a></sup> 合理性和一致性允许在它们所构成的约束范围内发生实质性的变化；这些约束由荷兰赌论证或决策理论和德·芬内蒂定理（de Finetti's theorem）来证明。<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_3" class="kx_ref">[3]</a></sup> 贝叶斯概率的客观变体和主观变体不同主要表现在它们对先验概率的解释和构造。 </p></div></div><div id="par_14995461685379590"><h2 class="title">3 历史<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><p>贝叶斯这个术语指的是托马斯·贝叶斯（Thomas Bayes）(1702-1761)，他在一篇题为《旨在解决机会论中的一个问题的文章 》的论文中证明了现在被称为贝叶斯定理的一个特例。<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_8" class="kx_ref">[8]</a></sup> 在这种特殊情况下，先验和后验分布是贝塔分布，数据来自伯努利试验。皮埃尔·西蒙·拉普拉斯（Pierre-Simon Laplace ）(1749-1827)引入了这个定理的一般形式，并用它来处理天体力学、医学统计、可靠性和法理学方面的问题。<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_9" class="kx_ref">[9]</a></sup> 早期贝叶斯推断遵循拉普拉斯的不充分推理原则使用均匀的先验，被称为“逆概率”(因为它从观测值到参数，或者从结果到原因进行逆向推理)。<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_10" class="kx_ref">[10]</a></sup> 20世纪20年代以后，“逆概率”在很大程度上被一系列称为频率统计的方法所取代。<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_10" class="kx_ref">[10]</a></sup> </p>
+<p>20世纪，拉普拉斯思想向两个方向发展，在贝叶斯实践中产生了客观和主观的潮流。哈罗德·杰弗里斯（Harold Jeffreys）的概率论(首次发表于1939年)在贝叶斯概率观的复兴中发挥了重要作用，随后是亚伯拉罕·瓦尔德（Abraham Wald）(1950年)和伦纳德·萨维奇（Leonard J. Savage）(1954年)的著作。形容词贝叶斯本身可以追溯到20世纪50年代；衍生出的贝叶斯主义和新贝叶斯主义是20世纪60年代的新造词。<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_11" class="kx_ref">[11]</a></sup><sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_12" class="kx_ref">[12]</a></sup><sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_13" class="kx_ref">[13]</a></sup> 在客观主义者的潮流中，统计分析只依赖于假设的模型和分析的数据。<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_14" class="kx_ref">[14]</a></sup> 不需要涉及主观决策。相比之下，“主观主义”统计学家否认对一般情况进行完全客观分析的可能性。 </p>
+<p>在20世纪80年代，贝叶斯方法的研究和应用有了显著的发展，这主要归功于马尔可夫链蒙特卡罗方法的发现和随之而来的许多计算问题的消除，以及对非标准、复杂应用日益增长的兴趣。<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_15" class="kx_ref">[15]</a></sup> 虽然频率学派统计学仍然占主导地位(从大多数本科教学仍然以此为基础这一事实可以看出<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_16" class="kx_ref">[16]</a></sup>，但是贝叶斯方法被广泛接受和使用，例如在机器学习领域。<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_17" class="kx_ref">[17]</a></sup> </p></div></div><div id="par_14995461685379591"><h2 class="title">4 贝叶斯概率的证明<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><p>使用贝叶斯概率作为贝叶斯推断的基础得到了几个论点的支持，如考克斯公理（Cox axioms）、荷兰著作论点、基于决策理论的论点和德·费内蒂定理（de Finetti's theorem）。 </p> 
+<h3>4.1 <span>公理化方法</span></h3> 
+<p>理查德·考克斯（Richard T. Cox）证明了<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_7" class="kx_ref">[7]</a></sup> 贝叶斯更新遵循几个公理，包括两个函数方程和一个可微性假设。可微性甚至连续性的假设是有争议的；哈尔彭（Halpern）发现了一个反例，基于他的观察，布尔代数的语句可能是有限的。<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_18" class="kx_ref">[18]</a></sup> 为了使理论更加严谨，许多作者还提出了其他公理。<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_6" class="kx_ref">[6]</a></sup> </p> 
+<h3>4.2 <span>荷兰赌方法</span></h3> 
+<p>荷兰赌论证是由德·芬内蒂提出的；它基于赌博。当一个聪明的赌徒下了一套保证盈利的赌注，而不管赌注的结果如何时，一个荷兰赌就诞生了。如果一个赌徒在计算赔率时遵循贝叶斯演算的规则，那么赌局是输的。 </p>
+<p>然而，伊恩·哈金(Ian Hacking)指出，传统的荷兰赌论证并没有具体说明贝叶斯更新:它们留下了非贝叶斯更新规则避开荷兰赌的可能性。例如，哈克（Hacking）写道<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_19" class="kx_ref">[19]</a></sup><sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_20" class="kx_ref">[20]</a></sup>&nbsp;:“无论是荷兰赌论证还是个性化库中证明概率公理的任何其他论点，都不包含动态假设。没有人需要贝叶斯主义。所以个人主义者要求动态假设是贝叶斯的。的确，在一致性方面，个人主义者可以放弃从经验中学习的贝叶斯模型。盐可能会失去味道。” </p>
+<p>事实上，也有非贝叶斯更新规则避免荷兰赌(如理查德·杰弗里斯规则出版后关于“概率运动学”<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_21" class="kx_ref">[21]</a></sup> 的文献中所讨论的那样，该规则本身被认为是贝叶斯<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_22" class="kx_ref">[22]</a></sup>)。足以(唯一地)指定贝叶斯更新的额外假设是实质性的<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_23" class="kx_ref">[23]</a></sup> ，且不是普遍令人满意的。<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_24" class="kx_ref">[24]</a></sup> </p> 
+<h3>4.3 <span>决策理论方法</span></h3> 
+<p>亚伯拉罕·瓦尔德（ Abraham Wald）给出了使用贝叶斯推断(以及贝叶斯概率)的决策理论证明，他证明了每个可接受的统计过程要么是贝叶斯过程，要么是贝叶斯过程的极限。<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_25" class="kx_ref">[25]</a></sup> 相反，每一个贝叶斯过程都是可以接受的。<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_26" class="kx_ref">[26]</a></sup> </p></div></div><div id="par_14995461702156811"><h2 class="title">5 构建先验的个人概率和客观方法<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><p>在拉姆齐（Ramsey）和冯·诺依曼（von Neumann）的期望效用理论的工作之后，决策理论家已经用代理的概率分布来解释理性行为。约翰·普范扎格（Johann Pfanzagl）通过提供主观概率和效用的公理化完成了博弈和经济行为理论，这是冯·诺依曼和奥斯卡·莫根施特恩（Oskar Morgenstern）没有完成的一项任务:为了方便起见，他们最初的理论假设所有的代理都有相同的概率分布。<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_27" class="kx_ref">[27]</a></sup> 普范扎格的公理（Pfanzagl's axiomatization）化得到了奥斯卡·莫根施特恩的认可:“冯·诺伊曼和我已经预料到了...[概率是否存在的问题]可能，也许更典型地，是主观的，并特别指出，在后一种情况下，可以找到公理，从中可以推导出期望的数值效用以及概率的数字(博弈论和经济行为理论第19页)。我们没有这样做；普范扎格（Pfanzagl）证明了这一点...具有所有必要的严谨性”。<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_28" class="kx_ref">[28]</a></sup> </p>
+<p>拉姆齐和萨维奇（Ramsey and Savage）指出，在实验中可以客观地研究个体代理的概率分布。检验概率假设的过程(使用有限样本)应归功于拉姆齐(1931)和德·芬尼蒂(1931，1937，1964，1970)。布鲁诺·德·福内梯（Bruno de Finetti）<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_29" class="kx_ref">[29]</a></sup><sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_30" class="kx_ref">[30]</a></sup> 和弗兰克·拉姆齐（Frank P. Ramsey）<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_30" class="kx_ref">[30]</a></sup><sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_31" class="kx_ref">[31]</a></sup> 都承认他们欠实用主义哲学的债，特别是(对拉姆齐来说)对查尔斯·皮尔斯（Charles S. Peirce）。<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_30" class="kx_ref">[30]</a></sup><sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_31" class="kx_ref">[31]</a></sup> </p>
+<p>评估概率分布的“拉姆齐检验”在理论上是可行的，并且让实验心理学家们忙了半个世纪。<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_32" class="kx_ref">[32]</a></sup>这项工作证明贝叶斯概率命题可以被证伪，因此符合查尔斯·皮尔斯的经验标准，他的工作启发了拉姆齐。(卡尔·波普（Karl Popper）推广了这种可证伪性标准。<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_33" class="kx_ref">[33]</a></sup><sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_34" class="kx_ref">[34]</a></sup>) </p>
+<p>现代个人概率实验评估的工作使用皮尔斯-贾斯特罗实验的随机化、盲法和布尔决策过程。<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_35" class="kx_ref">[35]</a></sup> 由于个人根据不同的概率判断行事，这些代理人的概率是“个人的”(但服从客观研究)。 </p>
+<p>对于科学和一些决策者缺乏知识或时间来指定知情概率分布（他们准备采取行动）的应用，个人概率是有问题的。为了满足科学和人类局限性的需要，贝叶斯统计学家已经开发了用于指定先验概率的“客观”方法。 </p>
+<p>事实上，一些贝叶斯主义者认为先验知识状态定义了“常规”统计问题的(唯一的)先验概率分布；参见适定问题。从拉普拉斯到约翰·梅纳德·凯恩斯（John Maynard Keynes）、哈罗德·杰弗里斯（Harold Jeffreys）和埃德温·汤普森·贾恩斯（ Edwin Thompson Jaynes），统计理论家们一直在寻找构建这种“客观”先验(适用于适当类别的常规问题)的正确方法。这些理论家及其后继者提出了几种构建“客观”先验的方法(不幸的是，不清楚如何评估这些方法所提出的先验的相对“客观性”): </p> 
+<ul>
+ <li>最大熵</li> 
+ <li>变化群分析</li> 
+ <li>参考分析</li>
+</ul> 
+<p>这每一种方法都为“常规的”单参数问题提供了有用的先验知识，并且每一种先验知识都可以处理一些具有挑战性的统计模型(具有“不规则性”或几个参数)。这些方法在贝叶斯实践中都很有用。事实上，构建“客观”(或者，“默认”或者“无知”)先验的方法是公认的主观(或者“个人”)贝叶斯主义者发展起来的，比如詹姆斯·伯杰(杜克大学)和何塞·米格尔·贝尔纳多(瓦利亚大学)，这仅仅是因为贝叶斯实践需要这样的先验，特别是在科学领域。<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_36" class="kx_ref">[36]</a></sup> 对“构建先验的普遍方法”的探索继续吸引统计理论家。<sup><a href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/d10688.htm#quote_36" class="kx_ref">[36]</a></sup> </p>
+<p>因此，贝叶斯统计学家需要使用已知的先验(使用相关专业知识或先前数据)，或者在构建“客观”先验的竞争方法中进行选择。 </p></div></div></div></div><div id="references"><h2 class="title" id="par_references">参考文献</h2><ul class="references"><li id="quote_1"><span class="references-num">[1]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Cox, R.T. (1946). "Probability, Frequency, and Reasonable Expectation". American Journal of Physics. 14 (1): 1–10. Bibcode:1946AmJPh..14....1C. doi:10.1119/1.1990764..</span></p></li><li id="quote_2"><span class="references-num">[2]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Jaynes, E.T. (1986). "Bayesian Methods: General Background". In Justice, J. H. Maximum-Entropy and Bayesian Methods in Applied Statistics. Cambridge: Cambridge University Press..</span></p></li><li id="quote_3"><span class="references-num">[3]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">de Finetti, Bruno (2017). Theory of Probability: A critical introductory treatment. Chichester: John Wiley &amp; Sons Ltd. ISBN 9781119286370..</span></p></li><li id="quote_4"><span class="references-num">[4]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Paulos, John Allen (5 August 2011). "The Mathematics of Changing Your Mind [by Sharon Bertsch McGrayne]". Book Review. New York Times. Retrieved 2011-08-06..</span></p></li><li id="quote_5"><span class="references-num">[5]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Stigler, Stephen M. (March 1990). The history of statistics. Harvard University Press. ISBN 9780674403413..</span></p></li><li id="quote_6"><span class="references-num">[6]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Dupré, Maurice J.; Tipler, Frank J. (2009). "New axioms for rigorous Bayesian probability". Bayesian Analysis (3): 599–606..</span></p></li><li id="quote_7"><span class="references-num">[7]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Cox, Richard T. (1961). The algebra of probable inference (Reprint ed.). Baltimore, MD; London, UK: Johns Hopkins Press; Oxford University Press [distributor]. ISBN 9780801869822..</span></p></li><li id="quote_8"><span class="references-num">[8]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">McGrayne, Sharon Bertsch (2011). The Theory that Would not Die. , p. 10,于Google Books。..</span></p></li><li id="quote_9"><span class="references-num">[9]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Stigler, Stephen M. (1986). "Chapter 3". The History of Statistics. Harvard University Press..</span></p></li><li id="quote_10"><span class="references-num">[10]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Fienberg, Stephen. E. (2006). "When did Bayesian Inference become "Bayesian"?" (PDF). Bayesian Analysis. 1 (1): 5, 1–40. Archived from the original (PDF) on 10 September 2014..</span></p></li><li id="quote_11"><span class="references-num">[11]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Harris, Marshall Dees (1959). "Recent developments of the so-called Bayesian approach to statistics". Agricultural Law Center. Legal-Economic Research. University of Iowa: 125 (fn. #52), 126. The works of Wald, Statistical Decision Functions (1950) and Savage, The Foundation of Statistics (1954) are commonly regarded starting points for current Bayesian approaches.</span></p></li><li id="quote_12"><span class="references-num">[12]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Annals of the Computation Laboratory of Harvard University. 31. 1962. p. 180. This revolution, which may or may not succeed, is neo-Bayesianism. Jeffreys tried to introduce this approach, but did not succeed at the time in giving it general appeal..</span></p></li><li id="quote_13"><span class="references-num">[13]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Kempthorne, Oscar (1967). The Classical Problem of Inference—Goodness of Fit. Fifth Berkeley Symposium on Mathematical Statistics and Probability. p. 235. It is curious that even in its activities unrelated to ethics, humanity searches for a religion. At the present time, the religion being 'pushed' the hardest is Bayesianism..</span></p></li><li id="quote_14"><span class="references-num">[14]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Bernardo, J.M. (2005). Reference analysis. Handbook of Statistics. 25. pp. 17–90. doi:10.1016/S0169-7161(05)25002-2. ISBN 9780444515391..</span></p></li><li id="quote_15"><span class="references-num">[15]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Wolpert, R.L. (2004). "A conversation with James O. Berger". Statistical Science. 9: 205–218..</span></p></li><li id="quote_16"><span class="references-num">[16]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Bernardo, José M. (2006). A Bayesian mathematical statistics primer (PDF). ICOTS-7. Bern..</span></p></li><li id="quote_17"><span class="references-num">[17]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Bishop, C.M. (2007). Pattern Recognition and Machine Learning. Springer..</span></p></li><li id="quote_18"><span class="references-num">[18]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Halpern, J. "A counterexample to theorems of Cox and Fine". Journal of Artificial Intelligence Research. 10: 67–85..</span></p></li><li id="quote_19"><span class="references-num">[19]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Hacking (1967), Section 3, page 316.</span></p></li><li id="quote_20"><span class="references-num">[20]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Hacking (1988, page 124).</span></p></li><li id="quote_21"><span class="references-num">[21]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Skyrms, Brian (1 January 1987). "Dynamic Coherence and Probability Kinematics". Philosophy of Science. 54 (1): 1–20. CiteSeerX 10.1.1.395.5723. doi:10.1086/289350. JSTOR 187470..</span></p></li><li id="quote_22"><span class="references-num">[22]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">"Bayes' Theorem". stanford.edu. Retrieved 21 March 2016..</span></p></li><li id="quote_23"><span class="references-num">[23]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Fuchs, Christopher A.; Schack, Rüdiger (1 January 2012). Ben-Menahem, Yemima; Hemmo, Meir, eds. Probability in Physics. The Frontiers Collection (in 英语). Springer Berlin Heidelberg. pp. 233–247. arXiv:1103.5950. doi:10.1007/978-3-642-21329-8_15. ISBN 9783642213281..</span></p></li><li id="quote_24"><span class="references-num">[24]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">van Frassen, Bas (1989). Laws and Symmetry. Oxford University Press. ISBN 0-19-824860-1..</span></p></li><li id="quote_25"><span class="references-num">[25]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Wald, Abraham (1950). Statistical Decision Functions. Wiley..</span></p></li><li id="quote_26"><span class="references-num">[26]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Bernardo, José M.; Smith, Adrian F.M. (1994). Bayesian Theory. John Wiley. ISBN 0-471-92416-4..</span></p></li><li id="quote_27"><span class="references-num">[27]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Pfanzagl (1967, 1968).</span></p></li><li id="quote_28"><span class="references-num">[28]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Morgenstern (1976, page 65).</span></p></li><li id="quote_29"><span class="references-num">[29]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Galavotti, Maria Carla (1 January 1989). "Anti-Realism in the Philosophy of Probability: Bruno de Finetti's Subjectivism". Erkenntnis. 31 (2/3): 239–261. doi:10.1007/bf01236565. JSTOR 20012239..</span></p></li><li id="quote_30"><span class="references-num">[30]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Galavotti, Maria Carla (1 December 1991). "The notion of subjective probability in the work of Ramsey and de Finetti". Theoria (in 英语). 57 (3): 239–259. doi:10.1111/j.1755-2567.1991.tb00839.x. ISSN 1755-2567..</span></p></li><li id="quote_31"><span class="references-num">[31]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Dokic, Jérôme; Engel, Pascal (2003). Frank Ramsey: Truth and Success. Routledge. ISBN 9781134445936..</span></p></li><li id="quote_32"><span class="references-num">[32]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Davidson et al. (1957).</span></p></li><li id="quote_33"><span class="references-num">[33]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">"Karl Popper". Stanford Encyclopedia of Philosophy..</span></p></li><li id="quote_34"><span class="references-num">[34]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Popper, Karl (2002) [1959]. The Logic of Scientific Discovery (in 英语) (2nd ed.). Routledge. p. 57. ISBN 0-415-27843-0 – via Google Books. (translation of 1935 original, in German)..</span></p></li><li id="quote_35"><span class="references-num">[35]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Peirce &amp; Jastrow (1885).</span></p></li><li id="quote_36"><span class="references-num">[36]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Bernardo, J. M. (2005). "Reference Analysis". In Dey, D.K.; Rao, C. R. Handbook of Statistics (PDF). 25. Amsterdam: Elsevier. pp. 17–90..</span></p></li></ul></div><div class="read-num">阅读 <!-- -->1368</div></div><div class="right-side" id="rightSide"><div class="side" id="lemma-side"><div class="side-title">版本记录</div><ul class="side-lst"><li><p class="side-lst-txt">暂无</p></li></ul><div class="user-card userCard"></div></div><div class="side"><div class="side-event"></div></div></div></div><div class="footer-box"><div id="footer"><div class="footer-logo-wrap"><div class="footer-logo"></div><div class="footer-logo-text">知识·传播·科普</div></div><div class="footer-info">本网站内容采用<a target="_blank" href="https://web.archive.org/web/20221025120729/https://creativecommons.org/licenses/by-sa/3.0/deed.zh?tdsourcetag=s_pctim_aiomsg">CC-BY-SA 3.0</a>授权</div><div class="footer-btn-wrap"><a target="_blank" href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/help/#user_protocol">用户协议</a><a target="_blank" href="https://web.archive.org/web/20221025120729/http://www.sogou.com/docs/terms.htm?v=1">免责声明</a><a target="_blank" href="https://web.archive.org/web/20221025120729/http://corp.sogou.com/private.html">隐私政策</a><a target="_blank" href="https://web.archive.org/web/20221025120729/https://baike.sogou.com/kexue/intro.htm">关于我们</a></div></div></div><script>window.lemmaInfo ={"lemmaId":"10688","versionId":"14995461668602368","title":"贝叶斯概率","subtitle":"","abstracts":{"paragraphId":"14995461668602375","title":"简介","versionId":"14995461668602369","lemmaId":10688,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":76031541,"name":"杏仁蛋奶冻","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1576233991,"comment":null,"dependVersionId":0,"contentType":2,"content":"<p>贝叶斯概率是对概率概念的一种解释，其中概率被解释为一种代表知识<sup><a href=\"#quote_1\" class=\"kx_ref\">[1]</a></sup> 状态的合理期望<sup><a href=\"#quote_2\" class=\"kx_ref\">[2]</a></sup> 或个人信念的量化，而不是某种现象发生的频率或倾向。<sup><a href=\"#quote_3\" class=\"kx_ref\">[3]</a></sup> </p>\n<p>概率的贝叶斯解释可以被看作是命题逻辑的扩展，它支持用假设进行推理。也就是说，命题的真假是不确定的。在贝叶斯观点中，一个概率被分配给一个假设，而在频率推断下，一个假设通常在没有被分配概率的情况下被检验。 </p>\n<p>贝叶斯概率属于证据概率的范畴；为了评估假设的概率，贝叶斯概率学家指定一个先验概率。继而，又根据新的相关数据(证据)将其更新为后验概率。<sup><a href=\"#quote_4\" class=\"kx_ref\">[4]</a></sup> 贝叶斯解释提供了一套标准的程序和公式来进行这种计算。 </p>\n<p>贝叶斯一词源于18世纪的数学家和神学家托马斯·贝叶斯（Thomas Bayes），他首次用数学方法处理了一个重要的统计数据分析问题，该方法现在被称为贝叶斯推断(Bayesian inference)。<sup><a href=\"#quote_5\" class=\"kx_ref\">[5]</a></sup> 数学家皮埃尔·西蒙·拉普拉斯（Pierre-Simon Laplace）开创并推广了现在所谓的贝叶斯概率。<sup><a href=\"#quote_5\" class=\"kx_ref\">[5]</a></sup> </p>","pics":null,"card":null,"references":[],"versionCount":0},"card":{"paragraphId":"0","title":null,"versionId":"0","lemmaId":0,"createType":0,"creator":null,"createTime":0,"versionEditor":null,"editTime":0,"comment":null,"dependVersionId":0,"contentType":0,"content":null,"pics":null,"card":null,"references":null,"versionCount":0},"categories":[{"id":5,"name":"数学","parents":[]}],"creator":{"uid":76031541,"name":"杏仁蛋奶冻","pic":"https://web.archive.org/web/20221025120729/https://cache.soso.com/qlogo/g?b=oidb&k=E46HRTsicSW8VMg4kQbDmSA&s=100&t=1555872769","introduction":null,"educations":[{"schoolName":"武汉大学","major":"","degree":"硕士","universityId":74,"universityLogo":"https://web.archive.org/web/20221025120729/https://img01.sogoucdn.com/app/a/200943/ddaa502e-6012-11e9-8c38-fc4dd4f70029","majorLevel1":null,"majorLevel2":null,"majorLevel3":null,"majorLevel1Id":0,"majorLevel2Id":0,"majorLevel3Id":0,"state":null,"lab":null,"researchField":null}],"jobs":null,"works":null,"educationBrief":"武汉大学","jobBrief":"","role":0,"roleName":null,"title":"武汉大学 · 硕士","professionalTitle":null,"phoneNo":null,"editable":true,"partnerId":48,"partnerIdCreateTime":1594286504,"partnerIdPoped":false},"createTime":1568626320,"editor":{"uid":76031541,"name":"杏仁蛋奶冻","pic":"https://web.archive.org/web/20221025120729/https://cache.soso.com/qlogo/g?b=oidb&k=E46HRTsicSW8VMg4kQbDmSA&s=100&t=1555872769","introduction":null,"educations":[{"schoolName":"武汉大学","major":"","degree":"硕士","universityId":74,"universityLogo":"https://web.archive.org/web/20221025120729/https://img01.sogoucdn.com/app/a/200943/ddaa502e-6012-11e9-8c38-fc4dd4f70029","majorLevel1":null,"majorLevel2":null,"majorLevel3":null,"majorLevel1Id":0,"majorLevel2Id":0,"majorLevel3Id":0,"state":null,"lab":null,"researchField":null}],"jobs":null,"works":null,"educationBrief":"武汉大学","jobBrief":"","role":0,"roleName":null,"title":"武汉大学 · 硕士","professionalTitle":null,"phoneNo":null,"editable":true,"partnerId":48,"partnerIdCreateTime":1594286504,"partnerIdPoped":false},"editTime":1576233991,"state":1,"versionCount":1,"upNum":5,"downNum":0,"pics":[],"catalogs":[{"level":1,"title":"贝叶斯方法","paragraphId":"14995461685379588","subCatalogs":null},{"level":1,"title":"客观和主观贝叶斯概率","paragraphId":"14995461685379589","subCatalogs":null},{"level":1,"title":"历史","paragraphId":"14995461685379590","subCatalogs":null},{"level":1,"title":"贝叶斯概率的证明","paragraphId":"14995461685379591","subCatalogs":[{"level":2,"title":"公理化方法","paragraphId":"14995461685379591","subCatalogs":null},{"level":2,"title":"荷兰赌方法","paragraphId":"14995461685379591","subCatalogs":null},{"level":2,"title":"决策理论方法","paragraphId":"14995461685379591","subCatalogs":null}]},{"level":1,"title":"构建先验的个人概率和客观方法","paragraphId":"14995461702156811","subCatalogs":null},{"level":1,"title":"参考文献","paragraphId":"-1","subCatalogs":null}],"paragraphs":[{"paragraphId":"14995461685379588","title":"贝叶斯方法","versionId":"14995461668602370","lemmaId":10688,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":76031541,"name":"杏仁蛋奶冻","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1576233991,"comment":null,"dependVersionId":0,"contentType":1,"content":"<p>概念和过程是贝叶斯方法的一大特点，如下: </p> \n<ul>\n <li>使用随机变量，或更一般的未知量，<sup><a href=\"#quote_6\" class=\"kx_ref\">[6]</a></sup> 对统计模型中的所有不确定性来源进行建模，包括因缺乏信息而导致的不确定性。</li> \n <li>需要考虑可用的(先验前的)信息来确定先验的概率分布。</li> \n <li>贝叶斯公式的计算顺序是:当更多数据可用时，使用贝叶斯公式计算后验分布；随后，后验分布成为下一个先验分布。</li> \n <li>而对于频率学派来说，假设是一个命题(必须是真或假)，因此假设的频率学派概率是0或1，在贝叶斯统计中，如果真值不确定，分配给假设的概率也可以在0到1的范围内。</li>\n</ul>","pics":null,"card":null,"references":[],"versionCount":0},{"paragraphId":"14995461685379589","title":"客观和主观贝叶斯概率","versionId":"14995461668602371","lemmaId":10688,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":76031541,"name":"杏仁蛋奶冻","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1576233991,"comment":null,"dependVersionId":0,"contentType":1,"content":"<p>从广义上讲，贝叶斯概率有两种解释。对于客观主义者来说，把概率解释为逻辑的延伸，概率量化合理的期望，每个共享相同知识的人（甚至是“机器人”）都应该按照贝叶斯统计的规则共享知识，这可以用考克斯定理（Cox's theorem）来证明。<sup><a href=\"#quote_2\" class=\"kx_ref\">[2]</a></sup><sup><a href=\"#quote_7\" class=\"kx_ref\">[7]</a></sup> 对于主观主义者来说，概率相应于个人信仰。<sup><a href=\"#quote_3\" class=\"kx_ref\">[3]</a></sup> 合理性和一致性允许在它们所构成的约束范围内发生实质性的变化；这些约束由荷兰赌论证或决策理论和德·芬内蒂定理（de Finetti's theorem）来证明。<sup><a href=\"#quote_3\" class=\"kx_ref\">[3]</a></sup> 贝叶斯概率的客观变体和主观变体不同主要表现在它们对先验概率的解释和构造。 </p>","pics":null,"card":null,"references":[],"versionCount":0},{"paragraphId":"14995461685379590","title":"历史","versionId":"14995461668602372","lemmaId":10688,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":76031541,"name":"杏仁蛋奶冻","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1576233991,"comment":null,"dependVersionId":0,"contentType":1,"content":"<p>贝叶斯这个术语指的是托马斯·贝叶斯（Thomas Bayes）(1702-1761)，他在一篇题为《旨在解决机会论中的一个问题的文章 》的论文中证明了现在被称为贝叶斯定理的一个特例。<sup><a href=\"#quote_8\" class=\"kx_ref\">[8]</a></sup> 在这种特殊情况下，先验和后验分布是贝塔分布，数据来自伯努利试验。皮埃尔·西蒙·拉普拉斯（Pierre-Simon Laplace ）(1749-1827)引入了这个定理的一般形式，并用它来处理天体力学、医学统计、可靠性和法理学方面的问题。<sup><a href=\"#quote_9\" class=\"kx_ref\">[9]</a></sup> 早期贝叶斯推断遵循拉普拉斯的不充分推理原则使用均匀的先验，被称为“逆概率”(因为它从观测值到参数，或者从结果到原因进行逆向推理)。<sup><a href=\"#quote_10\" class=\"kx_ref\">[10]</a></sup> 20世纪20年代以后，“逆概率”在很大程度上被一系列称为频率统计的方法所取代。<sup><a href=\"#quote_10\" class=\"kx_ref\">[10]</a></sup> </p>\n<p>20世纪，拉普拉斯思想向两个方向发展，在贝叶斯实践中产生了客观和主观的潮流。哈罗德·杰弗里斯（Harold Jeffreys）的概率论(首次发表于1939年)在贝叶斯概率观的复兴中发挥了重要作用，随后是亚伯拉罕·瓦尔德（Abraham Wald）(1950年)和伦纳德·萨维奇（Leonard J. Savage）(1954年)的著作。形容词贝叶斯本身可以追溯到20世纪50年代；衍生出的贝叶斯主义和新贝叶斯主义是20世纪60年代的新造词。<sup><a href=\"#quote_11\" class=\"kx_ref\">[11]</a></sup><sup><a href=\"#quote_12\" class=\"kx_ref\">[12]</a></sup><sup><a href=\"#quote_13\" class=\"kx_ref\">[13]</a></sup> 在客观主义者的潮流中，统计分析只依赖于假设的模型和分析的数据。<sup><a href=\"#quote_14\" class=\"kx_ref\">[14]</a></sup> 不需要涉及主观决策。相比之下，“主观主义”统计学家否认对一般情况进行完全客观分析的可能性。 </p>\n<p>在20世纪80年代，贝叶斯方法的研究和应用有了显著的发展，这主要归功于马尔可夫链蒙特卡罗方法的发现和随之而来的许多计算问题的消除，以及对非标准、复杂应用日益增长的兴趣。<sup><a href=\"#quote_15\" class=\"kx_ref\">[15]</a></sup> 虽然频率学派统计学仍然占主导地位(从大多数本科教学仍然以此为基础这一事实可以看出<sup><a href=\"#quote_16\" class=\"kx_ref\">[16]</a></sup>，但是贝叶斯方法被广泛接受和使用，例如在机器学习领域。<sup><a href=\"#quote_17\" class=\"kx_ref\">[17]</a></sup> </p>","pics":null,"card":null,"references":[],"versionCount":0},{"paragraphId":"14995461685379591","title":"贝叶斯概率的证明","versionId":"14995461668602373","lemmaId":10688,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":76031541,"name":"杏仁蛋奶冻","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1576233991,"comment":null,"dependVersionId":0,"contentType":1,"content":"<p>使用贝叶斯概率作为贝叶斯推断的基础得到了几个论点的支持，如考克斯公理（Cox axioms）、荷兰著作论点、基于决策理论的论点和德·费内蒂定理（de Finetti's theorem）。 </p> \n<h3>公理化方法</h3> \n<p>理查德·考克斯（Richard T. Cox）证明了<sup><a href=\"#quote_7\" class=\"kx_ref\">[7]</a></sup> 贝叶斯更新遵循几个公理，包括两个函数方程和一个可微性假设。可微性甚至连续性的假设是有争议的；哈尔彭（Halpern）发现了一个反例，基于他的观察，布尔代数的语句可能是有限的。<sup><a href=\"#quote_18\" class=\"kx_ref\">[18]</a></sup> 为了使理论更加严谨，许多作者还提出了其他公理。<sup><a href=\"#quote_6\" class=\"kx_ref\">[6]</a></sup> </p> \n<h3>荷兰赌方法</h3> \n<p>荷兰赌论证是由德·芬内蒂提出的；它基于赌博。当一个聪明的赌徒下了一套保证盈利的赌注，而不管赌注的结果如何时，一个荷兰赌就诞生了。如果一个赌徒在计算赔率时遵循贝叶斯演算的规则，那么赌局是输的。 </p>\n<p>然而，伊恩·哈金(Ian Hacking)指出，传统的荷兰赌论证并没有具体说明贝叶斯更新:它们留下了非贝叶斯更新规则避开荷兰赌的可能性。例如，哈克（Hacking）写道<sup><a href=\"#quote_19\" class=\"kx_ref\">[19]</a></sup><sup><a href=\"#quote_20\" class=\"kx_ref\">[20]</a></sup>&nbsp;:“无论是荷兰赌论证还是个性化库中证明概率公理的任何其他论点，都不包含动态假设。没有人需要贝叶斯主义。所以个人主义者要求动态假设是贝叶斯的。的确，在一致性方面，个人主义者可以放弃从经验中学习的贝叶斯模型。盐可能会失去味道。” </p>\n<p>事实上，也有非贝叶斯更新规则避免荷兰赌(如理查德·杰弗里斯规则出版后关于“概率运动学”<sup><a href=\"#quote_21\" class=\"kx_ref\">[21]</a></sup> 的文献中所讨论的那样，该规则本身被认为是贝叶斯<sup><a href=\"#quote_22\" class=\"kx_ref\">[22]</a></sup>)。足以(唯一地)指定贝叶斯更新的额外假设是实质性的<sup><a href=\"#quote_23\" class=\"kx_ref\">[23]</a></sup> ，且不是普遍令人满意的。<sup><a href=\"#quote_24\" class=\"kx_ref\">[24]</a></sup> </p> \n<h3>决策理论方法</h3> \n<p>亚伯拉罕·瓦尔德（ Abraham Wald）给出了使用贝叶斯推断(以及贝叶斯概率)的决策理论证明，他证明了每个可接受的统计过程要么是贝叶斯过程，要么是贝叶斯过程的极限。<sup><a href=\"#quote_25\" class=\"kx_ref\">[25]</a></sup> 相反，每一个贝叶斯过程都是可以接受的。<sup><a href=\"#quote_26\" class=\"kx_ref\">[26]</a></sup> </p>","pics":null,"card":null,"references":[],"versionCount":0},{"paragraphId":"14995461702156811","title":"构建先验的个人概率和客观方法","versionId":"14995461668602374","lemmaId":10688,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":76031541,"name":"杏仁蛋奶冻","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1576233991,"comment":null,"dependVersionId":0,"contentType":1,"content":"<p>在拉姆齐（Ramsey）和冯·诺依曼（von Neumann）的期望效用理论的工作之后，决策理论家已经用代理的概率分布来解释理性行为。约翰·普范扎格（Johann Pfanzagl）通过提供主观概率和效用的公理化完成了博弈和经济行为理论，这是冯·诺依曼和奥斯卡·莫根施特恩（Oskar Morgenstern）没有完成的一项任务:为了方便起见，他们最初的理论假设所有的代理都有相同的概率分布。<sup><a href=\"#quote_27\" class=\"kx_ref\">[27]</a></sup> 普范扎格的公理（Pfanzagl's axiomatization）化得到了奥斯卡·莫根施特恩的认可:“冯·诺伊曼和我已经预料到了...[概率是否存在的问题]可能，也许更典型地，是主观的，并特别指出，在后一种情况下，可以找到公理，从中可以推导出期望的数值效用以及概率的数字(博弈论和经济行为理论第19页)。我们没有这样做；普范扎格（Pfanzagl）证明了这一点...具有所有必要的严谨性”。<sup><a href=\"#quote_28\" class=\"kx_ref\">[28]</a></sup> </p>\n<p>拉姆齐和萨维奇（Ramsey and Savage）指出，在实验中可以客观地研究个体代理的概率分布。检验概率假设的过程(使用有限样本)应归功于拉姆齐(1931)和德·芬尼蒂(1931，1937，1964，1970)。布鲁诺·德·福内梯（Bruno de Finetti）<sup><a href=\"#quote_29\" class=\"kx_ref\">[29]</a></sup><sup><a href=\"#quote_30\" class=\"kx_ref\">[30]</a></sup> 和弗兰克·拉姆齐（Frank P. Ramsey）<sup><a href=\"#quote_30\" class=\"kx_ref\">[30]</a></sup><sup><a href=\"#quote_31\" class=\"kx_ref\">[31]</a></sup> 都承认他们欠实用主义哲学的债，特别是(对拉姆齐来说)对查尔斯·皮尔斯（Charles S. Peirce）。<sup><a href=\"#quote_30\" class=\"kx_ref\">[30]</a></sup><sup><a href=\"#quote_31\" class=\"kx_ref\">[31]</a></sup> </p>\n<p>评估概率分布的“拉姆齐检验”在理论上是可行的，并且让实验心理学家们忙了半个世纪。<sup><a href=\"#quote_32\" class=\"kx_ref\">[32]</a></sup>这项工作证明贝叶斯概率命题可以被证伪，因此符合查尔斯·皮尔斯的经验标准，他的工作启发了拉姆齐。(卡尔·波普（Karl Popper）推广了这种可证伪性标准。<sup><a href=\"#quote_33\" class=\"kx_ref\">[33]</a></sup><sup><a href=\"#quote_34\" class=\"kx_ref\">[34]</a></sup>) </p>\n<p>现代个人概率实验评估的工作使用皮尔斯-贾斯特罗实验的随机化、盲法和布尔决策过程。<sup><a href=\"#quote_35\" class=\"kx_ref\">[35]</a></sup> 由于个人根据不同的概率判断行事，这些代理人的概率是“个人的”(但服从客观研究)。 </p>\n<p>对于科学和一些决策者缺乏知识或时间来指定知情概率分布（他们准备采取行动）的应用，个人概率是有问题的。为了满足科学和人类局限性的需要，贝叶斯统计学家已经开发了用于指定先验概率的“客观”方法。 </p>\n<p>事实上，一些贝叶斯主义者认为先验知识状态定义了“常规”统计问题的(唯一的)先验概率分布；参见适定问题。从拉普拉斯到约翰·梅纳德·凯恩斯（John Maynard Keynes）、哈罗德·杰弗里斯（Harold Jeffreys）和埃德温·汤普森·贾恩斯（ Edwin Thompson Jaynes），统计理论家们一直在寻找构建这种“客观”先验(适用于适当类别的常规问题)的正确方法。这些理论家及其后继者提出了几种构建“客观”先验的方法(不幸的是，不清楚如何评估这些方法所提出的先验的相对“客观性”): </p> \n<ul>\n <li>最大熵</li> \n <li>变化群分析</li> \n <li>参考分析</li>\n</ul> \n<p>这每一种方法都为“常规的”单参数问题提供了有用的先验知识，并且每一种先验知识都可以处理一些具有挑战性的统计模型(具有“不规则性”或几个参数)。这些方法在贝叶斯实践中都很有用。事实上，构建“客观”(或者，“默认”或者“无知”)先验的方法是公认的主观(或者“个人”)贝叶斯主义者发展起来的，比如詹姆斯·伯杰(杜克大学)和何塞·米格尔·贝尔纳多(瓦利亚大学)，这仅仅是因为贝叶斯实践需要这样的先验，特别是在科学领域。<sup><a href=\"#quote_36\" class=\"kx_ref\">[36]</a></sup> 对“构建先验的普遍方法”的探索继续吸引统计理论家。<sup><a href=\"#quote_36\" class=\"kx_ref\">[36]</a></sup> </p>\n<p>因此，贝叶斯统计学家需要使用已知的先验(使用相关专业知识或先前数据)，或者在构建“客观”先验的竞争方法中进行选择。 </p>","pics":null,"card":null,"references":[],"versionCount":0}],"references":[{"id":1,"type":"book","title":"Cox, R.T. (1946). \"Probability, Frequency, and Reasonable Expectation\". American Journal of Physics. 14 (1): 1–10. Bibcode:1946AmJPh..14....1C. doi:10.1119/1.1990764.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":2,"type":"book","title":"Jaynes, E.T. (1986). \"Bayesian Methods: General Background\". In Justice, J. H. Maximum-Entropy and Bayesian Methods in Applied Statistics. Cambridge: Cambridge University Press.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":3,"type":"book","title":"de Finetti, Bruno (2017). Theory of Probability: A critical introductory treatment. Chichester: John Wiley & Sons Ltd. ISBN 9781119286370.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":4,"type":"book","title":"Paulos, John Allen (5 August 2011). \"The Mathematics of Changing Your Mind [by Sharon Bertsch McGrayne]\". Book Review. New York Times. Retrieved 2011-08-06.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":5,"type":"book","title":"Stigler, Stephen M. (March 1990). The history of statistics. Harvard University Press. ISBN 9780674403413.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":6,"type":"book","title":"Dupré, Maurice J.; Tipler, Frank J. (2009). \"New axioms for rigorous Bayesian probability\". Bayesian Analysis (3): 599–606.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":7,"type":"book","title":"Cox, Richard T. (1961). The algebra of probable inference (Reprint ed.). Baltimore, MD; London, UK: Johns Hopkins Press; Oxford University Press [distributor]. ISBN 9780801869822.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":8,"type":"book","title":"McGrayne, Sharon Bertsch (2011). The Theory that Would not Die. , p. 10,于Google Books。.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":9,"type":"book","title":"Stigler, Stephen M. (1986). \"Chapter 3\". The History of Statistics. Harvard University Press.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":10,"type":"book","title":"Fienberg, Stephen. E. (2006). \"When did Bayesian Inference become \"Bayesian\"?\" (PDF). Bayesian Analysis. 1 (1): 5, 1–40. Archived from the original (PDF) on 10 September 2014.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":11,"type":"book","title":"Harris, Marshall Dees (1959). \"Recent developments of the so-called Bayesian approach to statistics\". Agricultural Law Center. Legal-Economic Research. University of Iowa: 125 (fn. #52), 126. The works of Wald, Statistical Decision Functions (1950) and Savage, The Foundation of Statistics (1954) are commonly regarded starting points for current Bayesian approaches","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":12,"type":"book","title":"Annals of the Computation Laboratory of Harvard University. 31. 1962. p. 180. This revolution, which may or may not succeed, is neo-Bayesianism. Jeffreys tried to introduce this approach, but did not succeed at the time in giving it general appeal.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":13,"type":"book","title":"Kempthorne, Oscar (1967). The Classical Problem of Inference—Goodness of Fit. Fifth Berkeley Symposium on Mathematical Statistics and Probability. p. 235. It is curious that even in its activities unrelated to ethics, humanity searches for a religion. At the present time, the religion being 'pushed' the hardest is Bayesianism.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":14,"type":"book","title":"Bernardo, J.M. (2005). Reference analysis. Handbook of Statistics. 25. pp. 17–90. doi:10.1016/S0169-7161(05)25002-2. ISBN 9780444515391.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":15,"type":"book","title":"Wolpert, R.L. (2004). \"A conversation with James O. Berger\". Statistical Science. 9: 205–218.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":16,"type":"book","title":"Bernardo, José M. (2006). A Bayesian mathematical statistics primer (PDF). ICOTS-7. Bern.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":17,"type":"book","title":"Bishop, C.M. (2007). Pattern Recognition and Machine Learning. Springer.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":18,"type":"book","title":"Halpern, J. \"A counterexample to theorems of Cox and Fine\". Journal of Artificial Intelligence Research. 10: 67–85.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":19,"type":"book","title":"Hacking (1967), Section 3, page 316","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":20,"type":"book","title":"Hacking (1988, page 124)","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":21,"type":"book","title":"Skyrms, Brian (1 January 1987). \"Dynamic Coherence and Probability Kinematics\". Philosophy of Science. 54 (1): 1–20. CiteSeerX 10.1.1.395.5723. doi:10.1086/289350. JSTOR 187470.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":22,"type":"book","title":"\"Bayes' Theorem\". stanford.edu. Retrieved 21 March 2016.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":23,"type":"book","title":"Fuchs, Christopher A.; Schack, Rüdiger (1 January 2012). Ben-Menahem, Yemima; Hemmo, Meir, eds. Probability in Physics. The Frontiers Collection (in 英语). Springer Berlin Heidelberg. pp. 233–247. arXiv:1103.5950. doi:10.1007/978-3-642-21329-8_15. ISBN 9783642213281.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":24,"type":"book","title":"van Frassen, Bas (1989). Laws and Symmetry. Oxford University Press. ISBN 0-19-824860-1.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":25,"type":"book","title":"Wald, Abraham (1950). Statistical Decision Functions. Wiley.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":26,"type":"book","title":"Bernardo, José M.; Smith, Adrian F.M. (1994). Bayesian Theory. John Wiley. ISBN 0-471-92416-4.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":27,"type":"book","title":"Pfanzagl (1967, 1968)","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":28,"type":"book","title":"Morgenstern (1976, page 65)","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":29,"type":"book","title":"Galavotti, Maria Carla (1 January 1989). \"Anti-Realism in the Philosophy of Probability: Bruno de Finetti's Subjectivism\". Erkenntnis. 31 (2/3): 239–261. doi:10.1007/bf01236565. JSTOR 20012239.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":30,"type":"book","title":"Galavotti, Maria Carla (1 December 1991). \"The notion of subjective probability in the work of Ramsey and de Finetti\". Theoria (in 英语). 57 (3): 239–259. doi:10.1111/j.1755-2567.1991.tb00839.x. ISSN 1755-2567.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":31,"type":"book","title":"Dokic, Jérôme; Engel, Pascal (2003). Frank Ramsey: Truth and Success. Routledge. ISBN 9781134445936.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":32,"type":"book","title":"Davidson et al. (1957)","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":33,"type":"book","title":"\"Karl Popper\". Stanford Encyclopedia of Philosophy.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":34,"type":"book","title":"Popper, Karl (2002) [1959]. The Logic of Scientific Discovery (in 英语) (2nd ed.). Routledge. p. 57. ISBN 0-415-27843-0 – via Google Books. (translation of 1935 original, in German).","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":35,"type":"book","title":"Peirce & Jastrow (1885)","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":36,"type":"book","title":"Bernardo, J. M. (2005). \"Reference Analysis\". In Dey, D.K.; Rao, C. R. Handbook of Statistics (PDF). 25. Amsterdam: Elsevier. pp. 17–90.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false}],"recommendReferences":null,"auditState":2,"lemmaLevel":1,"origin":0,"originEnTitle":null,"originZhTitle":null,"pv":1368,"auditType":0,"synonyms":null,"showEditTime":"2019.12.13 18:46","auditors":[{"uid":0,"name":"Ki.κe","pic":"https://web.archive.org/web/20221025120729/https://wx.qlogo.cn/mmopen/vi_32/y67kfr32Doib4wg71Jiau7jVWvharic3nRKgdRRQSl6koeQJCo0GQs2Krw0vwdFRsOWnHIQOwAZsSg5lIkIrFCOcQ/132","introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":"","jobBrief":"","role":0,"roleName":null,"title":"","professionalTitle":null,"phoneNo":null,"editable":true,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false}],"hasZhishiNav":false,"auditInfos":{},"isHistory":false};</script><script crossorigin="anonymous" src="./688.贝叶斯概率 - 搜狗科学百科_files/aegis.min.js.download"></script><script crossorigin="anonymous" src="./688.贝叶斯概率 - 搜狗科学百科_files/main_2020092401.js.download"></script><script crossorigin="anonymous" src="./688.贝叶斯概率 - 搜狗科学百科_files/react.production.min.js.download"></script><script crossorigin="anonymous" src="./688.贝叶斯概率 - 搜狗科学百科_files/react-dom.production.min.js.download"></script><script crossorigin="anonymous" src="./688.贝叶斯概率 - 搜狗科学百科_files/jquery-1.11.1.min.js.download"></script><script crossorigin="anonymous" src="./688.贝叶斯概率 - 搜狗科学百科_files/main_2022062701.js.download"></script><script crossorigin="anonymous" src="./688.贝叶斯概率 - 搜狗科学百科_files/main_66bbe21.js.download"></script><script crossorigin="anonymous" src="./688.贝叶斯概率 - 搜狗科学百科_files/react.production.min.js.download"></script><script crossorigin="anonymous" src="./688.贝叶斯概率 - 搜狗科学百科_files/react-dom.production.min.js.download"></script><script crossorigin="anonymous" src="./688.贝叶斯概率 - 搜狗科学百科_files/main_edf0f08.js.download"></script><div id="popControl"><div class="pop-control-mask" style="display: none;"><div class="pop-container"><i class="close-icon"></i><div class="stop-title">搜狗科学百科停止服务运营公告</div><div class="stop-user">亲爱的用户：</div><div class="stop-content">因业务方向调整，搜狗科学百科将于2022年11月11日正式停止服务与运营。届时产品内所有数据将依据相关法律进行删除并关闭服务器，您将无法登录及使用搜狗科学百科，相关内容在平台下线后将无法找回。</div><div class="stop-content">搜狗科学百科是由搜狗推出的科学领域专业百科产品，与搜狗百科为两个独立产品，本次停止服务与运营仅对搜狗科学百科，并不影响搜狗百科产品正常使用，敬请知悉。</div><div class="stop-content">由此给您带来的不便我们深表歉意，敬请谅解。再次感谢您一直以来的陪伴与支持！</div><div class="stop-team">搜狗科学百科产品&amp;运营团队</div><div class="stop-time">2022年10月11日</div></div></div></div>
+</body></html>

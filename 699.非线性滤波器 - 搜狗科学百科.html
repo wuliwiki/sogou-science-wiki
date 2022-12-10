@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)https://web.archive.org/web/20221025114447/https://baike.sogou.com/kexue/d10699.htm -->
+<html class="" data-reactroot=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./699.非线性滤波器 - 搜狗科学百科_files/analytics.js.download" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app226.us.archive.org';v.server_ms=198;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="./699.非线性滤波器 - 搜狗科学百科_files/bundle-playback.js.download" charset="utf-8"></script>
+<script type="text/javascript" src="./699.非线性滤波器 - 搜狗科学百科_files/wombat.js.download" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://baike.sogou.com/kexue/d10699.htm","20221025114447","https://web.archive.org/","web","/_static/",
+	      "1666698287");
+</script>
+<link rel="stylesheet" type="text/css" href="./699.非线性滤波器 - 搜狗科学百科_files/banner-styles.css">
+<link rel="stylesheet" type="text/css" href="./699.非线性滤波器 - 搜狗科学百科_files/iconochive.css">
+<!-- End Wayback Rewrite JS Include -->
+<meta name="save" content="history"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="baidu-site-verification" content="VWGb6TyYx8"><meta content="非线性滤波器 - 搜狗科学百科" name="keywords"><meta content="搜狗科学百科是一部有着平等、协作、分享、自由理念的网络科学全书，为每一个互联网用户创造一个涵盖所有领域知识、服务的中文知识性平台。" name="description"><meta http-equiv="x-dns-prefetch-control" content="on"><meta name="server" baike="235" ip="210" env="online"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025114447/https://cache.soso.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025114447/https://hhy.sogoucdn.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025114447/https://pic.baike.soso.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025114447/https://ugc.qpic.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025114447/https://xui.ptlogin2.qq.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025114447/https://q1.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025114447/https://q2.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025114447/https://q3.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025114447/https://q4.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025114447/https://q.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025114447/https://img01.sogoucdn.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025114447/https://img02.sogoucdn.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025114447/https://img03.sogoucdn.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025114447/https://img04.sogoucdn.com/"><link rel="Shortcut Icon" href="https://web.archive.org/web/20221025114447im_/https://www.sogou.com/images/logo/new/favicon.ico?v=4"><link rel="Bookmark" href="https://www.sogou.com/images/logo/new/favicon.ico?v=4"><link href="./699.非线性滤波器 - 搜狗科学百科_files/base_b849887.css" rel="stylesheet"><link href="./699.非线性滤波器 - 搜狗科学百科_files/detail_378aed5.css" rel="stylesheet"><link href="./699.非线性滤波器 - 搜狗科学百科_files/inviteAudit_7894507.css" rel="stylesheet"><link rel="stylesheet" href="./699.非线性滤波器 - 搜狗科学百科_files/highlight.min.css"><title>非线性滤波器 - 搜狗科学百科</title><style>.onekey-close {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	width: 24px;
+	height: 24px;
+	background: url(//web.archive.org/web/20221025113757/https://hhy.sogoucdn.com/js/common/hhy/sprite_wap_baike_37443f3.png) no-repeat;
+	text-indent: -999em;
+	background-size: 84px;
+	background-position: -63px 0;
+}
+
+.onekey-login {
+	position: absolute;
+	top: 16.4%;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+
+/* .onekey-login-img {
+    width: 75px;
+    height: 75px;
+    background: url("https://web.archive.org/web/20221025114447/https://baike.sogou.com/kexue/images/sprite_wap_baike.png") no-repeat;
+    background-size: 100px 91px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+} */
+
+.onekey-login-title {
+	text-align: center;
+	padding-bottom: 3px;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 30px;
+	color: #000;
+}
+
+.onekey-login-txt {
+	text-align: center;
+	font-family: PingFangSC;
+	font-size: 14px;
+	line-height: 20px;
+	color: #8f8f8f;
+}
+
+.onekey-login-qq,
+.onekey-login-wx,
+.onekey-login-phone {
+	display: block;
+	width: 245px;
+	height: 54px;
+	border-radius: 45px;
+	text-align: center;
+
+	margin: 0 auto;
+	font-size: 17px;
+	line-height: 24px;
+	color: #000;
+	/* padding: 16px 77px; */
+	border-radius: 12px;
+	border: solid 1px #e0e0e0;
+}
+.onekey-qq-content,
+.onekey-vx-content,
+.onekey-phone-content {
+	display: inline-block;
+	margin-top: 16px;
+}
+.onekey-qq-content {
+	padding: 0 5px;
+}
+
+.onekey-login-qq {
+	margin-top: 48px;
+	margin-bottom: 24px;
+}
+
+.onekey-login-qq:before {
+	display: inline-block;
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: url(//web.archive.org/web/20221025113757/https://hhy.sogoucdn.com/js/common/hhy/sprite_wap_baike_37443f3.png) no-repeat;
+	background-size: 80px;
+	background-position: -20px 0;
+	vertical-align: top;
+	margin: 17px 8px 0 0;
+}
+
+.onekey-login-wx {
+	margin-bottom: 24px;
+}
+
+.onekey-login-wx:before {
+	display: inline-block;
+	content: "";
+	width: 21px;
+	height: 21px;
+	background: url(//web.archive.org/web/20221025113757/https://hhy.sogoucdn.com/js/common/hhy/sprite_wap_baike_37443f3.png) no-repeat;
+	background-size: 84px;
+	background-position: 0 0;
+	vertical-align: top;
+	margin: 17px 10px 0 0;
+}
+
+.onekey-login-phone {
+}
+
+.onekey-login-phone:before {
+	display: inline-block;
+	content: "";
+	width: 21px;
+	height: 21px;
+	background: url(//web.archive.org/web/20221025113757/https://hhy.sogoucdn.com/js/common/hhy/sprite_wap_baike_37443f3.png) no-repeat;
+	background-size: 84px;
+	background-position: -42px 0;
+	vertical-align: top;
+	margin: 17px 10px 0 0;
+}
+
+.onekey-fixed {
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	width: 100%;
+	height: 100%;
+}
+
+.onekey-fixed.forbid {
+	z-index: 100;
+	position: fixed;
+	top: auto;
+	bottom: 68px;
+	left: 9%;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	width: 82%;
+	height: 43px;
+	border-radius: 25px;
+	color: #ffffff;
+}
+.onekey-login-title.forbid {
+	text-align: center;
+	padding-bottom: 3px;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 30px;
+	color: white;
+}
+</style><style>#login_mask {
+  background: #000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  position: fixed;
+  /*fixed好像在哪个IE上有BUG，先用用*/
+  left: 0;
+  top: 0;
+  z-index: 999;
+  height: 100%;
+}
+
+#login_iframe_container {
+  position: fixed;
+  width: 550px;
+  height: 360px;
+  z-index: 1020;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 828px) {
+  #login_iframe_container {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+  }
+}
+
+#login_iframe_container.new-login {
+  width: 550px;
+  height: 360px;
+  background-image: url(//web.archive.org/web/20221025113757/https://hhy.sogoucdn.com/js/common/hhy/background_2a4a8a6.png);
+}
+
+#login_iframe_container.new-login.no-bg {
+  background: #fff;
+}
+
+#login_iframe_container.new-login .login-title {
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 0.19px;
+  color: #ffffff;
+  margin-top: 62px;
+}
+#login_iframe_container.new-login .forbid-title {
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 0.19px;
+  color: #333333;
+  margin-top: 150px;
+}
+
+#login_iframe_container.new-login.no-bg .login-title {
+  color: #333333;
+}
+
+#login_iframe_container.new-login .login-subtitle {
+  width: 100%;
+  height: 18px;
+  line-height: 18px;
+  font-size: 13px;
+  letter-spacing: 0.08px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 9px;
+  margin-bottom: 43px;
+}
+
+#login_iframe_container.new-login.no-bg .login-subtitle {
+  color: #999999;
+}
+
+#login_iframe_container.new-login .login-subtitle::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  background-color: #ffffff;
+  position: relative;
+  top: -4px;
+  left: -5px;
+}
+
+#login_iframe_container.new-login .login-subtitle::after {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  background-color: #ffffff;
+  position: relative;
+  top: -4px;
+  left: 5px;
+}
+
+#login_iframe_container.new-login.no-bg .login-subtitle::before {
+  background-color: #999999;
+}
+
+#login_iframe_container.new-login.no-bg .login-subtitle::after {
+  background-color: #999999;
+}
+
+#login_iframe_container.new-login .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 12px;
+  height: 12px;
+  background: url(//web.archive.org/web/20221025113757/https://hhy.sogoucdn.com/js/common/hhy/login-sprites_e3853e5.png) -59px -10px;
+  background-size: 81px 91px;
+  cursor: pointer;
+}
+
+#login_iframe_container.new-login .login-btn {
+  width: 220px;
+  height: 47px;
+  border-radius: 24px;
+  border: solid 1px #dddddd;
+  background-color: #ffffff;
+  margin: 0 auto;
+  margin-top: 28px;
+  position: relative;
+  display: block;
+}
+
+#login_iframe_container.new-login .login-btn .login-icon {
+  position: absolute;
+}
+
+#login_iframe_container.new-login .login-btn .login-text {
+  width: 61px;
+  height: 47px;
+  line-height: 47px;
+  vertical-align: middle;
+  font-size: 15px;
+  letter-spacing: 0.1px;
+  color: #666666;
+  position: absolute;
+  right: 62px;
+}
+
+#login_iframe_container.new-login .login-btn.qq-btn .login-icon {
+  width: 22px;
+  height: 27px;
+  top: 10px;
+  left: 67px;
+  background: url(//web.archive.org/web/20221025113757/https://hhy.sogoucdn.com/js/common/hhy/login-sprites_e3853e5.png) -10px -54px;
+  background-size: 81px 91px;
+}
+
+#login_iframe_container.new-login .login-btn.qq-btn .login-text {
+  right: 59px;
+}
+
+#login_iframe_container.new-login .login-btn.wechat-btn .login-icon {
+  width: 29px;
+  height: 24px;
+  top: 12px;
+  left: 62px;
+  background: url(//web.archive.org/web/20221025113757/https://hhy.sogoucdn.com/js/common/hhy/login-sprites_e3853e5.png) -10px -10px;
+  background-size: 81px 91px;
+}</style><style>/* -- container -- */
+.rodal,
+.rodal-mask {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.rodal {
+    position: fixed;
+}
+
+/* -- mask -- */
+.rodal-mask {
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+}
+
+/* -- dialog -- */
+.rodal-dialog {
+    position: absolute;
+    z-index: 101;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.rodal-center {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.rodal-bottom {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.rodal-top {
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}
+
+.rodal-left {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.rodal-right {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* -- close button -- */
+.rodal-close {
+    position: absolute;
+    cursor: pointer;
+    top: 16px;
+    right: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.rodal-close:before,
+.rodal-close:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: #999;
+    border-radius: 100%;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+}
+
+.rodal-close:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.rodal-close:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.rodal-close:hover:before,
+.rodal-close:hover:after {
+    background: #333;
+}
+
+/* -- fade -- */
+/* @-webkit-keyframes rodal-fade-enter {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes rodal-fade-enter {
+    from {
+        opacity: 0;
+    }
+}
+
+.rodal-fade-enter {
+    -webkit-animation: rodal-fade-enter both ease-in;
+    animation: rodal-fade-enter both ease-in;
+} */
+
+@-webkit-keyframes rodal-fade-leave {
+    to {
+        opacity: 0
+    }
+}
+
+@keyframes rodal-fade-leave {
+    to {
+        opacity: 0
+    }
+}
+
+.rodal-fade-leave {
+    -webkit-animation: rodal-fade-leave both ease-out;
+    animation: rodal-fade-leave both ease-out;
+}
+
+/* -- zoom -- */
+@-webkit-keyframes rodal-zoom-enter {
+    from {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-zoom-enter {
+    from {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-zoom-enter {
+    -webkit-animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-zoom-leave {
+    to {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-zoom-leave {
+    to {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-zoom-leave {
+    -webkit-animation: rodal-zoom-leave both;
+    animation: rodal-zoom-leave both;
+}
+
+/* -- slideDown -- */
+@-webkit-keyframes rodal-slideDown-enter {
+    from {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+@keyframes rodal-slideDown-enter {
+    from {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+.rodal-slideDown-enter {
+    -webkit-animation: rodal-slideDown-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideDown-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideDown-leave {
+    to {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+@keyframes rodal-slideDown-leave {
+    to {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+.rodal-slideDown-leave {
+    -webkit-animation: rodal-slideDown-leave both;
+    animation: rodal-slideDown-leave both;
+}
+
+/* -- slideLeft -- */
+@-webkit-keyframes rodal-slideLeft-enter {
+    from {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideLeft-enter {
+    from {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+.rodal-slideLeft-enter {
+    -webkit-animation: rodal-slideLeft-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideLeft-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideLeft-leave {
+    to {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideLeft-leave {
+    to {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+.rodal-slideLeft-leave {
+    -webkit-animation: rodal-slideLeft-leave both;
+    animation: rodal-slideLeft-leave both;
+}
+
+/* -- slideRight -- */
+@-webkit-keyframes rodal-slideRight-enter {
+    from {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideRight-enter {
+    from {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+.rodal-slideRight-enter {
+    -webkit-animation: rodal-slideRight-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideRight-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideRight-leave {
+    to {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideRight-leave {
+    to {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+.rodal-slideRight-leave {
+    -webkit-animation: rodal-slideRight-leave both;
+    animation: rodal-slideRight-leave both;
+}
+
+/* -- slideUp -- */
+@-webkit-keyframes rodal-slideUp-enter {
+    from {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+@keyframes rodal-slideUp-enter {
+    from {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+.rodal-slideUp-enter {
+    -webkit-animation: rodal-slideUp-enter both cubic-bezier(0.23, 1, 0.32, 1);
+    animation: rodal-slideUp-enter both cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@-webkit-keyframes rodal-slideUp-leave {
+    to {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+@keyframes rodal-slideUp-leave {
+    to {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+.rodal-slideUp-leave {
+    -webkit-animation: rodal-slideUp-leave both;
+    animation: rodal-slideUp-leave both;
+}
+
+/* -- flip -- */
+@-webkit-keyframes rodal-flip-enter {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+@keyframes rodal-flip-enter {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+.rodal-flip-enter {
+    -webkit-animation: rodal-flip-enter both ease-in;
+    animation: rodal-flip-enter both ease-in;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+}
+
+@-webkit-keyframes rodal-flip-leave {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+    }
+}
+
+@keyframes rodal-flip-leave {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+    }
+}
+
+.rodal-flip-leave {
+    -webkit-animation: rodal-flip-leave both;
+    animation: rodal-flip-leave both;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+}
+
+/* -- rotate -- */
+@-webkit-keyframes rodal-rotate-enter {
+    from {
+        -webkit-transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-rotate-enter {
+    from {
+        -webkit-transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-rotate-enter {
+    -webkit-animation: rodal-rotate-enter both;
+    animation: rodal-rotate-enter both;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+@-webkit-keyframes rodal-rotate-leave {
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-rotate-leave {
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-rotate-leave {
+    -webkit-animation: rodal-rotate-leave both;
+    animation: rodal-rotate-leave both;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+/* -- door -- */
+@-webkit-keyframes rodal-door-enter {
+    from {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+}
+
+@keyframes rodal-door-enter {
+    from {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+}
+
+.rodal-door-enter {
+    -webkit-animation: rodal-door-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-door-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-door-leave {
+    60% {
+        -webkit-transform: scale3d(.01, 1, 1);
+        transform: scale3d(.01, 1, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(0, 1, .1);
+        transform: scale3d(0, 1, .1);
+    }
+}
+
+@keyframes rodal-door-leave {
+    60% {
+        -webkit-transform: scale3d(.01, 1, 1);
+        transform: scale3d(.01, 1, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(0, 1, .1);
+        transform: scale3d(0, 1, .1);
+    }
+}
+
+.rodal-door-leave {
+    -webkit-animation: rodal-door-leave both;
+    animation: rodal-door-leave both;
+}</style><style>/* -- container -- */
+.rodal,
+.rodal-mask {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.rodal {
+    position: fixed;
+}
+
+/* -- mask -- */
+.rodal-mask {
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+}
+
+/* -- dialog -- */
+.rodal-dialog {
+    position: absolute;
+    z-index: 101;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.rodal-center {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.rodal-bottom {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.rodal-top {
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}
+
+.rodal-left {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.rodal-right {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* -- close button -- */
+.rodal-close {
+    position: absolute;
+    cursor: pointer;
+    top: 16px;
+    right: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.rodal-close:before,
+.rodal-close:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: #999;
+    border-radius: 100%;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+}
+
+.rodal-close:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.rodal-close:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.rodal-close:hover:before,
+.rodal-close:hover:after {
+    background: #333;
+}
+
+/* -- fade -- */
+/* @-webkit-keyframes rodal-fade-enter {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes rodal-fade-enter {
+    from {
+        opacity: 0;
+    }
+}
+
+.rodal-fade-enter {
+    -webkit-animation: rodal-fade-enter both ease-in;
+    animation: rodal-fade-enter both ease-in;
+} */
+
+@-webkit-keyframes rodal-fade-leave {
+    to {
+        opacity: 0
+    }
+}
+
+@keyframes rodal-fade-leave {
+    to {
+        opacity: 0
+    }
+}
+
+.rodal-fade-leave {
+    -webkit-animation: rodal-fade-leave both ease-out;
+    animation: rodal-fade-leave both ease-out;
+}
+
+/* -- zoom -- */
+@-webkit-keyframes rodal-zoom-enter {
+    from {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-zoom-enter {
+    from {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-zoom-enter {
+    -webkit-animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-zoom-leave {
+    to {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-zoom-leave {
+    to {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-zoom-leave {
+    -webkit-animation: rodal-zoom-leave both;
+    animation: rodal-zoom-leave both;
+}
+
+/* -- slideDown -- */
+@-webkit-keyframes rodal-slideDown-enter {
+    from {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+@keyframes rodal-slideDown-enter {
+    from {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+.rodal-slideDown-enter {
+    -webkit-animation: rodal-slideDown-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideDown-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideDown-leave {
+    to {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+@keyframes rodal-slideDown-leave {
+    to {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+.rodal-slideDown-leave {
+    -webkit-animation: rodal-slideDown-leave both;
+    animation: rodal-slideDown-leave both;
+}
+
+/* -- slideLeft -- */
+@-webkit-keyframes rodal-slideLeft-enter {
+    from {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideLeft-enter {
+    from {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+.rodal-slideLeft-enter {
+    -webkit-animation: rodal-slideLeft-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideLeft-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideLeft-leave {
+    to {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideLeft-leave {
+    to {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+.rodal-slideLeft-leave {
+    -webkit-animation: rodal-slideLeft-leave both;
+    animation: rodal-slideLeft-leave both;
+}
+
+/* -- slideRight -- */
+@-webkit-keyframes rodal-slideRight-enter {
+    from {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideRight-enter {
+    from {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+.rodal-slideRight-enter {
+    -webkit-animation: rodal-slideRight-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideRight-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideRight-leave {
+    to {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideRight-leave {
+    to {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+.rodal-slideRight-leave {
+    -webkit-animation: rodal-slideRight-leave both;
+    animation: rodal-slideRight-leave both;
+}
+
+/* -- slideUp -- */
+@-webkit-keyframes rodal-slideUp-enter {
+    from {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+@keyframes rodal-slideUp-enter {
+    from {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+.rodal-slideUp-enter {
+    -webkit-animation: rodal-slideUp-enter both cubic-bezier(0.23, 1, 0.32, 1);
+    animation: rodal-slideUp-enter both cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@-webkit-keyframes rodal-slideUp-leave {
+    to {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+@keyframes rodal-slideUp-leave {
+    to {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+.rodal-slideUp-leave {
+    -webkit-animation: rodal-slideUp-leave both;
+    animation: rodal-slideUp-leave both;
+}
+
+/* -- flip -- */
+@-webkit-keyframes rodal-flip-enter {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+@keyframes rodal-flip-enter {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+.rodal-flip-enter {
+    -webkit-animation: rodal-flip-enter both ease-in;
+    animation: rodal-flip-enter both ease-in;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+}
+
+@-webkit-keyframes rodal-flip-leave {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+    }
+}
+
+@keyframes rodal-flip-leave {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+    }
+}
+
+.rodal-flip-leave {
+    -webkit-animation: rodal-flip-leave both;
+    animation: rodal-flip-leave both;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+}
+
+/* -- rotate -- */
+@-webkit-keyframes rodal-rotate-enter {
+    from {
+        -webkit-transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-rotate-enter {
+    from {
+        -webkit-transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-rotate-enter {
+    -webkit-animation: rodal-rotate-enter both;
+    animation: rodal-rotate-enter both;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+@-webkit-keyframes rodal-rotate-leave {
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-rotate-leave {
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-rotate-leave {
+    -webkit-animation: rodal-rotate-leave both;
+    animation: rodal-rotate-leave both;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+/* -- door -- */
+@-webkit-keyframes rodal-door-enter {
+    from {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+}
+
+@keyframes rodal-door-enter {
+    from {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+}
+
+.rodal-door-enter {
+    -webkit-animation: rodal-door-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-door-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-door-leave {
+    60% {
+        -webkit-transform: scale3d(.01, 1, 1);
+        transform: scale3d(.01, 1, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(0, 1, .1);
+        transform: scale3d(0, 1, .1);
+    }
+}
+
+@keyframes rodal-door-leave {
+    60% {
+        -webkit-transform: scale3d(.01, 1, 1);
+        transform: scale3d(.01, 1, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(0, 1, .1);
+        transform: scale3d(0, 1, .1);
+    }
+}
+
+.rodal-door-leave {
+    -webkit-animation: rodal-door-leave both;
+    animation: rodal-door-leave both;
+}</style></head><body class=""><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+</style>
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display: block; direction: ltr;">
+</div><div id="wm-ipp-print">The Wayback Machine - https://web.archive.org/web/20221025114447/https://baike.sogou.com/kexue/d10699.htm</div>
+<script type="text/javascript">//<![CDATA[
+__wm.bt(675,27,25,2,"web","https://baike.sogou.com/kexue/d10699.htm","20221025114447",1996,"/_static/",["/_static/css/banner-styles.css?v=S1zqJCYt","/_static/css/iconochive.css?v=qtvMKcIJ"], false);
+  __wm.rw(1);
+//]]></script>
+<!-- END WAYBACK TOOLBAR INSERT --><script>window._gtag=window._gtag||{};window._gtag.shouldGrayed = false;if ('048d1f184f9d4d6c8c5daad1982a8c44') window._gtag.traceId = '048d1f184f9d4d6c8c5daad1982a8c44';if ({"illegality":true}) window.userInfo = {"illegality":true};</script><div class="topnavbox"><ul class="topnav"><li><a href="https://web.archive.org/web/20221025114447/https://www.sogou.com/web?query=">网页</a></li><li><a href="https://web.archive.org/web/20221025114447/https://weixin.sogou.com/weixin?p=75351201">微信</a></li><li><a href="https://web.archive.org/web/20221025114447/https://zhihu.sogou.com/zhihu?p=75351218">知乎</a></li><li><a href="https://web.archive.org/web/20221025114447/https://pic.sogou.com/pics?query=">图片</a></li><li><a href="https://web.archive.org/web/20221025114447/https://v.sogou.com/v?query=">视频</a></li><li><a href="https://web.archive.org/web/20221025114447/https://mingyi.sogou.com/">医疗</a></li><li class="cur"><strong>科学</strong></li><li><a href="https://web.archive.org/web/20221025114447/https://hanyu.sogou.com/">汉语</a></li><li><a href="https://web.archive.org/web/20221025114447/https://wenwen.sogou.com/">问问</a></li><li><a href="https://web.archive.org/web/20221025114447/https://www.sogou.com/docs/more.htm">更多<span class="topraquo">»</span></a></li></ul></div><div id="header"><div class="header-wrap"><a class="header-logo" href="https://web.archive.org/web/20221025114447/https://baike.sogou.com/kexue"></a><div class="header-search"><div class="querybox" id="suggBox"><form><input id="searchInput" class="query" type="text" placeholder="搜科学领域专业百科词条" name="query" autocomplete="off" value=""><a href="javascript:;" class="query-search"></a></form></div></div><div class="header-rgt"><span class="btn-header-rgt btn-edit" id="editLemma">创建</span><div class="header-user no-login"></div></div></div></div><div class="fixed-placeholder" style="visibility:none"></div><div id="container" class=""><div class="content lemma-level1"><div class="detail-title" id="abstract-title"><h1>非线性滤波器</h1><a href="https://web.archive.org/web/20221025114447/https://baike.sogou.com/kexue/d10699.htm#!" class="detail-edit">编辑</a></div><div class="section_content" data-id="14995466533994764"><div><p>在信号处理中，<b>非线性滤波器</b>是输出不是输入线性函数的滤波器。也就是说，如果滤波器分别有两个输入信号r、s和输出信号R、S，但是当输入是线性组合αr + βs时，其输出不总是αR + βS。 </p>
+<p>连续域和离散域滤波器都可能是非线性的。前者一个简单的例子是输出电压在任何时刻都是输入电压平方的电气设备；或是一个输入被限幅到固定范围[a，b]的设备，即R(t) =max(a，min(b，R(t))。后者一个重要的例子是中值滤波器，每个输出样本R<sub>i</sub>都是最后三个输入样本r<sub>i</sub>、r<sub>i -1</sub>、r<sub>i -2</sub>的中值。像线性滤波器一样，非线性滤波器的相位可能变，也可能不变。 </p>
+<p>非线性滤波器有许多应用，特别是在去除某些非加性噪声方面。例如，中值滤波器被广泛用于去除尖峰噪声——尖峰噪声仅影响一小部分样本，但影响量可能非常大。事实上，所有无线电接收机都使用非线性滤波器将KHz到GHz的信号转换到音频范围内；所有数字信号处理都依赖于非线性滤波器(模数转换器)将模拟信号转换成数字信号。 </p>
+<p>然而，非线性滤波器比线性滤波器更难使用和设计，因为信号分析最强大的数学工具(如脉冲响应和频率响应)不适用于它们。因此，例如线性滤波器经常被用来消除由非线性过程产生的噪声和失真，这仅仅是因为适当的非线性滤波器太难设计和构造。 </p>
+<p>综上所述，可知非线性滤波器与线性滤波器相比具有非常不同的行为。最重要的特征是，对于非线性滤波器，滤波器的输出或响应不符合前面概述的原则，特别是缩放和移位不变性。此外，非线性滤波器会产生以非直观方式变化的结果。 </p>
+<p>简而言之，非线性滤波器是输出不是其输入线性函数的滤波器。也就是说，如果滤波器分别为两个输入信号r和s输出信号R和S，但是当输入是线性组合a*r + b*s时，其输出并不总是a*R + b*S。 </p></div></div><div id="catalog"><h2 class="title2">目录<a href="javascript:" class="detail-edit">编辑</a></h2><div class="catalog_wrap" style=""><ul class="catalog_list col2"><li><span class="order">1</span><a href="javascript:" data-level="1" data-id="14995466533994765">线性系统</a></li><li><span class="order">2</span><a href="javascript:" data-level="1" data-id="14995466533994766">应用</a></li><li class="secondary_catalog"><span>2.1 </span><a href="javascript:" data-id="14995466533994766">噪音消除</a></li><li class="secondary_catalog"><span>2.2 </span><a href="javascript:" data-id="14995466533994766"><b>Kushner-Stratonovich滤波</b></a></li></ul><ul class="catalog_list col2"><li class="secondary_catalog"><span>2.3 </span><a href="javascript:" data-id="14995466533994766">能量转移过滤器</a></li><li><span class="order">3</span><a href="javascript:" data-level="1" data-id="references">参考文献</a></li></ul></div></div><div id="paragraphs"><div><div id="par_14995466533994765"><h2 class="title">1 线性系统<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><p>一个线性系统由几个原则定义。线性的基本定义是输出必须是输入的线性函数，即 </p> 
+<p><span class="kx_formula" alt="{\displaystyle \alpha y_{1}(t)+\beta y_{2}(t)=H\left\{\alpha x_{1}(t)+\beta x_{2}(t)\right\}}">
+  <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="fill-opacity:1; color-rendering:auto; color-interpolation:auto; text-rendering:auto; stroke:black; stroke-linecap:square; stroke-miterlimit:10; shape-rendering:auto; stroke-opacity:1; fill:black; stroke-dasharray:none; font-weight:normal; stroke-width:1; font-family:&#39;Dialog&#39;; font-style:normal; stroke-linejoin:miter; font-size:12px; stroke-dashoffset:0; image-rendering:auto;" width="318" height="27" xmlns="http://www.w3.org/2000/svg" class="transfer_formula">
+   <!--Generated by the Batik Graphics2D SVG Generator-->
+   <defs id="genericDefs"></defs>
+   <g>
+    <g transform="scale(20,20) translate(0,0.9)" style="font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:&#39;jlm_cmmi10&#39;; color-interpolation:linearRGB;">
+     <path style="stroke:none;" d="M0.4844 -0.2344 L0.4844 -0.2344 L0.4844 -0.1719 Q0.5469 -0.25 0.5781 -0.375 Q0.5781 -0.3906 0.5938 -0.3906 Q0.6094 -0.3906 0.6094 -0.3906 Q0.6094 -0.3594 0.5781 -0.3125 Q0.5469 -0.2188 0.4844 -0.1406 Q0.4844 -0.125 0.4844 -0.1094 Q0.4844 -0.0156 0.5078 -0.0156 Q0.5312 -0.0156 0.5625 -0.0469 Q0.5625 -0.0469 0.5625 -0.0625 Q0.5625 -0.0625 0.5781 -0.0625 Q0.5938 -0.0625 0.5938 -0.0625 Q0.5938 -0.0469 0.5625 -0.0156 Q0.5312 0.0156 0.5 0.0156 Q0.4375 0.0156 0.4219 -0.0625 Q0.4219 -0.0625 0.4062 -0.0781 Q0.3125 0.0156 0.2031 0.0156 Q0.1094 0.0156 0.0625 -0.0625 Q0.0469 -0.1094 0.0469 -0.1562 Q0.0469 -0.2656 0.125 -0.3438 Q0.2031 -0.4375 0.2969 -0.4375 Q0.2969 -0.4375 0.3125 -0.4375 Q0.3906 -0.4375 0.4375 -0.375 Q0.4375 -0.375 0.4375 -0.375 Q0.4844 -0.3281 0.4844 -0.2344 ZM0.4062 -0.0938 L0.4062 -0.0938 Q0.4062 -0.1094 0.4062 -0.2188 Q0.4062 -0.3281 0.375 -0.375 Q0.375 -0.4062 0.3594 -0.4062 L0.3438 -0.4062 L0.3438 -0.4062 L0.3438 -0.4062 Q0.3281 -0.4219 0.3125 -0.4219 Q0.2344 -0.4219 0.1875 -0.3438 L0.1719 -0.3281 Q0.1406 -0.2656 0.125 -0.1719 Q0.1094 -0.1406 0.1094 -0.125 Q0.1094 -0.0312 0.1719 -0.0156 Q0.1875 -0.0156 0.2031 -0.0156 Q0.3125 -0.0156 0.4062 -0.0938 Z"></path>
+    </g>
+    <g transform="matrix(20,0,0,20,0,0) translate(0.6397,0.9) scale(0.1,0.1)" style="font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:&#39;jlm_cmmi10&#39;; color-interpolation:linearRGB;">
+     <path style="stroke:none;" d="M0.0625 -4.4688 L2.1406 -4.4688 L2.1406 -4.2969 L2.0469 -4.2969 Q1.8281 -4.2969 1.7188 -4.2031 Q1.6094 -4.1094 1.6094 -3.9531 Q1.6094 -3.7656 1.7656 -3.4375 L2.8594 -1.1719 L3.8594 -3.6406 Q3.9375 -3.8438 3.9375 -4.0469 Q3.9375 -4.125 3.9062 -4.1719 Q3.8594 -4.2344 3.7812 -4.2656 Q3.7031 -4.2969 3.4844 -4.2969 L3.4844 -4.4688 L4.9375 -4.4688 L4.9375 -4.2969 Q4.7656 -4.2656 4.6641 -4.2109 Q4.5625 -4.1562 4.4531 -4 Q4.4062 -3.9219 4.2812 -3.625 L2.4688 0.8438 Q2.2031 1.5 1.7734 1.8281 Q1.3438 2.1562 0.9531 2.1562 Q0.6562 2.1562 0.4688 1.9922 Q0.2812 1.8281 0.2812 1.6094 Q0.2812 1.4062 0.4219 1.2812 Q0.5625 1.1562 0.7969 1.1562 Q0.9531 1.1562 1.2344 1.2656 Q1.4219 1.3438 1.4688 1.3438 Q1.625 1.3438 1.7969 1.1875 Q1.9688 1.0312 2.1406 0.5938 L2.4688 -0.1719 L0.8594 -3.5469 Q0.7812 -3.7031 0.625 -3.9219 Q0.5 -4.0938 0.4219 -4.1562 Q0.3125 -4.2344 0.0625 -4.2969 L0.0625 -4.4688 Z"></path>
+     <path d="M1.1719 -5.9688 L2.7812 -6.7656 L2.9375 -6.7656 L2.9375 -1.1719 Q2.9375 -0.6094 2.9844 -0.4766 Q3.0312 -0.3438 3.1797 -0.2656 Q3.3281 -0.1875 3.7812 -0.1875 L3.7812 0 L1.2969 0 L1.2969 -0.1875 Q1.7656 -0.1875 1.8984 -0.2578 Q2.0312 -0.3281 2.0859 -0.4531 Q2.1406 -0.5781 2.1406 -1.1719 L2.1406 -4.7344 Q2.1406 -5.4688 2.0938 -5.6719 Q2.0625 -5.8281 1.9688 -5.8984 Q1.875 -5.9688 1.75 -5.9688 Q1.5625 -5.9688 1.25 -5.8281 L1.1719 -5.9688 Z" style="stroke:none;" transform="scale(10,10) translate(0.5337,0.2506) scale(0.07,0.07)"></path>
+     <path d="M0.3281 0.2344 L0.3281 0.2344 Q0.3281 0.25 0.3281 0.25 Q0.3125 0.25 0.2656 0.2031 Q0.2031 0.1406 0.1719 0.0625 Q0.0938 -0.0781 0.0938 -0.25 Q0.0938 -0.4219 0.1562 -0.5625 Q0.2188 -0.6719 0.2969 -0.7344 Q0.3125 -0.75 0.3281 -0.75 Q0.3281 -0.75 0.3281 -0.7344 Q0.3281 -0.7344 0.3125 -0.7188 Q0.1562 -0.5625 0.1562 -0.25 Q0.1562 0.0625 0.3125 0.2188 Q0.3281 0.2344 0.3281 0.2344 Z" style="stroke:none;" transform="scale(10,10) translate(0.5337,0.2506) scale(1,1) translate(0.2927,-0.2506)"></path>
+    </g>
+    <g transform="matrix(20,0,0,20,0,0) translate(1.855,0.9) scale(0.1,0.1)" style="font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:&#39;jlm_cmr10&#39;; color-interpolation:linearRGB;">
+     <path style="stroke:none;" d="M1.6094 -5.9375 L1.6094 -4.4688 L2.6562 -4.4688 L2.6562 -4.125 L1.6094 -4.125 L1.6094 -1.2344 Q1.6094 -0.7969 1.7344 -0.6484 Q1.8594 -0.5 2.0625 -0.5 Q2.2188 -0.5 2.3672 -0.5938 Q2.5156 -0.6875 2.6094 -0.8906 L2.7969 -0.8906 Q2.625 -0.4062 2.3125 -0.1641 Q2 0.0781 1.6719 0.0781 Q1.4375 0.0781 1.2266 -0.0469 Q1.0156 -0.1719 0.9141 -0.4062 Q0.8125 -0.6406 0.8125 -1.125 L0.8125 -4.125 L0.0938 -4.125 L0.0938 -4.2969 Q0.3594 -4.4062 0.6406 -4.6562 Q0.9219 -4.9062 1.1406 -5.2656 Q1.2656 -5.4531 1.4531 -5.9375 L1.6094 -5.9375 Z"></path>
+     <path d="M0.2812 -0.25 L0.2812 -0.25 Q0.2812 -0.0781 0.2188 0.0625 Q0.1719 0.1719 0.0938 0.2344 Q0.0781 0.25 0.0625 0.25 Q0.0625 0.25 0.0625 0.2344 Q0.0625 0.2344 0.0625 0.2188 Q0.2344 0.0625 0.2344 -0.25 Q0.2344 -0.5625 0.0781 -0.7188 L0.0781 -0.7188 Q0.0625 -0.7344 0.0625 -0.7344 Q0.0625 -0.75 0.0625 -0.75 Q0.0781 -0.75 0.125 -0.7031 Q0.1875 -0.6406 0.2188 -0.5625 Q0.2812 -0.4219 0.2812 -0.25 Z" style="stroke:none;" transform="scale(10,10) translate(0.3197,0)"></path>
+    </g>
+    <g transform="matrix(20,0,0,20,0,0) translate(2.7858,0.9)" style="font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:&#39;jlm_cmr10&#39;; color-interpolation:linearRGB;">
+     <path style="stroke:none;" d="M0.4062 -0.2344 L0.4062 0.0469 Q0.4062 0.0781 0.3906 0.0781 Q0.375 0.0781 0.375 0.0469 L0.375 -0.2344 L0.0938 -0.2344 Q0.0625 -0.2344 0.0625 -0.25 Q0.0625 -0.2656 0.0938 -0.2656 L0.375 -0.2656 L0.375 -0.5469 Q0.375 -0.5781 0.3906 -0.5781 Q0.4062 -0.5781 0.4062 -0.5469 L0.4062 -0.2656 L0.6875 -0.2656 Q0.7188 -0.2656 0.7188 -0.25 Q0.7188 -0.2344 0.6875 -0.2344 L0.4062 -0.2344 Z"></path>
+    </g>
+    <g transform="matrix(20,0,0,20,0,0) translate(3.7858,0.9)" style="font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:&#39;jlm_cmmi10&#39;; color-interpolation:linearRGB;">
+     <path style="stroke:none;" d="M0.0312 0.1719 L0.1875 -0.4375 Q0.2031 -0.5469 0.2969 -0.625 Q0.375 -0.7031 0.4531 -0.7031 Q0.5312 -0.7031 0.5781 -0.6406 Q0.5938 -0.6094 0.5938 -0.5781 Q0.5938 -0.5 0.5312 -0.4375 Q0.5 -0.4219 0.4844 -0.4062 Q0.5469 -0.3594 0.5469 -0.2656 Q0.5469 -0.1562 0.4688 -0.0781 Q0.3906 0 0.2969 0.0156 L0.2812 0.0156 Q0.1875 0.0156 0.1406 -0.0625 Q0.125 -0.0781 0.125 -0.1094 L0.0469 0.1875 L0.0469 0.1875 Q0.0469 0.1875 0.0312 0.1875 Q0.0312 0.1875 0.0312 0.1875 Q0.0312 0.1875 0.0312 0.1719 ZM0.3281 -0.4062 Q0.3438 -0.3906 0.375 -0.3906 Q0.4062 -0.3906 0.4219 -0.4062 Q0.4062 -0.4062 0.375 -0.4062 Q0.3438 -0.4062 0.3281 -0.4062 ZM0.4531 -0.4219 Q0.5156 -0.4688 0.5312 -0.5781 L0.5312 -0.5781 L0.5312 -0.5781 Q0.5312 -0.5938 0.5312 -0.6094 Q0.5312 -0.6719 0.4688 -0.6875 Q0.4688 -0.6875 0.4531 -0.6875 Q0.375 -0.6875 0.2969 -0.6094 Q0.2344 -0.5312 0.2031 -0.4219 L0.1562 -0.2344 Q0.1406 -0.1719 0.1406 -0.1562 Q0.1406 -0.0781 0.2031 -0.0312 Q0.2344 -0.0156 0.2812 -0.0156 Q0.3594 -0.0156 0.4219 -0.0938 Q0.4219 -0.1094 0.4219 -0.1094 Q0.4688 -0.1719 0.4688 -0.2812 Q0.4688 -0.2969 0.4688 -0.2969 Q0.4688 -0.3594 0.4531 -0.3906 Q0.4062 -0.375 0.375 -0.375 Q0.2969 -0.375 0.2969 -0.4062 Q0.2969 -0.4375 0.375 -0.4375 Q0.4219 -0.4375 0.4531 -0.4219 Z"></path>
+    </g>
+    <g transform="matrix(20,0,0,20,0,0) translate(4.3515,0.9) scale(0.1,0.1)" style="font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:&#39;jlm_cmmi10&#39;; color-interpolation:linearRGB;">
+     <path style="stroke:none;" d="M0.0625 -4.4688 L2.1406 -4.4688 L2.1406 -4.2969 L2.0469 -4.2969 Q1.8281 -4.2969 1.7188 -4.2031 Q1.6094 -4.1094 1.6094 -3.9531 Q1.6094 -3.7656 1.7656 -3.4375 L2.8594 -1.1719 L3.8594 -3.6406 Q3.9375 -3.8438 3.9375 -4.0469 Q3.9375 -4.125 3.9062 -4.1719 Q3.8594 -4.2344 3.7812 -4.2656 Q3.7031 -4.2969 3.4844 -4.2969 L3.4844 -4.4688 L4.9375 -4.4688 L4.9375 -4.2969 Q4.7656 -4.2656 4.6641 -4.2109 Q4.5625 -4.1562 4.4531 -4 Q4.4062 -3.9219 4.2812 -3.625 L2.4688 0.8438 Q2.2031 1.5 1.7734 1.8281 Q1.3438 2.1562 0.9531 2.1562 Q0.6562 2.1562 0.4688 1.9922 Q0.2812 1.8281 0.2812 1.6094 Q0.2812 1.4062 0.4219 1.2812 Q0.5625 1.1562 0.7969 1.1562 Q0.9531 1.1562 1.2344 1.2656 Q1.4219 1.3438 1.4688 1.3438 Q1.625 1.3438 1.7969 1.1875 Q1.9688 1.0312 2.1406 0.5938 L2.4688 -0.1719 L0.8594 -3.5469 Q0.7812 -3.7031 0.625 -3.9219 Q0.5 -4.0938 0.4219 -4.1562 Q0.3125 -4.2344 0.0625 -4.2969 L0.0625 -4.4688 Z"></path>
+     <path d="M4.5781 -1.2812 L4.125 0 L0.2188 0 L0.2188 -0.1875 Q1.9375 -1.75 2.6406 -2.75 Q3.3438 -3.75 3.3438 -4.5781 Q3.3438 -5.2031 2.9609 -5.6094 Q2.5781 -6.0156 2.0312 -6.0156 Q1.5469 -6.0156 1.1562 -5.7266 Q0.7656 -5.4375 0.5938 -4.8906 L0.4062 -4.8906 Q0.5312 -5.7969 1.0312 -6.2812 Q1.5312 -6.7656 2.2969 -6.7656 Q3.0938 -6.7656 3.6406 -6.2422 Q4.1875 -5.7188 4.1875 -5.0156 Q4.1875 -4.5156 3.9531 -4.0156 Q3.5781 -3.2188 2.7812 -2.3438 Q1.5625 -1.0156 1.25 -0.7344 L2.9844 -0.7344 Q3.5156 -0.7344 3.7266 -0.7734 Q3.9375 -0.8125 4.1094 -0.9375 Q4.2812 -1.0625 4.4062 -1.2812 L4.5781 -1.2812 Z" style="stroke:none;" transform="scale(10,10) translate(0.5338,0.2506) scale(0.07,0.07)"></path>
+     <path d="M0.3281 0.2344 L0.3281 0.2344 Q0.3281 0.25 0.3281 0.25 Q0.3125 0.25 0.2656 0.2031 Q0.2031 0.1406 0.1719 0.0625 Q0.0938 -0.0781 0.0938 -0.25 Q0.0938 -0.4219 0.1562 -0.5625 Q0.2188 -0.6719 0.2969 -0.7344 Q0.3125 -0.75 0.3281 -0.75 Q0.3281 -0.75 0.3281 -0.7344 Q0.3281 -0.7344 0.3125 -0.7188 Q0.1562 -0.5625 0.1562 -0.25 Q0.1562 0.0625 0.3125 0.2188 Q0.3281 0.2344 0.3281 0.2344 Z" style="stroke:none;" transform="scale(10,10) translate(0.5338,0.2506) scale(1,1) translate(0.3485,-0.2506)"></path>
+    </g>
+    <g transform="matrix(20,0,0,20,0,0) translate(5.6226,0.9) scale(0.1,0.1)" style="font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:&#39;jlm_cmr10&#39;; color-interpolation:linearRGB;">
+     <path style="stroke:none;" d="M1.6094 -5.9375 L1.6094 -4.4688 L2.6562 -4.4688 L2.6562 -4.125 L1.6094 -4.125 L1.6094 -1.2344 Q1.6094 -0.7969 1.7344 -0.6484 Q1.8594 -0.5 2.0625 -0.5 Q2.2188 -0.5 2.3672 -0.5938 Q2.5156 -0.6875 2.6094 -0.8906 L2.7969 -0.8906 Q2.625 -0.4062 2.3125 -0.1641 Q2 0.0781 1.6719 0.0781 Q1.4375 0.0781 1.2266 -0.0469 Q1.0156 -0.1719 0.9141 -0.4062 Q0.8125 -0.6406 0.8125 -1.125 L0.8125 -4.125 L0.0938 -4.125 L0.0938 -4.2969 Q0.3594 -4.4062 0.6406 -4.6562 Q0.9219 -4.9062 1.1406 -5.2656 Q1.2656 -5.4531 1.4531 -5.9375 L1.6094 -5.9375 Z"></path>
+     <path d="M0.2812 -0.25 L0.2812 -0.25 Q0.2812 -0.0781 0.2188 0.0625 Q0.1719 0.1719 0.0938 0.2344 Q0.0781 0.25 0.0625 0.25 Q0.0625 0.25 0.0625 0.2344 Q0.0625 0.2344 0.0625 0.2188 Q0.2344 0.0625 0.2344 -0.25 Q0.2344 -0.5625 0.0781 -0.7188 L0.0781 -0.7188 Q0.0625 -0.7344 0.0625 -0.7344 Q0.0625 -0.75 0.0625 -0.75 Q0.0781 -0.75 0.125 -0.7031 Q0.1875 -0.6406 0.2188 -0.5625 Q0.2812 -0.4219 0.2812 -0.25 Z" style="stroke:none;" transform="scale(10,10) translate(0.3197,0)"></path>
+    </g>
+    <g transform="matrix(20,0,0,20,0,0) translate(6.6089,0.9)" style="font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:&#39;jlm_cmr10&#39;; color-interpolation:linearRGB;">
+     <path style="stroke:none;" d="M0.6875 -0.3281 L0.0938 -0.3281 Q0.0625 -0.3281 0.0625 -0.3438 Q0.0625 -0.3594 0.0938 -0.3594 L0.6875 -0.3594 Q0.7188 -0.3594 0.7188 -0.3438 Q0.7188 -0.3281 0.6875 -0.3281 ZM0.6875 -0.1406 L0.0938 -0.1406 Q0.0625 -0.1406 0.0625 -0.1562 Q0.0625 -0.1719 0.0938 -0.1719 L0.6875 -0.1719 Q0.7188 -0.1719 0.7188 -0.1562 Q0.7188 -0.1406 0.6875 -0.1406 Z"></path>
+    </g>
+    <g transform="matrix(20,0,0,20,0,0) translate(7.6645,0.9) scale(0.1,0.1)" style="font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:&#39;jlm_cmr10&#39;; color-interpolation:linearRGB;">
+     <path style="stroke:none;" d="M2.0625 -3.5469 L5.125 -3.5469 L5.125 -5.4375 Q5.125 -5.9531 5.0625 -6.1094 Q5.0156 -6.2344 4.8594 -6.3281 Q4.6562 -6.4375 4.4219 -6.4375 L4.1875 -6.4375 L4.1875 -6.625 L7.0156 -6.625 L7.0156 -6.4375 L6.7812 -6.4375 Q6.5469 -6.4375 6.3438 -6.3281 Q6.1875 -6.25 6.125 -6.0938 Q6.0625 -5.9375 6.0625 -5.4375 L6.0625 -1.1719 Q6.0625 -0.6719 6.1406 -0.5156 Q6.1875 -0.3906 6.3281 -0.2969 Q6.5469 -0.1875 6.7812 -0.1875 L7.0156 -0.1875 L7.0156 0 L4.1875 0 L4.1875 -0.1875 L4.4219 -0.1875 Q4.8281 -0.1875 5.0156 -0.4219 Q5.125 -0.5781 5.125 -1.1719 L5.125 -3.1875 L2.0625 -3.1875 L2.0625 -1.1719 Q2.0625 -0.6719 2.125 -0.5156 Q2.1719 -0.3906 2.3281 -0.2969 Q2.5312 -0.1875 2.7656 -0.1875 L3.0156 -0.1875 L3.0156 0 L0.1719 0 L0.1719 -0.1875 L0.4062 -0.1875 Q0.8125 -0.1875 1 -0.4219 Q1.125 -0.5781 1.125 -1.1719 L1.125 -5.4375 Q1.125 -5.9531 1.0625 -6.1094 Q1 -6.2344 0.8594 -6.3281 Q0.6406 -6.4375 0.4062 -6.4375 L0.1719 -6.4375 L0.1719 -6.625 L3.0156 -6.625 L3.0156 -6.4375 L2.7656 -6.4375 Q2.5312 -6.4375 2.3281 -6.3281 Q2.1719 -6.25 2.1172 -6.0938 Q2.0625 -5.9375 2.0625 -5.4375 L2.0625 -3.5469 Z"></path>
+     <path d="M0.2812 -0.5625 L0.2812 -0.3906 Q0.2812 -0.3125 0.2188 -0.2656 Q0.1875 -0.2656 0.1719 -0.25 Q0.2656 -0.2188 0.2812 -0.1406 Q0.2812 -0.1406 0.2812 -0.0625 L0.2812 0.0938 Q0.2812 0.125 0.2812 0.1406 Q0.2969 0.1875 0.3594 0.2188 Q0.375 0.2188 0.4062 0.2344 Q0.4219 0.2344 0.4219 0.2344 Q0.4219 0.25 0.4062 0.25 Q0.3281 0.25 0.2812 0.2188 Q0.2656 0.2188 0.2656 0.2188 Q0.2188 0.1875 0.2188 0.125 Q0.2188 0.1094 0.2188 0.0781 L0.2188 -0.1094 Q0.2188 -0.2031 0.125 -0.2344 Q0.1094 -0.2344 0.0938 -0.2344 Q0.0781 -0.2344 0.0781 -0.25 Q0.0781 -0.2656 0.0938 -0.2656 Q0.1562 -0.2656 0.1875 -0.3125 Q0.2188 -0.3281 0.2188 -0.3594 Q0.2188 -0.375 0.2188 -0.4375 L0.2188 -0.625 Q0.2188 -0.6875 0.2969 -0.7188 Q0.3438 -0.75 0.4062 -0.75 Q0.4219 -0.75 0.4219 -0.7344 Q0.4219 -0.7344 0.4219 -0.7344 Q0.3438 -0.7188 0.3125 -0.6875 L0.3125 -0.6875 L0.3125 -0.6875 Q0.2812 -0.6562 0.2812 -0.6094 L0.2812 -0.6094 Q0.2812 -0.6094 0.2812 -0.5625 Z" style="stroke:none;" transform="scale(10,10) translate(0.9082,0)"></path>
+    </g>
+    <g transform="matrix(20,0,0,20,0,0) translate(9.0727,0.9)" style="font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:&#39;jlm_cmmi10&#39;; color-interpolation:linearRGB;">
+     <path style="stroke:none;" d="M0.4844 -0.2344 L0.4844 -0.2344 L0.4844 -0.1719 Q0.5469 -0.25 0.5781 -0.375 Q0.5781 -0.3906 0.5938 -0.3906 Q0.6094 -0.3906 0.6094 -0.3906 Q0.6094 -0.3594 0.5781 -0.3125 Q0.5469 -0.2188 0.4844 -0.1406 Q0.4844 -0.125 0.4844 -0.1094 Q0.4844 -0.0156 0.5078 -0.0156 Q0.5312 -0.0156 0.5625 -0.0469 Q0.5625 -0.0469 0.5625 -0.0625 Q0.5625 -0.0625 0.5781 -0.0625 Q0.5938 -0.0625 0.5938 -0.0625 Q0.5938 -0.0469 0.5625 -0.0156 Q0.5312 0.0156 0.5 0.0156 Q0.4375 0.0156 0.4219 -0.0625 Q0.4219 -0.0625 0.4062 -0.0781 Q0.3125 0.0156 0.2031 0.0156 Q0.1094 0.0156 0.0625 -0.0625 Q0.0469 -0.1094 0.0469 -0.1562 Q0.0469 -0.2656 0.125 -0.3438 Q0.2031 -0.4375 0.2969 -0.4375 Q0.2969 -0.4375 0.3125 -0.4375 Q0.3906 -0.4375 0.4375 -0.375 Q0.4375 -0.375 0.4375 -0.375 Q0.4844 -0.3281 0.4844 -0.2344 ZM0.4062 -0.0938 L0.4062 -0.0938 Q0.4062 -0.1094 0.4062 -0.2188 Q0.4062 -0.3281 0.375 -0.375 Q0.375 -0.4062 0.3594 -0.4062 L0.3438 -0.4062 L0.3438 -0.4062 L0.3438 -0.4062 Q0.3281 -0.4219 0.3125 -0.4219 Q0.2344 -0.4219 0.1875 -0.3438 L0.1719 -0.3281 Q0.1406 -0.2656 0.125 -0.1719 Q0.1094 -0.1406 0.1094 -0.125 Q0.1094 -0.0312 0.1719 -0.0156 Q0.1875 -0.0156 0.2031 -0.0156 Q0.3125 -0.0156 0.4062 -0.0938 Z"></path>
+    </g>
+    <g transform="matrix(20,0,0,20,0,0) translate(9.7124,0.9) scale(0.1,0.1)" style="font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:&#39;jlm_cmmi10&#39;; color-interpolation:linearRGB;">
+     <path style="stroke:none;" d="M0.125 -4.4688 L2.2344 -4.4688 L2.2344 -4.2969 Q2.0312 -4.2969 1.9531 -4.2266 Q1.875 -4.1562 1.875 -4.0469 Q1.875 -3.9219 2.0469 -3.6875 Q2.0938 -3.6094 2.2031 -3.4375 L2.5312 -2.9375 L2.8906 -3.4375 Q3.25 -3.9219 3.25 -4.0469 Q3.25 -4.1562 3.1641 -4.2266 Q3.0781 -4.2969 2.8906 -4.2969 L2.8906 -4.4688 L4.4062 -4.4688 L4.4062 -4.2969 Q4.1719 -4.2812 3.9844 -4.1562 Q3.75 -4 3.3281 -3.4375 L2.7188 -2.625 L3.8438 -1.0156 Q4.25 -0.4375 4.4219 -0.3125 Q4.5938 -0.1875 4.875 -0.1719 L4.875 0 L2.7656 0 L2.7656 -0.1719 Q2.9844 -0.1719 3.1094 -0.2812 Q3.2031 -0.3438 3.2031 -0.4531 Q3.2031 -0.5625 2.8906 -1.0156 L2.2344 -1.9844 L1.5156 -1.0156 Q1.1875 -0.5781 1.1875 -0.5 Q1.1875 -0.375 1.2969 -0.2812 Q1.4062 -0.1875 1.625 -0.1719 L1.625 0 L0.1719 0 L0.1719 -0.1719 Q0.3438 -0.2031 0.4688 -0.2969 Q0.6562 -0.4375 1.0938 -1.0156 L2.0312 -2.2656 L1.1875 -3.5 Q0.8281 -4.0312 0.6328 -4.1641 Q0.4375 -4.2969 0.125 -4.2969 L0.125 -4.4688 Z"></path>
+     <path d="M1.1719 -5.9688 L2.7812 -6.7656 L2.9375 -6.7656 L2.9375 -1.1719 Q2.9375 -0.6094 2.9844 -0.4766 Q3.0312 -0.3438 3.1797 -0.2656 Q3.3281 -0.1875 3.7812 -0.1875 L3.7812 0 L1.2969 0 L1.2969 -0.1875 Q1.7656 -0.1875 1.8984 -0.2578 Q2.0312 -0.3281 2.0859 -0.4531 Q2.1406 -0.5781 2.1406 -1.1719 L2.1406 -4.7344 Q2.1406 -5.4688 2.0938 -5.6719 Q2.0625 -5.8281 1.9688 -5.8984 Q1.875 -5.9688 1.75 -5.9688 Q1.5625 -5.9688 1.25 -5.8281 L1.1719 -5.9688 Z" style="stroke:none;" transform="scale(10,10) translate(0.5275,0.15) scale(0.07,0.07)"></path>
+     <path d="M0.3281 0.2344 L0.3281 0.2344 Q0.3281 0.25 0.3281 0.25 Q0.3125 0.25 0.2656 0.2031 Q0.2031 0.1406 0.1719 0.0625 Q0.0938 -0.0781 0.0938 -0.25 Q0.0938 -0.4219 0.1562 -0.5625 Q0.2188 -0.6719 0.2969 -0.7344 Q0.3125 -0.75 0.3281 -0.75 Q0.3281 -0.75 0.3281 -0.7344 Q0.3281 -0.7344 0.3125 -0.7188 Q0.1562 -0.5625 0.1562 -0.25 Q0.1562 0.0625 0.3125 0.2188 Q0.3281 0.2344 0.3281 0.2344 Z" style="stroke:none;" transform="scale(10,10) translate(0.5275,0.15) scale(1,1) translate(0.2927,-0.15)"></path>
+    </g>
+    <g transform="matrix(20,0,0,20,0,0) translate(10.9215,0.9) scale(0.1,0.1)" style="font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:&#39;jlm_cmr10&#39;; color-interpolation:linearRGB;">
+     <path style="stroke:none;" d="M1.6094 -5.9375 L1.6094 -4.4688 L2.6562 -4.4688 L2.6562 -4.125 L1.6094 -4.125 L1.6094 -1.2344 Q1.6094 -0.7969 1.7344 -0.6484 Q1.8594 -0.5 2.0625 -0.5 Q2.2188 -0.5 2.3672 -0.5938 Q2.5156 -0.6875 2.6094 -0.8906 L2.7969 -0.8906 Q2.625 -0.4062 2.3125 -0.1641 Q2 0.0781 1.6719 0.0781 Q1.4375 0.0781 1.2266 -0.0469 Q1.0156 -0.1719 0.9141 -0.4062 Q0.8125 -0.6406 0.8125 -1.125 L0.8125 -4.125 L0.0938 -4.125 L0.0938 -4.2969 Q0.3594 -4.4062 0.6406 -4.6562 Q0.9219 -4.9062 1.1406 -5.2656 Q1.2656 -5.4531 1.4531 -5.9375 L1.6094 -5.9375 Z"></path>
+     <path d="M0.2812 -0.25 L0.2812 -0.25 Q0.2812 -0.0781 0.2188 0.0625 Q0.1719 0.1719 0.0938 0.2344 Q0.0781 0.25 0.0625 0.25 Q0.0625 0.25 0.0625 0.2344 Q0.0625 0.2344 0.0625 0.2188 Q0.2344 0.0625 0.2344 -0.25 Q0.2344 -0.5625 0.0781 -0.7188 L0.0781 -0.7188 Q0.0625 -0.7344 0.0625 -0.7344 Q0.0625 -0.75 0.0625 -0.75 Q0.0781 -0.75 0.125 -0.7031 Q0.1875 -0.6406 0.2188 -0.5625 Q0.2812 -0.4219 0.2812 -0.25 Z" style="stroke:none;" transform="scale(10,10) translate(0.3197,0)"></path>
+    </g>
+    <g transform="matrix(20,0,0,20,0,0) translate(11.8523,0.9)" style="font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:&#39;jlm_cmr10&#39;; color-interpolation:linearRGB;">
+     <path style="stroke:none;" d="M0.4062 -0.2344 L0.4062 0.0469 Q0.4062 0.0781 0.3906 0.0781 Q0.375 0.0781 0.375 0.0469 L0.375 -0.2344 L0.0938 -0.2344 Q0.0625 -0.2344 0.0625 -0.25 Q0.0625 -0.2656 0.0938 -0.2656 L0.375 -0.2656 L0.375 -0.5469 Q0.375 -0.5781 0.3906 -0.5781 Q0.4062 -0.5781 0.4062 -0.5469 L0.4062 -0.2656 L0.6875 -0.2656 Q0.7188 -0.2656 0.7188 -0.25 Q0.7188 -0.2344 0.6875 -0.2344 L0.4062 -0.2344 Z"></path>
+    </g>
+    <g transform="matrix(20,0,0,20,0,0) translate(12.8523,0.9)" style="font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:&#39;jlm_cmmi10&#39;; color-interpolation:linearRGB;">
+     <path style="stroke:none;" d="M0.0312 0.1719 L0.1875 -0.4375 Q0.2031 -0.5469 0.2969 -0.625 Q0.375 -0.7031 0.4531 -0.7031 Q0.5312 -0.7031 0.5781 -0.6406 Q0.5938 -0.6094 0.5938 -0.5781 Q0.5938 -0.5 0.5312 -0.4375 Q0.5 -0.4219 0.4844 -0.4062 Q0.5469 -0.3594 0.5469 -0.2656 Q0.5469 -0.1562 0.4688 -0.0781 Q0.3906 0 0.2969 0.0156 L0.2812 0.0156 Q0.1875 0.0156 0.1406 -0.0625 Q0.125 -0.0781 0.125 -0.1094 L0.0469 0.1875 L0.0469 0.1875 Q0.0469 0.1875 0.0312 0.1875 Q0.0312 0.1875 0.0312 0.1875 Q0.0312 0.1875 0.0312 0.1719 ZM0.3281 -0.4062 Q0.3438 -0.3906 0.375 -0.3906 Q0.4062 -0.3906 0.4219 -0.4062 Q0.4062 -0.4062 0.375 -0.4062 Q0.3438 -0.4062 0.3281 -0.4062 ZM0.4531 -0.4219 Q0.5156 -0.4688 0.5312 -0.5781 L0.5312 -0.5781 L0.5312 -0.5781 Q0.5312 -0.5938 0.5312 -0.6094 Q0.5312 -0.6719 0.4688 -0.6875 Q0.4688 -0.6875 0.4531 -0.6875 Q0.375 -0.6875 0.2969 -0.6094 Q0.2344 -0.5312 0.2031 -0.4219 L0.1562 -0.2344 Q0.1406 -0.1719 0.1406 -0.1562 Q0.1406 -0.0781 0.2031 -0.0312 Q0.2344 -0.0156 0.2812 -0.0156 Q0.3594 -0.0156 0.4219 -0.0938 Q0.4219 -0.1094 0.4219 -0.1094 Q0.4688 -0.1719 0.4688 -0.2812 Q0.4688 -0.2969 0.4688 -0.2969 Q0.4688 -0.3594 0.4531 -0.3906 Q0.4062 -0.375 0.375 -0.375 Q0.2969 -0.375 0.2969 -0.4062 Q0.2969 -0.4375 0.375 -0.4375 Q0.4219 -0.4375 0.4531 -0.4219 Z"></path>
+    </g>
+    <g transform="matrix(20,0,0,20,0,0) translate(13.4179,0.9) scale(0.1,0.1)" style="font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:&#39;jlm_cmmi10&#39;; color-interpolation:linearRGB;">
+     <path style="stroke:none;" d="M0.125 -4.4688 L2.2344 -4.4688 L2.2344 -4.2969 Q2.0312 -4.2969 1.9531 -4.2266 Q1.875 -4.1562 1.875 -4.0469 Q1.875 -3.9219 2.0469 -3.6875 Q2.0938 -3.6094 2.2031 -3.4375 L2.5312 -2.9375 L2.8906 -3.4375 Q3.25 -3.9219 3.25 -4.0469 Q3.25 -4.1562 3.1641 -4.2266 Q3.0781 -4.2969 2.8906 -4.2969 L2.8906 -4.4688 L4.4062 -4.4688 L4.4062 -4.2969 Q4.1719 -4.2812 3.9844 -4.1562 Q3.75 -4 3.3281 -3.4375 L2.7188 -2.625 L3.8438 -1.0156 Q4.25 -0.4375 4.4219 -0.3125 Q4.5938 -0.1875 4.875 -0.1719 L4.875 0 L2.7656 0 L2.7656 -0.1719 Q2.9844 -0.1719 3.1094 -0.2812 Q3.2031 -0.3438 3.2031 -0.4531 Q3.2031 -0.5625 2.8906 -1.0156 L2.2344 -1.9844 L1.5156 -1.0156 Q1.1875 -0.5781 1.1875 -0.5 Q1.1875 -0.375 1.2969 -0.2812 Q1.4062 -0.1875 1.625 -0.1719 L1.625 0 L0.1719 0 L0.1719 -0.1719 Q0.3438 -0.2031 0.4688 -0.2969 Q0.6562 -0.4375 1.0938 -1.0156 L2.0312 -2.2656 L1.1875 -3.5 Q0.8281 -4.0312 0.6328 -4.1641 Q0.4375 -4.2969 0.125 -4.2969 L0.125 -4.4688 Z"></path>
+     <path d="M4.5781 -1.2812 L4.125 0 L0.2188 0 L0.2188 -0.1875 Q1.9375 -1.75 2.6406 -2.75 Q3.3438 -3.75 3.3438 -4.5781 Q3.3438 -5.2031 2.9609 -5.6094 Q2.5781 -6.0156 2.0312 -6.0156 Q1.5469 -6.0156 1.1562 -5.7266 Q0.7656 -5.4375 0.5938 -4.8906 L0.4062 -4.8906 Q0.5312 -5.7969 1.0312 -6.2812 Q1.5312 -6.7656 2.2969 -6.7656 Q3.0938 -6.7656 3.6406 -6.2422 Q4.1875 -5.7188 4.1875 -5.0156 Q4.1875 -4.5156 3.9531 -4.0156 Q3.5781 -3.2188 2.7812 -2.3438 Q1.5625 -1.0156 1.25 -0.7344 L2.9844 -0.7344 Q3.5156 -0.7344 3.7266 -0.7734 Q3.9375 -0.8125 4.1094 -0.9375 Q4.2812 -1.0625 4.4062 -1.2812 L4.5781 -1.2812 Z" style="stroke:none;" transform="scale(10,10) translate(0.5275,0.15) scale(0.07,0.07)"></path>
+     <path d="M0.3281 0.2344 L0.3281 0.2344 Q0.3281 0.25 0.3281 0.25 Q0.3125 0.25 0.2656 0.2031 Q0.2031 0.1406 0.1719 0.0625 Q0.0938 -0.0781 0.0938 -0.25 Q0.0938 -0.4219 0.1562 -0.5625 Q0.2188 -0.6719 0.2969 -0.7344 Q0.3125 -0.75 0.3281 -0.75 Q0.3281 -0.75 0.3281 -0.7344 Q0.3281 -0.7344 0.3125 -0.7188 Q0.1562 -0.5625 0.1562 -0.25 Q0.1562 0.0625 0.3125 0.2188 Q0.3281 0.2344 0.3281 0.2344 Z" style="stroke:none;" transform="scale(10,10) translate(0.5275,0.15) scale(1,1) translate(0.3485,-0.15)"></path>
+    </g>
+    <g transform="matrix(20,0,0,20,0,0) translate(14.6828,0.9) scale(0.1,0.1)" style="font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:&#39;jlm_cmr10&#39;; color-interpolation:linearRGB;">
+     <path style="stroke:none;" d="M1.6094 -5.9375 L1.6094 -4.4688 L2.6562 -4.4688 L2.6562 -4.125 L1.6094 -4.125 L1.6094 -1.2344 Q1.6094 -0.7969 1.7344 -0.6484 Q1.8594 -0.5 2.0625 -0.5 Q2.2188 -0.5 2.3672 -0.5938 Q2.5156 -0.6875 2.6094 -0.8906 L2.7969 -0.8906 Q2.625 -0.4062 2.3125 -0.1641 Q2 0.0781 1.6719 0.0781 Q1.4375 0.0781 1.2266 -0.0469 Q1.0156 -0.1719 0.9141 -0.4062 Q0.8125 -0.6406 0.8125 -1.125 L0.8125 -4.125 L0.0938 -4.125 L0.0938 -4.2969 Q0.3594 -4.4062 0.6406 -4.6562 Q0.9219 -4.9062 1.1406 -5.2656 Q1.2656 -5.4531 1.4531 -5.9375 L1.6094 -5.9375 Z"></path>
+     <path d="M0.2812 -0.25 L0.2812 -0.25 Q0.2812 -0.0781 0.2188 0.0625 Q0.1719 0.1719 0.0938 0.2344 Q0.0781 0.25 0.0625 0.25 Q0.0625 0.25 0.0625 0.2344 Q0.0625 0.2344 0.0625 0.2188 Q0.2344 0.0625 0.2344 -0.25 Q0.2344 -0.5625 0.0781 -0.7188 L0.0781 -0.7188 Q0.0625 -0.7344 0.0625 -0.7344 Q0.0625 -0.75 0.0625 -0.75 Q0.0781 -0.75 0.125 -0.7031 Q0.1875 -0.6406 0.2188 -0.5625 Q0.2812 -0.4219 0.2812 -0.25 Z" style="stroke:none;" transform="scale(10,10) translate(0.3197,0)"></path>
+    </g>
+    <g transform="matrix(20,0,0,20,0,0) translate(15.3914,0.9)" style="font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:&#39;jlm_cmsy10&#39;; color-interpolation:linearRGB;">
+     <path style="stroke:none;" d="M0.2812 -0.5781 L0.2812 -0.5781 L0.2812 -0.3906 Q0.2812 -0.2969 0.375 -0.2656 Q0.3906 -0.2656 0.4062 -0.2656 Q0.4219 -0.2656 0.4219 -0.25 Q0.4219 -0.2344 0.4062 -0.2344 Q0.3438 -0.2344 0.3125 -0.1875 Q0.2812 -0.1719 0.2812 -0.1406 Q0.2812 -0.125 0.2812 -0.0625 L0.2812 0.125 Q0.2812 0.1875 0.2031 0.2188 Q0.1562 0.25 0.0938 0.25 Q0.0781 0.25 0.0781 0.2344 Q0.0781 0.2344 0.0781 0.2344 Q0.1562 0.2188 0.1875 0.1875 L0.1875 0.1875 Q0.2188 0.1562 0.2188 0.1094 Q0.2188 0.1094 0.2188 0.0625 L0.2188 -0.1094 Q0.2188 -0.1875 0.2812 -0.2344 Q0.3125 -0.2344 0.3281 -0.25 Q0.2344 -0.2812 0.2188 -0.3594 Q0.2188 -0.3594 0.2188 -0.4375 L0.2188 -0.5938 Q0.2188 -0.625 0.2188 -0.6406 Q0.2031 -0.6875 0.1406 -0.7188 Q0.125 -0.7188 0.0938 -0.7344 Q0.0781 -0.7344 0.0781 -0.7344 Q0.0781 -0.75 0.0938 -0.75 Q0.1719 -0.75 0.2188 -0.7188 L0.2344 -0.7188 Q0.2812 -0.6875 0.2812 -0.625 L0.2812 -0.625 L0.2812 -0.625 Q0.2812 -0.6094 0.2812 -0.5781 Z"></path>
+    </g>
+   </g>
+  </svg>&nbsp;</span></p> 
+<p>上式对于任何标量值α和β都成立。这是线性系统设计的一个基本属性，称为叠加。因此，如果这个方程无效，系统就被称为非线性系统。也就是说，当系统是线性的时，可以应用叠加原理。这一重要事实正是线性系统分析技术如此发达的原因。 </p></div></div><div id="par_14995466533994766"><h2 class="title">2 应用<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><h3>2.1 <span>噪音消除</span></h3> 
+<p>信号在传输或处理过程中经常被破坏；滤波器设计的一个常见目标是恢复原始信号，这一过程通常被称为“噪声消除”。最简单的破坏类型是加性噪声(additional noise)，当所需的信号S被加上与S没有已知联系的无用信号N时，如果噪声N具有简单的统计描述，例如高斯噪声，那么卡尔曼滤波器将可以减少N并将S恢复到香农定理允许的程度。特别是，如果S和N在频域不重叠，它们可以被线性带通滤波器完全分离。 </p>
+<p>另一方面，对于几乎任何其他形式的噪声，需要某种非线性滤波器来最大限度地恢复信号。例如，对于乘性噪声(与信号相乘，而不是相加)，需要将输入转换为对数标度，应用线性滤波器，然后将结果转换为回线性标度。在本例中，第一步和第三步不是线性的。 </p>
+<p>当信号的某些“非线性”特征比整体信息内容更重要时，非线性滤波器也可能有用。例如，在数字图像处理中，人们可能希望保持照片中物体轮廓边缘的清晰度，或保持扫描图纸中线条的连通性。线性去噪滤波器通常会模糊这些特征；而非线性滤波器可能会产生更令人满意的结果(即使在信息论意义上模糊图像可能更“正确”)。 </p>
+<p>许多非线性去噪滤波器工作在时域中。他们通常检查每个样本周围有限窗口内的数字输入信号，并使用一些统计推断模型(隐式或显式)来估计该点原始信号的最可能值。这种滤波器的设计在估计理论和控制理论中被称为随机过程的滤波问题。 </p>
+<p>非线性滤波器的例子包括: </p> 
+<ul>
+ <li>锁相环</li> 
+ <li>探测器</li> 
+ <li>混合器</li> 
+ <li>中值滤波器</li> 
+ <li>Ranklets滤波器</li>
+</ul> 
+<p>非线性滤波器在图像处理功能中也占有决定性的地位。在实时图像处理的典型流程中，通常使用许多非线性滤波器来形成、成形、检测和处理图像信息。此外，使用自适应过滤器规则生成的这些过滤器，每一种类型都可以参数化，以便可以在特定环境下以一种方式工作，而在不同环境下以另一种方式工作。它们的目标从噪声消除到特征提取各不相同。过滤图像数据是几乎所有图像处理系统中使用的标准过程。非线性滤波器是最常用的滤波器结构形式。如果图像包含少量噪声，但幅度相对较高，则中值滤波器可能更合适。 </p> 
+<h3>2.2 <span>Kushner-Stratonovich滤波</span></h3> 
+<p>20世纪50年代末和60年代初，Ruslan L.Stratonovich<sup><a href="https://web.archive.org/web/20221025114447/https://baike.sogou.com/kexue/d10699.htm#quote_1" class="kx_ref">[1]</a></sup><sup><a href="https://web.archive.org/web/20221025114447/https://baike.sogou.com/kexue/d10699.htm#quote_2" class="kx_ref">[2]</a></sup><sup><a href="https://web.archive.org/web/20221025114447/https://baike.sogou.com/kexue/d10699.htm#quote_3" class="kx_ref">[3]</a></sup><sup><a href="https://web.archive.org/web/20221025114447/https://baike.sogou.com/kexue/d10699.htm#quote_4" class="kx_ref">[4]</a></sup> 和Harold J.Kushner<sup><a href="https://web.archive.org/web/20221025114447/https://baike.sogou.com/kexue/d10699.htm#quote_5" class="kx_ref">[5]</a></sup>解决了最优非线性滤波问题。 </p>
+<p>kushner—Stratonovich解是一个随机偏微分方程。1969年，Moshe Zakai为滤波器的非标准化条件定律引入了简化动力学，称为Zakai方程。<sup><a href="https://web.archive.org/web/20221025114447/https://baike.sogou.com/kexue/d10699.htm#quote_6" class="kx_ref">[6]</a></sup>Mireille Chaleyat-Maurel和Dominique Michel<sup><a href="https://web.archive.org/web/20221025114447/https://baike.sogou.com/kexue/d10699.htm#quote_7" class="kx_ref">[7]</a></sup> 证明了该解一般是无限维的，因此需要用有限维近似。这些解可能是启发式的，例如扩展卡尔曼滤波器或由Peter S. Maybeck描述的假定密度滤波器 <sup><a href="https://web.archive.org/web/20221025114447/https://baike.sogou.com/kexue/d10699.htm#quote_8" class="kx_ref">[8]</a></sup> 或由达Damiano Brigo, Bernard Hanzon and François Le Gland引入的投影滤波器，<sup><a href="https://web.archive.org/web/20221025114447/https://baike.sogou.com/kexue/d10699.htm#quote_9" class="kx_ref">[9]</a></sup> 它们的一些子类被证明与假定密度滤波器相一致。<sup><a href="https://web.archive.org/web/20221025114447/https://baike.sogou.com/kexue/d10699.htm#quote_10" class="kx_ref">[10]</a></sup> </p> 
+<h3>2.3 <span>能量转移过滤器</span></h3> 
+<p>能量转换滤波器是一类非线性动态滤波器，用于以设计的方式转换能量。<sup><a href="https://web.archive.org/web/20221025114447/https://baike.sogou.com/kexue/d10699.htm#quote_11" class="kx_ref">[11]</a></sup> 能量可以被转换到更高或更低的频段，在设计范围内传播，或者聚焦在某一频段。许多能量传递滤波器的设计是可行的，并且这些设计在滤波器设计中提供了额外的自由度，而使用线性设计时则是不可能的。 </p></div></div></div></div><div id="references"><h2 class="title" id="par_references">参考文献</h2><ul class="references"><li id="quote_1"><span class="references-num">[1]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Ruslan L. Stratonovich (1959), Optimum nonlinear systems which bring about a separation of a signal with constant parameters from noise. Radiofizika, volume 2,issue 6, pages 892–901..</span></p></li><li id="quote_2"><span class="references-num">[2]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Ruslan L. Stratonovich (1959). On the theory of optimal non-linear filtering of random functions. Theory of Probability and Its Applications, volume 4, pages 223–225..</span></p></li><li id="quote_3"><span class="references-num">[3]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Ruslan L. Stratonovich (1960), Application of the Markov processes theory to optimal filtering. Radio Engineering and Electronic Physics, volume 5, issue 11, pages 1–19..</span></p></li><li id="quote_4"><span class="references-num">[4]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Ruslan L. Stratonovich (1960), Conditional Markov Processes. Theory of Probability and Its Applications, volume 5, pages 156–178..</span></p></li><li id="quote_5"><span class="references-num">[5]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Kushner, Harold. (1967), Nonlinear filtering: The exact dynamical equations satisfied by the conditional mode. IEEE Transactions on Automatic Control, volume 12, issue 3, pages 262–267.</span></p></li><li id="quote_6"><span class="references-num">[6]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Moshe Zakai (1969), On the optimal filtering of diffusion processes. Zeitung Wahrsch., volume 11, pages 230–243. MR242552 Zbl 0164.19201 doi:10.1007/BF00536382.</span></p></li><li id="quote_7"><span class="references-num">[7]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Chaleyat-Maurel, Mireille and Dominique Michel (1984), Des resultats de non existence de filtre de dimension finie. Stochastics, volume 13, issue 1+2, pages 83–102..</span></p></li><li id="quote_8"><span class="references-num">[8]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Peter S. Maybeck (1979), Stochastic models, estimation, and control. Volume 141, Series Mathematics in Science and Engineering, Academic Press.</span></p></li><li id="quote_9"><span class="references-num">[9]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Damiano Brigo, Bernard Hanzon, and François LeGland (1998) A Differential Geometric approach to nonlinear filtering: the Projection Filter, IEEE Transactions on Automatic Control, volume 43, issue 2, pages 247–252..</span></p></li><li id="quote_10"><span class="references-num">[10]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Damiano Brigo, Bernard Hanzon, and François LeGland (1999), Approximate Nonlinear Filtering by Projection on Exponential Manifolds of Densities, Bernoulli, volume 5, issue 3, pages 495–534.</span></p></li><li id="quote_11"><span class="references-num">[11]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Billings S.A. "Nonlinear System Identification: NARMAX Methods in the Time, Frequency, and Spatio-Temporal Domains". Wiley, 2013.</span></p></li></ul></div><div class="read-num">阅读 <!-- -->68</div></div><div class="right-side" id="rightSide"><div class="side" id="lemma-side"><div class="side-title">版本记录</div><ul class="side-lst"><li><p class="side-lst-txt">暂无</p></li></ul><div class="user-card userCard"></div></div><div class="side"><div class="side-event"></div></div></div></div><div class="footer-box"><div id="footer"><div class="footer-logo-wrap"><div class="footer-logo"></div><div class="footer-logo-text">知识·传播·科普</div></div><div class="footer-info">本网站内容采用<a target="_blank" href="https://web.archive.org/web/20221025114447/https://creativecommons.org/licenses/by-sa/3.0/deed.zh?tdsourcetag=s_pctim_aiomsg">CC-BY-SA 3.0</a>授权</div><div class="footer-btn-wrap"><a target="_blank" href="https://web.archive.org/web/20221025114447/https://baike.sogou.com/help/#user_protocol">用户协议</a><a target="_blank" href="https://web.archive.org/web/20221025114447/http://www.sogou.com/docs/terms.htm?v=1">免责声明</a><a target="_blank" href="https://web.archive.org/web/20221025114447/http://corp.sogou.com/private.html">隐私政策</a><a target="_blank" href="https://web.archive.org/web/20221025114447/https://baike.sogou.com/kexue/intro.htm">关于我们</a></div></div></div><script>window.lemmaInfo ={"lemmaId":"10699","versionId":"14995466601103876","title":"非线性滤波器","subtitle":"","abstracts":{"paragraphId":"14995466533994764","title":"简介","versionId":"14995466601103877","lemmaId":10699,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":76031342,"name":"胡信鹏","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1576233994,"comment":null,"dependVersionId":0,"contentType":2,"content":"<p>在信号处理中，<b>非线性滤波器</b>是输出不是输入线性函数的滤波器。也就是说，如果滤波器分别有两个输入信号r、s和输出信号R、S，但是当输入是线性组合αr + βs时，其输出不总是αR + βS。 </p>\n<p>连续域和离散域滤波器都可能是非线性的。前者一个简单的例子是输出电压在任何时刻都是输入电压平方的电气设备；或是一个输入被限幅到固定范围[a，b]的设备，即R(t) =max(a，min(b，R(t))。后者一个重要的例子是中值滤波器，每个输出样本R<sub>i</sub>都是最后三个输入样本r<sub>i</sub>、r<sub>i -1</sub>、r<sub>i -2</sub>的中值。像线性滤波器一样，非线性滤波器的相位可能变，也可能不变。 </p>\n<p>非线性滤波器有许多应用，特别是在去除某些非加性噪声方面。例如，中值滤波器被广泛用于去除尖峰噪声——尖峰噪声仅影响一小部分样本，但影响量可能非常大。事实上，所有无线电接收机都使用非线性滤波器将KHz到GHz的信号转换到音频范围内；所有数字信号处理都依赖于非线性滤波器(模数转换器)将模拟信号转换成数字信号。 </p>\n<p>然而，非线性滤波器比线性滤波器更难使用和设计，因为信号分析最强大的数学工具(如脉冲响应和频率响应)不适用于它们。因此，例如线性滤波器经常被用来消除由非线性过程产生的噪声和失真，这仅仅是因为适当的非线性滤波器太难设计和构造。 </p>\n<p>综上所述，可知非线性滤波器与线性滤波器相比具有非常不同的行为。最重要的特征是，对于非线性滤波器，滤波器的输出或响应不符合前面概述的原则，特别是缩放和移位不变性。此外，非线性滤波器会产生以非直观方式变化的结果。 </p>\n<p>简而言之，非线性滤波器是输出不是其输入线性函数的滤波器。也就是说，如果滤波器分别为两个输入信号r和s输出信号R和S，但是当输入是线性组合a*r + b*s时，其输出并不总是a*R + b*S。 </p>","pics":null,"card":null,"references":[],"versionCount":0},"card":{"paragraphId":"0","title":null,"versionId":"0","lemmaId":0,"createType":0,"creator":null,"createTime":0,"versionEditor":null,"editTime":0,"comment":null,"dependVersionId":0,"contentType":0,"content":null,"pics":null,"card":null,"references":null,"versionCount":0},"categories":[{"id":6,"name":"机械工程","parents":[]}],"creator":{"uid":31221062,"name":"张志煌","pic":"https://web.archive.org/web/20221025114447/https://cache.soso.com/qlogo/g?b=oidb&k=yI5YsiaWJ2vMgkUriabwpoPQ&s=100&t=1555539303","introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":"","jobBrief":"","role":0,"roleName":null,"title":"","professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":151,"partnerIdCreateTime":1595844883,"partnerIdPoped":false},"createTime":1569227158,"editor":{"uid":76031342,"name":"胡信鹏","pic":"https://web.archive.org/web/20221025114447/https://cache.soso.com/qlogo/g?b=oidb&k=c3YteA4f6HnkW0t3lYHphA&s=100&t=1555293569","introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":"","jobBrief":"","role":0,"roleName":null,"title":"","professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":160,"partnerIdCreateTime":1595844886,"partnerIdPoped":false},"editTime":1576233994,"state":1,"versionCount":2,"upNum":0,"downNum":0,"pics":[],"catalogs":[{"level":1,"title":"线性系统","paragraphId":"14995466533994765","subCatalogs":null},{"level":1,"title":"应用","paragraphId":"14995466533994766","subCatalogs":[{"level":2,"title":"噪音消除","paragraphId":"14995466533994766","subCatalogs":null},{"level":2,"title":"<b>Kushner-Stratonovich滤波</b>","paragraphId":"14995466533994766","subCatalogs":null},{"level":2,"title":"能量转移过滤器","paragraphId":"14995466533994766","subCatalogs":null}]},{"level":1,"title":"参考文献","paragraphId":"-1","subCatalogs":null}],"paragraphs":[{"paragraphId":"14995466533994765","title":"线性系统","versionId":"14995466601103878","lemmaId":10699,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":76031342,"name":"胡信鹏","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1576233994,"comment":null,"dependVersionId":0,"contentType":1,"content":"<p>一个线性系统由几个原则定义。线性的基本定义是输出必须是输入的线性函数，即 </p> \n<p><span class=\"kx_formula\" alt=\"{\\displaystyle \\alpha y_{1}(t)+\\beta y_{2}(t)=H\\left\\{\\alpha x_{1}(t)+\\beta x_{2}(t)\\right\\}}\">\n  <svg xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"fill-opacity:1; color-rendering:auto; color-interpolation:auto; text-rendering:auto; stroke:black; stroke-linecap:square; stroke-miterlimit:10; shape-rendering:auto; stroke-opacity:1; fill:black; stroke-dasharray:none; font-weight:normal; stroke-width:1; font-family:'Dialog'; font-style:normal; stroke-linejoin:miter; font-size:12px; stroke-dashoffset:0; image-rendering:auto;\" width=\"318\" height=\"27\" xmlns=\"http://www.w3.org/2000/svg\" class=\"transfer_formula\">\n   <!--Generated by the Batik Graphics2D SVG Generator-->\n   <defs id=\"genericDefs\" />\n   <g>\n    <g transform=\"scale(20,20) translate(0,0.9)\" style=\"font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:'jlm_cmmi10'; color-interpolation:linearRGB;\">\n     <path style=\"stroke:none;\" d=\"M0.4844 -0.2344 L0.4844 -0.2344 L0.4844 -0.1719 Q0.5469 -0.25 0.5781 -0.375 Q0.5781 -0.3906 0.5938 -0.3906 Q0.6094 -0.3906 0.6094 -0.3906 Q0.6094 -0.3594 0.5781 -0.3125 Q0.5469 -0.2188 0.4844 -0.1406 Q0.4844 -0.125 0.4844 -0.1094 Q0.4844 -0.0156 0.5078 -0.0156 Q0.5312 -0.0156 0.5625 -0.0469 Q0.5625 -0.0469 0.5625 -0.0625 Q0.5625 -0.0625 0.5781 -0.0625 Q0.5938 -0.0625 0.5938 -0.0625 Q0.5938 -0.0469 0.5625 -0.0156 Q0.5312 0.0156 0.5 0.0156 Q0.4375 0.0156 0.4219 -0.0625 Q0.4219 -0.0625 0.4062 -0.0781 Q0.3125 0.0156 0.2031 0.0156 Q0.1094 0.0156 0.0625 -0.0625 Q0.0469 -0.1094 0.0469 -0.1562 Q0.0469 -0.2656 0.125 -0.3438 Q0.2031 -0.4375 0.2969 -0.4375 Q0.2969 -0.4375 0.3125 -0.4375 Q0.3906 -0.4375 0.4375 -0.375 Q0.4375 -0.375 0.4375 -0.375 Q0.4844 -0.3281 0.4844 -0.2344 ZM0.4062 -0.0938 L0.4062 -0.0938 Q0.4062 -0.1094 0.4062 -0.2188 Q0.4062 -0.3281 0.375 -0.375 Q0.375 -0.4062 0.3594 -0.4062 L0.3438 -0.4062 L0.3438 -0.4062 L0.3438 -0.4062 Q0.3281 -0.4219 0.3125 -0.4219 Q0.2344 -0.4219 0.1875 -0.3438 L0.1719 -0.3281 Q0.1406 -0.2656 0.125 -0.1719 Q0.1094 -0.1406 0.1094 -0.125 Q0.1094 -0.0312 0.1719 -0.0156 Q0.1875 -0.0156 0.2031 -0.0156 Q0.3125 -0.0156 0.4062 -0.0938 Z\" />\n    </g>\n    <g transform=\"matrix(20,0,0,20,0,0) translate(0.6397,0.9) scale(0.1,0.1)\" style=\"font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:'jlm_cmmi10'; color-interpolation:linearRGB;\">\n     <path style=\"stroke:none;\" d=\"M0.0625 -4.4688 L2.1406 -4.4688 L2.1406 -4.2969 L2.0469 -4.2969 Q1.8281 -4.2969 1.7188 -4.2031 Q1.6094 -4.1094 1.6094 -3.9531 Q1.6094 -3.7656 1.7656 -3.4375 L2.8594 -1.1719 L3.8594 -3.6406 Q3.9375 -3.8438 3.9375 -4.0469 Q3.9375 -4.125 3.9062 -4.1719 Q3.8594 -4.2344 3.7812 -4.2656 Q3.7031 -4.2969 3.4844 -4.2969 L3.4844 -4.4688 L4.9375 -4.4688 L4.9375 -4.2969 Q4.7656 -4.2656 4.6641 -4.2109 Q4.5625 -4.1562 4.4531 -4 Q4.4062 -3.9219 4.2812 -3.625 L2.4688 0.8438 Q2.2031 1.5 1.7734 1.8281 Q1.3438 2.1562 0.9531 2.1562 Q0.6562 2.1562 0.4688 1.9922 Q0.2812 1.8281 0.2812 1.6094 Q0.2812 1.4062 0.4219 1.2812 Q0.5625 1.1562 0.7969 1.1562 Q0.9531 1.1562 1.2344 1.2656 Q1.4219 1.3438 1.4688 1.3438 Q1.625 1.3438 1.7969 1.1875 Q1.9688 1.0312 2.1406 0.5938 L2.4688 -0.1719 L0.8594 -3.5469 Q0.7812 -3.7031 0.625 -3.9219 Q0.5 -4.0938 0.4219 -4.1562 Q0.3125 -4.2344 0.0625 -4.2969 L0.0625 -4.4688 Z\" />\n     <path d=\"M1.1719 -5.9688 L2.7812 -6.7656 L2.9375 -6.7656 L2.9375 -1.1719 Q2.9375 -0.6094 2.9844 -0.4766 Q3.0312 -0.3438 3.1797 -0.2656 Q3.3281 -0.1875 3.7812 -0.1875 L3.7812 0 L1.2969 0 L1.2969 -0.1875 Q1.7656 -0.1875 1.8984 -0.2578 Q2.0312 -0.3281 2.0859 -0.4531 Q2.1406 -0.5781 2.1406 -1.1719 L2.1406 -4.7344 Q2.1406 -5.4688 2.0938 -5.6719 Q2.0625 -5.8281 1.9688 -5.8984 Q1.875 -5.9688 1.75 -5.9688 Q1.5625 -5.9688 1.25 -5.8281 L1.1719 -5.9688 Z\" style=\"stroke:none;\" transform=\"scale(10,10) translate(0.5337,0.2506) scale(0.07,0.07)\" />\n     <path d=\"M0.3281 0.2344 L0.3281 0.2344 Q0.3281 0.25 0.3281 0.25 Q0.3125 0.25 0.2656 0.2031 Q0.2031 0.1406 0.1719 0.0625 Q0.0938 -0.0781 0.0938 -0.25 Q0.0938 -0.4219 0.1562 -0.5625 Q0.2188 -0.6719 0.2969 -0.7344 Q0.3125 -0.75 0.3281 -0.75 Q0.3281 -0.75 0.3281 -0.7344 Q0.3281 -0.7344 0.3125 -0.7188 Q0.1562 -0.5625 0.1562 -0.25 Q0.1562 0.0625 0.3125 0.2188 Q0.3281 0.2344 0.3281 0.2344 Z\" style=\"stroke:none;\" transform=\"scale(10,10) translate(0.5337,0.2506) scale(1,1) translate(0.2927,-0.2506)\" />\n    </g>\n    <g transform=\"matrix(20,0,0,20,0,0) translate(1.855,0.9) scale(0.1,0.1)\" style=\"font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:'jlm_cmr10'; color-interpolation:linearRGB;\">\n     <path style=\"stroke:none;\" d=\"M1.6094 -5.9375 L1.6094 -4.4688 L2.6562 -4.4688 L2.6562 -4.125 L1.6094 -4.125 L1.6094 -1.2344 Q1.6094 -0.7969 1.7344 -0.6484 Q1.8594 -0.5 2.0625 -0.5 Q2.2188 -0.5 2.3672 -0.5938 Q2.5156 -0.6875 2.6094 -0.8906 L2.7969 -0.8906 Q2.625 -0.4062 2.3125 -0.1641 Q2 0.0781 1.6719 0.0781 Q1.4375 0.0781 1.2266 -0.0469 Q1.0156 -0.1719 0.9141 -0.4062 Q0.8125 -0.6406 0.8125 -1.125 L0.8125 -4.125 L0.0938 -4.125 L0.0938 -4.2969 Q0.3594 -4.4062 0.6406 -4.6562 Q0.9219 -4.9062 1.1406 -5.2656 Q1.2656 -5.4531 1.4531 -5.9375 L1.6094 -5.9375 Z\" />\n     <path d=\"M0.2812 -0.25 L0.2812 -0.25 Q0.2812 -0.0781 0.2188 0.0625 Q0.1719 0.1719 0.0938 0.2344 Q0.0781 0.25 0.0625 0.25 Q0.0625 0.25 0.0625 0.2344 Q0.0625 0.2344 0.0625 0.2188 Q0.2344 0.0625 0.2344 -0.25 Q0.2344 -0.5625 0.0781 -0.7188 L0.0781 -0.7188 Q0.0625 -0.7344 0.0625 -0.7344 Q0.0625 -0.75 0.0625 -0.75 Q0.0781 -0.75 0.125 -0.7031 Q0.1875 -0.6406 0.2188 -0.5625 Q0.2812 -0.4219 0.2812 -0.25 Z\" style=\"stroke:none;\" transform=\"scale(10,10) translate(0.3197,0)\" />\n    </g>\n    <g transform=\"matrix(20,0,0,20,0,0) translate(2.7858,0.9)\" style=\"font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:'jlm_cmr10'; color-interpolation:linearRGB;\">\n     <path style=\"stroke:none;\" d=\"M0.4062 -0.2344 L0.4062 0.0469 Q0.4062 0.0781 0.3906 0.0781 Q0.375 0.0781 0.375 0.0469 L0.375 -0.2344 L0.0938 -0.2344 Q0.0625 -0.2344 0.0625 -0.25 Q0.0625 -0.2656 0.0938 -0.2656 L0.375 -0.2656 L0.375 -0.5469 Q0.375 -0.5781 0.3906 -0.5781 Q0.4062 -0.5781 0.4062 -0.5469 L0.4062 -0.2656 L0.6875 -0.2656 Q0.7188 -0.2656 0.7188 -0.25 Q0.7188 -0.2344 0.6875 -0.2344 L0.4062 -0.2344 Z\" />\n    </g>\n    <g transform=\"matrix(20,0,0,20,0,0) translate(3.7858,0.9)\" style=\"font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:'jlm_cmmi10'; color-interpolation:linearRGB;\">\n     <path style=\"stroke:none;\" d=\"M0.0312 0.1719 L0.1875 -0.4375 Q0.2031 -0.5469 0.2969 -0.625 Q0.375 -0.7031 0.4531 -0.7031 Q0.5312 -0.7031 0.5781 -0.6406 Q0.5938 -0.6094 0.5938 -0.5781 Q0.5938 -0.5 0.5312 -0.4375 Q0.5 -0.4219 0.4844 -0.4062 Q0.5469 -0.3594 0.5469 -0.2656 Q0.5469 -0.1562 0.4688 -0.0781 Q0.3906 0 0.2969 0.0156 L0.2812 0.0156 Q0.1875 0.0156 0.1406 -0.0625 Q0.125 -0.0781 0.125 -0.1094 L0.0469 0.1875 L0.0469 0.1875 Q0.0469 0.1875 0.0312 0.1875 Q0.0312 0.1875 0.0312 0.1875 Q0.0312 0.1875 0.0312 0.1719 ZM0.3281 -0.4062 Q0.3438 -0.3906 0.375 -0.3906 Q0.4062 -0.3906 0.4219 -0.4062 Q0.4062 -0.4062 0.375 -0.4062 Q0.3438 -0.4062 0.3281 -0.4062 ZM0.4531 -0.4219 Q0.5156 -0.4688 0.5312 -0.5781 L0.5312 -0.5781 L0.5312 -0.5781 Q0.5312 -0.5938 0.5312 -0.6094 Q0.5312 -0.6719 0.4688 -0.6875 Q0.4688 -0.6875 0.4531 -0.6875 Q0.375 -0.6875 0.2969 -0.6094 Q0.2344 -0.5312 0.2031 -0.4219 L0.1562 -0.2344 Q0.1406 -0.1719 0.1406 -0.1562 Q0.1406 -0.0781 0.2031 -0.0312 Q0.2344 -0.0156 0.2812 -0.0156 Q0.3594 -0.0156 0.4219 -0.0938 Q0.4219 -0.1094 0.4219 -0.1094 Q0.4688 -0.1719 0.4688 -0.2812 Q0.4688 -0.2969 0.4688 -0.2969 Q0.4688 -0.3594 0.4531 -0.3906 Q0.4062 -0.375 0.375 -0.375 Q0.2969 -0.375 0.2969 -0.4062 Q0.2969 -0.4375 0.375 -0.4375 Q0.4219 -0.4375 0.4531 -0.4219 Z\" />\n    </g>\n    <g transform=\"matrix(20,0,0,20,0,0) translate(4.3515,0.9) scale(0.1,0.1)\" style=\"font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:'jlm_cmmi10'; color-interpolation:linearRGB;\">\n     <path style=\"stroke:none;\" d=\"M0.0625 -4.4688 L2.1406 -4.4688 L2.1406 -4.2969 L2.0469 -4.2969 Q1.8281 -4.2969 1.7188 -4.2031 Q1.6094 -4.1094 1.6094 -3.9531 Q1.6094 -3.7656 1.7656 -3.4375 L2.8594 -1.1719 L3.8594 -3.6406 Q3.9375 -3.8438 3.9375 -4.0469 Q3.9375 -4.125 3.9062 -4.1719 Q3.8594 -4.2344 3.7812 -4.2656 Q3.7031 -4.2969 3.4844 -4.2969 L3.4844 -4.4688 L4.9375 -4.4688 L4.9375 -4.2969 Q4.7656 -4.2656 4.6641 -4.2109 Q4.5625 -4.1562 4.4531 -4 Q4.4062 -3.9219 4.2812 -3.625 L2.4688 0.8438 Q2.2031 1.5 1.7734 1.8281 Q1.3438 2.1562 0.9531 2.1562 Q0.6562 2.1562 0.4688 1.9922 Q0.2812 1.8281 0.2812 1.6094 Q0.2812 1.4062 0.4219 1.2812 Q0.5625 1.1562 0.7969 1.1562 Q0.9531 1.1562 1.2344 1.2656 Q1.4219 1.3438 1.4688 1.3438 Q1.625 1.3438 1.7969 1.1875 Q1.9688 1.0312 2.1406 0.5938 L2.4688 -0.1719 L0.8594 -3.5469 Q0.7812 -3.7031 0.625 -3.9219 Q0.5 -4.0938 0.4219 -4.1562 Q0.3125 -4.2344 0.0625 -4.2969 L0.0625 -4.4688 Z\" />\n     <path d=\"M4.5781 -1.2812 L4.125 0 L0.2188 0 L0.2188 -0.1875 Q1.9375 -1.75 2.6406 -2.75 Q3.3438 -3.75 3.3438 -4.5781 Q3.3438 -5.2031 2.9609 -5.6094 Q2.5781 -6.0156 2.0312 -6.0156 Q1.5469 -6.0156 1.1562 -5.7266 Q0.7656 -5.4375 0.5938 -4.8906 L0.4062 -4.8906 Q0.5312 -5.7969 1.0312 -6.2812 Q1.5312 -6.7656 2.2969 -6.7656 Q3.0938 -6.7656 3.6406 -6.2422 Q4.1875 -5.7188 4.1875 -5.0156 Q4.1875 -4.5156 3.9531 -4.0156 Q3.5781 -3.2188 2.7812 -2.3438 Q1.5625 -1.0156 1.25 -0.7344 L2.9844 -0.7344 Q3.5156 -0.7344 3.7266 -0.7734 Q3.9375 -0.8125 4.1094 -0.9375 Q4.2812 -1.0625 4.4062 -1.2812 L4.5781 -1.2812 Z\" style=\"stroke:none;\" transform=\"scale(10,10) translate(0.5338,0.2506) scale(0.07,0.07)\" />\n     <path d=\"M0.3281 0.2344 L0.3281 0.2344 Q0.3281 0.25 0.3281 0.25 Q0.3125 0.25 0.2656 0.2031 Q0.2031 0.1406 0.1719 0.0625 Q0.0938 -0.0781 0.0938 -0.25 Q0.0938 -0.4219 0.1562 -0.5625 Q0.2188 -0.6719 0.2969 -0.7344 Q0.3125 -0.75 0.3281 -0.75 Q0.3281 -0.75 0.3281 -0.7344 Q0.3281 -0.7344 0.3125 -0.7188 Q0.1562 -0.5625 0.1562 -0.25 Q0.1562 0.0625 0.3125 0.2188 Q0.3281 0.2344 0.3281 0.2344 Z\" style=\"stroke:none;\" transform=\"scale(10,10) translate(0.5338,0.2506) scale(1,1) translate(0.3485,-0.2506)\" />\n    </g>\n    <g transform=\"matrix(20,0,0,20,0,0) translate(5.6226,0.9) scale(0.1,0.1)\" style=\"font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:'jlm_cmr10'; color-interpolation:linearRGB;\">\n     <path style=\"stroke:none;\" d=\"M1.6094 -5.9375 L1.6094 -4.4688 L2.6562 -4.4688 L2.6562 -4.125 L1.6094 -4.125 L1.6094 -1.2344 Q1.6094 -0.7969 1.7344 -0.6484 Q1.8594 -0.5 2.0625 -0.5 Q2.2188 -0.5 2.3672 -0.5938 Q2.5156 -0.6875 2.6094 -0.8906 L2.7969 -0.8906 Q2.625 -0.4062 2.3125 -0.1641 Q2 0.0781 1.6719 0.0781 Q1.4375 0.0781 1.2266 -0.0469 Q1.0156 -0.1719 0.9141 -0.4062 Q0.8125 -0.6406 0.8125 -1.125 L0.8125 -4.125 L0.0938 -4.125 L0.0938 -4.2969 Q0.3594 -4.4062 0.6406 -4.6562 Q0.9219 -4.9062 1.1406 -5.2656 Q1.2656 -5.4531 1.4531 -5.9375 L1.6094 -5.9375 Z\" />\n     <path d=\"M0.2812 -0.25 L0.2812 -0.25 Q0.2812 -0.0781 0.2188 0.0625 Q0.1719 0.1719 0.0938 0.2344 Q0.0781 0.25 0.0625 0.25 Q0.0625 0.25 0.0625 0.2344 Q0.0625 0.2344 0.0625 0.2188 Q0.2344 0.0625 0.2344 -0.25 Q0.2344 -0.5625 0.0781 -0.7188 L0.0781 -0.7188 Q0.0625 -0.7344 0.0625 -0.7344 Q0.0625 -0.75 0.0625 -0.75 Q0.0781 -0.75 0.125 -0.7031 Q0.1875 -0.6406 0.2188 -0.5625 Q0.2812 -0.4219 0.2812 -0.25 Z\" style=\"stroke:none;\" transform=\"scale(10,10) translate(0.3197,0)\" />\n    </g>\n    <g transform=\"matrix(20,0,0,20,0,0) translate(6.6089,0.9)\" style=\"font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:'jlm_cmr10'; color-interpolation:linearRGB;\">\n     <path style=\"stroke:none;\" d=\"M0.6875 -0.3281 L0.0938 -0.3281 Q0.0625 -0.3281 0.0625 -0.3438 Q0.0625 -0.3594 0.0938 -0.3594 L0.6875 -0.3594 Q0.7188 -0.3594 0.7188 -0.3438 Q0.7188 -0.3281 0.6875 -0.3281 ZM0.6875 -0.1406 L0.0938 -0.1406 Q0.0625 -0.1406 0.0625 -0.1562 Q0.0625 -0.1719 0.0938 -0.1719 L0.6875 -0.1719 Q0.7188 -0.1719 0.7188 -0.1562 Q0.7188 -0.1406 0.6875 -0.1406 Z\" />\n    </g>\n    <g transform=\"matrix(20,0,0,20,0,0) translate(7.6645,0.9) scale(0.1,0.1)\" style=\"font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:'jlm_cmr10'; color-interpolation:linearRGB;\">\n     <path style=\"stroke:none;\" d=\"M2.0625 -3.5469 L5.125 -3.5469 L5.125 -5.4375 Q5.125 -5.9531 5.0625 -6.1094 Q5.0156 -6.2344 4.8594 -6.3281 Q4.6562 -6.4375 4.4219 -6.4375 L4.1875 -6.4375 L4.1875 -6.625 L7.0156 -6.625 L7.0156 -6.4375 L6.7812 -6.4375 Q6.5469 -6.4375 6.3438 -6.3281 Q6.1875 -6.25 6.125 -6.0938 Q6.0625 -5.9375 6.0625 -5.4375 L6.0625 -1.1719 Q6.0625 -0.6719 6.1406 -0.5156 Q6.1875 -0.3906 6.3281 -0.2969 Q6.5469 -0.1875 6.7812 -0.1875 L7.0156 -0.1875 L7.0156 0 L4.1875 0 L4.1875 -0.1875 L4.4219 -0.1875 Q4.8281 -0.1875 5.0156 -0.4219 Q5.125 -0.5781 5.125 -1.1719 L5.125 -3.1875 L2.0625 -3.1875 L2.0625 -1.1719 Q2.0625 -0.6719 2.125 -0.5156 Q2.1719 -0.3906 2.3281 -0.2969 Q2.5312 -0.1875 2.7656 -0.1875 L3.0156 -0.1875 L3.0156 0 L0.1719 0 L0.1719 -0.1875 L0.4062 -0.1875 Q0.8125 -0.1875 1 -0.4219 Q1.125 -0.5781 1.125 -1.1719 L1.125 -5.4375 Q1.125 -5.9531 1.0625 -6.1094 Q1 -6.2344 0.8594 -6.3281 Q0.6406 -6.4375 0.4062 -6.4375 L0.1719 -6.4375 L0.1719 -6.625 L3.0156 -6.625 L3.0156 -6.4375 L2.7656 -6.4375 Q2.5312 -6.4375 2.3281 -6.3281 Q2.1719 -6.25 2.1172 -6.0938 Q2.0625 -5.9375 2.0625 -5.4375 L2.0625 -3.5469 Z\" />\n     <path d=\"M0.2812 -0.5625 L0.2812 -0.3906 Q0.2812 -0.3125 0.2188 -0.2656 Q0.1875 -0.2656 0.1719 -0.25 Q0.2656 -0.2188 0.2812 -0.1406 Q0.2812 -0.1406 0.2812 -0.0625 L0.2812 0.0938 Q0.2812 0.125 0.2812 0.1406 Q0.2969 0.1875 0.3594 0.2188 Q0.375 0.2188 0.4062 0.2344 Q0.4219 0.2344 0.4219 0.2344 Q0.4219 0.25 0.4062 0.25 Q0.3281 0.25 0.2812 0.2188 Q0.2656 0.2188 0.2656 0.2188 Q0.2188 0.1875 0.2188 0.125 Q0.2188 0.1094 0.2188 0.0781 L0.2188 -0.1094 Q0.2188 -0.2031 0.125 -0.2344 Q0.1094 -0.2344 0.0938 -0.2344 Q0.0781 -0.2344 0.0781 -0.25 Q0.0781 -0.2656 0.0938 -0.2656 Q0.1562 -0.2656 0.1875 -0.3125 Q0.2188 -0.3281 0.2188 -0.3594 Q0.2188 -0.375 0.2188 -0.4375 L0.2188 -0.625 Q0.2188 -0.6875 0.2969 -0.7188 Q0.3438 -0.75 0.4062 -0.75 Q0.4219 -0.75 0.4219 -0.7344 Q0.4219 -0.7344 0.4219 -0.7344 Q0.3438 -0.7188 0.3125 -0.6875 L0.3125 -0.6875 L0.3125 -0.6875 Q0.2812 -0.6562 0.2812 -0.6094 L0.2812 -0.6094 Q0.2812 -0.6094 0.2812 -0.5625 Z\" style=\"stroke:none;\" transform=\"scale(10,10) translate(0.9082,0)\" />\n    </g>\n    <g transform=\"matrix(20,0,0,20,0,0) translate(9.0727,0.9)\" style=\"font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:'jlm_cmmi10'; color-interpolation:linearRGB;\">\n     <path style=\"stroke:none;\" d=\"M0.4844 -0.2344 L0.4844 -0.2344 L0.4844 -0.1719 Q0.5469 -0.25 0.5781 -0.375 Q0.5781 -0.3906 0.5938 -0.3906 Q0.6094 -0.3906 0.6094 -0.3906 Q0.6094 -0.3594 0.5781 -0.3125 Q0.5469 -0.2188 0.4844 -0.1406 Q0.4844 -0.125 0.4844 -0.1094 Q0.4844 -0.0156 0.5078 -0.0156 Q0.5312 -0.0156 0.5625 -0.0469 Q0.5625 -0.0469 0.5625 -0.0625 Q0.5625 -0.0625 0.5781 -0.0625 Q0.5938 -0.0625 0.5938 -0.0625 Q0.5938 -0.0469 0.5625 -0.0156 Q0.5312 0.0156 0.5 0.0156 Q0.4375 0.0156 0.4219 -0.0625 Q0.4219 -0.0625 0.4062 -0.0781 Q0.3125 0.0156 0.2031 0.0156 Q0.1094 0.0156 0.0625 -0.0625 Q0.0469 -0.1094 0.0469 -0.1562 Q0.0469 -0.2656 0.125 -0.3438 Q0.2031 -0.4375 0.2969 -0.4375 Q0.2969 -0.4375 0.3125 -0.4375 Q0.3906 -0.4375 0.4375 -0.375 Q0.4375 -0.375 0.4375 -0.375 Q0.4844 -0.3281 0.4844 -0.2344 ZM0.4062 -0.0938 L0.4062 -0.0938 Q0.4062 -0.1094 0.4062 -0.2188 Q0.4062 -0.3281 0.375 -0.375 Q0.375 -0.4062 0.3594 -0.4062 L0.3438 -0.4062 L0.3438 -0.4062 L0.3438 -0.4062 Q0.3281 -0.4219 0.3125 -0.4219 Q0.2344 -0.4219 0.1875 -0.3438 L0.1719 -0.3281 Q0.1406 -0.2656 0.125 -0.1719 Q0.1094 -0.1406 0.1094 -0.125 Q0.1094 -0.0312 0.1719 -0.0156 Q0.1875 -0.0156 0.2031 -0.0156 Q0.3125 -0.0156 0.4062 -0.0938 Z\" />\n    </g>\n    <g transform=\"matrix(20,0,0,20,0,0) translate(9.7124,0.9) scale(0.1,0.1)\" style=\"font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:'jlm_cmmi10'; color-interpolation:linearRGB;\">\n     <path style=\"stroke:none;\" d=\"M0.125 -4.4688 L2.2344 -4.4688 L2.2344 -4.2969 Q2.0312 -4.2969 1.9531 -4.2266 Q1.875 -4.1562 1.875 -4.0469 Q1.875 -3.9219 2.0469 -3.6875 Q2.0938 -3.6094 2.2031 -3.4375 L2.5312 -2.9375 L2.8906 -3.4375 Q3.25 -3.9219 3.25 -4.0469 Q3.25 -4.1562 3.1641 -4.2266 Q3.0781 -4.2969 2.8906 -4.2969 L2.8906 -4.4688 L4.4062 -4.4688 L4.4062 -4.2969 Q4.1719 -4.2812 3.9844 -4.1562 Q3.75 -4 3.3281 -3.4375 L2.7188 -2.625 L3.8438 -1.0156 Q4.25 -0.4375 4.4219 -0.3125 Q4.5938 -0.1875 4.875 -0.1719 L4.875 0 L2.7656 0 L2.7656 -0.1719 Q2.9844 -0.1719 3.1094 -0.2812 Q3.2031 -0.3438 3.2031 -0.4531 Q3.2031 -0.5625 2.8906 -1.0156 L2.2344 -1.9844 L1.5156 -1.0156 Q1.1875 -0.5781 1.1875 -0.5 Q1.1875 -0.375 1.2969 -0.2812 Q1.4062 -0.1875 1.625 -0.1719 L1.625 0 L0.1719 0 L0.1719 -0.1719 Q0.3438 -0.2031 0.4688 -0.2969 Q0.6562 -0.4375 1.0938 -1.0156 L2.0312 -2.2656 L1.1875 -3.5 Q0.8281 -4.0312 0.6328 -4.1641 Q0.4375 -4.2969 0.125 -4.2969 L0.125 -4.4688 Z\" />\n     <path d=\"M1.1719 -5.9688 L2.7812 -6.7656 L2.9375 -6.7656 L2.9375 -1.1719 Q2.9375 -0.6094 2.9844 -0.4766 Q3.0312 -0.3438 3.1797 -0.2656 Q3.3281 -0.1875 3.7812 -0.1875 L3.7812 0 L1.2969 0 L1.2969 -0.1875 Q1.7656 -0.1875 1.8984 -0.2578 Q2.0312 -0.3281 2.0859 -0.4531 Q2.1406 -0.5781 2.1406 -1.1719 L2.1406 -4.7344 Q2.1406 -5.4688 2.0938 -5.6719 Q2.0625 -5.8281 1.9688 -5.8984 Q1.875 -5.9688 1.75 -5.9688 Q1.5625 -5.9688 1.25 -5.8281 L1.1719 -5.9688 Z\" style=\"stroke:none;\" transform=\"scale(10,10) translate(0.5275,0.15) scale(0.07,0.07)\" />\n     <path d=\"M0.3281 0.2344 L0.3281 0.2344 Q0.3281 0.25 0.3281 0.25 Q0.3125 0.25 0.2656 0.2031 Q0.2031 0.1406 0.1719 0.0625 Q0.0938 -0.0781 0.0938 -0.25 Q0.0938 -0.4219 0.1562 -0.5625 Q0.2188 -0.6719 0.2969 -0.7344 Q0.3125 -0.75 0.3281 -0.75 Q0.3281 -0.75 0.3281 -0.7344 Q0.3281 -0.7344 0.3125 -0.7188 Q0.1562 -0.5625 0.1562 -0.25 Q0.1562 0.0625 0.3125 0.2188 Q0.3281 0.2344 0.3281 0.2344 Z\" style=\"stroke:none;\" transform=\"scale(10,10) translate(0.5275,0.15) scale(1,1) translate(0.2927,-0.15)\" />\n    </g>\n    <g transform=\"matrix(20,0,0,20,0,0) translate(10.9215,0.9) scale(0.1,0.1)\" style=\"font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:'jlm_cmr10'; color-interpolation:linearRGB;\">\n     <path style=\"stroke:none;\" d=\"M1.6094 -5.9375 L1.6094 -4.4688 L2.6562 -4.4688 L2.6562 -4.125 L1.6094 -4.125 L1.6094 -1.2344 Q1.6094 -0.7969 1.7344 -0.6484 Q1.8594 -0.5 2.0625 -0.5 Q2.2188 -0.5 2.3672 -0.5938 Q2.5156 -0.6875 2.6094 -0.8906 L2.7969 -0.8906 Q2.625 -0.4062 2.3125 -0.1641 Q2 0.0781 1.6719 0.0781 Q1.4375 0.0781 1.2266 -0.0469 Q1.0156 -0.1719 0.9141 -0.4062 Q0.8125 -0.6406 0.8125 -1.125 L0.8125 -4.125 L0.0938 -4.125 L0.0938 -4.2969 Q0.3594 -4.4062 0.6406 -4.6562 Q0.9219 -4.9062 1.1406 -5.2656 Q1.2656 -5.4531 1.4531 -5.9375 L1.6094 -5.9375 Z\" />\n     <path d=\"M0.2812 -0.25 L0.2812 -0.25 Q0.2812 -0.0781 0.2188 0.0625 Q0.1719 0.1719 0.0938 0.2344 Q0.0781 0.25 0.0625 0.25 Q0.0625 0.25 0.0625 0.2344 Q0.0625 0.2344 0.0625 0.2188 Q0.2344 0.0625 0.2344 -0.25 Q0.2344 -0.5625 0.0781 -0.7188 L0.0781 -0.7188 Q0.0625 -0.7344 0.0625 -0.7344 Q0.0625 -0.75 0.0625 -0.75 Q0.0781 -0.75 0.125 -0.7031 Q0.1875 -0.6406 0.2188 -0.5625 Q0.2812 -0.4219 0.2812 -0.25 Z\" style=\"stroke:none;\" transform=\"scale(10,10) translate(0.3197,0)\" />\n    </g>\n    <g transform=\"matrix(20,0,0,20,0,0) translate(11.8523,0.9)\" style=\"font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:'jlm_cmr10'; color-interpolation:linearRGB;\">\n     <path style=\"stroke:none;\" d=\"M0.4062 -0.2344 L0.4062 0.0469 Q0.4062 0.0781 0.3906 0.0781 Q0.375 0.0781 0.375 0.0469 L0.375 -0.2344 L0.0938 -0.2344 Q0.0625 -0.2344 0.0625 -0.25 Q0.0625 -0.2656 0.0938 -0.2656 L0.375 -0.2656 L0.375 -0.5469 Q0.375 -0.5781 0.3906 -0.5781 Q0.4062 -0.5781 0.4062 -0.5469 L0.4062 -0.2656 L0.6875 -0.2656 Q0.7188 -0.2656 0.7188 -0.25 Q0.7188 -0.2344 0.6875 -0.2344 L0.4062 -0.2344 Z\" />\n    </g>\n    <g transform=\"matrix(20,0,0,20,0,0) translate(12.8523,0.9)\" style=\"font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:'jlm_cmmi10'; color-interpolation:linearRGB;\">\n     <path style=\"stroke:none;\" d=\"M0.0312 0.1719 L0.1875 -0.4375 Q0.2031 -0.5469 0.2969 -0.625 Q0.375 -0.7031 0.4531 -0.7031 Q0.5312 -0.7031 0.5781 -0.6406 Q0.5938 -0.6094 0.5938 -0.5781 Q0.5938 -0.5 0.5312 -0.4375 Q0.5 -0.4219 0.4844 -0.4062 Q0.5469 -0.3594 0.5469 -0.2656 Q0.5469 -0.1562 0.4688 -0.0781 Q0.3906 0 0.2969 0.0156 L0.2812 0.0156 Q0.1875 0.0156 0.1406 -0.0625 Q0.125 -0.0781 0.125 -0.1094 L0.0469 0.1875 L0.0469 0.1875 Q0.0469 0.1875 0.0312 0.1875 Q0.0312 0.1875 0.0312 0.1875 Q0.0312 0.1875 0.0312 0.1719 ZM0.3281 -0.4062 Q0.3438 -0.3906 0.375 -0.3906 Q0.4062 -0.3906 0.4219 -0.4062 Q0.4062 -0.4062 0.375 -0.4062 Q0.3438 -0.4062 0.3281 -0.4062 ZM0.4531 -0.4219 Q0.5156 -0.4688 0.5312 -0.5781 L0.5312 -0.5781 L0.5312 -0.5781 Q0.5312 -0.5938 0.5312 -0.6094 Q0.5312 -0.6719 0.4688 -0.6875 Q0.4688 -0.6875 0.4531 -0.6875 Q0.375 -0.6875 0.2969 -0.6094 Q0.2344 -0.5312 0.2031 -0.4219 L0.1562 -0.2344 Q0.1406 -0.1719 0.1406 -0.1562 Q0.1406 -0.0781 0.2031 -0.0312 Q0.2344 -0.0156 0.2812 -0.0156 Q0.3594 -0.0156 0.4219 -0.0938 Q0.4219 -0.1094 0.4219 -0.1094 Q0.4688 -0.1719 0.4688 -0.2812 Q0.4688 -0.2969 0.4688 -0.2969 Q0.4688 -0.3594 0.4531 -0.3906 Q0.4062 -0.375 0.375 -0.375 Q0.2969 -0.375 0.2969 -0.4062 Q0.2969 -0.4375 0.375 -0.4375 Q0.4219 -0.4375 0.4531 -0.4219 Z\" />\n    </g>\n    <g transform=\"matrix(20,0,0,20,0,0) translate(13.4179,0.9) scale(0.1,0.1)\" style=\"font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:'jlm_cmmi10'; color-interpolation:linearRGB;\">\n     <path style=\"stroke:none;\" d=\"M0.125 -4.4688 L2.2344 -4.4688 L2.2344 -4.2969 Q2.0312 -4.2969 1.9531 -4.2266 Q1.875 -4.1562 1.875 -4.0469 Q1.875 -3.9219 2.0469 -3.6875 Q2.0938 -3.6094 2.2031 -3.4375 L2.5312 -2.9375 L2.8906 -3.4375 Q3.25 -3.9219 3.25 -4.0469 Q3.25 -4.1562 3.1641 -4.2266 Q3.0781 -4.2969 2.8906 -4.2969 L2.8906 -4.4688 L4.4062 -4.4688 L4.4062 -4.2969 Q4.1719 -4.2812 3.9844 -4.1562 Q3.75 -4 3.3281 -3.4375 L2.7188 -2.625 L3.8438 -1.0156 Q4.25 -0.4375 4.4219 -0.3125 Q4.5938 -0.1875 4.875 -0.1719 L4.875 0 L2.7656 0 L2.7656 -0.1719 Q2.9844 -0.1719 3.1094 -0.2812 Q3.2031 -0.3438 3.2031 -0.4531 Q3.2031 -0.5625 2.8906 -1.0156 L2.2344 -1.9844 L1.5156 -1.0156 Q1.1875 -0.5781 1.1875 -0.5 Q1.1875 -0.375 1.2969 -0.2812 Q1.4062 -0.1875 1.625 -0.1719 L1.625 0 L0.1719 0 L0.1719 -0.1719 Q0.3438 -0.2031 0.4688 -0.2969 Q0.6562 -0.4375 1.0938 -1.0156 L2.0312 -2.2656 L1.1875 -3.5 Q0.8281 -4.0312 0.6328 -4.1641 Q0.4375 -4.2969 0.125 -4.2969 L0.125 -4.4688 Z\" />\n     <path d=\"M4.5781 -1.2812 L4.125 0 L0.2188 0 L0.2188 -0.1875 Q1.9375 -1.75 2.6406 -2.75 Q3.3438 -3.75 3.3438 -4.5781 Q3.3438 -5.2031 2.9609 -5.6094 Q2.5781 -6.0156 2.0312 -6.0156 Q1.5469 -6.0156 1.1562 -5.7266 Q0.7656 -5.4375 0.5938 -4.8906 L0.4062 -4.8906 Q0.5312 -5.7969 1.0312 -6.2812 Q1.5312 -6.7656 2.2969 -6.7656 Q3.0938 -6.7656 3.6406 -6.2422 Q4.1875 -5.7188 4.1875 -5.0156 Q4.1875 -4.5156 3.9531 -4.0156 Q3.5781 -3.2188 2.7812 -2.3438 Q1.5625 -1.0156 1.25 -0.7344 L2.9844 -0.7344 Q3.5156 -0.7344 3.7266 -0.7734 Q3.9375 -0.8125 4.1094 -0.9375 Q4.2812 -1.0625 4.4062 -1.2812 L4.5781 -1.2812 Z\" style=\"stroke:none;\" transform=\"scale(10,10) translate(0.5275,0.15) scale(0.07,0.07)\" />\n     <path d=\"M0.3281 0.2344 L0.3281 0.2344 Q0.3281 0.25 0.3281 0.25 Q0.3125 0.25 0.2656 0.2031 Q0.2031 0.1406 0.1719 0.0625 Q0.0938 -0.0781 0.0938 -0.25 Q0.0938 -0.4219 0.1562 -0.5625 Q0.2188 -0.6719 0.2969 -0.7344 Q0.3125 -0.75 0.3281 -0.75 Q0.3281 -0.75 0.3281 -0.7344 Q0.3281 -0.7344 0.3125 -0.7188 Q0.1562 -0.5625 0.1562 -0.25 Q0.1562 0.0625 0.3125 0.2188 Q0.3281 0.2344 0.3281 0.2344 Z\" style=\"stroke:none;\" transform=\"scale(10,10) translate(0.5275,0.15) scale(1,1) translate(0.3485,-0.15)\" />\n    </g>\n    <g transform=\"matrix(20,0,0,20,0,0) translate(14.6828,0.9) scale(0.1,0.1)\" style=\"font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:'jlm_cmr10'; color-interpolation:linearRGB;\">\n     <path style=\"stroke:none;\" d=\"M1.6094 -5.9375 L1.6094 -4.4688 L2.6562 -4.4688 L2.6562 -4.125 L1.6094 -4.125 L1.6094 -1.2344 Q1.6094 -0.7969 1.7344 -0.6484 Q1.8594 -0.5 2.0625 -0.5 Q2.2188 -0.5 2.3672 -0.5938 Q2.5156 -0.6875 2.6094 -0.8906 L2.7969 -0.8906 Q2.625 -0.4062 2.3125 -0.1641 Q2 0.0781 1.6719 0.0781 Q1.4375 0.0781 1.2266 -0.0469 Q1.0156 -0.1719 0.9141 -0.4062 Q0.8125 -0.6406 0.8125 -1.125 L0.8125 -4.125 L0.0938 -4.125 L0.0938 -4.2969 Q0.3594 -4.4062 0.6406 -4.6562 Q0.9219 -4.9062 1.1406 -5.2656 Q1.2656 -5.4531 1.4531 -5.9375 L1.6094 -5.9375 Z\" />\n     <path d=\"M0.2812 -0.25 L0.2812 -0.25 Q0.2812 -0.0781 0.2188 0.0625 Q0.1719 0.1719 0.0938 0.2344 Q0.0781 0.25 0.0625 0.25 Q0.0625 0.25 0.0625 0.2344 Q0.0625 0.2344 0.0625 0.2188 Q0.2344 0.0625 0.2344 -0.25 Q0.2344 -0.5625 0.0781 -0.7188 L0.0781 -0.7188 Q0.0625 -0.7344 0.0625 -0.7344 Q0.0625 -0.75 0.0625 -0.75 Q0.0781 -0.75 0.125 -0.7031 Q0.1875 -0.6406 0.2188 -0.5625 Q0.2812 -0.4219 0.2812 -0.25 Z\" style=\"stroke:none;\" transform=\"scale(10,10) translate(0.3197,0)\" />\n    </g>\n    <g transform=\"matrix(20,0,0,20,0,0) translate(15.3914,0.9)\" style=\"font-size:1px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:'jlm_cmsy10'; color-interpolation:linearRGB;\">\n     <path style=\"stroke:none;\" d=\"M0.2812 -0.5781 L0.2812 -0.5781 L0.2812 -0.3906 Q0.2812 -0.2969 0.375 -0.2656 Q0.3906 -0.2656 0.4062 -0.2656 Q0.4219 -0.2656 0.4219 -0.25 Q0.4219 -0.2344 0.4062 -0.2344 Q0.3438 -0.2344 0.3125 -0.1875 Q0.2812 -0.1719 0.2812 -0.1406 Q0.2812 -0.125 0.2812 -0.0625 L0.2812 0.125 Q0.2812 0.1875 0.2031 0.2188 Q0.1562 0.25 0.0938 0.25 Q0.0781 0.25 0.0781 0.2344 Q0.0781 0.2344 0.0781 0.2344 Q0.1562 0.2188 0.1875 0.1875 L0.1875 0.1875 Q0.2188 0.1562 0.2188 0.1094 Q0.2188 0.1094 0.2188 0.0625 L0.2188 -0.1094 Q0.2188 -0.1875 0.2812 -0.2344 Q0.3125 -0.2344 0.3281 -0.25 Q0.2344 -0.2812 0.2188 -0.3594 Q0.2188 -0.3594 0.2188 -0.4375 L0.2188 -0.5938 Q0.2188 -0.625 0.2188 -0.6406 Q0.2031 -0.6875 0.1406 -0.7188 Q0.125 -0.7188 0.0938 -0.7344 Q0.0781 -0.7344 0.0781 -0.7344 Q0.0781 -0.75 0.0938 -0.75 Q0.1719 -0.75 0.2188 -0.7188 L0.2344 -0.7188 Q0.2812 -0.6875 0.2812 -0.625 L0.2812 -0.625 L0.2812 -0.625 Q0.2812 -0.6094 0.2812 -0.5781 Z\" />\n    </g>\n   </g>\n  </svg>&nbsp;</span></p> \n<p>上式对于任何标量值α和β都成立。这是线性系统设计的一个基本属性，称为叠加。因此，如果这个方程无效，系统就被称为非线性系统。也就是说，当系统是线性的时，可以应用叠加原理。这一重要事实正是线性系统分析技术如此发达的原因。 </p>","pics":null,"card":null,"references":[],"versionCount":0},{"paragraphId":"14995466533994766","title":"应用","versionId":"14995466601103879","lemmaId":10699,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":76031342,"name":"胡信鹏","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1576233994,"comment":null,"dependVersionId":0,"contentType":1,"content":"<h3>噪音消除</h3> \n<p>信号在传输或处理过程中经常被破坏；滤波器设计的一个常见目标是恢复原始信号，这一过程通常被称为“噪声消除”。最简单的破坏类型是加性噪声(additional noise)，当所需的信号S被加上与S没有已知联系的无用信号N时，如果噪声N具有简单的统计描述，例如高斯噪声，那么卡尔曼滤波器将可以减少N并将S恢复到香农定理允许的程度。特别是，如果S和N在频域不重叠，它们可以被线性带通滤波器完全分离。 </p>\n<p>另一方面，对于几乎任何其他形式的噪声，需要某种非线性滤波器来最大限度地恢复信号。例如，对于乘性噪声(与信号相乘，而不是相加)，需要将输入转换为对数标度，应用线性滤波器，然后将结果转换为回线性标度。在本例中，第一步和第三步不是线性的。 </p>\n<p>当信号的某些“非线性”特征比整体信息内容更重要时，非线性滤波器也可能有用。例如，在数字图像处理中，人们可能希望保持照片中物体轮廓边缘的清晰度，或保持扫描图纸中线条的连通性。线性去噪滤波器通常会模糊这些特征；而非线性滤波器可能会产生更令人满意的结果(即使在信息论意义上模糊图像可能更“正确”)。 </p>\n<p>许多非线性去噪滤波器工作在时域中。他们通常检查每个样本周围有限窗口内的数字输入信号，并使用一些统计推断模型(隐式或显式)来估计该点原始信号的最可能值。这种滤波器的设计在估计理论和控制理论中被称为随机过程的滤波问题。 </p>\n<p>非线性滤波器的例子包括: </p> \n<ul>\n <li>锁相环</li> \n <li>探测器</li> \n <li>混合器</li> \n <li>中值滤波器</li> \n <li>Ranklets滤波器</li>\n</ul> \n<p>非线性滤波器在图像处理功能中也占有决定性的地位。在实时图像处理的典型流程中，通常使用许多非线性滤波器来形成、成形、检测和处理图像信息。此外，使用自适应过滤器规则生成的这些过滤器，每一种类型都可以参数化，以便可以在特定环境下以一种方式工作，而在不同环境下以另一种方式工作。它们的目标从噪声消除到特征提取各不相同。过滤图像数据是几乎所有图像处理系统中使用的标准过程。非线性滤波器是最常用的滤波器结构形式。如果图像包含少量噪声，但幅度相对较高，则中值滤波器可能更合适。 </p> \n<h3><b>Kushner-Stratonovich滤波</b></h3> \n<p>20世纪50年代末和60年代初，Ruslan L.Stratonovich<sup><a href=\"#quote_1\" class=\"kx_ref\">[1]</a></sup><sup><a href=\"#quote_2\" class=\"kx_ref\">[2]</a></sup><sup><a href=\"#quote_3\" class=\"kx_ref\">[3]</a></sup><sup><a href=\"#quote_4\" class=\"kx_ref\">[4]</a></sup> 和Harold J.Kushner<sup><a href=\"#quote_5\" class=\"kx_ref\">[5]</a></sup>解决了最优非线性滤波问题。 </p>\n<p>kushner—Stratonovich解是一个随机偏微分方程。1969年，Moshe Zakai为滤波器的非标准化条件定律引入了简化动力学，称为Zakai方程。<sup><a href=\"#quote_6\" class=\"kx_ref\">[6]</a></sup>Mireille Chaleyat-Maurel和Dominique Michel<sup><a href=\"#quote_7\" class=\"kx_ref\">[7]</a></sup> 证明了该解一般是无限维的，因此需要用有限维近似。这些解可能是启发式的，例如扩展卡尔曼滤波器或由Peter S. Maybeck描述的假定密度滤波器 <sup><a href=\"#quote_8\" class=\"kx_ref\">[8]</a></sup> 或由达Damiano Brigo, Bernard Hanzon and François Le Gland引入的投影滤波器，<sup><a href=\"#quote_9\" class=\"kx_ref\">[9]</a></sup> 它们的一些子类被证明与假定密度滤波器相一致。<sup><a href=\"#quote_10\" class=\"kx_ref\">[10]</a></sup> </p> \n<h3>能量转移过滤器</h3> \n<p>能量转换滤波器是一类非线性动态滤波器，用于以设计的方式转换能量。<sup><a href=\"#quote_11\" class=\"kx_ref\">[11]</a></sup> 能量可以被转换到更高或更低的频段，在设计范围内传播，或者聚焦在某一频段。许多能量传递滤波器的设计是可行的，并且这些设计在滤波器设计中提供了额外的自由度，而使用线性设计时则是不可能的。 </p>","pics":null,"card":null,"references":[],"versionCount":0}],"references":[{"id":1,"type":"book","title":"Ruslan L. Stratonovich (1959), Optimum nonlinear systems which bring about a separation of a signal with constant parameters from noise. Radiofizika, volume 2,issue 6, pages 892–901.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":2,"type":"book","title":"Ruslan L. Stratonovich (1959). On the theory of optimal non-linear filtering of random functions. Theory of Probability and Its Applications, volume 4, pages 223–225.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":3,"type":"book","title":"Ruslan L. Stratonovich (1960), Application of the Markov processes theory to optimal filtering. Radio Engineering and Electronic Physics, volume 5, issue 11, pages 1–19.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":4,"type":"book","title":"Ruslan L. Stratonovich (1960), Conditional Markov Processes. Theory of Probability and Its Applications, volume 5, pages 156–178.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":5,"type":"book","title":"Kushner, Harold. (1967), Nonlinear filtering: The exact dynamical equations satisfied by the conditional mode. IEEE Transactions on Automatic Control, volume 12, issue 3, pages 262–267","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":6,"type":"book","title":"Moshe Zakai (1969), On the optimal filtering of diffusion processes. Zeitung Wahrsch., volume 11, pages 230–243. MR242552 Zbl 0164.19201 doi:10.1007/BF00536382","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":7,"type":"book","title":"Chaleyat-Maurel, Mireille and Dominique Michel (1984), Des resultats de non existence de filtre de dimension finie. Stochastics, volume 13, issue 1+2, pages 83–102.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":8,"type":"book","title":"Peter S. Maybeck (1979), Stochastic models, estimation, and control. Volume 141, Series Mathematics in Science and Engineering, Academic Press","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":9,"type":"book","title":"Damiano Brigo, Bernard Hanzon, and François LeGland (1998) A Differential Geometric approach to nonlinear filtering: the Projection Filter, IEEE Transactions on Automatic Control, volume 43, issue 2, pages 247–252.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":10,"type":"book","title":"Damiano Brigo, Bernard Hanzon, and François LeGland (1999), Approximate Nonlinear Filtering by Projection on Exponential Manifolds of Densities, Bernoulli, volume 5, issue 3, pages 495–534","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":11,"type":"book","title":"Billings S.A. \"Nonlinear System Identification: NARMAX Methods in the Time, Frequency, and Spatio-Temporal Domains\". Wiley, 2013","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false}],"recommendReferences":null,"auditState":2,"lemmaLevel":1,"origin":0,"originEnTitle":null,"originZhTitle":null,"pv":68,"auditType":0,"synonyms":null,"showEditTime":"2019.12.13 18:46","auditors":[{"uid":0,"name":"Ki.κe","pic":"https://web.archive.org/web/20221025114447/https://wx.qlogo.cn/mmopen/vi_32/y67kfr32Doib4wg71Jiau7jVWvharic3nRKgdRRQSl6koeQJCo0GQs2Krw0vwdFRsOWnHIQOwAZsSg5lIkIrFCOcQ/132","introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":"","jobBrief":"","role":0,"roleName":null,"title":"","professionalTitle":null,"phoneNo":null,"editable":true,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false}],"hasZhishiNav":false,"auditInfos":{},"isHistory":false};</script><script crossorigin="anonymous" src="./699.非线性滤波器 - 搜狗科学百科_files/aegis.min.js.download"></script><script crossorigin="anonymous" src="./699.非线性滤波器 - 搜狗科学百科_files/main_2020092401.js.download"></script><script crossorigin="anonymous" src="./699.非线性滤波器 - 搜狗科学百科_files/react.production.min.js.download"></script><script crossorigin="anonymous" src="./699.非线性滤波器 - 搜狗科学百科_files/react-dom.production.min.js.download"></script><script crossorigin="anonymous" src="./699.非线性滤波器 - 搜狗科学百科_files/jquery-1.11.1.min.js.download"></script><script crossorigin="anonymous" src="./699.非线性滤波器 - 搜狗科学百科_files/main_2022062701.js.download"></script><script crossorigin="anonymous" src="./699.非线性滤波器 - 搜狗科学百科_files/main_66bbe21.js.download"></script><script crossorigin="anonymous" src="./699.非线性滤波器 - 搜狗科学百科_files/react.production.min.js.download"></script><script crossorigin="anonymous" src="./699.非线性滤波器 - 搜狗科学百科_files/react-dom.production.min.js.download"></script><script crossorigin="anonymous" src="./699.非线性滤波器 - 搜狗科学百科_files/main_edf0f08.js.download"></script><div id="popControl"><div class="pop-control-mask" style="display: none;"><div class="pop-container"><i class="close-icon"></i><div class="stop-title">搜狗科学百科停止服务运营公告</div><div class="stop-user">亲爱的用户：</div><div class="stop-content">因业务方向调整，搜狗科学百科将于2022年11月11日正式停止服务与运营。届时产品内所有数据将依据相关法律进行删除并关闭服务器，您将无法登录及使用搜狗科学百科，相关内容在平台下线后将无法找回。</div><div class="stop-content">搜狗科学百科是由搜狗推出的科学领域专业百科产品，与搜狗百科为两个独立产品，本次停止服务与运营仅对搜狗科学百科，并不影响搜狗百科产品正常使用，敬请知悉。</div><div class="stop-content">由此给您带来的不便我们深表歉意，敬请谅解。再次感谢您一直以来的陪伴与支持！</div><div class="stop-team">搜狗科学百科产品&amp;运营团队</div><div class="stop-time">2022年10月11日</div></div></div></div>
+</body></html>

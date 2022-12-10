@@ -1,0 +1,1561 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)https://web.archive.org/web/20221025122000/https://baike.sogou.com/kexue/d11025.htm -->
+<html class="" data-reactroot=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./1025.合并排序 - 搜狗科学百科_files/analytics.js.download" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app226.us.archive.org';v.server_ms=147;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="./1025.合并排序 - 搜狗科学百科_files/bundle-playback.js.download" charset="utf-8"></script>
+<script type="text/javascript" src="./1025.合并排序 - 搜狗科学百科_files/wombat.js.download" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://baike.sogou.com/kexue/d11025.htm","20221025122000","https://web.archive.org/","web","/_static/",
+	      "1666700400");
+</script>
+<link rel="stylesheet" type="text/css" href="./1025.合并排序 - 搜狗科学百科_files/banner-styles.css">
+<link rel="stylesheet" type="text/css" href="./1025.合并排序 - 搜狗科学百科_files/iconochive.css">
+<!-- End Wayback Rewrite JS Include -->
+<meta name="save" content="history"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="baidu-site-verification" content="VWGb6TyYx8"><meta content="合并排序 - 搜狗科学百科" name="keywords"><meta content="搜狗科学百科是一部有着平等、协作、分享、自由理念的网络科学全书，为每一个互联网用户创造一个涵盖所有领域知识、服务的中文知识性平台。" name="description"><meta http-equiv="x-dns-prefetch-control" content="on"><meta name="server" baike="235" ip="210" env="online"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025122000/https://cache.soso.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025122000/https://hhy.sogoucdn.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025122000/https://pic.baike.soso.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025122000/https://ugc.qpic.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025122000/https://xui.ptlogin2.qq.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025122000/https://q1.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025122000/https://q2.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025122000/https://q3.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025122000/https://q4.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025122000/https://q.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025122000/https://img01.sogoucdn.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025122000/https://img02.sogoucdn.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025122000/https://img03.sogoucdn.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025122000/https://img04.sogoucdn.com/"><link rel="Shortcut Icon" href="https://web.archive.org/web/20221025122000im_/https://www.sogou.com/images/logo/new/favicon.ico?v=4"><link rel="Bookmark" href="https://www.sogou.com/images/logo/new/favicon.ico?v=4"><link href="./1025.合并排序 - 搜狗科学百科_files/base_b849887.css" rel="stylesheet"><link href="./1025.合并排序 - 搜狗科学百科_files/detail_378aed5.css" rel="stylesheet"><link href="./1025.合并排序 - 搜狗科学百科_files/inviteAudit_7894507.css" rel="stylesheet"><link rel="stylesheet" href="./1025.合并排序 - 搜狗科学百科_files/highlight.min.css"><title>合并排序 - 搜狗科学百科</title><style>.onekey-close {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	width: 24px;
+	height: 24px;
+	background: url(//web.archive.org/web/20221025113757/https://hhy.sogoucdn.com/js/common/hhy/sprite_wap_baike_37443f3.png) no-repeat;
+	text-indent: -999em;
+	background-size: 84px;
+	background-position: -63px 0;
+}
+
+.onekey-login {
+	position: absolute;
+	top: 16.4%;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+
+/* .onekey-login-img {
+    width: 75px;
+    height: 75px;
+    background: url("https://web.archive.org/web/20221025122000/https://baike.sogou.com/kexue/images/sprite_wap_baike.png") no-repeat;
+    background-size: 100px 91px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+} */
+
+.onekey-login-title {
+	text-align: center;
+	padding-bottom: 3px;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 30px;
+	color: #000;
+}
+
+.onekey-login-txt {
+	text-align: center;
+	font-family: PingFangSC;
+	font-size: 14px;
+	line-height: 20px;
+	color: #8f8f8f;
+}
+
+.onekey-login-qq,
+.onekey-login-wx,
+.onekey-login-phone {
+	display: block;
+	width: 245px;
+	height: 54px;
+	border-radius: 45px;
+	text-align: center;
+
+	margin: 0 auto;
+	font-size: 17px;
+	line-height: 24px;
+	color: #000;
+	/* padding: 16px 77px; */
+	border-radius: 12px;
+	border: solid 1px #e0e0e0;
+}
+.onekey-qq-content,
+.onekey-vx-content,
+.onekey-phone-content {
+	display: inline-block;
+	margin-top: 16px;
+}
+.onekey-qq-content {
+	padding: 0 5px;
+}
+
+.onekey-login-qq {
+	margin-top: 48px;
+	margin-bottom: 24px;
+}
+
+.onekey-login-qq:before {
+	display: inline-block;
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: url(//web.archive.org/web/20221025113757/https://hhy.sogoucdn.com/js/common/hhy/sprite_wap_baike_37443f3.png) no-repeat;
+	background-size: 80px;
+	background-position: -20px 0;
+	vertical-align: top;
+	margin: 17px 8px 0 0;
+}
+
+.onekey-login-wx {
+	margin-bottom: 24px;
+}
+
+.onekey-login-wx:before {
+	display: inline-block;
+	content: "";
+	width: 21px;
+	height: 21px;
+	background: url(//web.archive.org/web/20221025113757/https://hhy.sogoucdn.com/js/common/hhy/sprite_wap_baike_37443f3.png) no-repeat;
+	background-size: 84px;
+	background-position: 0 0;
+	vertical-align: top;
+	margin: 17px 10px 0 0;
+}
+
+.onekey-login-phone {
+}
+
+.onekey-login-phone:before {
+	display: inline-block;
+	content: "";
+	width: 21px;
+	height: 21px;
+	background: url(//web.archive.org/web/20221025113757/https://hhy.sogoucdn.com/js/common/hhy/sprite_wap_baike_37443f3.png) no-repeat;
+	background-size: 84px;
+	background-position: -42px 0;
+	vertical-align: top;
+	margin: 17px 10px 0 0;
+}
+
+.onekey-fixed {
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	width: 100%;
+	height: 100%;
+}
+
+.onekey-fixed.forbid {
+	z-index: 100;
+	position: fixed;
+	top: auto;
+	bottom: 68px;
+	left: 9%;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	width: 82%;
+	height: 43px;
+	border-radius: 25px;
+	color: #ffffff;
+}
+.onekey-login-title.forbid {
+	text-align: center;
+	padding-bottom: 3px;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 30px;
+	color: white;
+}
+</style><style>#login_mask {
+  background: #000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  position: fixed;
+  /*fixed好像在哪个IE上有BUG，先用用*/
+  left: 0;
+  top: 0;
+  z-index: 999;
+  height: 100%;
+}
+
+#login_iframe_container {
+  position: fixed;
+  width: 550px;
+  height: 360px;
+  z-index: 1020;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 828px) {
+  #login_iframe_container {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+  }
+}
+
+#login_iframe_container.new-login {
+  width: 550px;
+  height: 360px;
+  background-image: url(//web.archive.org/web/20221025113757/https://hhy.sogoucdn.com/js/common/hhy/background_2a4a8a6.png);
+}
+
+#login_iframe_container.new-login.no-bg {
+  background: #fff;
+}
+
+#login_iframe_container.new-login .login-title {
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 0.19px;
+  color: #ffffff;
+  margin-top: 62px;
+}
+#login_iframe_container.new-login .forbid-title {
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 0.19px;
+  color: #333333;
+  margin-top: 150px;
+}
+
+#login_iframe_container.new-login.no-bg .login-title {
+  color: #333333;
+}
+
+#login_iframe_container.new-login .login-subtitle {
+  width: 100%;
+  height: 18px;
+  line-height: 18px;
+  font-size: 13px;
+  letter-spacing: 0.08px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 9px;
+  margin-bottom: 43px;
+}
+
+#login_iframe_container.new-login.no-bg .login-subtitle {
+  color: #999999;
+}
+
+#login_iframe_container.new-login .login-subtitle::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  background-color: #ffffff;
+  position: relative;
+  top: -4px;
+  left: -5px;
+}
+
+#login_iframe_container.new-login .login-subtitle::after {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  background-color: #ffffff;
+  position: relative;
+  top: -4px;
+  left: 5px;
+}
+
+#login_iframe_container.new-login.no-bg .login-subtitle::before {
+  background-color: #999999;
+}
+
+#login_iframe_container.new-login.no-bg .login-subtitle::after {
+  background-color: #999999;
+}
+
+#login_iframe_container.new-login .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 12px;
+  height: 12px;
+  background: url(//web.archive.org/web/20221025113757/https://hhy.sogoucdn.com/js/common/hhy/login-sprites_e3853e5.png) -59px -10px;
+  background-size: 81px 91px;
+  cursor: pointer;
+}
+
+#login_iframe_container.new-login .login-btn {
+  width: 220px;
+  height: 47px;
+  border-radius: 24px;
+  border: solid 1px #dddddd;
+  background-color: #ffffff;
+  margin: 0 auto;
+  margin-top: 28px;
+  position: relative;
+  display: block;
+}
+
+#login_iframe_container.new-login .login-btn .login-icon {
+  position: absolute;
+}
+
+#login_iframe_container.new-login .login-btn .login-text {
+  width: 61px;
+  height: 47px;
+  line-height: 47px;
+  vertical-align: middle;
+  font-size: 15px;
+  letter-spacing: 0.1px;
+  color: #666666;
+  position: absolute;
+  right: 62px;
+}
+
+#login_iframe_container.new-login .login-btn.qq-btn .login-icon {
+  width: 22px;
+  height: 27px;
+  top: 10px;
+  left: 67px;
+  background: url(//web.archive.org/web/20221025113757/https://hhy.sogoucdn.com/js/common/hhy/login-sprites_e3853e5.png) -10px -54px;
+  background-size: 81px 91px;
+}
+
+#login_iframe_container.new-login .login-btn.qq-btn .login-text {
+  right: 59px;
+}
+
+#login_iframe_container.new-login .login-btn.wechat-btn .login-icon {
+  width: 29px;
+  height: 24px;
+  top: 12px;
+  left: 62px;
+  background: url(//web.archive.org/web/20221025113757/https://hhy.sogoucdn.com/js/common/hhy/login-sprites_e3853e5.png) -10px -10px;
+  background-size: 81px 91px;
+}</style><style>/* -- container -- */
+.rodal,
+.rodal-mask {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.rodal {
+    position: fixed;
+}
+
+/* -- mask -- */
+.rodal-mask {
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+}
+
+/* -- dialog -- */
+.rodal-dialog {
+    position: absolute;
+    z-index: 101;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.rodal-center {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.rodal-bottom {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.rodal-top {
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}
+
+.rodal-left {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.rodal-right {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* -- close button -- */
+.rodal-close {
+    position: absolute;
+    cursor: pointer;
+    top: 16px;
+    right: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.rodal-close:before,
+.rodal-close:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: #999;
+    border-radius: 100%;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+}
+
+.rodal-close:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.rodal-close:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.rodal-close:hover:before,
+.rodal-close:hover:after {
+    background: #333;
+}
+
+/* -- fade -- */
+/* @-webkit-keyframes rodal-fade-enter {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes rodal-fade-enter {
+    from {
+        opacity: 0;
+    }
+}
+
+.rodal-fade-enter {
+    -webkit-animation: rodal-fade-enter both ease-in;
+    animation: rodal-fade-enter both ease-in;
+} */
+
+@-webkit-keyframes rodal-fade-leave {
+    to {
+        opacity: 0
+    }
+}
+
+@keyframes rodal-fade-leave {
+    to {
+        opacity: 0
+    }
+}
+
+.rodal-fade-leave {
+    -webkit-animation: rodal-fade-leave both ease-out;
+    animation: rodal-fade-leave both ease-out;
+}
+
+/* -- zoom -- */
+@-webkit-keyframes rodal-zoom-enter {
+    from {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-zoom-enter {
+    from {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-zoom-enter {
+    -webkit-animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-zoom-leave {
+    to {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-zoom-leave {
+    to {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-zoom-leave {
+    -webkit-animation: rodal-zoom-leave both;
+    animation: rodal-zoom-leave both;
+}
+
+/* -- slideDown -- */
+@-webkit-keyframes rodal-slideDown-enter {
+    from {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+@keyframes rodal-slideDown-enter {
+    from {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+.rodal-slideDown-enter {
+    -webkit-animation: rodal-slideDown-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideDown-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideDown-leave {
+    to {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+@keyframes rodal-slideDown-leave {
+    to {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+.rodal-slideDown-leave {
+    -webkit-animation: rodal-slideDown-leave both;
+    animation: rodal-slideDown-leave both;
+}
+
+/* -- slideLeft -- */
+@-webkit-keyframes rodal-slideLeft-enter {
+    from {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideLeft-enter {
+    from {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+.rodal-slideLeft-enter {
+    -webkit-animation: rodal-slideLeft-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideLeft-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideLeft-leave {
+    to {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideLeft-leave {
+    to {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+.rodal-slideLeft-leave {
+    -webkit-animation: rodal-slideLeft-leave both;
+    animation: rodal-slideLeft-leave both;
+}
+
+/* -- slideRight -- */
+@-webkit-keyframes rodal-slideRight-enter {
+    from {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideRight-enter {
+    from {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+.rodal-slideRight-enter {
+    -webkit-animation: rodal-slideRight-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideRight-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideRight-leave {
+    to {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideRight-leave {
+    to {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+.rodal-slideRight-leave {
+    -webkit-animation: rodal-slideRight-leave both;
+    animation: rodal-slideRight-leave both;
+}
+
+/* -- slideUp -- */
+@-webkit-keyframes rodal-slideUp-enter {
+    from {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+@keyframes rodal-slideUp-enter {
+    from {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+.rodal-slideUp-enter {
+    -webkit-animation: rodal-slideUp-enter both cubic-bezier(0.23, 1, 0.32, 1);
+    animation: rodal-slideUp-enter both cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@-webkit-keyframes rodal-slideUp-leave {
+    to {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+@keyframes rodal-slideUp-leave {
+    to {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+.rodal-slideUp-leave {
+    -webkit-animation: rodal-slideUp-leave both;
+    animation: rodal-slideUp-leave both;
+}
+
+/* -- flip -- */
+@-webkit-keyframes rodal-flip-enter {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+@keyframes rodal-flip-enter {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+.rodal-flip-enter {
+    -webkit-animation: rodal-flip-enter both ease-in;
+    animation: rodal-flip-enter both ease-in;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+}
+
+@-webkit-keyframes rodal-flip-leave {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+    }
+}
+
+@keyframes rodal-flip-leave {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+    }
+}
+
+.rodal-flip-leave {
+    -webkit-animation: rodal-flip-leave both;
+    animation: rodal-flip-leave both;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+}
+
+/* -- rotate -- */
+@-webkit-keyframes rodal-rotate-enter {
+    from {
+        -webkit-transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-rotate-enter {
+    from {
+        -webkit-transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-rotate-enter {
+    -webkit-animation: rodal-rotate-enter both;
+    animation: rodal-rotate-enter both;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+@-webkit-keyframes rodal-rotate-leave {
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-rotate-leave {
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-rotate-leave {
+    -webkit-animation: rodal-rotate-leave both;
+    animation: rodal-rotate-leave both;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+/* -- door -- */
+@-webkit-keyframes rodal-door-enter {
+    from {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+}
+
+@keyframes rodal-door-enter {
+    from {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+}
+
+.rodal-door-enter {
+    -webkit-animation: rodal-door-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-door-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-door-leave {
+    60% {
+        -webkit-transform: scale3d(.01, 1, 1);
+        transform: scale3d(.01, 1, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(0, 1, .1);
+        transform: scale3d(0, 1, .1);
+    }
+}
+
+@keyframes rodal-door-leave {
+    60% {
+        -webkit-transform: scale3d(.01, 1, 1);
+        transform: scale3d(.01, 1, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(0, 1, .1);
+        transform: scale3d(0, 1, .1);
+    }
+}
+
+.rodal-door-leave {
+    -webkit-animation: rodal-door-leave both;
+    animation: rodal-door-leave both;
+}</style><style>/* -- container -- */
+.rodal,
+.rodal-mask {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.rodal {
+    position: fixed;
+}
+
+/* -- mask -- */
+.rodal-mask {
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+}
+
+/* -- dialog -- */
+.rodal-dialog {
+    position: absolute;
+    z-index: 101;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.rodal-center {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.rodal-bottom {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.rodal-top {
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}
+
+.rodal-left {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.rodal-right {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* -- close button -- */
+.rodal-close {
+    position: absolute;
+    cursor: pointer;
+    top: 16px;
+    right: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.rodal-close:before,
+.rodal-close:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: #999;
+    border-radius: 100%;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+}
+
+.rodal-close:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.rodal-close:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.rodal-close:hover:before,
+.rodal-close:hover:after {
+    background: #333;
+}
+
+/* -- fade -- */
+/* @-webkit-keyframes rodal-fade-enter {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes rodal-fade-enter {
+    from {
+        opacity: 0;
+    }
+}
+
+.rodal-fade-enter {
+    -webkit-animation: rodal-fade-enter both ease-in;
+    animation: rodal-fade-enter both ease-in;
+} */
+
+@-webkit-keyframes rodal-fade-leave {
+    to {
+        opacity: 0
+    }
+}
+
+@keyframes rodal-fade-leave {
+    to {
+        opacity: 0
+    }
+}
+
+.rodal-fade-leave {
+    -webkit-animation: rodal-fade-leave both ease-out;
+    animation: rodal-fade-leave both ease-out;
+}
+
+/* -- zoom -- */
+@-webkit-keyframes rodal-zoom-enter {
+    from {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-zoom-enter {
+    from {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-zoom-enter {
+    -webkit-animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-zoom-leave {
+    to {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-zoom-leave {
+    to {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-zoom-leave {
+    -webkit-animation: rodal-zoom-leave both;
+    animation: rodal-zoom-leave both;
+}
+
+/* -- slideDown -- */
+@-webkit-keyframes rodal-slideDown-enter {
+    from {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+@keyframes rodal-slideDown-enter {
+    from {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+.rodal-slideDown-enter {
+    -webkit-animation: rodal-slideDown-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideDown-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideDown-leave {
+    to {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+@keyframes rodal-slideDown-leave {
+    to {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+.rodal-slideDown-leave {
+    -webkit-animation: rodal-slideDown-leave both;
+    animation: rodal-slideDown-leave both;
+}
+
+/* -- slideLeft -- */
+@-webkit-keyframes rodal-slideLeft-enter {
+    from {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideLeft-enter {
+    from {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+.rodal-slideLeft-enter {
+    -webkit-animation: rodal-slideLeft-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideLeft-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideLeft-leave {
+    to {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideLeft-leave {
+    to {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+.rodal-slideLeft-leave {
+    -webkit-animation: rodal-slideLeft-leave both;
+    animation: rodal-slideLeft-leave both;
+}
+
+/* -- slideRight -- */
+@-webkit-keyframes rodal-slideRight-enter {
+    from {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideRight-enter {
+    from {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+.rodal-slideRight-enter {
+    -webkit-animation: rodal-slideRight-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideRight-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideRight-leave {
+    to {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideRight-leave {
+    to {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+.rodal-slideRight-leave {
+    -webkit-animation: rodal-slideRight-leave both;
+    animation: rodal-slideRight-leave both;
+}
+
+/* -- slideUp -- */
+@-webkit-keyframes rodal-slideUp-enter {
+    from {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+@keyframes rodal-slideUp-enter {
+    from {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+.rodal-slideUp-enter {
+    -webkit-animation: rodal-slideUp-enter both cubic-bezier(0.23, 1, 0.32, 1);
+    animation: rodal-slideUp-enter both cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@-webkit-keyframes rodal-slideUp-leave {
+    to {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+@keyframes rodal-slideUp-leave {
+    to {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+.rodal-slideUp-leave {
+    -webkit-animation: rodal-slideUp-leave both;
+    animation: rodal-slideUp-leave both;
+}
+
+/* -- flip -- */
+@-webkit-keyframes rodal-flip-enter {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+@keyframes rodal-flip-enter {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+.rodal-flip-enter {
+    -webkit-animation: rodal-flip-enter both ease-in;
+    animation: rodal-flip-enter both ease-in;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+}
+
+@-webkit-keyframes rodal-flip-leave {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+    }
+}
+
+@keyframes rodal-flip-leave {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+    }
+}
+
+.rodal-flip-leave {
+    -webkit-animation: rodal-flip-leave both;
+    animation: rodal-flip-leave both;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+}
+
+/* -- rotate -- */
+@-webkit-keyframes rodal-rotate-enter {
+    from {
+        -webkit-transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-rotate-enter {
+    from {
+        -webkit-transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-rotate-enter {
+    -webkit-animation: rodal-rotate-enter both;
+    animation: rodal-rotate-enter both;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+@-webkit-keyframes rodal-rotate-leave {
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-rotate-leave {
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-rotate-leave {
+    -webkit-animation: rodal-rotate-leave both;
+    animation: rodal-rotate-leave both;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+/* -- door -- */
+@-webkit-keyframes rodal-door-enter {
+    from {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+}
+
+@keyframes rodal-door-enter {
+    from {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+}
+
+.rodal-door-enter {
+    -webkit-animation: rodal-door-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-door-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-door-leave {
+    60% {
+        -webkit-transform: scale3d(.01, 1, 1);
+        transform: scale3d(.01, 1, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(0, 1, .1);
+        transform: scale3d(0, 1, .1);
+    }
+}
+
+@keyframes rodal-door-leave {
+    60% {
+        -webkit-transform: scale3d(.01, 1, 1);
+        transform: scale3d(.01, 1, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(0, 1, .1);
+        transform: scale3d(0, 1, .1);
+    }
+}
+
+.rodal-door-leave {
+    -webkit-animation: rodal-door-leave both;
+    animation: rodal-door-leave both;
+}</style></head><body class=""><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+</style>
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display: block; direction: ltr;">
+</div><div id="wm-ipp-print">The Wayback Machine - https://web.archive.org/web/20221025122000/https://baike.sogou.com/kexue/d11025.htm</div>
+<script type="text/javascript">//<![CDATA[
+__wm.bt(675,27,25,2,"web","https://baike.sogou.com/kexue/d11025.htm","20221025122000",1996,"/_static/",["/_static/css/banner-styles.css?v=S1zqJCYt","/_static/css/iconochive.css?v=qtvMKcIJ"], false);
+  __wm.rw(1);
+//]]></script>
+<!-- END WAYBACK TOOLBAR INSERT --><script>window._gtag=window._gtag||{};window._gtag.shouldGrayed = false;if ('559cf3d1c8d5400db7c35eebd9d02f43') window._gtag.traceId = '559cf3d1c8d5400db7c35eebd9d02f43';if ({"illegality":true}) window.userInfo = {"illegality":true};</script><div class="topnavbox"><ul class="topnav"><li><a href="https://web.archive.org/web/20221025122000/https://www.sogou.com/web?query=">网页</a></li><li><a href="https://web.archive.org/web/20221025122000/https://weixin.sogou.com/weixin?p=75351201">微信</a></li><li><a href="https://web.archive.org/web/20221025122000/https://zhihu.sogou.com/zhihu?p=75351218">知乎</a></li><li><a href="https://web.archive.org/web/20221025122000/https://pic.sogou.com/pics?query=">图片</a></li><li><a href="https://web.archive.org/web/20221025122000/https://v.sogou.com/v?query=">视频</a></li><li><a href="https://web.archive.org/web/20221025122000/https://mingyi.sogou.com/">医疗</a></li><li class="cur"><strong>科学</strong></li><li><a href="https://web.archive.org/web/20221025122000/https://hanyu.sogou.com/">汉语</a></li><li><a href="https://web.archive.org/web/20221025122000/https://wenwen.sogou.com/">问问</a></li><li><a href="https://web.archive.org/web/20221025122000/https://www.sogou.com/docs/more.htm">更多<span class="topraquo">»</span></a></li></ul></div><div id="header"><div class="header-wrap"><a class="header-logo" href="https://web.archive.org/web/20221025122000/https://baike.sogou.com/kexue"></a><div class="header-search"><div class="querybox" id="suggBox"><form><input id="searchInput" class="query" type="text" placeholder="搜科学领域专业百科词条" name="query" autocomplete="off" value=""><a href="javascript:;" class="query-search"></a></form></div></div><div class="header-rgt"><span class="btn-header-rgt btn-edit" id="editLemma">创建</span><div class="header-user no-login"></div></div></div></div><div class="fixed-placeholder" style="visibility:none"></div><div id="container" class=""><div class="content lemma-level1"><div class="detail-title" id="abstract-title"><h1>合并排序</h1><a href="https://web.archive.org/web/20221025122000/https://baike.sogou.com/kexue/d11025.htm#!" class="detail-edit">编辑</a></div><div class="section_content" data-id="53986263941832469"><div><p><strong>合并排序</strong>也叫<strong>归并排序</strong>。在计算机科学中，<b>归并排序</b>（通常拼写为<b>mergesort</b>）是一种高效、通用的， 基于比较的排序算法。大多数实现都会产生一个稳定排序，这意味着输入和输出中相等元素的顺序相同。归并排序是由约翰·冯·诺依曼在1945年发明的一种分治算法。<sup><a href="https://web.archive.org/web/20221025122000/https://baike.sogou.com/kexue/d11025.htm#quote_1" class="kx_ref">[1]</a></sup>自底向上的归并排序的详细描述和分析在1948年Goldstine和冯·诺依曼的报告中出现。<sup><a href="https://web.archive.org/web/20221025122000/https://baike.sogou.com/kexue/d11025.htm#quote_2" class="kx_ref">[2]</a></sup> </p></div></div><div id="catalog"><h2 class="title2">目录<a href="javascript:" class="detail-edit">编辑</a></h2><div class="catalog_wrap" style=""><ul class="catalog_list col3"><li><span class="order">1</span><a href="javascript:" data-level="1" data-id="14996252596896270">算法</a></li><li class="secondary_catalog"><span>1.1 </span><a href="javascript:" data-id="14996252596896270">自顶向下的实现</a></li><li class="secondary_catalog"><span>1.2 </span><a href="javascript:" data-id="14996252596896270">自底向上的实现</a></li><li class="secondary_catalog"><span>1.3 </span><a href="javascript:" data-id="14996252596896270">使用列表的自顶向下实现</a></li><li class="secondary_catalog"><span>1.4 </span><a href="javascript:" data-id="14996252596896270">使用列表的自底向上实现</a></li></ul><ul class="catalog_list col3"><li><span class="order">2</span><a href="javascript:" data-level="1" data-id="14996252596896271">自然归并排序</a></li><li><span class="order">3</span><a href="javascript:" data-level="1" data-id="14996252596896272">分析</a></li><li><span class="order">4</span><a href="javascript:" data-level="1" data-id="14996252613673474">变体</a></li><li><span class="order">5</span><a href="javascript:" data-level="1" data-id="14996252613673475">与磁带机一起使用</a></li><li><span class="order">6</span><a href="javascript:" data-level="1" data-id="14996252613673476">优化归并排序</a></li></ul><ul class="catalog_list col3"><li><span class="order">7</span><a href="javascript:" data-level="1" data-id="14996252613673477">并行归并排序</a></li><li><span class="order">8</span><a href="javascript:" data-level="1" data-id="14996252613673478">与其他排序算法的比较</a></li><li><span class="order">9</span><a href="javascript:" data-level="1" data-id="14996252630450702">笔记</a></li><li><span class="order">10</span><a href="javascript:" data-level="1" data-id="references">参考文献</a></li></ul></div></div><div id="paragraphs"><div><div id="par_14996252596896270"><h2 class="title">1 算法<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><p>从概念上讲，归并排序的工作方式如下:</p><p>
+ </p><ol>
+  <li>将未排序的列表分为<i>n</i>个子列表，每个包含一个元素(一个元素的列表被视为有序)。</li>
+  <li>反复地归并子列表以产生新的有序子列表，直到只剩下一个子列表。这将是排序后的列表。</li>
+ </ol><p></p><p></p><h3>1.1 <span>自顶向下的实现</span></h3><p></p><p>类C代码的示例如下，该代码使用索引进行自顶向下归并排序算法，该算法递归地拆分列表(在这个例子中称为<i>运行</i>)，直到子列表大小为1，然后归并这些子列表以产生有序列表。通过将归并方向与每一级递归交替进行，可以避免写回的步骤。</p><p></p><pre class="kx_code"><code class="C">// Array A[] has the items to sort; array B[] is a work array.
+void TopDownMergeSort(A[], B[], n)
+{
+ &nbsp; &nbsp;CopyArray(A, 0, n, B); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // duplicate array A[] into B[]
+ &nbsp; &nbsp;TopDownSplitMerge(B, 0, n, A); &nbsp; // sort data from B[] into A[]
+}
+
+// Sort the given run of array A[] using array B[] as a source.
+// iBegin is inclusive; iEnd is exclusive (A[iEnd] is not in the set).
+void TopDownSplitMerge(B[], iBegin, iEnd, A[])
+{
+ &nbsp; &nbsp;if(iEnd - iBegin &lt; 2) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // if run size == 1
+ &nbsp; &nbsp; &nbsp; &nbsp;return; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // &nbsp; consider it sorted
+ &nbsp; &nbsp;// split the run longer than 1 item into halves
+ &nbsp; &nbsp;iMiddle = (iEnd + iBegin) / 2; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// iMiddle = mid point
+ &nbsp; &nbsp;// recursively sort both runs from array A[] into B[]
+ &nbsp; &nbsp;TopDownSplitMerge(A, iBegin, &nbsp;iMiddle, B); &nbsp;// sort the left &nbsp;run
+ &nbsp; &nbsp;TopDownSplitMerge(A, iMiddle, &nbsp; &nbsp;iEnd, B); &nbsp;// sort the right run
+ &nbsp; &nbsp;// merge the resulting runs from array B[] into A[]
+ &nbsp; &nbsp;TopDownMerge(B, iBegin, iMiddle, iEnd, A);
+}
+
+// &nbsp;Left source half is A[ iBegin:iMiddle-1].
+// Right source half is A[iMiddle:iEnd-1 &nbsp; ].
+// Result is &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;B[ iBegin:iEnd-1 &nbsp; ].
+void TopDownMerge(A[], iBegin, iMiddle, iEnd, B[])
+{
+ &nbsp; &nbsp;i = iBegin, j = iMiddle;
+ 
+ &nbsp; &nbsp;// While there are elements in the left or right runs...
+ &nbsp; &nbsp;for (k = iBegin; k &lt; iEnd; k++) {
+ &nbsp; &nbsp; &nbsp; &nbsp;// If left run head exists and is &lt;= existing right run head.
+ &nbsp; &nbsp; &nbsp; &nbsp;if (i &lt; iMiddle &amp;&amp; (j &gt;= iEnd || A[i] &lt;= A[j])) {
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;B[k] = A[i];
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;i = i + 1;
+ &nbsp; &nbsp; &nbsp; &nbsp;} else {
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;B[k] = A[j];
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;j = j + 1;
+ &nbsp; &nbsp; &nbsp; &nbsp;}
+ &nbsp; &nbsp;}
+}
+
+void CopyArray(A[], iBegin, iEnd, B[])
+{
+ &nbsp; &nbsp;for(k = iBegin; k &lt; iEnd; k++)
+ &nbsp; &nbsp; &nbsp; &nbsp;B[k] = A[k];
+}</code></pre><p></p><p></p><h3>1.2 <span>自底向上的实现</span></h3><p></p><p>使用自底向上归并排序算法索引的类C代码示例如下，该算法将列表视为<i>n</i>个大小为1的子列表(在这个例子中称为<i>运行步骤</i>)，并在两个缓冲器之间来回迭代合并子列表:</p><p></p><pre class="kx_code"><code class="C">// array A[] has the items to sort; array B[] is a work array
+void BottomUpMergeSort(A[], B[], n)
+{
+ &nbsp; &nbsp;// Each 1-element run in A is already "sorted".
+ &nbsp; &nbsp;// Make successively longer sorted runs of length 2, 4, 8, 16... until whole array is sorted.
+ &nbsp; &nbsp;for (width = 1; width &lt; n; width = 2 * width)
+ &nbsp; &nbsp;{
+ &nbsp; &nbsp; &nbsp; &nbsp;// Array A is full of runs of length width.
+ &nbsp; &nbsp; &nbsp; &nbsp;for (i = 0; i &lt; n; i = i + 2 * width)
+ &nbsp; &nbsp; &nbsp; &nbsp;{
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// Merge two runs: A[i:i+width-1] and A[i+width:i+2*width-1] to B[]
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// or copy A[i:n-1] to B[] ( if(i+width &gt;= n) )
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;BottomUpMerge(A, i, min(i+width, n), min(i+2*width, n), B);
+ &nbsp; &nbsp; &nbsp; &nbsp;}
+ &nbsp; &nbsp; &nbsp; &nbsp;// Now work array B is full of runs of length 2*width.
+ &nbsp; &nbsp; &nbsp; &nbsp;// Copy array B to array A for next iteration.
+ &nbsp; &nbsp; &nbsp; &nbsp;// A more efficient implementation would swap the roles of A and B.
+ &nbsp; &nbsp; &nbsp; &nbsp;CopyArray(B, A, n);
+ &nbsp; &nbsp; &nbsp; &nbsp;// Now array A is full of runs of length 2*width.
+ &nbsp; &nbsp;}
+}
+
+// &nbsp;Left run is A[iLeft :iRight-1].
+// Right run is A[iRight:iEnd-1 &nbsp;].
+void BottomUpMerge(A[], iLeft, iRight, iEnd, B[])
+{
+ &nbsp; &nbsp;i = iLeft, j = iRight;
+ &nbsp; &nbsp;// While there are elements in the left or right runs...
+ &nbsp; &nbsp;for (k = iLeft; k &lt; iEnd; k++) {
+ &nbsp; &nbsp; &nbsp; &nbsp;// If left run head exists and is &lt;= existing right run head.
+ &nbsp; &nbsp; &nbsp; &nbsp;if (i &lt; iRight &amp;&amp; (j &gt;= iEnd || A[i] &lt;= A[j])) {
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;B[k] = A[i];
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;i = i + 1;
+ &nbsp; &nbsp; &nbsp; &nbsp;} else {
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;B[k] = A[j];
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;j = j + 1; &nbsp; &nbsp;
+ &nbsp; &nbsp; &nbsp; &nbsp;}
+ &nbsp; &nbsp;} 
+}
+
+void CopyArray(B[], A[], n)
+{
+ &nbsp; &nbsp;for(i = 0; i &lt; n; i++)
+ &nbsp; &nbsp; &nbsp; &nbsp;A[i] = B[i];
+}</code></pre><p></p><p></p><h3>1.3 <span>使用列表的自顶向下实现</span></h3><p></p><p>对于自顶向下的归并排序算法的伪代码如下，它递归地将输入列表分成较小的子列表，直到这些子列表被简单排序，然后在返回调用链的同时归并这些子列表。</p><p></p><pre class="kx_code"><b>function</b> merge_sort(<i>list</i> m)
+    // <i>Base case. A list of zero or one elements is sorted, by definition.</i>
+    <b>if</b> length of m ≤ 1 <b>then</b>
+        <b>return</b> m
+
+    // <i>Recursive case. First, divide the list into equal-sized sublists</i>
+    // <i>consisting of the first half and second half of the list.</i>
+    // <i>This assumes lists start at index 0.</i>
+    <b>var</b> left&nbsp;:= empty list    <b>var</b> right&nbsp;:= empty list    <b>for each</b> x <b>with index</b> i <b>in</b> m <b>do</b>
+        <b>if</b> i &lt; (length of m)/2 <b>then</b>
+            add x to left        <b>else</b>
+            add x to right
+
+    // <i>Recursively sort both sublists.</i>
+    left&nbsp;:= merge_sort(left)
+    right&nbsp;:= merge_sort(right)
+
+    // Then merge the now-sorted sublists.    <b>return</b> merge(left, right)</pre><p></p><p>在本例中 merge 函数归并左右子列表。</p><p></p><pre class="kx_code"><b>function</b> merge(left, right)    <b>var</b> result&nbsp;:= empty list    <b>while</b> left is not empty <b>and</b> right is not empty <b>do</b>
+        <b>if</b> first(left) ≤ first(right) <b>then</b>
+            append first(left) to result
+            left&nbsp;:= rest(left)        <b>else</b>
+            append first(right) to result
+            right&nbsp;:= rest(right)
+
+    // <i>Either left or right may have elements left; consume them.</i>
+    // <i>(Only one of the following loops will actually be entered.)</i>
+    <b>while</b> left is not empty <b>do</b>
+        append first(left) to result
+        left&nbsp;:= rest(left)    <b>while</b> right is not empty <b>do</b>
+        append first(right) to result
+        right&nbsp;:= rest(right)    <b>return</b> result</pre><p></p><p></p><h3>1.4 <span>使用列表的自底向上实现</span></h3><p></p><p>对于自底向上的归并排序算法伪代码如下，它使用一个固定大小的节点引用数组，其中array[i]是对大小为2的列表的引用<sup><i>i</i></sup> 或者<i>空</i>。 <i>node</i>是指向节点的引用或指针。merge()函数类似于自顶向下合并列表示例中的merge函数，它归并两个已经排序的列表，并处理空列表。在这种情况下，merge()将使用<i>node</i>输入参数和返回值。</p><p></p><pre class="kx_code"><b>function</b> merge_sort(<i>node</i> head)
+    // return if empty list    <b>if</b> (head == nil)        <b>return</b> nil    <b>var</b> <i>node</i> array[32]; initially all nil    <b>var</b> <i>node</i> result    <b>var</b> <i>node</i> next    <b>var</b> <i>int</i>  i
+    result = head
+    // merge nodes into array    <b>while</b> (result&nbsp;!= nil)
+         next = result.next;
+         result.next = nil         <b>for</b>(i = 0; (i &lt; 32) &amp;&amp; (array[i]&nbsp;!= nil); i += 1)
+              result = merge(array[i], result)
+              array[i] = nil
+         // do not go past end of array         <b>if</b> (i == 32)
+               i -= 1
+         array[i] = result
+         result = next
+    // merge array into single list
+    result = nil    <b>for</b> (i = 0; i &lt; 32; i += 1)
+         result = merge(array[i], result)    <b>return</b> result</pre><p></p></div></div><div id="par_14996252596896271"><h2 class="title">2 自然归并排序<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><p>自然归并排序类似于自底向上的归并排序，输入中任何自然发生的运行步骤(排序的序列)都被利用。利用列表(或等价的磁带或文件)等方便的数据结构(用作先进先出队列或者后进先出堆栈)，单调和双调(交替上/下)运行步骤都可以使用。<sup><a href="https://web.archive.org/web/20221025122000/https://baike.sogou.com/kexue/d11025.htm#quote_3" class="kx_ref">[3]</a></sup>在自底向上的归并排序中，起始点假定每次运行步骤都是一个项目长。实际上，随机输入的数据中会有许多恰好有序的序列进行短期运行步骤。在典型情况下，自然归并排序可能不需要那么多遍，因为要归并的运行步骤较少。在最好的情况下，输入已经有序(即一次运行)，所以自然归并排序只需要遍历一次数据。在许多实际情况下，存在长的自然运行步骤，因此自然归并排序被用作 Timsort。如:</p><p></p><pre class="kx_code">开始       &nbsp;:  3  4  2  1  7  5  8  9  0  6
+选择运行   &nbsp;: (3  4)(2)(1  7)(5  8  9)(0  6)
+归并      &nbsp;: (2  3  4)(1  5  7  8  9)(0  6)
+归并      &nbsp;: (1  2  3  4  5  7  8  9)(0  6)
+归并      &nbsp;: (0  1  2  3  4  5  6  7  8  9)</pre><p></p><p>竞赛排序用于收集外部排序算法的初始运行步骤。</p></div></div><div id="par_14996252596896272"><h2 class="title">3 分析<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><p></p><div class="text_img ed_imgfloat_right">
+            <a class="ed_image_link lazyLoad" data-src="https://img02.sogoucdn.com/app/a/200698/sogou_science_2273" data-bigsrc="" title="点击查看大图" href="javascript:" data-observer="true"></a>
+            <div class="text_img_title">一种递归归并排序算法，用于对7个整数组成的数组进行排序。这张图表示人为模拟归并排序（自顶向下）的步骤。</div>   
+        </div> <p></p><p>在排序<i>n</i>个对象中，归并排序拥有O(<i>n</i>&nbsp;log&nbsp;<i>n</i>)的平均性能和最坏情况下的性能。如果对长度为<i>n</i>的列表进行归并排序的运行时间为<i>T(n</i>)，那么按照算法的定义(将算法应用于原始列表一半大小的两个列表，并加上合并得到的两个列表的<i>n</i>步)，递推公式为<i>T(n</i>)=2<i>T(n</i>/2)+<i>n</i>。相近的形式源于分治算法的主定理。</p><p>在最坏的情况下，归并排序的比较次数由排序数字给出。这些数字等于或略小于(<i>n</i>&nbsp;⌈lg&nbsp;<i>n</i>⌉2<sup>⌈lg&nbsp;<i>n</i>⌉</sup> + 1)，介于(<i>n</i>&nbsp;lg&nbsp;<i>n</i> − <i>n</i> + 1)和(<i>n</i>&nbsp;lg&nbsp;<i>n</i> + <i>n</i> + O(lg&nbsp;<i>n</i>))之间。<sup><a href="https://web.archive.org/web/20221025122000/https://baike.sogou.com/kexue/d11025.htm#quote_4" class="kx_ref">[4]</a></sup> </p><p>对于大的 <i>n</i> 和随机顺序的输入列表，归并排序的预期(平均)比较次数<i>α'n</i> 少于最坏的情况。<b><span class="kx_formula" alt="{\displaystyle \alpha =-1+\sum _{k=0}^{\infty }{\frac {1}{2^{k}+1}}\approx 0.2645.}"> 
+ &nbsp; <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="fill-opacity:1; color-rendering:auto; color-interpolation:auto; text-rendering:auto; stroke:black; stroke-linecap:square; stroke-miterlimit:10; shape-rendering:auto; stroke-opacity:1; fill:black; stroke-dasharray:none; font-weight:normal; stroke-width:1; font-family:&#39;Dialog&#39;; font-style:normal; stroke-linejoin:miter; font-size:12px; stroke-dashoffset:0; image-rendering:auto;" width="264" height="67" xmlns="http://www.w3.org/2000/svg" class="transfer_formula"><!--Generated by the Batik Graphics2D SVG Generator--><defs id="genericDefs"></defs><g><g transform="scale(20,20) translate(0,1.9014)"><path d="M0.4844 -0.2344 L0.4844 -0.2344 L0.4844 -0.1719 Q0.5469 -0.25 0.5781 -0.375 Q0.5781 -0.3906 0.5938 -0.3906 Q0.6094 -0.3906 0.6094 -0.3906 Q0.6094 -0.3594 0.5781 -0.3125 Q0.5469 -0.2188 0.4844 -0.1406 Q0.4844 -0.125 0.4844 -0.1094 Q0.4844 -0.0156 0.5078 -0.0156 Q0.5312 -0.0156 0.5625 -0.0469 Q0.5625 -0.0469 0.5625 -0.0625 Q0.5625 -0.0625 0.5781 -0.0625 Q0.5938 -0.0625 0.5938 -0.0625 Q0.5938 -0.0469 0.5625 -0.0156 Q0.5312 0.0156 0.5 0.0156 Q0.4375 0.0156 0.4219 -0.0625 Q0.4219 -0.0625 0.4062 -0.0781 Q0.3125 0.0156 0.2031 0.0156 Q0.1094 0.0156 0.0625 -0.0625 Q0.0469 -0.1094 0.0469 -0.1562 Q0.0469 -0.2656 0.125 -0.3438 Q0.2031 -0.4375 0.2969 -0.4375 Q0.2969 -0.4375 0.3125 -0.4375 Q0.3906 -0.4375 0.4375 -0.375 Q0.4375 -0.375 0.4375 -0.375 Q0.4844 -0.3281 0.4844 -0.2344 ZM0.4062 -0.0938 L0.4062 -0.0938 Q0.4062 -0.1094 0.4062 -0.2188 Q0.4062 -0.3281 0.375 -0.375 Q0.375 -0.4062 0.3594 -0.4062 L0.3438 -0.4062 L0.3438 -0.4062 L0.3438 -0.4062 Q0.3281 -0.4219 0.3125 -0.4219 Q0.2344 -0.4219 0.1875 -0.3438 L0.1719 -0.3281 Q0.1406 -0.2656 0.125 -0.1719 Q0.1094 -0.1406 0.1094 -0.125 Q0.1094 -0.0312 0.1719 -0.0156 Q0.1875 -0.0156 0.2031 -0.0156 Q0.3125 -0.0156 0.4062 -0.0938 Z"></path></g><g transform="matrix(20,0,0,20,0,0) translate(0.9175,1.9014)"><path d="M0.6875 -0.3281 L0.0938 -0.3281 Q0.0625 -0.3281 0.0625 -0.3438 Q0.0625 -0.3594 0.0938 -0.3594 L0.6875 -0.3594 Q0.7188 -0.3594 0.7188 -0.3438 Q0.7188 -0.3281 0.6875 -0.3281 ZM0.6875 -0.1406 L0.0938 -0.1406 Q0.0625 -0.1406 0.0625 -0.1562 Q0.0625 -0.1719 0.0938 -0.1719 L0.6875 -0.1719 Q0.7188 -0.1719 0.7188 -0.1562 Q0.7188 -0.1406 0.6875 -0.1406 Z"></path></g><g transform="matrix(20,0,0,20,0,0) translate(1.973,1.9014)"><path d="M0.6562 -0.2344 L0.1094 -0.2344 Q0.0781 -0.2344 0.0781 -0.25 Q0.0781 -0.2656 0.1094 -0.2656 L0.6562 -0.2656 Q0.6875 -0.2656 0.6875 -0.25 Q0.6875 -0.2344 0.6562 -0.2344 Z"></path></g><g transform="matrix(20,0,0,20,0,0) translate(2.7508,1.9014) scale(0.1,0.1)"><path d="M1.1719 -5.9688 L2.7812 -6.7656 L2.9375 -6.7656 L2.9375 -1.1719 Q2.9375 -0.6094 2.9844 -0.4766 Q3.0312 -0.3438 3.1797 -0.2656 Q3.3281 -0.1875 3.7812 -0.1875 L3.7812 0 L1.2969 0 L1.2969 -0.1875 Q1.7656 -0.1875 1.8984 -0.2578 Q2.0312 -0.3281 2.0859 -0.4531 Q2.1406 -0.5781 2.1406 -1.1719 L2.1406 -4.7344 Q2.1406 -5.4688 2.0938 -5.6719 Q2.0625 -5.8281 1.9688 -5.8984 Q1.875 -5.9688 1.75 -5.9688 Q1.5625 -5.9688 1.25 -5.8281 L1.1719 -5.9688 Z"></path><path d="M0.4062 -0.2344 L0.4062 0.0469 Q0.4062 0.0781 0.3906 0.0781 Q0.375 0.0781 0.375 0.0469 L0.375 -0.2344 L0.0938 -0.2344 Q0.0625 -0.2344 0.0625 -0.25 Q0.0625 -0.2656 0.0938 -0.2656 L0.375 -0.2656 L0.375 -0.5469 Q0.375 -0.5781 0.3906 -0.5781 Q0.4062 -0.5781 0.4062 -0.5469 L0.4062 -0.2656 L0.6875 -0.2656 Q0.7188 -0.2656 0.7188 -0.25 Q0.7188 -0.2344 0.6875 -0.2344 L0.4062 -0.2344 Z" transform="scale(10,10) translate(0.6403,0)"></path></g><g transform="matrix(20,0,0,20,0,0) translate(4.7634,0.5514) scale(0.7,0.7)"><path d="M0.5156 -0.2656 Q0.5625 -0.375 0.6562 -0.4219 Q0.7031 -0.4375 0.75 -0.4375 Q0.8438 -0.4375 0.9062 -0.3594 Q0.9375 -0.2969 0.9375 -0.2188 Q0.9375 -0.1094 0.875 -0.0469 Q0.8281 0.0156 0.75 0.0156 Q0.6562 0.0156 0.5781 -0.0625 Q0.5625 -0.0781 0.5156 -0.125 L0.4844 -0.1562 Q0.4375 -0.0625 0.3438 -0.0156 Q0.2969 0.0156 0.25 0.0156 Q0.1562 0.0156 0.0938 -0.0781 Q0.0625 -0.1406 0.0625 -0.2188 Q0.0625 -0.3125 0.125 -0.3906 Q0.1719 -0.4375 0.25 -0.4375 Q0.3438 -0.4375 0.4219 -0.375 Q0.4375 -0.3594 0.4844 -0.2969 L0.4844 -0.2969 Q0.5 -0.2812 0.5156 -0.2656 ZM0.5312 -0.2344 L0.625 -0.1094 Q0.625 -0.1094 0.625 -0.1094 L0.6406 -0.1094 Q0.7031 -0.0312 0.7656 -0.0312 Q0.8438 -0.0312 0.8906 -0.1094 Q0.9219 -0.1562 0.9219 -0.2188 Q0.9219 -0.2969 0.875 -0.3594 Q0.8281 -0.4062 0.7656 -0.4062 L0.7656 -0.4062 Q0.6406 -0.4062 0.5312 -0.25 Q0.5312 -0.2344 0.5312 -0.2344 ZM0.4688 -0.1875 L0.4688 -0.1875 L0.375 -0.3125 L0.375 -0.3125 L0.3594 -0.3281 Q0.2969 -0.3906 0.2344 -0.3906 Q0.1562 -0.3906 0.1094 -0.3281 Q0.0781 -0.2812 0.0781 -0.2188 Q0.0781 -0.125 0.125 -0.0625 Q0.1719 -0.0156 0.2344 -0.0156 Q0.3594 -0.0156 0.4531 -0.1875 Q0.4688 -0.1875 0.4688 -0.1875 Z"></path></g><g transform="matrix(20,0,0,20,0,0) translate(4.3912,0.8514)"><path d="M0.0625 1.4062 Q0.0625 1.4062 0.0625 1.3906 Q0.0625 1.3906 0.0625 1.375 L0.5938 0.7656 L0.0625 0.0469 Q0.0625 0.0469 0.0625 0.0469 L0.0625 0.0156 Q0.0625 0 0.0625 0 Q0.0625 0 0.0625 0 L1.2656 0 L1.3906 0.2812 L1.3594 0.2812 Q1.3125 0.1719 1.2031 0.125 Q1.0938 0.0781 0.9766 0.0625 Q0.8594 0.0469 0.7031 0.0469 L0.2344 0.0469 L0.7031 0.6875 Q0.7188 0.7031 0.7188 0.7031 Q0.7188 0.7031 0.7031 0.7031 L0.1875 1.3125 L0.7031 1.3125 Q0.8594 1.3125 0.9844 1.2969 Q1.1094 1.2812 1.2109 1.2344 Q1.3125 1.1875 1.3594 1.0781 L1.3906 1.0781 L1.2656 1.4062 L0.0625 1.4062 Z"></path></g><g transform="matrix(20,0,0,20,0,0) translate(4.4736,3.0037) scale(0.07,0.07)"><path d="M1.6406 -6.9375 L1.6406 -2.5 L2.7812 -3.5312 Q3.1406 -3.8594 3.1875 -3.9531 Q3.2344 -4.0156 3.2344 -4.0625 Q3.2344 -4.1719 3.1562 -4.2422 Q3.0781 -4.3125 2.8906 -4.3125 L2.8906 -4.4688 L4.8281 -4.4688 L4.8281 -4.3125 Q4.4219 -4.3125 4.1562 -4.1953 Q3.8906 -4.0781 3.5781 -3.7969 L2.4375 -2.7344 L3.5781 -1.2812 Q4.0625 -0.6875 4.2188 -0.5156 Q4.4531 -0.2969 4.6406 -0.2188 Q4.75 -0.1719 5.0625 -0.1719 L5.0625 0 L2.8906 0 L2.8906 -0.1719 Q3.0781 -0.1875 3.1406 -0.2344 Q3.2031 -0.2812 3.2031 -0.375 Q3.2031 -0.4844 3.0156 -0.7344 L1.6406 -2.4844 L1.6406 -1 Q1.6406 -0.5781 1.7031 -0.4375 Q1.7656 -0.2969 1.875 -0.2422 Q1.9844 -0.1875 2.3594 -0.1719 L2.3594 0 L0.0781 0 L0.0781 -0.1719 Q0.4219 -0.1719 0.5938 -0.2656 Q0.7031 -0.3125 0.75 -0.4219 Q0.8281 -0.5938 0.8281 -0.9844 L0.8281 -5.0469 Q0.8281 -5.8281 0.7891 -6 Q0.75 -6.1719 0.6719 -6.2422 Q0.5938 -6.3125 0.4688 -6.3125 Q0.375 -6.3125 0.1719 -6.2188 L0.0781 -6.3906 L1.4062 -6.9375 L1.6406 -6.9375 Z"></path><path d="M0.6875 -0.3281 L0.0938 -0.3281 Q0.0625 -0.3281 0.0625 -0.3438 Q0.0625 -0.3594 0.0938 -0.3594 L0.6875 -0.3594 Q0.7188 -0.3594 0.7188 -0.3438 Q0.7188 -0.3281 0.6875 -0.3281 ZM0.6875 -0.1406 L0.0938 -0.1406 Q0.0625 -0.1406 0.0625 -0.1562 Q0.0625 -0.1719 0.0938 -0.1719 L0.6875 -0.1719 Q0.7188 -0.1719 0.7188 -0.1562 Q0.7188 -0.1406 0.6875 -0.1406 Z" transform="scale(14.2857,14.2857) translate(0.3824,0) scale(0.7,0.7)"></path></g><g transform="matrix(20,0,0,20,0,0) translate(5.4004,3.0037) scale(0.07,0.07)"><path d="M0.3594 -3.2656 Q0.3594 -4.4062 0.7031 -5.2266 Q1.0469 -6.0469 1.6094 -6.4375 Q2.0469 -6.7656 2.5156 -6.7656 Q3.2812 -6.7656 3.8906 -5.9844 Q4.6406 -5.0156 4.6406 -3.375 Q4.6406 -2.2188 4.3125 -1.4141 Q3.9844 -0.6094 3.4688 -0.2422 Q2.9531 0.125 2.4688 0.125 Q1.5312 0.125 0.8906 -1 Q0.3594 -1.9375 0.3594 -3.2656 ZM1.3125 -3.1562 Q1.3125 -1.7812 1.6562 -0.9219 Q1.9375 -0.1875 2.4844 -0.1875 Q2.75 -0.1875 3.0312 -0.4297 Q3.3125 -0.6719 3.4688 -1.2188 Q3.6875 -2.0625 3.6875 -3.5938 Q3.6875 -4.7188 3.4531 -5.4844 Q3.2812 -6.0469 3 -6.2812 Q2.7969 -6.4375 2.5156 -6.4375 Q2.1875 -6.4375 1.9219 -6.1406 Q1.5781 -5.7344 1.4453 -4.8672 Q1.3125 -4 1.3125 -3.1562 Z"></path><path d="M1.1719 -5.9688 L2.7812 -6.7656 L2.9375 -6.7656 L2.9375 -1.1719 Q2.9375 -0.6094 2.9844 -0.4766 Q3.0312 -0.3438 3.1797 -0.2656 Q3.3281 -0.1875 3.7812 -0.1875 L3.7812 0 L1.2969 0 L1.2969 -0.1875 Q1.7656 -0.1875 1.8984 -0.2578 Q2.0312 -0.3281 2.0859 -0.4531 Q2.1406 -0.5781 2.1406 -1.1719 L2.1406 -4.7344 Q2.1406 -5.4688 2.0938 -5.6719 Q2.0625 -5.8281 1.9688 -5.8984 Q1.875 -5.9688 1.75 -5.9688 Q1.5625 -5.9688 1.25 -5.8281 L1.1719 -5.9688 Z" transform="scale(14.2857,14.2857) translate(1.7856,-1.7788) scale(0.1,0.1)"></path><rect x="6.1223" y="1.6314" transform="scale(14.2857,14.2857) translate(-5.4004,-3.0037)" width="2.5455" height="0.04"></rect><path d="M4.5781 -1.2812 L4.125 0 L0.2188 0 L0.2188 -0.1875 Q1.9375 -1.75 2.6406 -2.75 Q3.3438 -3.75 3.3438 -4.5781 Q3.3438 -5.2031 2.9609 -5.6094 Q2.5781 -6.0156 2.0312 -6.0156 Q1.5469 -6.0156 1.1562 -5.7266 Q0.7656 -5.4375 0.5938 -4.8906 L0.4062 -4.8906 Q0.5312 -5.7969 1.0312 -6.2812 Q1.5312 -6.7656 2.2969 -6.7656 Q3.0938 -6.7656 3.6406 -6.2422 Q4.1875 -5.7188 4.1875 -5.0156 Q4.1875 -4.5156 3.9531 -4.0156 Q3.5781 -3.2188 2.7812 -2.3438 Q1.5625 -1.0156 1.25 -0.7344 L2.9844 -0.7344 Q3.5156 -0.7344 3.7266 -0.7734 Q3.9375 -0.8125 4.1094 -0.9375 Q4.2812 -1.0625 4.4062 -1.2812 L4.5781 -1.2812 Z" transform="scale(14.2857,14.2857) translate(0.7219,-0.3204) scale(0.1,0.1)"></path><path d="M1.6406 -6.9375 L1.6406 -2.5 L2.7812 -3.5312 Q3.1406 -3.8594 3.1875 -3.9531 Q3.2344 -4.0156 3.2344 -4.0625 Q3.2344 -4.1719 3.1562 -4.2422 Q3.0781 -4.3125 2.8906 -4.3125 L2.8906 -4.4688 L4.8281 -4.4688 L4.8281 -4.3125 Q4.4219 -4.3125 4.1562 -4.1953 Q3.8906 -4.0781 3.5781 -3.7969 L2.4375 -2.7344 L3.5781 -1.2812 Q4.0625 -0.6875 4.2188 -0.5156 Q4.4531 -0.2969 4.6406 -0.2188 Q4.75 -0.1719 5.0625 -0.1719 L5.0625 0 L2.8906 0 L2.8906 -0.1719 Q3.0781 -0.1875 3.1406 -0.2344 Q3.2031 -0.2812 3.2031 -0.375 Q3.2031 -0.4844 3.0156 -0.7344 L1.6406 -2.4844 L1.6406 -1 Q1.6406 -0.5781 1.7031 -0.4375 Q1.7656 -0.2969 1.875 -0.2422 Q1.9844 -0.1875 2.3594 -0.1719 L2.3594 0 L0.0781 0 L0.0781 -0.1719 Q0.4219 -0.1719 0.5938 -0.2656 Q0.7031 -0.3125 0.75 -0.4219 Q0.8281 -0.5938 0.8281 -0.9844 L0.8281 -5.0469 Q0.8281 -5.8281 0.7891 -6 Q0.75 -6.1719 0.6719 -6.2422 Q0.5938 -6.3125 0.4688 -6.3125 Q0.375 -6.3125 0.1719 -6.2188 L0.0781 -6.3906 L1.4062 -6.9375 L1.6406 -6.9375 Z" transform="scale(14.2857,14.2857) translate(1.2197,-0.7267) scale(0.07,0.07)"></path><path d="M0.4062 -0.2344 L0.4062 0.0469 Q0.4062 0.0781 0.3906 0.0781 Q0.375 0.0781 0.375 0.0469 L0.375 -0.2344 L0.0938 -0.2344 Q0.0625 -0.2344 0.0625 -0.25 Q0.0625 -0.2656 0.0938 -0.2656 L0.375 -0.2656 L0.375 -0.5469 Q0.375 -0.5781 0.3906 -0.5781 Q0.4062 -0.5781 0.4062 -0.5469 L0.4062 -0.2656 L0.6875 -0.2656 Q0.7188 -0.2656 0.7188 -0.25 Q0.7188 -0.2344 0.6875 -0.2344 L0.4062 -0.2344 Z" transform="scale(14.2857,14.2857) translate(1.2197,-0.7267) scale(1,1) translate(0.6296,0.4063)"></path></g><g transform="matrix(20,0,0,20,0,0) translate(8.2497,2.6833) scale(0.1,0.1)"><path d="M1.1719 -5.9688 L2.7812 -6.7656 L2.9375 -6.7656 L2.9375 -1.1719 Q2.9375 -0.6094 2.9844 -0.4766 Q3.0312 -0.3438 3.1797 -0.2656 Q3.3281 -0.1875 3.7812 -0.1875 L3.7812 0 L1.2969 0 L1.2969 -0.1875 Q1.7656 -0.1875 1.8984 -0.2578 Q2.0312 -0.3281 2.0859 -0.4531 Q2.1406 -0.5781 2.1406 -1.1719 L2.1406 -4.7344 Q2.1406 -5.4688 2.0938 -5.6719 Q2.0625 -5.8281 1.9688 -5.8984 Q1.875 -5.9688 1.75 -5.9688 Q1.5625 -5.9688 1.25 -5.8281 L1.1719 -5.9688 Z"></path><path d="M0.7188 -0.4531 Q0.7188 -0.375 0.6562 -0.3281 Q0.6094 -0.2812 0.5625 -0.2812 Q0.4844 -0.2812 0.4062 -0.3438 Q0.4062 -0.3438 0.3906 -0.3594 Q0.3125 -0.4062 0.2656 -0.4219 Q0.25 -0.4219 0.2188 -0.4219 Q0.1562 -0.4219 0.125 -0.3906 Q0.1094 -0.3906 0.1094 -0.3906 Q0.0938 -0.3594 0.0781 -0.3125 Q0.0781 -0.2969 0.0625 -0.2969 Q0.0625 -0.2969 0.0625 -0.3125 Q0.0625 -0.4062 0.125 -0.4531 Q0.1719 -0.4844 0.2188 -0.4844 Q0.2812 -0.4844 0.375 -0.4219 Q0.375 -0.4219 0.375 -0.4219 Q0.4688 -0.3594 0.5 -0.3594 Q0.5312 -0.3438 0.5625 -0.3438 Q0.625 -0.3438 0.6562 -0.3906 Q0.6875 -0.4219 0.6875 -0.4531 Q0.7031 -0.4844 0.7031 -0.4844 Q0.7188 -0.4844 0.7188 -0.4531 ZM0.7188 -0.2188 Q0.7188 -0.1406 0.6562 -0.0938 Q0.6094 -0.0625 0.5625 -0.0625 Q0.4844 -0.0625 0.4062 -0.1094 Q0.4062 -0.1094 0.3906 -0.125 Q0.3125 -0.1719 0.2656 -0.1875 Q0.25 -0.1875 0.2188 -0.1875 Q0.1562 -0.1875 0.125 -0.1562 Q0.0938 -0.125 0.0781 -0.0781 Q0.0781 -0.0625 0.0625 -0.0625 Q0.0625 -0.0625 0.0625 -0.0938 Q0.0625 -0.1719 0.125 -0.2188 Q0.1719 -0.25 0.2188 -0.25 Q0.2812 -0.25 0.375 -0.1875 Q0.375 -0.1875 0.375 -0.1875 Q0.4688 -0.125 0.5 -0.125 Q0.5312 -0.1094 0.5625 -0.1094 Q0.625 -0.1094 0.6719 -0.1562 Q0.6875 -0.1875 0.6875 -0.2188 Q0.6875 -0.25 0.7031 -0.25 Q0.7188 -0.25 0.7188 -0.2188 Z" transform="scale(10,10) translate(0.8159,-0.7819)"></path></g><g transform="matrix(20,0,0,20,0,0) translate(10.1212,1.9014) scale(0.1,0.1)"><path d="M0.3594 -3.2656 Q0.3594 -4.4062 0.7031 -5.2266 Q1.0469 -6.0469 1.6094 -6.4375 Q2.0469 -6.7656 2.5156 -6.7656 Q3.2812 -6.7656 3.8906 -5.9844 Q4.6406 -5.0156 4.6406 -3.375 Q4.6406 -2.2188 4.3125 -1.4141 Q3.9844 -0.6094 3.4688 -0.2422 Q2.9531 0.125 2.4688 0.125 Q1.5312 0.125 0.8906 -1 Q0.3594 -1.9375 0.3594 -3.2656 ZM1.3125 -3.1562 Q1.3125 -1.7812 1.6562 -0.9219 Q1.9375 -0.1875 2.4844 -0.1875 Q2.75 -0.1875 3.0312 -0.4297 Q3.3125 -0.6719 3.4688 -1.2188 Q3.6875 -2.0625 3.6875 -3.5938 Q3.6875 -4.7188 3.4531 -5.4844 Q3.2812 -6.0469 3 -6.2812 Q2.7969 -6.4375 2.5156 -6.4375 Q2.1875 -6.4375 1.9219 -6.1406 Q1.5781 -5.7344 1.4453 -4.8672 Q1.3125 -4 1.3125 -3.1562 Z"></path><path d="M0.1875 -0.0469 L0.1875 -0.0469 Q0.1875 -0.0156 0.1562 0 Q0.1562 0 0.1406 0 Q0.1094 0 0.0938 -0.0312 Q0.0938 -0.0469 0.0938 -0.0469 Q0.0938 -0.0938 0.1094 -0.0938 Q0.125 -0.1094 0.1406 -0.1094 Q0.1719 -0.1094 0.1875 -0.0781 Q0.1875 -0.0625 0.1875 -0.0469 Z" transform="scale(10,10) translate(0.5041,0)"></path></g><g transform="matrix(20,0,0,20,0,0) translate(10.903,1.9014) scale(0.1,0.1)"><path d="M4.5781 -1.2812 L4.125 0 L0.2188 0 L0.2188 -0.1875 Q1.9375 -1.75 2.6406 -2.75 Q3.3438 -3.75 3.3438 -4.5781 Q3.3438 -5.2031 2.9609 -5.6094 Q2.5781 -6.0156 2.0312 -6.0156 Q1.5469 -6.0156 1.1562 -5.7266 Q0.7656 -5.4375 0.5938 -4.8906 L0.4062 -4.8906 Q0.5312 -5.7969 1.0312 -6.2812 Q1.5312 -6.7656 2.2969 -6.7656 Q3.0938 -6.7656 3.6406 -6.2422 Q4.1875 -5.7188 4.1875 -5.0156 Q4.1875 -4.5156 3.9531 -4.0156 Q3.5781 -3.2188 2.7812 -2.3438 Q1.5625 -1.0156 1.25 -0.7344 L2.9844 -0.7344 Q3.5156 -0.7344 3.7266 -0.7734 Q3.9375 -0.8125 4.1094 -0.9375 Q4.2812 -1.0625 4.4062 -1.2812 L4.5781 -1.2812 ZM9.4844 -6.7656 L9.4844 -6.5781 Q8.8438 -6.5156 8.4297 -6.3203 Q8.0156 -6.125 7.625 -5.7344 Q7.2344 -5.3438 6.9688 -4.8516 Q6.7031 -4.3594 6.5312 -3.7031 Q7.2344 -4.1875 7.9375 -4.1875 Q8.625 -4.1875 9.1172 -3.6406 Q9.6094 -3.0938 9.6094 -2.2344 Q9.6094 -1.3906 9.1094 -0.7188 Q8.5 0.125 7.5156 0.125 Q6.8281 0.125 6.3594 -0.3281 Q5.4375 -1.2031 5.4375 -2.5938 Q5.4375 -3.4844 5.7891 -4.2891 Q6.1406 -5.0938 6.8047 -5.7109 Q7.4688 -6.3281 8.0703 -6.5469 Q8.6719 -6.7656 9.2031 -6.7656 L9.4844 -6.7656 ZM6.4531 -3.3438 Q6.3594 -2.6875 6.3594 -2.2812 Q6.3594 -1.8125 6.5312 -1.2578 Q6.7031 -0.7031 7.0469 -0.3906 Q7.2969 -0.1562 7.6562 -0.1562 Q8.0781 -0.1562 8.4141 -0.5547 Q8.75 -0.9531 8.75 -1.7031 Q8.75 -2.5312 8.4141 -3.1406 Q8.0781 -3.75 7.4688 -3.75 Q7.2812 -3.75 7.0703 -3.6719 Q6.8594 -3.5938 6.4531 -3.3438 ZM14.6562 -2.4375 L14.6562 -1.75 L13.7656 -1.75 L13.7656 0 L12.9531 0 L12.9531 -1.75 L10.1562 -1.75 L10.1562 -2.375 L13.2344 -6.7656 L13.7656 -6.7656 L13.7656 -2.4375 L14.6562 -2.4375 ZM12.9531 -2.4375 L12.9531 -5.7344 L10.6406 -2.4375 L12.9531 -2.4375 ZM19.3438 -6.625 L18.9531 -5.7969 L16.9688 -5.7969 L16.5312 -4.9062 Q17.8281 -4.7188 18.5781 -3.9375 Q19.2344 -3.2812 19.2344 -2.375 Q19.2344 -1.8594 19.0234 -1.4141 Q18.8125 -0.9688 18.4922 -0.6562 Q18.1719 -0.3438 17.7656 -0.1562 Q17.2031 0.125 16.6094 0.125 Q16.0156 0.125 15.75 -0.0781 Q15.4844 -0.2812 15.4844 -0.5312 Q15.4844 -0.6719 15.5938 -0.7734 Q15.7031 -0.875 15.875 -0.875 Q16 -0.875 16.0938 -0.8359 Q16.1875 -0.7969 16.4219 -0.6406 Q16.7812 -0.3906 17.1562 -0.3906 Q17.7344 -0.3906 18.1641 -0.8203 Q18.5938 -1.25 18.5938 -1.875 Q18.5938 -2.4688 18.2109 -2.9922 Q17.8281 -3.5156 17.1562 -3.7969 Q16.6094 -4.0156 15.7031 -4.0469 L16.9688 -6.625 L19.3438 -6.625 Z"></path><path d="M0.1875 -0.0469 L0.1875 -0.0469 Q0.1875 -0.0156 0.1562 0 Q0.1562 0 0.1406 0 Q0.1094 0 0.0938 -0.0312 Q0.0938 -0.0469 0.0938 -0.0469 Q0.0938 -0.0938 0.1094 -0.0938 Q0.125 -0.1094 0.1406 -0.1094 Q0.1719 -0.1094 0.1875 -0.0781 Q0.1875 -0.0625 0.1875 -0.0469 Z" transform="scale(10,10) translate(1.9744,0)"></path></g></g></svg>&nbsp;</span></b> </p><p>在<i>最差</i>情况下，归并排序的比较次数比快速排序在<i>平均</i>情况下的比较次数少39%。就移动次数而言，归并排序的最坏情况复杂度是O(<i>n</i>&nbsp;log&nbsp;<i>n)</i>—与quicksort的最佳情况下的复杂度相同，归并排序的最佳情况需要的迭代次数大约是最差情况的一半。<sup class="noprint Template-Fact">[来源请求]</sup> </p><p>对于某些类型的列表，如果待排序的数据只能按顺序有效访问，归并排序比快速排序更有效，因此在一些语言中很流行，如Lisp，其中顺序访问的数据结构非常常见。与快速排序的一些(高效)实现不同，归并排序是一种稳定的排序。</p><p>归并排序最常见的实现并非在原列表中偏序；<sup><a href="https://web.archive.org/web/20221025122000/https://baike.sogou.com/kexue/d11025.htm#quote_5" class="kx_ref">[5]</a></sup> 因此，必须为存储有序序列输出分配内存(只需<i>n</i>/2的额外空间的版本见下文)。</p></div></div><div id="par_14996252613673474"><h2 class="title">4 变体<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><p>归并排序的变体主要关注降低空间复杂性和复制成本。</p><p>将空间开销减少到<i>n</i>/2的简单替代方案是维护<i>左右</i> 节点作为组合结构，仅将m的<i>左侧</i>部分复制到临时存储空间，引导<i>归并</i> 过程使其将归并输出放入<i>m</i>。在这个版本中，最好将临时空间分配给<i>归并</i>过程，因此只需要一次分配。前面提到的过度复制也得到缓解，因为<i>回送结果</i> 语句(函数<i>merge </i>在上面的伪代码中)变得多余。</p><p>当在数组上实现时，归并排序的一个缺点是需要<span><i>O</i>(<i>n</i>)</span>的运行空间。几个原地算法变体已被提出:</p><p>
+ </p><ul>
+  <li>Katajainen等人提出一种需要恒定工作内存的算法:用足够的存储空间来容纳输入数组中的一个元素，以及额外的空间来容纳<span><i>O</i>(1)</span>空间复杂度的输入数组中的指针。他们实现了<span><i>O</i>(<i>n</i> log <i>n</i>)</span> 带有小常数的时间复杂度，但是他们的算法并不稳定。<sup><a href="https://web.archive.org/web/20221025122000/https://baike.sogou.com/kexue/d11025.htm#quote_6" class="kx_ref">[6]</a></sup></li>
+  <li>创造可以与标准(自上而下或自下而上)归并排序相结合，以产生原地归并排序算法的<i>原地归并</i>算法已经有了许多尝试。在这种情况下，“原地”的概念可以放宽到意味着“占用对数堆栈空间”，因为标准的归并排序需要为其自己的堆栈使用留出一定的空间。格弗特等人表示，使用恒定的暂存空间的情况下，在<span><i>O</i>(<i>n</i> log <i>n</i>)</span>时间复杂度内的稳定原地归并算法是可能的，但是它们的算法很复杂，并且具有很高的常数因子:归并长度分别为<span>n</span>和<span>m</span>的数组将进行 <span>5<i>n</i> + 12<i>m</i> + <i>o</i>(<i>m</i>)</span> 次移动。这种高常数因子和复杂的原地算法变得更简单、更容易理解。<sup><a href="https://web.archive.org/web/20221025122000/https://baike.sogou.com/kexue/d11025.htm#quote_7" class="kx_ref">[7]</a></sup> Bing-Chao Huang和Michael A. Langston<sup><a href="https://web.archive.org/web/20221025122000/https://baike.sogou.com/kexue/d11025.htm#quote_8" class="kx_ref">[8]</a></sup>提出了一种简单的线性时间算法，<i>实际原地归并</i> 算法，使用固定数量的额外空间归并排序列表。他们都使用了克朗罗德和其他人的作品。它融入线性时间和恒定的额外空间。该算法比标准的归并排序算法花费的平均时间少一点，可以自由利用0(n)个临时额外存储单元，不到原空间的2倍。虽然该算法在实际应用中要快得多，但对于某些列表来说也是不稳定的。但是使用类似的概念，他们已经能够解决这个问题。其他原地算法包括符号归并，它总共花费<span><i>O</i>((<i>n</i> + <i>m</i>) log (<i>n</i> + <i>m</i>))</span> 的总时间，并且是稳定的。<sup><a href="https://web.archive.org/web/20221025122000/https://baike.sogou.com/kexue/d11025.htm#quote_9" class="kx_ref">[9]</a></sup> 将这样的算法插入归并排序增加了非线性的复杂度，但仍然是拟线性的，复杂度为<span><i>O</i>(<i>n</i> (log <i>n</i>)<sup>2</sup>)</span>。</li>
+  <li>现代稳定的线性原地归并是块归并排序。</li>
+ </ul><p></p><p>减少复制到多个列表的另一种方法是将新的信息字段与每个键(<i>m</i>中的元素被称为键)。此字段将用于在排序列表中将键和任何相关信息链接在一起(键及其相关信息称为记录)。然后，通过改变链接值来进行排序列表的归并；根本不需要移动任何记录。仅包含一个链接的字段通常会小于整个记录，因此也将使用更少的空间。这是一种标准排序技术，不限于归并排序。</p></div></div><div id="par_14996252613673475"><h2 class="title">5 与磁带机一起使用<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><p></p><div class="text_img ed_imgfloat_right">
+            <a class="ed_image_link lazyLoad" data-src="https://img02.sogoucdn.com/app/a/200698/sogou_science_4045" data-bigsrc="" title="点击查看大图" href="javascript:" data-observer="true"></a>
+            <div class="text_img_title">归并排序类型的算法允许在现代标准下具有小容量随机存储器的早期计算机上对大量数据进行排序。记录存储在磁带上并在磁带驱动器组上处理，例如图中的IBM 729.</div>   
+        </div> <p></p><p>当要排序的数据太大而无法容纳时，在光盘或者磁带驱动器上进行外部归并排序非常实用。 外部排序解释如何用磁盘驱动器实现归并排序。典型的磁带机类型使用四个磁带机。所有的输入/输出都是顺序的(除了每一遍结束时的倒带)。一个最小的实现只需要两个记录缓冲区和几个程序变量就可以完成。</p><p>将四个磁带机命名为A、B、C、D，原始数据在A上，并且只使用两个记录缓冲区，算法类似于 ，使用成对的磁带机而非内存中的阵列。基本算法可以描述如下:</p><p>
+ </p><ol>
+  <li>合并A中的记录对；交替向C和D写入两个记录的子列表</li>
+  <li>将两个记录的子列表从C和D合并成四个记录的子列表；把这些交替写入A和B</li>
+  <li>将A和B的四个记录子列表合并为八个记录子列表；交替地把这些写入C和D</li>
+  <li>重复以上步骤，直到您有一个包含所有数据的列表，在log<sub>2</sub>(<i>n</i>)遍中就可以完成排序。</li>
+ </ol><p></p><p>通常情况下，外部排序使用混合算法而不是从非常短的运行步骤开始，初始过程将把许多记录读入内存，进行内部排序以创建一个长运行步骤，然后将这些长运行步骤分配到输出集。这一步避免了许多遍早期归并。例如，一个1024条记录的内部排序将保存9个归并过程。内部排序通常很大，因为它这样的好处。事实上，有些技术可以使初始运行步骤的长度大小高于可用内存。<sup><a href="https://web.archive.org/web/20221025122000/https://baike.sogou.com/kexue/d11025.htm#quote_10" class="kx_ref">[10]</a></sup> </p><p>有了更高级的算法，上述算法可以修改为使用三个磁带。使用两个队列，或一个栈和一个队列，或三个栈也可以达到<i>O</i>（<i>n</i> log <i>n</i>)的运行时间。另一方面，使用k（k&gt;2）个磁带(内存中有<i>O(k</i>)个项)，利用k/2路归并，我们可以将磁带操作数量减少到<i>O</i>(log <i>k</i>)次。</p><p>优化磁带(和磁盘)驱动器使用的更复杂的归并排序是多相归并排序。</p></div></div><div id="par_14996252613673476"><h2 class="title">6 优化归并排序<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><p></p><div class="text_img ed_imgfloat_right">
+            <a class="ed_image_link lazyLoad" data-src="https://img01.sogoucdn.com/app/a/200698/sogou_science_4044" data-bigsrc="" title="点击查看大图" href="javascript:" data-observer="true"></a>
+            <div class="text_img_title">在随机整数数组上进行的平铺归并排序。横轴表示数组索引，纵轴表示数组中的整数。</div>   
+        </div> <p></p><p>在现代计算机上， 参考点在 软件优化方面至关重要，因为使用了多级内存层次结构。利用高速缓存的归并排序算法已被提出，该算法明确选择最小化存储器高速缓存中页面调入调出的移动次数。例如，<b>平铺归并排序</b>算法在子阵列达到大小为S时停止划分子阵列，其中S是适合于中央处理器高速缓存的数据项的数量。这些子阵列中的每一个都用原地排序算法进行排序，例如插入排序，以避免内存交换，然后以标准递归方式完成普通的归并排序。该算法在受益于缓存优化的机器上表现出了更好的性能<sup class="noprint Inline-Template">[示例请求]</sup>。 （）</p><p>提出了归并排序的替代版本，该版本使用恒定的额外空间。这个算法后来被改进了。（）</p><p>此外，许多外部排序的应用使用归并排序的形式，其中输入被分割成更多数量的子列表，理想情况下，这是数量满足归并后仍能使当前处理的页的集合适配主存储器。</p></div></div><div id="par_14996252613673477"><h2 class="title">7 并行归并排序<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><p>由于使用了分治法，归并排序并行性很好。 科曼、莱瑟森、瑞文斯特和斯坦的第三版<i>算法导论</i>讨论了几个平行的变体。<sup><a href="https://web.archive.org/web/20221025122000/https://baike.sogou.com/kexue/d11025.htm#quote_11" class="kx_ref">[11]</a></sup> 其中的第一个可以很容易地用伪代码表达分支合并关键词:</p><p></p><pre class="kx_code">// <i>Sort elements lo through hi (exclusive) of array A.</i><b>algorithm</b> mergesort(A, lo, hi) <b>is</b>
+    <b>if</b> lo+1 &lt; hi <b>then</b>  // <i>Two or more elements.</i>
+        mid = ⌊(lo + hi) / 2⌋        <b>fork</b> mergesort(A, lo, mid)
+        mergesort(A, mid, hi)        <b>join</b>
+        merge(A, lo, mid, hi)</pre><p></p><p>这个算法是对串行版本的一个微不足道的修改，它的加速并不令人印象深刻:当在无限数量的处理器上执行时，它运行的时间复杂度为<span>Θ(<i>n</i>)</span>，这只是一个<span>Θ(log <i>n</i>)</span> 串行版本的改进。使用并行归并算法可以获得更好的结果，这给出了并行下 <span>Θ(<i>n</i> / (log <i>n</i>)<sup>2</sup>)</span>的时间复杂度，这意味着如果有足够的处理器可用的时间，这种类型的并行归并排序运行的复杂度为</p><p><span class="kx_formula" alt="{\displaystyle \Theta \left((n\log n)\cdot {\frac {(\log n)^{2}}{n}}\right)=\Theta ((\log n)^{3})}"> 
+ &nbsp;<svg xmlns:xlink="http://www.w3.org/1999/xlink" style="fill-opacity:1; color-rendering:auto; color-interpolation:auto; text-rendering:auto; stroke:black; stroke-linecap:square; stroke-miterlimit:10; shape-rendering:auto; stroke-opacity:1; fill:black; stroke-dasharray:none; font-weight:normal; stroke-width:1; font-family:&#39;Dialog&#39;; font-style:normal; stroke-linejoin:miter; font-size:12px; stroke-dashoffset:0; image-rendering:auto;" width="320" height="56" xmlns="http://www.w3.org/2000/svg" class="transfer_formula"><!--Generated by the Batik Graphics2D SVG Generator--><defs id="genericDefs"></defs><g><g transform="scale(20,20) translate(0,1.663)"><path d="M0.7188 -0.3438 Q0.7188 -0.1875 0.625 -0.0781 Q0.5312 0.0156 0.4062 0.0156 L0.3906 0.0156 Q0.2656 0.0156 0.1562 -0.0781 Q0.0625 -0.1719 0.0625 -0.3281 L0.0625 -0.3438 Q0.0625 -0.4844 0.1562 -0.5938 Q0.25 -0.7031 0.375 -0.7031 L0.3906 -0.7031 Q0.5156 -0.7031 0.6094 -0.6094 Q0.7188 -0.5 0.7188 -0.3594 L0.7188 -0.3438 ZM0.3906 0 Q0.4688 0 0.5312 -0.0625 Q0.625 -0.1562 0.625 -0.3438 Q0.625 -0.5469 0.5156 -0.6406 Q0.4531 -0.6875 0.3906 -0.6875 Q0.2969 -0.6875 0.2344 -0.6094 L0.2344 -0.6094 Q0.1562 -0.5156 0.1562 -0.3438 Q0.1562 -0.125 0.2656 -0.0469 Q0.3281 0 0.3906 0 ZM0.5625 -0.4062 L0.5625 -0.2656 L0.5469 -0.2656 L0.5469 -0.2969 L0.2344 -0.2969 L0.2344 -0.2656 L0.2031 -0.2656 L0.2031 -0.4062 L0.2344 -0.4062 L0.2344 -0.375 L0.5469 -0.375 L0.5469 -0.4062 L0.5625 -0.4062 Z"></path></g><g transform="matrix(20,0,0,20,0,0) translate(0.9444,0.253)"><path d="M0.6562 2.3594 Q0.5469 2.25 0.4531 2.1094 Q0.3594 1.9688 0.3047 1.8125 Q0.25 1.6562 0.2266 1.4922 Q0.2031 1.3281 0.2031 1.1562 Q0.2031 0.9844 0.2266 0.8203 Q0.25 0.6562 0.3047 0.5 Q0.3594 0.3438 0.4531 0.2109 Q0.5469 0.0781 0.6562 -0.0312 Q0.6562 -0.0469 0.6719 -0.0469 L0.6875 -0.0469 Q0.7031 -0.0469 0.7031 -0.0391 Q0.7031 -0.0312 0.7031 -0.0312 Q0.7031 -0.0312 0.7031 -0.0312 Q0.5781 0.0938 0.5 0.2266 Q0.4219 0.3594 0.375 0.5156 Q0.3281 0.6719 0.3125 0.8359 Q0.2969 1 0.2969 1.1562 Q0.2969 1.3281 0.3125 1.4844 Q0.3281 1.6406 0.375 1.7969 Q0.4219 1.9531 0.5078 2.0938 Q0.5938 2.2344 0.7031 2.3438 Q0.7031 2.3438 0.7031 2.3438 Q0.7031 2.3594 0.7031 2.3594 Q0.7031 2.3594 0.6875 2.3594 L0.6719 2.3594 Q0.6562 2.3594 0.6562 2.3594 Z"></path></g><g transform="matrix(20,0,0,20,0,0) translate(1.6806,1.663)"><path d="M0.3281 0.2344 L0.3281 0.2344 Q0.3281 0.25 0.3281 0.25 Q0.3125 0.25 0.2656 0.2031 Q0.2031 0.1406 0.1719 0.0625 Q0.0938 -0.0781 0.0938 -0.25 Q0.0938 -0.4219 0.1562 -0.5625 Q0.2188 -0.6719 0.2969 -0.7344 Q0.3125 -0.75 0.3281 -0.75 Q0.3281 -0.75 0.3281 -0.7344 Q0.3281 -0.7344 0.3125 -0.7188 Q0.1562 -0.5625 0.1562 -0.25 Q0.1562 0.0625 0.3125 0.2188 Q0.3281 0.2344 0.3281 0.2344 Z"></path></g><g transform="matrix(20,0,0,20,0,0) translate(2.0695,1.663) scale(0.1,0.1)"><path d="M1.6094 -3.6562 Q2.4062 -4.6094 3.1094 -4.6094 Q3.4844 -4.6094 3.75 -4.4219 Q4.0156 -4.2344 4.1719 -3.8125 Q4.2656 -3.5312 4.2656 -2.9219 L4.2656 -1.0156 Q4.2656 -0.5938 4.3438 -0.4375 Q4.3906 -0.3125 4.5156 -0.2422 Q4.6406 -0.1719 4.9531 -0.1719 L4.9531 0 L2.75 0 L2.75 -0.1719 L2.8438 -0.1719 Q3.1562 -0.1719 3.2812 -0.2656 Q3.4062 -0.3594 3.4531 -0.5469 Q3.4688 -0.625 3.4688 -1.0156 L3.4688 -2.8438 Q3.4688 -3.4531 3.3125 -3.7266 Q3.1562 -4 2.7812 -4 Q2.1875 -4 1.6094 -3.375 L1.6094 -1.0156 Q1.6094 -0.5625 1.6719 -0.4531 Q1.7344 -0.3125 1.8594 -0.2422 Q1.9844 -0.1719 2.3438 -0.1719 L2.3438 0 L0.125 0 L0.125 -0.1719 L0.2344 -0.1719 Q0.5781 -0.1719 0.6953 -0.3438 Q0.8125 -0.5156 0.8125 -1.0156 L0.8125 -2.6719 Q0.8125 -3.4844 0.7734 -3.6562 Q0.7344 -3.8281 0.6641 -3.8906 Q0.5938 -3.9531 0.4531 -3.9531 Q0.3281 -3.9531 0.125 -3.875 L0.0625 -4.0625 L1.4062 -4.6094 L1.6094 -4.6094 L1.6094 -3.6562 Z"></path><path d="M0.1719 -0.6875 L0.1719 -0.0781 Q0.1719 -0.0469 0.1875 -0.0312 Q0.2031 -0.0312 0.25 -0.0312 L0.25 0 L0.1406 0 Q0.125 0 0.0312 0 L0.0312 -0.0312 Q0.0938 -0.0312 0.1094 -0.0469 L0.1094 -0.0469 Q0.1094 -0.0469 0.1094 -0.0781 L0.1094 -0.5938 Q0.1094 -0.6406 0.0938 -0.6406 L0.0938 -0.6406 Q0.0781 -0.6562 0.0625 -0.6562 L0.0312 -0.6562 L0.0312 -0.6875 L0.1719 -0.6875 Z" transform="scale(10,10) translate(0.702,0)"></path></g><g transform="matrix(20,0,0,20,0,0) translate(3.0492,1.663)"><path d="M0.4688 -0.2188 L0.4688 -0.2188 Q0.4688 -0.1094 0.3906 -0.0469 Q0.3281 0.0156 0.25 0.0156 Q0.1562 0.0156 0.0938 -0.0625 Q0.0312 -0.125 0.0312 -0.2188 Q0.0312 -0.3125 0.0938 -0.3906 Q0.1562 -0.4531 0.25 -0.4531 Q0.3438 -0.4531 0.4062 -0.375 Q0.4688 -0.2969 0.4688 -0.2188 ZM0.25 -0.0156 L0.25 -0.0156 Q0.3125 -0.0156 0.3594 -0.0625 L0.3594 -0.0938 Q0.3906 -0.125 0.3906 -0.2188 Q0.3906 -0.3125 0.3594 -0.3594 Q0.3125 -0.4219 0.25 -0.4219 Q0.1875 -0.4219 0.1406 -0.375 Q0.1406 -0.375 0.1406 -0.3594 Q0.1094 -0.3125 0.1094 -0.2188 Q0.1094 -0.125 0.1406 -0.0781 Q0.1719 -0.0156 0.25 -0.0156 Z"></path></g><g transform="matrix(20,0,0,20,0,0) translate(3.5492,1.663)"><path d="M0.2188 -0.1719 Q0.2656 -0.1719 0.2969 -0.2188 Q0.3125 -0.2344 0.3125 -0.2969 Q0.3125 -0.4219 0.2188 -0.4219 Q0.1719 -0.4219 0.1562 -0.375 Q0.1406 -0.3594 0.1406 -0.2969 Q0.1406 -0.1719 0.2188 -0.1719 ZM0.125 -0.1875 Q0.1094 -0.1562 0.1094 -0.1406 Q0.1094 -0.0938 0.1406 -0.0781 Q0.1406 -0.0625 0.1562 -0.0625 Q0.1719 -0.0625 0.2344 -0.0625 Q0.3438 -0.0625 0.3906 -0.0469 Q0.3906 -0.0469 0.4062 -0.0312 Q0.4688 0 0.4688 0.0781 Q0.4688 0.1406 0.3906 0.1719 Q0.3281 0.2031 0.25 0.2031 Q0.1406 0.2031 0.0625 0.1562 Q0.0312 0.125 0.0312 0.0781 Q0.0312 0.0312 0.0781 0 Q0.0938 -0.0156 0.125 -0.0156 Q0.0781 -0.0469 0.0781 -0.1094 Q0.0781 -0.1562 0.1094 -0.1875 Q0.0625 -0.2344 0.0625 -0.2969 Q0.0625 -0.3594 0.125 -0.4062 Q0.1562 -0.4375 0.2188 -0.4375 Q0.2812 -0.4375 0.3281 -0.4062 Q0.375 -0.4531 0.4375 -0.4531 Q0.4688 -0.4531 0.4844 -0.4219 Q0.4844 -0.4062 0.4844 -0.4062 Q0.4844 -0.375 0.4531 -0.375 Q0.4375 -0.375 0.4219 -0.3906 Q0.4219 -0.4062 0.4219 -0.4062 Q0.4219 -0.4219 0.4375 -0.4375 Q0.4375 -0.4375 0.4375 -0.4375 Q0.3906 -0.4375 0.3438 -0.3906 Q0.3906 -0.3594 0.3906 -0.2969 Q0.3906 -0.2188 0.3281 -0.1875 Q0.2812 -0.1562 0.2188 -0.1562 Q0.1719 -0.1562 0.125 -0.1875 ZM0.25 0.1875 L0.25 0.1875 Q0.3438 0.1875 0.3906 0.1406 Q0.4219 0.1094 0.4219 0.0781 Q0.4219 0 0.2969 0 L0.2969 0 L0.2969 0 Q0.2812 0 0.2188 0 L0.1562 0 Q0.1094 0 0.0938 0.0312 Q0.0781 0.0625 0.0781 0.0781 Q0.0781 0.125 0.1406 0.1562 Q0.1875 0.1875 0.25 0.1875 Z"></path></g><g transform="matrix(20,0,0,20,0,0) translate(4.2159,1.663) scale(0.1,0.1)"><path d="M1.6094 -3.6562 Q2.4062 -4.6094 3.1094 -4.6094 Q3.4844 -4.6094 3.75 -4.4219 Q4.0156 -4.2344 4.1719 -3.8125 Q4.2656 -3.5312 4.2656 -2.9219 L4.2656 -1.0156 Q4.2656 -0.5938 4.3438 -0.4375 Q4.3906 -0.3125 4.5156 -0.2422 Q4.6406 -0.1719 4.9531 -0.1719 L4.9531 0 L2.75 0 L2.75 -0.1719 L2.8438 -0.1719 Q3.1562 -0.1719 3.2812 -0.2656 Q3.4062 -0.3594 3.4531 -0.5469 Q3.4688 -0.625 3.4688 -1.0156 L3.4688 -2.8438 Q3.4688 -3.4531 3.3125 -3.7266 Q3.1562 -4 2.7812 -4 Q2.1875 -4 1.6094 -3.375 L1.6094 -1.0156 Q1.6094 -0.5625 1.6719 -0.4531 Q1.7344 -0.3125 1.8594 -0.2422 Q1.9844 -0.1719 2.3438 -0.1719 L2.3438 0 L0.125 0 L0.125 -0.1719 L0.2344 -0.1719 Q0.5781 -0.1719 0.6953 -0.3438 Q0.8125 -0.5156 0.8125 -1.0156 L0.8125 -2.6719 Q0.8125 -3.4844 0.7734 -3.6562 Q0.7344 -3.8281 0.6641 -3.8906 Q0.5938 -3.9531 0.4531 -3.9531 Q0.3281 -3.9531 0.125 -3.875 L0.0625 -4.0625 L1.4062 -4.6094 L1.6094 -4.6094 L1.6094 -3.6562 Z"></path><path d="M0.2812 -0.25 L0.2812 -0.25 Q0.2812 -0.0781 0.2188 0.0625 Q0.1719 0.1719 0.0938 0.2344 Q0.0781 0.25 0.0625 0.25 Q0.0625 0.25 0.0625 0.2344 Q0.0625 0.2344 0.0625 0.2188 Q0.2344 0.0625 0.2344 -0.25 Q0.2344 -0.5625 0.0781 -0.7188 L0.0781 -0.7188 Q0.0625 -0.7344 0.0625 -0.7344 Q0.0625 -0.75 0.0625 -0.75 Q0.0781 -0.75 0.125 -0.7031 Q0.1875 -0.6406 0.2188 -0.5625 Q0.2812 -0.4219 0.2812 -0.25 Z" transform="scale(10,10) translate(0.5353,0)"></path></g><g transform="matrix(20,0,0,20,0,0) translate(5.3623,1.663)"><path d="M0.1875 -0.25 Q0.1875 -0.2188 0.1562 -0.2031 Q0.1562 -0.2031 0.1406 -0.2031 Q0.1094 -0.2031 0.0938 -0.2344 Q0.0938 -0.2344 0.0938 -0.25 Q0.0938 -0.2812 0.1094 -0.2969 Q0.125 -0.2969 0.1406 -0.2969 Q0.1719 -0.2969 0.1875 -0.2656 Q0.1875 -0.2656 0.1875 -0.25 Z"></path></g><g transform="matrix(20,0,0,20,0,0) translate(5.9823,0.9865)"><path d="M0.3281 0.2344 L0.3281 0.2344 Q0.3281 0.25 0.3281 0.25 Q0.3125 0.25 0.2656 0.2031 Q0.2031 0.1406 0.1719 0.0625 Q0.0938 -0.0781 0.0938 -0.25 Q0.0938 -0.4219 0.1562 -0.5625 Q0.2188 -0.6719 0.2969 -0.7344 Q0.3125 -0.75 0.3281 -0.75 Q0.3281 -0.75 0.3281 -0.7344 Q0.3281 -0.7344 0.3125 -0.7188 Q0.1562 -0.5625 0.1562 -0.25 Q0.1562 0.0625 0.3125 0.2188 Q0.3281 0.2344 0.3281 0.2344 Z"></path></g><g transform="matrix(20,0,0,20,0,0) translate(6.3712,0.9865)"><path d="M0.1719 -0.6875 L0.1719 -0.0781 Q0.1719 -0.0469 0.1875 -0.0312 Q0.2031 -0.0312 0.25 -0.0312 L0.25 0 L0.1406 0 Q0.125 0 0.0312 0 L0.0312 -0.0312 Q0.0938 -0.0312 0.1094 -0.0469 L0.1094 -0.0469 Q0.1094 -0.0469 0.1094 -0.0781 L0.1094 -0.5938 Q0.1094 -0.6406 0.0938 -0.6406 L0.0938 -0.6406 Q0.0781 -0.6562 0.0625 -0.6562 L0.0312 -0.6562 L0.0312 -0.6875 L0.1719 -0.6875 Z"></path></g><g transform="matrix(20,0,0,20,0,0) translate(6.649,0.9865)"><path d="M0.4688 -0.2188 L0.4688 -0.2188 Q0.4688 -0.1094 0.3906 -0.0469 Q0.3281 0.0156 0.25 0.0156 Q0.1562 0.0156 0.0938 -0.0625 Q0.0312 -0.125 0.0312 -0.2188 Q0.0312 -0.3125 0.0938 -0.3906 Q0.1562 -0.4531 0.25 -0.4531 Q0.3438 -0.4531 0.4062 -0.375 Q0.4688 -0.2969 0.4688 -0.2188 ZM0.25 -0.0156 L0.25 -0.0156 Q0.3125 -0.0156 0.3594 -0.0625 L0.3594 -0.0938 Q0.3906 -0.125 0.3906 -0.2188 Q0.3906 -0.3125 0.3594 -0.3594 Q0.3125 -0.4219 0.25 -0.4219 Q0.1875 -0.4219 0.1406 -0.375 Q0.1406 -0.375 0.1406 -0.3594 Q0.1094 -0.3125 0.1094 -0.2188 Q0.1094 -0.125 0.1406 -0.0781 Q0.1719 -0.0156 0.25 -0.0156 Z"></path></g><g transform="matrix(20,0,0,20,0,0) translate(7.149,0.9865)"><path d="M0.2188 -0.1719 Q0.2656 -0.1719 0.2969 -0.2188 Q0.3125 -0.2344 0.3125 -0.2969 Q0.3125 -0.4219 0.2188 -0.4219 Q0.1719 -0.4219 0.1562 -0.375 Q0.1406 -0.3594 0.1406 -0.2969 Q0.1406 -0.1719 0.2188 -0.1719 ZM0.125 -0.1875 Q0.1094 -0.1562 0.1094 -0.1406 Q0.1094 -0.0938 0.1406 -0.0781 Q0.1406 -0.0625 0.1562 -0.0625 Q0.1719 -0.0625 0.2344 -0.0625 Q0.3438 -0.0625 0.3906 -0.0469 Q0.3906 -0.0469 0.4062 -0.0312 Q0.4688 0 0.4688 0.0781 Q0.4688 0.1406 0.3906 0.1719 Q0.3281 0.2031 0.25 0.2031 Q0.1406 0.2031 0.0625 0.1562 Q0.0312 0.125 0.0312 0.0781 Q0.0312 0.0312 0.0781 0 Q0.0938 -0.0156 0.125 -0.0156 Q0.0781 -0.0469 0.0781 -0.1094 Q0.0781 -0.1562 0.1094 -0.1875 Q0.0625 -0.2344 0.0625 -0.2969 Q0.0625 -0.3594 0.125 -0.4062 Q0.1562 -0.4375 0.2188 -0.4375 Q0.2812 -0.4375 0.3281 -0.4062 Q0.375 -0.4531 0.4375 -0.4531 Q0.4688 -0.4531 0.4844 -0.4219 Q0.4844 -0.4062 0.4844 -0.4062 Q0.4844 -0.375 0.4531 -0.375 Q0.4375 -0.375 0.4219 -0.3906 Q0.4219 -0.4062 0.4219 -0.4062 Q0.4219 -0.4219 0.4375 -0.4375 Q0.4375 -0.4375 0.4375 -0.4375 Q0.3906 -0.4375 0.3438 -0.3906 Q0.3906 -0.3594 0.3906 -0.2969 Q0.3906 -0.2188 0.3281 -0.1875 Q0.2812 -0.1562 0.2188 -0.1562 Q0.1719 -0.1562 0.125 -0.1875 ZM0.25 0.1875 L0.25 0.1875 Q0.3438 0.1875 0.3906 0.1406 Q0.4219 0.1094 0.4219 0.0781 Q0.4219 0 0.2969 0 L0.2969 0 L0.2969 0 Q0.2812 0 0.2188 0 L0.1562 0 Q0.1094 0 0.0938 0.0312 Q0.0781 0.0625 0.0781 0.0781 Q0.0781 0.125 0.1406 0.1562 Q0.1875 0.1875 0.25 0.1875 Z"></path></g><g transform="matrix(20,0,0,20,0,0) translate(7.8156,0.9865) scale(0.1,0.1)"><path d="M1.6094 -3.6562 Q2.4062 -4.6094 3.1094 -4.6094 Q3.4844 -4.6094 3.75 -4.4219 Q4.0156 -4.2344 4.1719 -3.8125 Q4.2656 -3.5312 4.2656 -2.9219 L4.2656 -1.0156 Q4.2656 -0.5938 4.3438 -0.4375 Q4.3906 -0.3125 4.5156 -0.2422 Q4.6406 -0.1719 4.9531 -0.1719 L4.9531 0 L2.75 0 L2.75 -0.1719 L2.8438 -0.1719 Q3.1562 -0.1719 3.2812 -0.2656 Q3.4062 -0.3594 3.4531 -0.5469 Q3.4688 -0.625 3.4688 -1.0156 L3.4688 -2.8438 Q3.4688 -3.4531 3.3125 -3.7266 Q3.1562 -4 2.7812 -4 Q2.1875 -4 1.6094 -3.375 L1.6094 -1.0156 Q1.6094 -0.5625 1.6719 -0.4531 Q1.7344 -0.3125 1.8594 -0.2422 Q1.9844 -0.1719 2.3438 -0.1719 L2.3438 0 L0.125 0 L0.125 -0.1719 L0.2344 -0.1719 Q0.5781 -0.1719 0.6953 -0.3438 Q0.8125 -0.5156 0.8125 -1.0156 L0.8125 -2.6719 Q0.8125 -3.4844 0.7734 -3.6562 Q0.7344 -3.8281 0.6641 -3.8906 Q0.5938 -3.9531 0.4531 -3.9531 Q0.3281 -3.9531 0.125 -3.875 L0.0625 -4.0625 L1.4062 -4.6094 L1.6094 -4.6094 L1.6094 -3.6562 Z"></path><path d="M0.2812 -0.25 L0.2812 -0.25 Q0.2812 -0.0781 0.2188 0.0625 Q0.1719 0.1719 0.0938 0.2344 Q0.0781 0.25 0.0625 0.25 Q0.0625 0.25 0.0625 0.2344 Q0.0625 0.2344 0.0625 0.2188 Q0.2344 0.0625 0.2344 -0.25 Q0.2344 -0.5625 0.0781 -0.7188 L0.0781 -0.7188 Q0.0625 -0.7344 0.0625 -0.7344 Q0.0625 -0.75 0.0625 -0.75 Q0.0781 -0.75 0.125 -0.7031 Q0.1875 -0.6406 0.2188 -0.5625 Q0.2812 -0.4219 0.2812 -0.25 Z" transform="scale(10,10) translate(0.5353,0)"></path></g><g transform="matrix(20,0,0,20,0,0) translate(8.7399,0.6236) scale(0.07,0.07)"><path d="M4.5781 -1.2812 L4.125 0 L0.2188 0 L0.2188 -0.1875 Q1.9375 -1.75 2.6406 -2.75 Q3.3438 -3.75 3.3438 -4.5781 Q3.3438 -5.2031 2.9609 -5.6094 Q2.5781 -6.0156 2.0312 -6.0156 Q1.5469 -6.0156 1.1562 -5.7266 Q0.7656 -5.4375 0.5938 -4.8906 L0.4062 -4.8906 Q0.5312 -5.7969 1.0312 -6.2812 Q1.5312 -6.7656 2.2969 -6.7656 Q3.0938 -6.7656 3.6406 -6.2422 Q4.1875 -5.7188 4.1875 -5.0156 Q4.1875 -4.5156 3.9531 -4.0156 Q3.5781 -3.2188 2.7812 -2.3438 Q1.5625 -1.0156 1.25 -0.7344 L2.9844 -0.7344 Q3.5156 -0.7344 3.7266 -0.7734 Q3.9375 -0.8125 4.1094 -0.9375 Q4.2812 -1.0625 4.4062 -1.2812 L4.5781 -1.2812 Z"></path><rect x="5.9823" y="1.393" transform="scale(14.2857,14.2857) translate(-8.7399,-0.6236)" width="3.131" height="0.04"></rect><path d="M1.6094 -3.6562 Q2.4062 -4.6094 3.1094 -4.6094 Q3.4844 -4.6094 3.75 -4.4219 Q4.0156 -4.2344 4.1719 -3.8125 Q4.2656 -3.5312 4.2656 -2.9219 L4.2656 -1.0156 Q4.2656 -0.5938 4.3438 -0.4375 Q4.3906 -0.3125 4.5156 -0.2422 Q4.6406 -0.1719 4.9531 -0.1719 L4.9531 0 L2.75 0 L2.75 -0.1719 L2.8438 -0.1719 Q3.1562 -0.1719 3.2812 -0.2656 Q3.4062 -0.3594 3.4531 -0.5469 Q3.4688 -0.625 3.4688 -1.0156 L3.4688 -2.8438 Q3.4688 -3.4531 3.3125 -3.7266 Q3.1562 -4 2.7812 -4 Q2.1875 -4 1.6094 -3.375 L1.6094 -1.0156 Q1.6094 -0.5625 1.6719 -0.4531 Q1.7344 -0.3125 1.8594 -0.2422 Q1.9844 -0.1719 2.3438 -0.1719 L2.3438 0 L0.125 0 L0.125 -0.1719 L0.2344 -0.1719 Q0.5781 -0.1719 0.6953 -0.3438 Q0.8125 -0.5156 0.8125 -1.0156 L0.8125 -2.6719 Q0.8125 -3.4844 0.7734 -3.6562 Q0.7344 -3.8281 0.6641 -3.8906 Q0.5938 -3.9531 0.4531 -3.9531 Q0.3281 -3.9531 0.125 -3.875 L0.0625 -4.0625 L1.4062 -4.6094 L1.6094 -4.6094 L1.6094 -3.6562 Z" transform="scale(14.2857,14.2857) translate(-1.4597,1.7254) scale(0.1,0.1)"></path><path d="M0.0469 2.3594 Q0.0312 2.3594 0.0312 2.3438 Q0.0312 2.3438 0.0312 2.3438 Q0.1562 2.2344 0.2344 2.0938 Q0.3125 1.9531 0.3594 1.8047 Q0.4062 1.6562 0.4219 1.4922 Q0.4375 1.3281 0.4375 1.1562 Q0.4375 0.9844 0.4219 0.8281 Q0.4062 0.6719 0.3594 0.5156 Q0.3125 0.3594 0.2344 0.2266 Q0.1562 0.0938 0.0312 -0.0312 Q0.0312 -0.0312 0.0312 -0.0312 Q0.0312 -0.0469 0.0469 -0.0469 L0.0625 -0.0469 Q0.0781 -0.0469 0.0781 -0.0312 Q0.2031 0.0781 0.2891 0.2109 Q0.375 0.3438 0.4297 0.5 Q0.4844 0.6562 0.5078 0.8203 Q0.5312 0.9844 0.5312 1.1562 Q0.5312 1.3281 0.5078 1.4922 Q0.4844 1.6562 0.4297 1.8125 Q0.375 1.9688 0.2891 2.1094 Q0.2031 2.25 0.0781 2.3594 Q0.0781 2.3594 0.0625 2.3594 L0.0469 2.3594 Z" transform="scale(14.2857,14.2857) translate(0.4935,-0.3706)"></path></g><g transform="matrix(20,0,0,20,0,0) translate(10.2472,1.663)"><path d="M0.6875 -0.3281 L0.0938 -0.3281 Q0.0625 -0.3281 0.0625 -0.3438 Q0.0625 -0.3594 0.0938 -0.3594 L0.6875 -0.3594 Q0.7188 -0.3594 0.7188 -0.3438 Q0.7188 -0.3281 0.6875 -0.3281 ZM0.6875 -0.1406 L0.0938 -0.1406 Q0.0625 -0.1406 0.0625 -0.1562 Q0.0625 -0.1719 0.0938 -0.1719 L0.6875 -0.1719 Q0.7188 -0.1719 0.7188 -0.1562 Q0.7188 -0.1406 0.6875 -0.1406 Z"></path></g><g transform="matrix(20,0,0,20,0,0) translate(11.3028,1.663)"><path d="M0.7188 -0.3438 Q0.7188 -0.1875 0.625 -0.0781 Q0.5312 0.0156 0.4062 0.0156 L0.3906 0.0156 Q0.2656 0.0156 0.1562 -0.0781 Q0.0625 -0.1719 0.0625 -0.3281 L0.0625 -0.3438 Q0.0625 -0.4844 0.1562 -0.5938 Q0.25 -0.7031 0.375 -0.7031 L0.3906 -0.7031 Q0.5156 -0.7031 0.6094 -0.6094 Q0.7188 -0.5 0.7188 -0.3594 L0.7188 -0.3438 ZM0.3906 0 Q0.4688 0 0.5312 -0.0625 Q0.625 -0.1562 0.625 -0.3438 Q0.625 -0.5469 0.5156 -0.6406 Q0.4531 -0.6875 0.3906 -0.6875 Q0.2969 -0.6875 0.2344 -0.6094 L0.2344 -0.6094 Q0.1562 -0.5156 0.1562 -0.3438 Q0.1562 -0.125 0.2656 -0.0469 Q0.3281 0 0.3906 0 ZM0.5625 -0.4062 L0.5625 -0.2656 L0.5469 -0.2656 L0.5469 -0.2969 L0.2344 -0.2969 L0.2344 -0.2656 L0.2031 -0.2656 L0.2031 -0.4062 L0.2344 -0.4062 L0.2344 -0.375 L0.5469 -0.375 L0.5469 -0.4062 L0.5625 -0.4062 Z"></path></g><g transform="matrix(20,0,0,20,0,0) translate(12.0806,1.663)"><path d="M0.3281 0.2344 L0.3281 0.2344 Q0.3281 0.25 0.3281 0.25 Q0.3125 0.25 0.2656 0.2031 Q0.2031 0.1406 0.1719 0.0625 Q0.0938 -0.0781 0.0938 -0.25 Q0.0938 -0.4219 0.1562 -0.5625 Q0.2188 -0.6719 0.2969 -0.7344 Q0.3125 -0.75 0.3281 -0.75 Q0.3281 -0.75 0.3281 -0.7344 Q0.3281 -0.7344 0.3125 -0.7188 Q0.1562 -0.5625 0.1562 -0.25 Q0.1562 0.0625 0.3125 0.2188 Q0.3281 0.2344 0.3281 0.2344 Z"></path></g><g transform="matrix(20,0,0,20,0,0) translate(12.4694,1.663)"><path d="M0.3281 0.2344 L0.3281 0.2344 Q0.3281 0.25 0.3281 0.25 Q0.3125 0.25 0.2656 0.2031 Q0.2031 0.1406 0.1719 0.0625 Q0.0938 -0.0781 0.0938 -0.25 Q0.0938 -0.4219 0.1562 -0.5625 Q0.2188 -0.6719 0.2969 -0.7344 Q0.3125 -0.75 0.3281 -0.75 Q0.3281 -0.75 0.3281 -0.7344 Q0.3281 -0.7344 0.3125 -0.7188 Q0.1562 -0.5625 0.1562 -0.25 Q0.1562 0.0625 0.3125 0.2188 Q0.3281 0.2344 0.3281 0.2344 Z"></path></g><g transform="matrix(20,0,0,20,0,0) translate(12.8583,1.663)"><path d="M0.1719 -0.6875 L0.1719 -0.0781 Q0.1719 -0.0469 0.1875 -0.0312 Q0.2031 -0.0312 0.25 -0.0312 L0.25 0 L0.1406 0 Q0.125 0 0.0312 0 L0.0312 -0.0312 Q0.0938 -0.0312 0.1094 -0.0469 L0.1094 -0.0469 Q0.1094 -0.0469 0.1094 -0.0781 L0.1094 -0.5938 Q0.1094 -0.6406 0.0938 -0.6406 L0.0938 -0.6406 Q0.0781 -0.6562 0.0625 -0.6562 L0.0312 -0.6562 L0.0312 -0.6875 L0.1719 -0.6875 Z"></path></g><g transform="matrix(20,0,0,20,0,0) translate(13.1361,1.663)"><path d="M0.4688 -0.2188 L0.4688 -0.2188 Q0.4688 -0.1094 0.3906 -0.0469 Q0.3281 0.0156 0.25 0.0156 Q0.1562 0.0156 0.0938 -0.0625 Q0.0312 -0.125 0.0312 -0.2188 Q0.0312 -0.3125 0.0938 -0.3906 Q0.1562 -0.4531 0.25 -0.4531 Q0.3438 -0.4531 0.4062 -0.375 Q0.4688 -0.2969 0.4688 -0.2188 ZM0.25 -0.0156 L0.25 -0.0156 Q0.3125 -0.0156 0.3594 -0.0625 L0.3594 -0.0938 Q0.3906 -0.125 0.3906 -0.2188 Q0.3906 -0.3125 0.3594 -0.3594 Q0.3125 -0.4219 0.25 -0.4219 Q0.1875 -0.4219 0.1406 -0.375 Q0.1406 -0.375 0.1406 -0.3594 Q0.1094 -0.3125 0.1094 -0.2188 Q0.1094 -0.125 0.1406 -0.0781 Q0.1719 -0.0156 0.25 -0.0156 Z"></path></g><g transform="matrix(20,0,0,20,0,0) translate(13.6361,1.663)"><path d="M0.2188 -0.1719 Q0.2656 -0.1719 0.2969 -0.2188 Q0.3125 -0.2344 0.3125 -0.2969 Q0.3125 -0.4219 0.2188 -0.4219 Q0.1719 -0.4219 0.1562 -0.375 Q0.1406 -0.3594 0.1406 -0.2969 Q0.1406 -0.1719 0.2188 -0.1719 ZM0.125 -0.1875 Q0.1094 -0.1562 0.1094 -0.1406 Q0.1094 -0.0938 0.1406 -0.0781 Q0.1406 -0.0625 0.1562 -0.0625 Q0.1719 -0.0625 0.2344 -0.0625 Q0.3438 -0.0625 0.3906 -0.0469 Q0.3906 -0.0469 0.4062 -0.0312 Q0.4688 0 0.4688 0.0781 Q0.4688 0.1406 0.3906 0.1719 Q0.3281 0.2031 0.25 0.2031 Q0.1406 0.2031 0.0625 0.1562 Q0.0312 0.125 0.0312 0.0781 Q0.0312 0.0312 0.0781 0 Q0.0938 -0.0156 0.125 -0.0156 Q0.0781 -0.0469 0.0781 -0.1094 Q0.0781 -0.1562 0.1094 -0.1875 Q0.0625 -0.2344 0.0625 -0.2969 Q0.0625 -0.3594 0.125 -0.4062 Q0.1562 -0.4375 0.2188 -0.4375 Q0.2812 -0.4375 0.3281 -0.4062 Q0.375 -0.4531 0.4375 -0.4531 Q0.4688 -0.4531 0.4844 -0.4219 Q0.4844 -0.4062 0.4844 -0.4062 Q0.4844 -0.375 0.4531 -0.375 Q0.4375 -0.375 0.4219 -0.3906 Q0.4219 -0.4062 0.4219 -0.4062 Q0.4219 -0.4219 0.4375 -0.4375 Q0.4375 -0.4375 0.4375 -0.4375 Q0.3906 -0.4375 0.3438 -0.3906 Q0.3906 -0.3594 0.3906 -0.2969 Q0.3906 -0.2188 0.3281 -0.1875 Q0.2812 -0.1562 0.2188 -0.1562 Q0.1719 -0.1562 0.125 -0.1875 ZM0.25 0.1875 L0.25 0.1875 Q0.3438 0.1875 0.3906 0.1406 Q0.4219 0.1094 0.4219 0.0781 Q0.4219 0 0.2969 0 L0.2969 0 L0.2969 0 Q0.2812 0 0.2188 0 L0.1562 0 Q0.1094 0 0.0938 0.0312 Q0.0781 0.0625 0.0781 0.0781 Q0.0781 0.125 0.1406 0.1562 Q0.1875 0.1875 0.25 0.1875 Z"></path></g><g transform="matrix(20,0,0,20,0,0) translate(14.3028,1.663) scale(0.1,0.1)"><path d="M1.6094 -3.6562 Q2.4062 -4.6094 3.1094 -4.6094 Q3.4844 -4.6094 3.75 -4.4219 Q4.0156 -4.2344 4.1719 -3.8125 Q4.2656 -3.5312 4.2656 -2.9219 L4.2656 -1.0156 Q4.2656 -0.5938 4.3438 -0.4375 Q4.3906 -0.3125 4.5156 -0.2422 Q4.6406 -0.1719 4.9531 -0.1719 L4.9531 0 L2.75 0 L2.75 -0.1719 L2.8438 -0.1719 Q3.1562 -0.1719 3.2812 -0.2656 Q3.4062 -0.3594 3.4531 -0.5469 Q3.4688 -0.625 3.4688 -1.0156 L3.4688 -2.8438 Q3.4688 -3.4531 3.3125 -3.7266 Q3.1562 -4 2.7812 -4 Q2.1875 -4 1.6094 -3.375 L1.6094 -1.0156 Q1.6094 -0.5625 1.6719 -0.4531 Q1.7344 -0.3125 1.8594 -0.2422 Q1.9844 -0.1719 2.3438 -0.1719 L2.3438 0 L0.125 0 L0.125 -0.1719 L0.2344 -0.1719 Q0.5781 -0.1719 0.6953 -0.3438 Q0.8125 -0.5156 0.8125 -1.0156 L0.8125 -2.6719 Q0.8125 -3.4844 0.7734 -3.6562 Q0.7344 -3.8281 0.6641 -3.8906 Q0.5938 -3.9531 0.4531 -3.9531 Q0.3281 -3.9531 0.125 -3.875 L0.0625 -4.0625 L1.4062 -4.6094 L1.6094 -4.6094 L1.6094 -3.6562 Z"></path><path d="M0.2812 -0.25 L0.2812 -0.25 Q0.2812 -0.0781 0.2188 0.0625 Q0.1719 0.1719 0.0938 0.2344 Q0.0781 0.25 0.0625 0.25 Q0.0625 0.25 0.0625 0.2344 Q0.0625 0.2344 0.0625 0.2188 Q0.2344 0.0625 0.2344 -0.25 Q0.2344 -0.5625 0.0781 -0.7188 L0.0781 -0.7188 Q0.0625 -0.7344 0.0625 -0.7344 Q0.0625 -0.75 0.0625 -0.75 Q0.0781 -0.75 0.125 -0.7031 Q0.1875 -0.6406 0.2188 -0.5625 Q0.2812 -0.4219 0.2812 -0.25 Z" transform="scale(10,10) translate(0.5353,0)"></path></g><g transform="matrix(20,0,0,20,0,0) translate(15.227,1.2501) scale(0.07,0.07)"><path d="M0.5156 -5.3594 Q0.7969 -6.0312 1.2266 -6.3984 Q1.6562 -6.7656 2.2969 -6.7656 Q3.0938 -6.7656 3.5156 -6.2344 Q3.8438 -5.8594 3.8438 -5.4219 Q3.8438 -4.6875 2.9375 -3.9219 Q3.5469 -3.6875 3.8594 -3.2422 Q4.1719 -2.7969 4.1719 -2.1875 Q4.1719 -1.3281 3.625 -0.7031 Q2.9062 0.125 1.5625 0.125 Q0.8906 0.125 0.6484 -0.0469 Q0.4062 -0.2188 0.4062 -0.4062 Q0.4062 -0.5469 0.5234 -0.6562 Q0.6406 -0.7656 0.7969 -0.7656 Q0.9219 -0.7656 1.0469 -0.7188 Q1.125 -0.7031 1.4219 -0.5469 Q1.7188 -0.3906 1.8281 -0.3594 Q2 -0.3125 2.2188 -0.3125 Q2.7031 -0.3125 3.0781 -0.6953 Q3.4531 -1.0781 3.4531 -1.6094 Q3.4531 -2 3.2812 -2.3594 Q3.1562 -2.625 3 -2.7812 Q2.7812 -2.9688 2.4219 -3.125 Q2.0625 -3.2812 1.6719 -3.2812 L1.5156 -3.2812 L1.5156 -3.4375 Q1.9062 -3.4844 2.2969 -3.7109 Q2.6875 -3.9375 2.8594 -4.2578 Q3.0312 -4.5781 3.0312 -4.9688 Q3.0312 -5.4688 2.7188 -5.7812 Q2.4062 -6.0938 1.9375 -6.0938 Q1.1719 -6.0938 0.6719 -5.2812 L0.5156 -5.3594 Z"></path><path d="M0.2812 -0.25 L0.2812 -0.25 Q0.2812 -0.0781 0.2188 0.0625 Q0.1719 0.1719 0.0938 0.2344 Q0.0781 0.25 0.0625 0.25 Q0.0625 0.25 0.0625 0.2344 Q0.0625 0.2344 0.0625 0.2188 Q0.2344 0.0625 0.2344 -0.25 Q0.2344 -0.5625 0.0781 -0.7188 L0.0781 -0.7188 Q0.0625 -0.7344 0.0625 -0.7344 Q0.0625 -0.75 0.0625 -0.75 Q0.0781 -0.75 0.125 -0.7031 Q0.1875 -0.6406 0.2188 -0.5625 Q0.2812 -0.4219 0.2812 -0.25 Z" transform="scale(14.2857,14.2857) translate(0.345,0.4129)"></path></g></g></svg>&nbsp;</span></p><p>。<sup><a href="https://web.archive.org/web/20221025122000/https://baike.sogou.com/kexue/d11025.htm#quote_11" class="kx_ref">[11]</a></sup> 当与快速稳定的顺序排序相结合时，这种排序在实践中可以表现良好，例如插入排序和快速顺序归并作为归并小阵列的基本情况。<sup><a href="https://web.archive.org/web/20221025122000/https://baike.sogou.com/kexue/d11025.htm#quote_12" class="kx_ref">[12]</a></sup> </p><p>归并排序是最早实现的最佳速度的排序算法之一，理查德·科尔使用巧妙的二次采样算法来确保<span><i>O</i>(1)</span>归并。<sup><a href="https://web.archive.org/web/20221025122000/https://baike.sogou.com/kexue/d11025.htm#quote_13" class="kx_ref">[13]</a></sup> 其他复杂度的并行排序算法可以在较低的常数时间内实现相同或更好的时间界限。例如，在1991年，大卫·鲍尔斯描述了一个并行化的快速排序(和一个相关的基数排序)可以在具有<i>n个处理器的</i>CRCW并行随机存取机（PRAM）上通过隐式执行分区在<i>O</i>(log <i>n</i>)时间复杂度内运行。<sup><a href="https://web.archive.org/web/20221025122000/https://baike.sogou.com/kexue/d11025.htm#quote_14" class="kx_ref">[14]</a></sup>鲍尔斯<sup><a href="https://web.archive.org/web/20221025122000/https://baike.sogou.com/kexue/d11025.htm#quote_15" class="kx_ref">[15]</a></sup>还展示了一个在蝴蝶排序网络上时间复杂度为<i>O</i>((log <i>n</i>)<sup>2</sup>)的Batcher的双调归并排序算法，比起在PRAM上运行的<i>O</i>(log <i>n</i>)复杂度，它实际上更快，他详细讨论了比较、基数和并行排序中隐藏的开销。</p></div></div><div id="par_14996252613673478"><h2 class="title">8 与其他排序算法的比较<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><p>尽管堆排序与归并排序有相同的时间限制，它只需要θ(1)的辅助空间而非归并排序的θ(<i>n</i>)。在典型的现代架构上，高效的快速排序在对基于内存的数组进行排序时，实现通常优于归并排序。另一方面，归并排序是一种稳定的排序，在处理访问缓慢的顺序介质时效率更高。归并排序通常是排序链表的最佳方式：在这种情况下，以只需要θ(1)额外空间的方式实现归并排序相对容易，并且链表的缓慢随机访问性能使得一些其他算法(例如快速排序)性能较差，而另一些算法(例如堆排序)完全不可能。</p><p>截至 Perl 5.8，归并排序是它的默认排序算法(它在早期版本的Perl中是快速排序)。在Java中，Arrays.sort() 方法根据数据类型使用归并排序或优化的快速排序，并且为了高效实现，当排序的数组元素少于7个时切换为插入排序。<sup><a href="https://web.archive.org/web/20221025122000/https://baike.sogou.com/kexue/d11025.htm#quote_16" class="kx_ref">[16]</a></sup> Linux内核对其链表使用归并排序。<sup><a href="https://web.archive.org/web/20221025122000/https://baike.sogou.com/kexue/d11025.htm#quote_17" class="kx_ref">[17]</a></sup> Python使用Timsort，这是归并排序和插入排序的另一种优化混合，已成为 Java SE 7（对于非基元类型的数组）<sup><a href="https://web.archive.org/web/20221025122000/https://baike.sogou.com/kexue/d11025.htm#quote_18" class="kx_ref">[18]</a></sup>， 安卓平台<sup><a href="https://web.archive.org/web/20221025122000/https://baike.sogou.com/kexue/d11025.htm#quote_19" class="kx_ref">[19]</a></sup> 和 GNU Octave<sup><a href="https://web.archive.org/web/20221025122000/https://baike.sogou.com/kexue/d11025.htm#quote_20" class="kx_ref">[20]</a></sup>中的标准排序算法。</p></div></div><div id="par_14996252630450702"><h2 class="title">9 笔记<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><p>
+ </p><ol>
+  <li id="cite-ref-2">， p.&nbsp;122）</li>
+  <li id="cite-ref-4">， p.&nbsp;158）</li>
+  <li id="cite-ref-6">Katajainen, Jyrki; Träff, Jesper Larsson (March 1997). "A meticulous analysis of mergesort programs" (PDF). <i>Proceedings of the 3rd Italian Conference on Algorithms and Complexity</i>. Italian Conference on Algorithms and Complexity. Rome. pp.&nbsp;217–228. CiteSeerX&nbsp;10.1.1.86.3154. doi:10.1007/3-540-62592-5_74.</li>
+  <li id="cite-ref-8">Powers, David M. W. and McMahon Graham B. (1983), "A compendium of interesting prolog programs", DCS Technical Report 8313, Department of Computer Science, University of New South Wales.</li>
+  <li id="cite-ref-10">The worst case number given here does not agree with that given in Knuth's <i>Art of Computer Programming, Vol 3</i>. The discrepancy is due to Knuth analyzing a variant implementation of merge sort that is slightly sub-optimal</li>
+  <li id="cite-ref-12">Cormen; Leiserson; Rivest; Stein. <i>Introduction to Algorithms</i>. p.&nbsp;151. ISBN&nbsp;978-0-262-03384-8.</li>
+  <li id="cite-ref-14">Katajainen, Jyrki; Pasanen, Tomi; Teuhola, Jukka (1996). "Practical in-place mergesort". <i>Nordic J. Computing</i>. <b>3</b> (1): 27–40. CiteSeerX&nbsp;10.1.1.22.8523.</li>
+  <li id="cite-ref-16">Geffert, Viliam; Katajainen, Jyrki; Pasanen, Tomi (2000). "Asymptotically efficient in-place merging". <i>Theoretical Computer Science</i>. <b>237</b>: 159–181. doi:10.1016/S0304-3975(98)00162-5.</li>
+  <li id="cite-ref-18">Huang, Bing-Chao; Langston, Michael A. (March 1988). "Practical In-Place Merging". <i>Communications of the ACM</i>. <b>31</b> (3): 348–352. doi:10.1145/42392.42403.</li>
+  <li id="cite-ref-20">Kim, Pok-Son; Kutzner, Arne (2004). <i>Stable Minimum Storage Merging by Symmetric Comparisons</i>. European Symp. Algorithms. Lecture Notes in Computer Science. <b>3221</b>. pp.&nbsp;714–723. CiteSeerX&nbsp;10.1.1.102.4612. doi:10.1007/978-3-540-30140-0_63. ISBN&nbsp;978-3-540-23025-0.</li>
+  <li id="cite-ref-22">Selection sort. Knuth's snowplow. Natural merge.</li>
+  <li id="cite-ref-24">，第797–805页</li>
+  <li id="cite-ref-26">Victor J. Duvanenko "Parallel Merge Sort" Dr. Dobb's Journal &amp; blog[1] and GitHub repo C++ implementation [2]</li>
+  <li id="cite-ref-28">Cole, Richard (August 1988). "Parallel merge sort". <i>SIAM J. Comput</i>. <b>17</b> (4): 770–785. CiteSeerX&nbsp;10.1.1.464.7118. doi:10.1137/0217049</li>
+  <li id="cite-ref-30">Powers, David M. W. Parallelized Quicksort and Radixsort with Optimal Speedup, <i>Proceedings of International Conference on Parallel Computing Technologies</i>. Novosibirsk. 1991.</li>
+  <li id="cite-ref-32">David M. W. Powers, Parallel Unification: Practical Complexity, Australasian Computer Architecture Workshop, Flinders University, January 1995</li>
+  <li id="cite-ref-34">OpenJDK src/java.base/share/classes/java/util/Arrays.java @ 53904:9c3fe09f69bc</li>
+  <li id="cite-ref-36">linux kernel /lib/list_sort.c</li>
+  <li id="cite-ref-38">jjb. "Commit 6804124: Replace "modified mergesort" in java.util.Arrays.sort with timsort". <i>Java Development Kit 7 Hg repo</i>. Archived from the original on 2018-01-26. Retrieved 24 Feb 2011.</li>
+  <li id="cite-ref-40">"Class: java.util.TimSort&lt;T&gt;". <i>Android JDK Documentation</i>. Archived from the original on January 20, 2015. Retrieved 19 Jan 2015.</li>
+  <li id="cite-ref-42">"liboctave/util/oct-sort.cc". <i>Mercurial repository of Octave source code</i>. Lines 23-25 of the initial comment block. Retrieved 18 Feb 2013. Code stolen in large part from Python's, listobject.c, which itself had no license header. However, thanks to Tim Peters for the parts of the code I ripped-off.</li>
+ </ol><p></p></div></div></div></div><div id="references"><h2 class="title" id="par_references">参考文献</h2><ul class="references"><li id="quote_1"><span class="references-num">[1]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Knuth（1998， p. 158）.</span></p></li><li id="quote_2"><span class="references-num">[2]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Katajainen, Jyrki; Träff, Jesper Larsson (March 1997). "A meticulous analysis of mergesort programs" (PDF). Proceedings of the 3rd Italian Conference on Algorithms and Complexity. Italian Conference on Algorithms and Complexity. Rome. pp. 217–228. CiteSeerX 10.1.1.86.3154. doi:10.1007/3-540-62592-5_74..</span></p></li><li id="quote_3"><span class="references-num">[3]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Powers, David M. W. and McMahon Graham B. (1983), "A compendium of interesting prolog programs", DCS Technical Report 8313, Department of Computer Science, University of New South Wales..</span></p></li><li id="quote_4"><span class="references-num">[4]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">The worst case number given here does not agree with that given in Knuth's Art of Computer Programming, Vol 3. The discrepancy is due to Knuth analyzing a variant implementation of merge sort that is slightly sub-optimal.</span></p></li><li id="quote_5"><span class="references-num">[5]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Cormen; Leiserson; Rivest; Stein. Introduction to Algorithms. p. 151. ISBN 978-0-262-03384-8..</span></p></li><li id="quote_6"><span class="references-num">[6]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Katajainen, Jyrki; Pasanen, Tomi; Teuhola, Jukka (1996). "Practical in-place mergesort". Nordic J. Computing. 3 (1): 27–40. CiteSeerX 10.1.1.22.8523..</span></p></li><li id="quote_7"><span class="references-num">[7]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Geffert, Viliam; Katajainen, Jyrki; Pasanen, Tomi (2000). "Asymptotically efficient in-place merging". Theoretical Computer Science. 237: 159–181. doi:10.1016/S0304-3975(98)00162-5..</span></p></li><li id="quote_8"><span class="references-num">[8]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Huang, Bing-Chao; Langston, Michael A. (March 1988). "Practical In-Place Merging". Communications of the ACM. 31 (3): 348–352. doi:10.1145/42392.42403..</span></p></li><li id="quote_9"><span class="references-num">[9]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Kim, Pok-Son; Kutzner, Arne (2004). Stable Minimum Storage Merging by Symmetric Comparisons. European Symp. Algorithms. Lecture Notes in Computer Science. 3221. pp. 714–723. CiteSeerX 10.1.1.102.4612. doi:10.1007/978-3-540-30140-0_63. ISBN 978-3-540-23025-0..</span></p></li><li id="quote_10"><span class="references-num">[10]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Selection sort. Knuth's snowplow. Natural merge..</span></p></li><li id="quote_11"><span class="references-num">[11]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Cormen 等人 2009，第797–805页.</span></p></li><li id="quote_12"><span class="references-num">[12]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Victor J. Duvanenko "Parallel Merge Sort" Dr. Dobb's Journal &amp; blog[1] and GitHub repo C++ implementation [2].</span></p></li><li id="quote_13"><span class="references-num">[13]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Cole, Richard (August 1988). "Parallel merge sort". SIAM J. Comput. 17 (4): 770–785. CiteSeerX 10.1.1.464.7118. doi:10.1137/0217049.</span></p></li><li id="quote_14"><span class="references-num">[14]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Powers, David M. W. Parallelized Quicksort and Radixsort with Optimal Speedup, Proceedings of International Conference on Parallel Computing Technologies. Novosibirsk. 1991..</span></p></li><li id="quote_15"><span class="references-num">[15]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">David M. W. Powers, Parallel Unification: Practical Complexity, Australasian Computer Architecture Workshop, Flinders University, January 1995.</span></p></li><li id="quote_16"><span class="references-num">[16]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">OpenJDK src/java.base/share/classes/java/util/Arrays.java @ 53904:9c3fe09f69bc.</span></p></li><li id="quote_17"><span class="references-num">[17]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">linux kernel /lib/list_sort.c.</span></p></li><li id="quote_18"><span class="references-num">[18]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">jjb. "Commit 6804124: Replace "modified mergesort" in java.util.Arrays.sort with timsort". Java Development Kit 7 Hg repo. Archived from the original on 2018-01-26. Retrieved 24 Feb 2011..</span></p></li><li id="quote_19"><span class="references-num">[19]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">"Class: java.util.TimSort&lt;T&gt;". Android JDK Documentation. Archived from the original on January 20, 2015. Retrieved 19 Jan 2015..</span></p></li><li id="quote_20"><span class="references-num">[20]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">"liboctave/util/oct-sort.cc". Mercurial repository of Octave source code. Lines 23-25 of the initial comment block. Retrieved 18 Feb 2013. Code stolen in large part from Python's, listobject.c, which itself had no license header. However, thanks to Tim Peters for the parts of the code I ripped-off..</span></p></li></ul></div><div class="read-num">阅读 <!-- -->828</div></div><div class="right-side" id="rightSide"><div class="side" id="lemma-side"><div class="side-title">版本记录</div><ul class="side-lst"><li><p class="side-lst-txt">暂无</p></li></ul><div class="user-card userCard"></div></div><div class="side"><div class="side-event"></div></div></div></div><div class="footer-box"><div id="footer"><div class="footer-logo-wrap"><div class="footer-logo"></div><div class="footer-logo-text">知识·传播·科普</div></div><div class="footer-info">本网站内容采用<a target="_blank" href="https://web.archive.org/web/20221025122000/https://creativecommons.org/licenses/by-sa/3.0/deed.zh?tdsourcetag=s_pctim_aiomsg">CC-BY-SA 3.0</a>授权</div><div class="footer-btn-wrap"><a target="_blank" href="https://web.archive.org/web/20221025122000/https://baike.sogou.com/help/#user_protocol">用户协议</a><a target="_blank" href="https://web.archive.org/web/20221025122000/http://www.sogou.com/docs/terms.htm?v=1">免责声明</a><a target="_blank" href="https://web.archive.org/web/20221025122000/http://corp.sogou.com/private.html">隐私政策</a><a target="_blank" href="https://web.archive.org/web/20221025122000/https://baike.sogou.com/kexue/intro.htm">关于我们</a></div></div></div><script>window.lemmaInfo ={"lemmaId":"11025","versionId":"53986263941832458","title":"合并排序","subtitle":"","abstracts":{"paragraphId":"53986263941832469","title":"摘要","versionId":"53986263941832459","lemmaId":11025,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":82859321,"name":"━╋独特","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1599474320,"comment":null,"dependVersionId":0,"contentType":2,"content":"<p><strong>合并排序</strong>也叫<strong>归并排序</strong>。在计算机科学中，<b>归并排序</b>（通常拼写为<b>mergesort</b>）是一种高效、通用的， 基于比较的排序算法。大多数实现都会产生一个稳定排序，这意味着输入和输出中相等元素的顺序相同。归并排序是由约翰·冯·诺依曼在1945年发明的一种分治算法。<sup><a href=\"#quote_1\" class=\"kx_ref\">[1]</a></sup>自底向上的归并排序的详细描述和分析在1948年Goldstine和冯·诺依曼的报告中出现。<sup><a href=\"#quote_2\" class=\"kx_ref\">[2]</a></sup> </p>","pics":null,"card":null,"references":[],"versionCount":0},"card":{"paragraphId":"14996252596896269","title":"基本信息","versionId":"14996252580119043","lemmaId":0,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":10145103,"name":"科学百科编辑组","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1576234462,"comment":null,"dependVersionId":0,"contentType":3,"content":"","pics":null,"card":{"cardItems":[{"key":"分类","value":"排序算法"},{"key":"数据结构","value":"Array"},{"key":"最坏时间复杂度","value":"O(<i>n</i> log <i>n</i>)"},{"key":"最优时间复杂度","value":"传统算法O(<i>n</i> log <i>n</i>), 自然归并变体O(<i>n</i>)"},{"key":"平均时间复杂度","value":"O(<i>n</i> log <i>n</i>)"},{"key":"最坏空间复杂度","value":"总共需要O(<i>n</i>)空间复杂度,使用链表时，只需要O(<i>1</i>)空间复杂度<sup class=\"reference\"></sup>"}]},"references":[],"versionCount":0},"categories":[{"id":1,"name":"计算机","parents":[]}],"creator":{"uid":10145103,"name":"柚子otto","pic":"https://web.archive.org/web/20221025122000/https://img02.sogoucdn.com/app/a/200698/1152_1152_1864088_20200427232849-1518843971.png","introduction":"","educations":[{"schoolName":"中国地质大学（北京）","major":"","degree":"本科","universityId":22,"universityLogo":"https://web.archive.org/web/20221025122000/https://img01.sogoucdn.com/app/a/200943/d3465c1c-6011-11e9-b353-fc4dd4f70029","majorLevel1":"理学","majorLevel2":"地理学","majorLevel3":"地图学与地理信息系统","majorLevel1Id":1,"majorLevel2Id":103,"majorLevel3Id":109,"state":"毕业","lab":"","researchField":""}],"jobs":[{"company":"搜狗","title":"产品经理"}],"works":null,"educationBrief":"中国地质大学（北京）","jobBrief":"产品经理","role":0,"roleName":null,"title":"中国地质大学（北京） · 地理学本科","professionalTitle":null,"phoneNo":null,"editable":true,"partnerId":139,"partnerIdCreateTime":1595844881,"partnerIdPoped":true},"createTime":1571038434,"editor":{"uid":10145103,"name":"柚子otto","pic":"https://web.archive.org/web/20221025122000/https://img02.sogoucdn.com/app/a/200698/1152_1152_1864088_20200427232849-1518843971.png","introduction":"","educations":[{"schoolName":"中国地质大学（北京）","major":"","degree":"本科","universityId":22,"universityLogo":"https://web.archive.org/web/20221025122000/https://img01.sogoucdn.com/app/a/200943/d3465c1c-6011-11e9-b353-fc4dd4f70029","majorLevel1":"理学","majorLevel2":"地理学","majorLevel3":"地图学与地理信息系统","majorLevel1Id":1,"majorLevel2Id":103,"majorLevel3Id":109,"state":"毕业","lab":"","researchField":""}],"jobs":[{"company":"搜狗","title":"产品经理"}],"works":null,"educationBrief":"中国地质大学（北京）","jobBrief":"产品经理","role":0,"roleName":null,"title":"中国地质大学（北京） · 地理学本科","professionalTitle":null,"phoneNo":null,"editable":true,"partnerId":139,"partnerIdCreateTime":1595844881,"partnerIdPoped":true},"editTime":1576234462,"state":1,"versionCount":1,"upNum":0,"downNum":0,"pics":[{"originalUrl":"https://web.archive.org/web/20221025122000/https://img02.sogoucdn.com/app/a/200698/sogou_science_2273?w=300&h=289&titlename=%E4%B8%80%E7%A7%8D%E9%80%92%E5%BD%92%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%EF%BC%8C%E7%94%A8%E4%BA%8E%E5%AF%B97%E4%B8%AA%E6%95%B4%E6%95%B0%E7%BB%84%E6%88%90%E7%9A%84%E6%95%B0%E7%BB%84%E8%BF%9B%E8%A1%8C%E6%8E%92%E5%BA%8F%E3%80%82%E8%BF%99%E5%BC%A0%E5%9B%BE%E8%A1%A8%E7%A4%BA%E4%BA%BA%E4%B8%BA%E6%A8%A1%E6%8B%9F%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F%EF%BC%88%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%EF%BC%89%E7%9A%84%E6%AD%A5%E9%AA%A4%E3%80%82","url":"https://web.archive.org/web/20221025122000/https://img02.sogoucdn.com/app/a/200698/sogou_science_2273","rw":300,"rh":289,"title":"一种递归归并排序算法，用于对7个整数组成的数组进行排序。这张图表示人为模拟归并排序（自顶向下）的步骤。","alt":null,"width":0,"height":0},{"originalUrl":"https://web.archive.org/web/20221025122000/https://img02.sogoucdn.com/app/a/200698/sogou_science_4045?h=225&titlename=%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F%E7%B1%BB%E5%9E%8B%E7%9A%84%E7%AE%97%E6%B3%95%E5%85%81%E8%AE%B8%E5%9C%A8%E7%8E%B0%E4%BB%A3%E6%A0%87%E5%87%86%E4%B8%8B%E5%85%B7%E6%9C%89%E5%B0%8F%E5%AE%B9%E9%87%8F%E9%9A%8F%E6%9C%BA%E5%AD%98%E5%82%A8%E5%99%A8%E7%9A%84%E6%97%A9%E6%9C%9F%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%8A%E5%AF%B9%E5%A4%A7%E9%87%8F%E6%95%B0%E6%8D%AE%E8%BF%9B%E8%A1%8C%E6%8E%92%E5%BA%8F%E3%80%82%E8%AE%B0%E5%BD%95%E5%AD%98%E5%82%A8%E5%9C%A8%E7%A3%81%E5%B8%A6%E4%B8%8A%E5%B9%B6%E5%9C%A8%E7%A3%81%E5%B8%A6%E9%A9%B1%E5%8A%A8%E5%99%A8%E7%BB%84%E4%B8%8A%E5%A4%84%E7%90%86%EF%BC%8C%E4%BE%8B%E5%A6%82%E5%9B%BE%E4%B8%AD%E7%9A%84IBM%20729.&w=300","url":"https://web.archive.org/web/20221025122000/https://img02.sogoucdn.com/app/a/200698/sogou_science_4045","rw":300,"rh":225,"title":"归并排序类型的算法允许在现代标准下具有小容量随机存储器的早期计算机上对大量数据进行排序。记录存储在磁带上并在磁带驱动器组上处理，例如图中的IBM 729.","alt":null,"width":0,"height":0},{"originalUrl":"https://web.archive.org/web/20221025122000/https://img01.sogoucdn.com/app/a/200698/sogou_science_4044?h=237&titlename=%E5%9C%A8%E9%9A%8F%E6%9C%BA%E6%95%B4%E6%95%B0%E6%95%B0%E7%BB%84%E4%B8%8A%E8%BF%9B%E8%A1%8C%E7%9A%84%E5%B9%B3%E9%93%BA%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F%E3%80%82%E6%A8%AA%E8%BD%B4%E8%A1%A8%E7%A4%BA%E6%95%B0%E7%BB%84%E7%B4%A2%E5%BC%95%EF%BC%8C%E7%BA%B5%E8%BD%B4%E8%A1%A8%E7%A4%BA%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%95%B4%E6%95%B0%E3%80%82&w=280","url":"https://web.archive.org/web/20221025122000/https://img01.sogoucdn.com/app/a/200698/sogou_science_4044","rw":280,"rh":237,"title":"在随机整数数组上进行的平铺归并排序。横轴表示数组索引，纵轴表示数组中的整数。","alt":null,"width":0,"height":0}],"catalogs":[{"level":1,"title":"算法","paragraphId":"14996252596896270","subCatalogs":[{"level":2,"title":"自顶向下的实现","paragraphId":"14996252596896270","subCatalogs":null},{"level":2,"title":"自底向上的实现","paragraphId":"14996252596896270","subCatalogs":null},{"level":2,"title":"使用列表的自顶向下实现","paragraphId":"14996252596896270","subCatalogs":null},{"level":2,"title":"使用列表的自底向上实现","paragraphId":"14996252596896270","subCatalogs":null}]},{"level":1,"title":"自然归并排序","paragraphId":"14996252596896271","subCatalogs":null},{"level":1,"title":"分析","paragraphId":"14996252596896272","subCatalogs":null},{"level":1,"title":"变体","paragraphId":"14996252613673474","subCatalogs":null},{"level":1,"title":"与磁带机一起使用","paragraphId":"14996252613673475","subCatalogs":null},{"level":1,"title":"优化归并排序","paragraphId":"14996252613673476","subCatalogs":null},{"level":1,"title":"并行归并排序","paragraphId":"14996252613673477","subCatalogs":null},{"level":1,"title":"与其他排序算法的比较","paragraphId":"14996252613673478","subCatalogs":null},{"level":1,"title":"笔记","paragraphId":"14996252630450702","subCatalogs":null},{"level":1,"title":"参考文献","paragraphId":"-1","subCatalogs":null}],"paragraphs":[{"paragraphId":"14996252596896270","title":"算法","versionId":"53986263941832460","lemmaId":11025,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":82859321,"name":"━╋独特","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1599474320,"comment":null,"dependVersionId":0,"contentType":1,"content":"<p>从概念上讲，归并排序的工作方式如下:</p><p>\n <ol>\n  <li>将未排序的列表分为<i>n</i>个子列表，每个包含一个元素(一个元素的列表被视为有序)。</li>\n  <li>反复地归并子列表以产生新的有序子列表，直到只剩下一个子列表。这将是排序后的列表。</li>\n </ol></p><p><h3>自顶向下的实现</h3></p><p>类C代码的示例如下，该代码使用索引进行自顶向下归并排序算法，该算法递归地拆分列表(在这个例子中称为<i>运行</i>)，直到子列表大小为1，然后归并这些子列表以产生有序列表。通过将归并方向与每一级递归交替进行，可以避免写回的步骤。</p><p><pre class=\"kx_code\"><code class=\"C\">// Array A[] has the items to sort; array B[] is a work array.\nvoid TopDownMergeSort(A[], B[], n)\n{\n &nbsp; &nbsp;CopyArray(A, 0, n, B); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // duplicate array A[] into B[]\n &nbsp; &nbsp;TopDownSplitMerge(B, 0, n, A); &nbsp; // sort data from B[] into A[]\n}\n\n// Sort the given run of array A[] using array B[] as a source.\n// iBegin is inclusive; iEnd is exclusive (A[iEnd] is not in the set).\nvoid TopDownSplitMerge(B[], iBegin, iEnd, A[])\n{\n &nbsp; &nbsp;if(iEnd - iBegin &lt; 2) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // if run size == 1\n &nbsp; &nbsp; &nbsp; &nbsp;return; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // &nbsp; consider it sorted\n &nbsp; &nbsp;// split the run longer than 1 item into halves\n &nbsp; &nbsp;iMiddle = (iEnd + iBegin) / 2; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// iMiddle = mid point\n &nbsp; &nbsp;// recursively sort both runs from array A[] into B[]\n &nbsp; &nbsp;TopDownSplitMerge(A, iBegin, &nbsp;iMiddle, B); &nbsp;// sort the left &nbsp;run\n &nbsp; &nbsp;TopDownSplitMerge(A, iMiddle, &nbsp; &nbsp;iEnd, B); &nbsp;// sort the right run\n &nbsp; &nbsp;// merge the resulting runs from array B[] into A[]\n &nbsp; &nbsp;TopDownMerge(B, iBegin, iMiddle, iEnd, A);\n}\n\n// &nbsp;Left source half is A[ iBegin:iMiddle-1].\n// Right source half is A[iMiddle:iEnd-1 &nbsp; ].\n// Result is &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;B[ iBegin:iEnd-1 &nbsp; ].\nvoid TopDownMerge(A[], iBegin, iMiddle, iEnd, B[])\n{\n &nbsp; &nbsp;i = iBegin, j = iMiddle;\n \n &nbsp; &nbsp;// While there are elements in the left or right runs...\n &nbsp; &nbsp;for (k = iBegin; k &lt; iEnd; k++) {\n &nbsp; &nbsp; &nbsp; &nbsp;// If left run head exists and is &lt;= existing right run head.\n &nbsp; &nbsp; &nbsp; &nbsp;if (i &lt; iMiddle &amp;&amp; (j &gt;= iEnd || A[i] &lt;= A[j])) {\n &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;B[k] = A[i];\n &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;i = i + 1;\n &nbsp; &nbsp; &nbsp; &nbsp;} else {\n &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;B[k] = A[j];\n &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;j = j + 1;\n &nbsp; &nbsp; &nbsp; &nbsp;}\n &nbsp; &nbsp;}\n}\n\nvoid CopyArray(A[], iBegin, iEnd, B[])\n{\n &nbsp; &nbsp;for(k = iBegin; k &lt; iEnd; k++)\n &nbsp; &nbsp; &nbsp; &nbsp;B[k] = A[k];\n}</code></pre></p><p><h3>自底向上的实现</h3></p><p>使用自底向上归并排序算法索引的类C代码示例如下，该算法将列表视为<i>n</i>个大小为1的子列表(在这个例子中称为<i>运行步骤</i>)，并在两个缓冲器之间来回迭代合并子列表:</p><p><pre class=\"kx_code\"><code class=\"C\">// array A[] has the items to sort; array B[] is a work array\nvoid BottomUpMergeSort(A[], B[], n)\n{\n &nbsp; &nbsp;// Each 1-element run in A is already \"sorted\".\n &nbsp; &nbsp;// Make successively longer sorted runs of length 2, 4, 8, 16... until whole array is sorted.\n &nbsp; &nbsp;for (width = 1; width &lt; n; width = 2 * width)\n &nbsp; &nbsp;{\n &nbsp; &nbsp; &nbsp; &nbsp;// Array A is full of runs of length width.\n &nbsp; &nbsp; &nbsp; &nbsp;for (i = 0; i &lt; n; i = i + 2 * width)\n &nbsp; &nbsp; &nbsp; &nbsp;{\n &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// Merge two runs: A[i:i+width-1] and A[i+width:i+2*width-1] to B[]\n &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// or copy A[i:n-1] to B[] ( if(i+width &gt;= n) )\n &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;BottomUpMerge(A, i, min(i+width, n), min(i+2*width, n), B);\n &nbsp; &nbsp; &nbsp; &nbsp;}\n &nbsp; &nbsp; &nbsp; &nbsp;// Now work array B is full of runs of length 2*width.\n &nbsp; &nbsp; &nbsp; &nbsp;// Copy array B to array A for next iteration.\n &nbsp; &nbsp; &nbsp; &nbsp;// A more efficient implementation would swap the roles of A and B.\n &nbsp; &nbsp; &nbsp; &nbsp;CopyArray(B, A, n);\n &nbsp; &nbsp; &nbsp; &nbsp;// Now array A is full of runs of length 2*width.\n &nbsp; &nbsp;}\n}\n\n// &nbsp;Left run is A[iLeft :iRight-1].\n// Right run is A[iRight:iEnd-1 &nbsp;].\nvoid BottomUpMerge(A[], iLeft, iRight, iEnd, B[])\n{\n &nbsp; &nbsp;i = iLeft, j = iRight;\n &nbsp; &nbsp;// While there are elements in the left or right runs...\n &nbsp; &nbsp;for (k = iLeft; k &lt; iEnd; k++) {\n &nbsp; &nbsp; &nbsp; &nbsp;// If left run head exists and is &lt;= existing right run head.\n &nbsp; &nbsp; &nbsp; &nbsp;if (i &lt; iRight &amp;&amp; (j &gt;= iEnd || A[i] &lt;= A[j])) {\n &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;B[k] = A[i];\n &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;i = i + 1;\n &nbsp; &nbsp; &nbsp; &nbsp;} else {\n &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;B[k] = A[j];\n &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;j = j + 1; &nbsp; &nbsp;\n &nbsp; &nbsp; &nbsp; &nbsp;}\n &nbsp; &nbsp;} \n}\n\nvoid CopyArray(B[], A[], n)\n{\n &nbsp; &nbsp;for(i = 0; i &lt; n; i++)\n &nbsp; &nbsp; &nbsp; &nbsp;A[i] = B[i];\n}</code></pre></p><p><h3>使用列表的自顶向下实现</h3></p><p>对于自顶向下的归并排序算法的伪代码如下，它递归地将输入列表分成较小的子列表，直到这些子列表被简单排序，然后在返回调用链的同时归并这些子列表。</p><p><pre class=\"kx_code\"><b>function</b> merge_sort(<i>list</i> m)\n    // <i>Base case. A list of zero or one elements is sorted, by definition.</i>\n    <b>if</b> length of m ≤ 1 <b>then</b>\n        <b>return</b> m\n\n    // <i>Recursive case. First, divide the list into equal-sized sublists</i>\n    // <i>consisting of the first half and second half of the list.</i>\n    // <i>This assumes lists start at index 0.</i>\n    <b>var</b> left&nbsp;:= empty list    <b>var</b> right&nbsp;:= empty list    <b>for each</b> x <b>with index</b> i <b>in</b> m <b>do</b>\n        <b>if</b> i &lt; (length of m)/2 <b>then</b>\n            add x to left        <b>else</b>\n            add x to right\n\n    // <i>Recursively sort both sublists.</i>\n    left&nbsp;:= merge_sort(left)\n    right&nbsp;:= merge_sort(right)\n\n    // Then merge the now-sorted sublists.    <b>return</b> merge(left, right)</pre></p><p>在本例中 merge 函数归并左右子列表。</p><p><pre class=\"kx_code\"><b>function</b> merge(left, right)    <b>var</b> result&nbsp;:= empty list    <b>while</b> left is not empty <b>and</b> right is not empty <b>do</b>\n        <b>if</b> first(left) ≤ first(right) <b>then</b>\n            append first(left) to result\n            left&nbsp;:= rest(left)        <b>else</b>\n            append first(right) to result\n            right&nbsp;:= rest(right)\n\n    // <i>Either left or right may have elements left; consume them.</i>\n    // <i>(Only one of the following loops will actually be entered.)</i>\n    <b>while</b> left is not empty <b>do</b>\n        append first(left) to result\n        left&nbsp;:= rest(left)    <b>while</b> right is not empty <b>do</b>\n        append first(right) to result\n        right&nbsp;:= rest(right)    <b>return</b> result</pre></p><p><h3>使用列表的自底向上实现</h3></p><p>对于自底向上的归并排序算法伪代码如下，它使用一个固定大小的节点引用数组，其中array[i]是对大小为2的列表的引用<sup><i>i</i></sup> 或者<i>空</i>。 <i>node</i>是指向节点的引用或指针。merge()函数类似于自顶向下合并列表示例中的merge函数，它归并两个已经排序的列表，并处理空列表。在这种情况下，merge()将使用<i>node</i>输入参数和返回值。</p><p><pre class=\"kx_code\"><b>function</b> merge_sort(<i>node</i> head)\n    // return if empty list    <b>if</b> (head == nil)        <b>return</b> nil    <b>var</b> <i>node</i> array[32]; initially all nil    <b>var</b> <i>node</i> result    <b>var</b> <i>node</i> next    <b>var</b> <i>int</i>  i\n    result = head\n    // merge nodes into array    <b>while</b> (result&nbsp;!= nil)\n         next = result.next;\n         result.next = nil         <b>for</b>(i = 0; (i &lt; 32) &amp;&amp; (array[i]&nbsp;!= nil); i += 1)\n              result = merge(array[i], result)\n              array[i] = nil\n         // do not go past end of array         <b>if</b> (i == 32)\n               i -= 1\n         array[i] = result\n         result = next\n    // merge array into single list\n    result = nil    <b>for</b> (i = 0; i &lt; 32; i += 1)\n         result = merge(array[i], result)    <b>return</b> result</pre></p>","pics":null,"card":null,"references":[],"versionCount":0},{"paragraphId":"14996252596896271","title":"自然归并排序","versionId":"53986263941832461","lemmaId":11025,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":82859321,"name":"━╋独特","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1599474320,"comment":null,"dependVersionId":0,"contentType":1,"content":"<p>自然归并排序类似于自底向上的归并排序，输入中任何自然发生的运行步骤(排序的序列)都被利用。利用列表(或等价的磁带或文件)等方便的数据结构(用作先进先出队列或者后进先出堆栈)，单调和双调(交替上/下)运行步骤都可以使用。<sup><a href=\"#quote_3\" class=\"kx_ref\">[3]</a></sup>在自底向上的归并排序中，起始点假定每次运行步骤都是一个项目长。实际上，随机输入的数据中会有许多恰好有序的序列进行短期运行步骤。在典型情况下，自然归并排序可能不需要那么多遍，因为要归并的运行步骤较少。在最好的情况下，输入已经有序(即一次运行)，所以自然归并排序只需要遍历一次数据。在许多实际情况下，存在长的自然运行步骤，因此自然归并排序被用作 Timsort。如:</p><p><pre class=\"kx_code\">开始       &nbsp;:  3  4  2  1  7  5  8  9  0  6\n选择运行   &nbsp;: (3  4)(2)(1  7)(5  8  9)(0  6)\n归并      &nbsp;: (2  3  4)(1  5  7  8  9)(0  6)\n归并      &nbsp;: (1  2  3  4  5  7  8  9)(0  6)\n归并      &nbsp;: (0  1  2  3  4  5  6  7  8  9)</pre></p><p>竞赛排序用于收集外部排序算法的初始运行步骤。</p>","pics":null,"card":null,"references":[],"versionCount":0},{"paragraphId":"14996252596896272","title":"分析","versionId":"53986263941832462","lemmaId":11025,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":82859321,"name":"━╋独特","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1599474320,"comment":null,"dependVersionId":0,"contentType":1,"content":"<p><img alt=\"\" class=\"fileimage kx_img ed_imgfloat_right\" img_height=\"289\" img_width=\"300\" titlename=\"一种递归归并排序算法，用于对7个整数组成的数组进行排序。这张图表示人为模拟归并排序（自顶向下）的步骤。\" data-src=\"https://img02.sogoucdn.com/app/a/200698/sogou_science_2273\"> </p><p>在排序<i>n</i>个对象中，归并排序拥有O(<i>n</i>&nbsp;log&nbsp;<i>n</i>)的平均性能和最坏情况下的性能。如果对长度为<i>n</i>的列表进行归并排序的运行时间为<i>T(n</i>)，那么按照算法的定义(将算法应用于原始列表一半大小的两个列表，并加上合并得到的两个列表的<i>n</i>步)，递推公式为<i>T(n</i>)=2<i>T(n</i>/2)+<i>n</i>。相近的形式源于分治算法的主定理。</p><p>在最坏的情况下，归并排序的比较次数由排序数字给出。这些数字等于或略小于(<i>n</i>&nbsp;⌈lg&nbsp;<i>n</i>⌉2<sup>⌈lg&nbsp;<i>n</i>⌉</sup> + 1)，介于(<i>n</i>&nbsp;lg&nbsp;<i>n</i> − <i>n</i> + 1)和(<i>n</i>&nbsp;lg&nbsp;<i>n</i> + <i>n</i> + O(lg&nbsp;<i>n</i>))之间。<sup><a href=\"#quote_4\" class=\"kx_ref\">[4]</a></sup> </p><p>对于大的 <i>n</i> 和随机顺序的输入列表，归并排序的预期(平均)比较次数<i>α'n</i> 少于最坏的情况。<b><span class=\"kx_formula\" alt=\"{\\displaystyle \\alpha =-1+\\sum _{k=0}^{\\infty }{\\frac {1}{2^{k}+1}}\\approx 0.2645.}\"> \n &nbsp; <svg xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"fill-opacity:1; color-rendering:auto; color-interpolation:auto; text-rendering:auto; stroke:black; stroke-linecap:square; stroke-miterlimit:10; shape-rendering:auto; stroke-opacity:1; fill:black; stroke-dasharray:none; font-weight:normal; stroke-width:1; font-family:'Dialog'; font-style:normal; stroke-linejoin:miter; font-size:12px; stroke-dashoffset:0; image-rendering:auto;\" width=\"264\" height=\"67\" xmlns=\"http://www.w3.org/2000/svg\" class=\"transfer_formula\"><!--Generated by the Batik Graphics2D SVG Generator--><defs id=\"genericDefs\"></defs><g><g transform=\"scale(20,20) translate(0,1.9014)\"><path d=\"M0.4844 -0.2344 L0.4844 -0.2344 L0.4844 -0.1719 Q0.5469 -0.25 0.5781 -0.375 Q0.5781 -0.3906 0.5938 -0.3906 Q0.6094 -0.3906 0.6094 -0.3906 Q0.6094 -0.3594 0.5781 -0.3125 Q0.5469 -0.2188 0.4844 -0.1406 Q0.4844 -0.125 0.4844 -0.1094 Q0.4844 -0.0156 0.5078 -0.0156 Q0.5312 -0.0156 0.5625 -0.0469 Q0.5625 -0.0469 0.5625 -0.0625 Q0.5625 -0.0625 0.5781 -0.0625 Q0.5938 -0.0625 0.5938 -0.0625 Q0.5938 -0.0469 0.5625 -0.0156 Q0.5312 0.0156 0.5 0.0156 Q0.4375 0.0156 0.4219 -0.0625 Q0.4219 -0.0625 0.4062 -0.0781 Q0.3125 0.0156 0.2031 0.0156 Q0.1094 0.0156 0.0625 -0.0625 Q0.0469 -0.1094 0.0469 -0.1562 Q0.0469 -0.2656 0.125 -0.3438 Q0.2031 -0.4375 0.2969 -0.4375 Q0.2969 -0.4375 0.3125 -0.4375 Q0.3906 -0.4375 0.4375 -0.375 Q0.4375 -0.375 0.4375 -0.375 Q0.4844 -0.3281 0.4844 -0.2344 ZM0.4062 -0.0938 L0.4062 -0.0938 Q0.4062 -0.1094 0.4062 -0.2188 Q0.4062 -0.3281 0.375 -0.375 Q0.375 -0.4062 0.3594 -0.4062 L0.3438 -0.4062 L0.3438 -0.4062 L0.3438 -0.4062 Q0.3281 -0.4219 0.3125 -0.4219 Q0.2344 -0.4219 0.1875 -0.3438 L0.1719 -0.3281 Q0.1406 -0.2656 0.125 -0.1719 Q0.1094 -0.1406 0.1094 -0.125 Q0.1094 -0.0312 0.1719 -0.0156 Q0.1875 -0.0156 0.2031 -0.0156 Q0.3125 -0.0156 0.4062 -0.0938 Z\"></path></g><g transform=\"matrix(20,0,0,20,0,0) translate(0.9175,1.9014)\"><path d=\"M0.6875 -0.3281 L0.0938 -0.3281 Q0.0625 -0.3281 0.0625 -0.3438 Q0.0625 -0.3594 0.0938 -0.3594 L0.6875 -0.3594 Q0.7188 -0.3594 0.7188 -0.3438 Q0.7188 -0.3281 0.6875 -0.3281 ZM0.6875 -0.1406 L0.0938 -0.1406 Q0.0625 -0.1406 0.0625 -0.1562 Q0.0625 -0.1719 0.0938 -0.1719 L0.6875 -0.1719 Q0.7188 -0.1719 0.7188 -0.1562 Q0.7188 -0.1406 0.6875 -0.1406 Z\"></path></g><g transform=\"matrix(20,0,0,20,0,0) translate(1.973,1.9014)\"><path d=\"M0.6562 -0.2344 L0.1094 -0.2344 Q0.0781 -0.2344 0.0781 -0.25 Q0.0781 -0.2656 0.1094 -0.2656 L0.6562 -0.2656 Q0.6875 -0.2656 0.6875 -0.25 Q0.6875 -0.2344 0.6562 -0.2344 Z\"></path></g><g transform=\"matrix(20,0,0,20,0,0) translate(2.7508,1.9014) scale(0.1,0.1)\"><path d=\"M1.1719 -5.9688 L2.7812 -6.7656 L2.9375 -6.7656 L2.9375 -1.1719 Q2.9375 -0.6094 2.9844 -0.4766 Q3.0312 -0.3438 3.1797 -0.2656 Q3.3281 -0.1875 3.7812 -0.1875 L3.7812 0 L1.2969 0 L1.2969 -0.1875 Q1.7656 -0.1875 1.8984 -0.2578 Q2.0312 -0.3281 2.0859 -0.4531 Q2.1406 -0.5781 2.1406 -1.1719 L2.1406 -4.7344 Q2.1406 -5.4688 2.0938 -5.6719 Q2.0625 -5.8281 1.9688 -5.8984 Q1.875 -5.9688 1.75 -5.9688 Q1.5625 -5.9688 1.25 -5.8281 L1.1719 -5.9688 Z\"></path><path d=\"M0.4062 -0.2344 L0.4062 0.0469 Q0.4062 0.0781 0.3906 0.0781 Q0.375 0.0781 0.375 0.0469 L0.375 -0.2344 L0.0938 -0.2344 Q0.0625 -0.2344 0.0625 -0.25 Q0.0625 -0.2656 0.0938 -0.2656 L0.375 -0.2656 L0.375 -0.5469 Q0.375 -0.5781 0.3906 -0.5781 Q0.4062 -0.5781 0.4062 -0.5469 L0.4062 -0.2656 L0.6875 -0.2656 Q0.7188 -0.2656 0.7188 -0.25 Q0.7188 -0.2344 0.6875 -0.2344 L0.4062 -0.2344 Z\" transform=\"scale(10,10) translate(0.6403,0)\"></path></g><g transform=\"matrix(20,0,0,20,0,0) translate(4.7634,0.5514) scale(0.7,0.7)\"><path d=\"M0.5156 -0.2656 Q0.5625 -0.375 0.6562 -0.4219 Q0.7031 -0.4375 0.75 -0.4375 Q0.8438 -0.4375 0.9062 -0.3594 Q0.9375 -0.2969 0.9375 -0.2188 Q0.9375 -0.1094 0.875 -0.0469 Q0.8281 0.0156 0.75 0.0156 Q0.6562 0.0156 0.5781 -0.0625 Q0.5625 -0.0781 0.5156 -0.125 L0.4844 -0.1562 Q0.4375 -0.0625 0.3438 -0.0156 Q0.2969 0.0156 0.25 0.0156 Q0.1562 0.0156 0.0938 -0.0781 Q0.0625 -0.1406 0.0625 -0.2188 Q0.0625 -0.3125 0.125 -0.3906 Q0.1719 -0.4375 0.25 -0.4375 Q0.3438 -0.4375 0.4219 -0.375 Q0.4375 -0.3594 0.4844 -0.2969 L0.4844 -0.2969 Q0.5 -0.2812 0.5156 -0.2656 ZM0.5312 -0.2344 L0.625 -0.1094 Q0.625 -0.1094 0.625 -0.1094 L0.6406 -0.1094 Q0.7031 -0.0312 0.7656 -0.0312 Q0.8438 -0.0312 0.8906 -0.1094 Q0.9219 -0.1562 0.9219 -0.2188 Q0.9219 -0.2969 0.875 -0.3594 Q0.8281 -0.4062 0.7656 -0.4062 L0.7656 -0.4062 Q0.6406 -0.4062 0.5312 -0.25 Q0.5312 -0.2344 0.5312 -0.2344 ZM0.4688 -0.1875 L0.4688 -0.1875 L0.375 -0.3125 L0.375 -0.3125 L0.3594 -0.3281 Q0.2969 -0.3906 0.2344 -0.3906 Q0.1562 -0.3906 0.1094 -0.3281 Q0.0781 -0.2812 0.0781 -0.2188 Q0.0781 -0.125 0.125 -0.0625 Q0.1719 -0.0156 0.2344 -0.0156 Q0.3594 -0.0156 0.4531 -0.1875 Q0.4688 -0.1875 0.4688 -0.1875 Z\"></path></g><g transform=\"matrix(20,0,0,20,0,0) translate(4.3912,0.8514)\"><path d=\"M0.0625 1.4062 Q0.0625 1.4062 0.0625 1.3906 Q0.0625 1.3906 0.0625 1.375 L0.5938 0.7656 L0.0625 0.0469 Q0.0625 0.0469 0.0625 0.0469 L0.0625 0.0156 Q0.0625 0 0.0625 0 Q0.0625 0 0.0625 0 L1.2656 0 L1.3906 0.2812 L1.3594 0.2812 Q1.3125 0.1719 1.2031 0.125 Q1.0938 0.0781 0.9766 0.0625 Q0.8594 0.0469 0.7031 0.0469 L0.2344 0.0469 L0.7031 0.6875 Q0.7188 0.7031 0.7188 0.7031 Q0.7188 0.7031 0.7031 0.7031 L0.1875 1.3125 L0.7031 1.3125 Q0.8594 1.3125 0.9844 1.2969 Q1.1094 1.2812 1.2109 1.2344 Q1.3125 1.1875 1.3594 1.0781 L1.3906 1.0781 L1.2656 1.4062 L0.0625 1.4062 Z\"></path></g><g transform=\"matrix(20,0,0,20,0,0) translate(4.4736,3.0037) scale(0.07,0.07)\"><path d=\"M1.6406 -6.9375 L1.6406 -2.5 L2.7812 -3.5312 Q3.1406 -3.8594 3.1875 -3.9531 Q3.2344 -4.0156 3.2344 -4.0625 Q3.2344 -4.1719 3.1562 -4.2422 Q3.0781 -4.3125 2.8906 -4.3125 L2.8906 -4.4688 L4.8281 -4.4688 L4.8281 -4.3125 Q4.4219 -4.3125 4.1562 -4.1953 Q3.8906 -4.0781 3.5781 -3.7969 L2.4375 -2.7344 L3.5781 -1.2812 Q4.0625 -0.6875 4.2188 -0.5156 Q4.4531 -0.2969 4.6406 -0.2188 Q4.75 -0.1719 5.0625 -0.1719 L5.0625 0 L2.8906 0 L2.8906 -0.1719 Q3.0781 -0.1875 3.1406 -0.2344 Q3.2031 -0.2812 3.2031 -0.375 Q3.2031 -0.4844 3.0156 -0.7344 L1.6406 -2.4844 L1.6406 -1 Q1.6406 -0.5781 1.7031 -0.4375 Q1.7656 -0.2969 1.875 -0.2422 Q1.9844 -0.1875 2.3594 -0.1719 L2.3594 0 L0.0781 0 L0.0781 -0.1719 Q0.4219 -0.1719 0.5938 -0.2656 Q0.7031 -0.3125 0.75 -0.4219 Q0.8281 -0.5938 0.8281 -0.9844 L0.8281 -5.0469 Q0.8281 -5.8281 0.7891 -6 Q0.75 -6.1719 0.6719 -6.2422 Q0.5938 -6.3125 0.4688 -6.3125 Q0.375 -6.3125 0.1719 -6.2188 L0.0781 -6.3906 L1.4062 -6.9375 L1.6406 -6.9375 Z\"></path><path d=\"M0.6875 -0.3281 L0.0938 -0.3281 Q0.0625 -0.3281 0.0625 -0.3438 Q0.0625 -0.3594 0.0938 -0.3594 L0.6875 -0.3594 Q0.7188 -0.3594 0.7188 -0.3438 Q0.7188 -0.3281 0.6875 -0.3281 ZM0.6875 -0.1406 L0.0938 -0.1406 Q0.0625 -0.1406 0.0625 -0.1562 Q0.0625 -0.1719 0.0938 -0.1719 L0.6875 -0.1719 Q0.7188 -0.1719 0.7188 -0.1562 Q0.7188 -0.1406 0.6875 -0.1406 Z\" transform=\"scale(14.2857,14.2857) translate(0.3824,0) scale(0.7,0.7)\"></path></g><g transform=\"matrix(20,0,0,20,0,0) translate(5.4004,3.0037) scale(0.07,0.07)\"><path d=\"M0.3594 -3.2656 Q0.3594 -4.4062 0.7031 -5.2266 Q1.0469 -6.0469 1.6094 -6.4375 Q2.0469 -6.7656 2.5156 -6.7656 Q3.2812 -6.7656 3.8906 -5.9844 Q4.6406 -5.0156 4.6406 -3.375 Q4.6406 -2.2188 4.3125 -1.4141 Q3.9844 -0.6094 3.4688 -0.2422 Q2.9531 0.125 2.4688 0.125 Q1.5312 0.125 0.8906 -1 Q0.3594 -1.9375 0.3594 -3.2656 ZM1.3125 -3.1562 Q1.3125 -1.7812 1.6562 -0.9219 Q1.9375 -0.1875 2.4844 -0.1875 Q2.75 -0.1875 3.0312 -0.4297 Q3.3125 -0.6719 3.4688 -1.2188 Q3.6875 -2.0625 3.6875 -3.5938 Q3.6875 -4.7188 3.4531 -5.4844 Q3.2812 -6.0469 3 -6.2812 Q2.7969 -6.4375 2.5156 -6.4375 Q2.1875 -6.4375 1.9219 -6.1406 Q1.5781 -5.7344 1.4453 -4.8672 Q1.3125 -4 1.3125 -3.1562 Z\"></path><path d=\"M1.1719 -5.9688 L2.7812 -6.7656 L2.9375 -6.7656 L2.9375 -1.1719 Q2.9375 -0.6094 2.9844 -0.4766 Q3.0312 -0.3438 3.1797 -0.2656 Q3.3281 -0.1875 3.7812 -0.1875 L3.7812 0 L1.2969 0 L1.2969 -0.1875 Q1.7656 -0.1875 1.8984 -0.2578 Q2.0312 -0.3281 2.0859 -0.4531 Q2.1406 -0.5781 2.1406 -1.1719 L2.1406 -4.7344 Q2.1406 -5.4688 2.0938 -5.6719 Q2.0625 -5.8281 1.9688 -5.8984 Q1.875 -5.9688 1.75 -5.9688 Q1.5625 -5.9688 1.25 -5.8281 L1.1719 -5.9688 Z\" transform=\"scale(14.2857,14.2857) translate(1.7856,-1.7788) scale(0.1,0.1)\"></path><rect x=\"6.1223\" y=\"1.6314\" transform=\"scale(14.2857,14.2857) translate(-5.4004,-3.0037)\" width=\"2.5455\" height=\"0.04\"></rect><path d=\"M4.5781 -1.2812 L4.125 0 L0.2188 0 L0.2188 -0.1875 Q1.9375 -1.75 2.6406 -2.75 Q3.3438 -3.75 3.3438 -4.5781 Q3.3438 -5.2031 2.9609 -5.6094 Q2.5781 -6.0156 2.0312 -6.0156 Q1.5469 -6.0156 1.1562 -5.7266 Q0.7656 -5.4375 0.5938 -4.8906 L0.4062 -4.8906 Q0.5312 -5.7969 1.0312 -6.2812 Q1.5312 -6.7656 2.2969 -6.7656 Q3.0938 -6.7656 3.6406 -6.2422 Q4.1875 -5.7188 4.1875 -5.0156 Q4.1875 -4.5156 3.9531 -4.0156 Q3.5781 -3.2188 2.7812 -2.3438 Q1.5625 -1.0156 1.25 -0.7344 L2.9844 -0.7344 Q3.5156 -0.7344 3.7266 -0.7734 Q3.9375 -0.8125 4.1094 -0.9375 Q4.2812 -1.0625 4.4062 -1.2812 L4.5781 -1.2812 Z\" transform=\"scale(14.2857,14.2857) translate(0.7219,-0.3204) scale(0.1,0.1)\"></path><path d=\"M1.6406 -6.9375 L1.6406 -2.5 L2.7812 -3.5312 Q3.1406 -3.8594 3.1875 -3.9531 Q3.2344 -4.0156 3.2344 -4.0625 Q3.2344 -4.1719 3.1562 -4.2422 Q3.0781 -4.3125 2.8906 -4.3125 L2.8906 -4.4688 L4.8281 -4.4688 L4.8281 -4.3125 Q4.4219 -4.3125 4.1562 -4.1953 Q3.8906 -4.0781 3.5781 -3.7969 L2.4375 -2.7344 L3.5781 -1.2812 Q4.0625 -0.6875 4.2188 -0.5156 Q4.4531 -0.2969 4.6406 -0.2188 Q4.75 -0.1719 5.0625 -0.1719 L5.0625 0 L2.8906 0 L2.8906 -0.1719 Q3.0781 -0.1875 3.1406 -0.2344 Q3.2031 -0.2812 3.2031 -0.375 Q3.2031 -0.4844 3.0156 -0.7344 L1.6406 -2.4844 L1.6406 -1 Q1.6406 -0.5781 1.7031 -0.4375 Q1.7656 -0.2969 1.875 -0.2422 Q1.9844 -0.1875 2.3594 -0.1719 L2.3594 0 L0.0781 0 L0.0781 -0.1719 Q0.4219 -0.1719 0.5938 -0.2656 Q0.7031 -0.3125 0.75 -0.4219 Q0.8281 -0.5938 0.8281 -0.9844 L0.8281 -5.0469 Q0.8281 -5.8281 0.7891 -6 Q0.75 -6.1719 0.6719 -6.2422 Q0.5938 -6.3125 0.4688 -6.3125 Q0.375 -6.3125 0.1719 -6.2188 L0.0781 -6.3906 L1.4062 -6.9375 L1.6406 -6.9375 Z\" transform=\"scale(14.2857,14.2857) translate(1.2197,-0.7267) scale(0.07,0.07)\"></path><path d=\"M0.4062 -0.2344 L0.4062 0.0469 Q0.4062 0.0781 0.3906 0.0781 Q0.375 0.0781 0.375 0.0469 L0.375 -0.2344 L0.0938 -0.2344 Q0.0625 -0.2344 0.0625 -0.25 Q0.0625 -0.2656 0.0938 -0.2656 L0.375 -0.2656 L0.375 -0.5469 Q0.375 -0.5781 0.3906 -0.5781 Q0.4062 -0.5781 0.4062 -0.5469 L0.4062 -0.2656 L0.6875 -0.2656 Q0.7188 -0.2656 0.7188 -0.25 Q0.7188 -0.2344 0.6875 -0.2344 L0.4062 -0.2344 Z\" transform=\"scale(14.2857,14.2857) translate(1.2197,-0.7267) scale(1,1) translate(0.6296,0.4063)\"></path></g><g transform=\"matrix(20,0,0,20,0,0) translate(8.2497,2.6833) scale(0.1,0.1)\"><path d=\"M1.1719 -5.9688 L2.7812 -6.7656 L2.9375 -6.7656 L2.9375 -1.1719 Q2.9375 -0.6094 2.9844 -0.4766 Q3.0312 -0.3438 3.1797 -0.2656 Q3.3281 -0.1875 3.7812 -0.1875 L3.7812 0 L1.2969 0 L1.2969 -0.1875 Q1.7656 -0.1875 1.8984 -0.2578 Q2.0312 -0.3281 2.0859 -0.4531 Q2.1406 -0.5781 2.1406 -1.1719 L2.1406 -4.7344 Q2.1406 -5.4688 2.0938 -5.6719 Q2.0625 -5.8281 1.9688 -5.8984 Q1.875 -5.9688 1.75 -5.9688 Q1.5625 -5.9688 1.25 -5.8281 L1.1719 -5.9688 Z\"></path><path d=\"M0.7188 -0.4531 Q0.7188 -0.375 0.6562 -0.3281 Q0.6094 -0.2812 0.5625 -0.2812 Q0.4844 -0.2812 0.4062 -0.3438 Q0.4062 -0.3438 0.3906 -0.3594 Q0.3125 -0.4062 0.2656 -0.4219 Q0.25 -0.4219 0.2188 -0.4219 Q0.1562 -0.4219 0.125 -0.3906 Q0.1094 -0.3906 0.1094 -0.3906 Q0.0938 -0.3594 0.0781 -0.3125 Q0.0781 -0.2969 0.0625 -0.2969 Q0.0625 -0.2969 0.0625 -0.3125 Q0.0625 -0.4062 0.125 -0.4531 Q0.1719 -0.4844 0.2188 -0.4844 Q0.2812 -0.4844 0.375 -0.4219 Q0.375 -0.4219 0.375 -0.4219 Q0.4688 -0.3594 0.5 -0.3594 Q0.5312 -0.3438 0.5625 -0.3438 Q0.625 -0.3438 0.6562 -0.3906 Q0.6875 -0.4219 0.6875 -0.4531 Q0.7031 -0.4844 0.7031 -0.4844 Q0.7188 -0.4844 0.7188 -0.4531 ZM0.7188 -0.2188 Q0.7188 -0.1406 0.6562 -0.0938 Q0.6094 -0.0625 0.5625 -0.0625 Q0.4844 -0.0625 0.4062 -0.1094 Q0.4062 -0.1094 0.3906 -0.125 Q0.3125 -0.1719 0.2656 -0.1875 Q0.25 -0.1875 0.2188 -0.1875 Q0.1562 -0.1875 0.125 -0.1562 Q0.0938 -0.125 0.0781 -0.0781 Q0.0781 -0.0625 0.0625 -0.0625 Q0.0625 -0.0625 0.0625 -0.0938 Q0.0625 -0.1719 0.125 -0.2188 Q0.1719 -0.25 0.2188 -0.25 Q0.2812 -0.25 0.375 -0.1875 Q0.375 -0.1875 0.375 -0.1875 Q0.4688 -0.125 0.5 -0.125 Q0.5312 -0.1094 0.5625 -0.1094 Q0.625 -0.1094 0.6719 -0.1562 Q0.6875 -0.1875 0.6875 -0.2188 Q0.6875 -0.25 0.7031 -0.25 Q0.7188 -0.25 0.7188 -0.2188 Z\" transform=\"scale(10,10) translate(0.8159,-0.7819)\"></path></g><g transform=\"matrix(20,0,0,20,0,0) translate(10.1212,1.9014) scale(0.1,0.1)\"><path d=\"M0.3594 -3.2656 Q0.3594 -4.4062 0.7031 -5.2266 Q1.0469 -6.0469 1.6094 -6.4375 Q2.0469 -6.7656 2.5156 -6.7656 Q3.2812 -6.7656 3.8906 -5.9844 Q4.6406 -5.0156 4.6406 -3.375 Q4.6406 -2.2188 4.3125 -1.4141 Q3.9844 -0.6094 3.4688 -0.2422 Q2.9531 0.125 2.4688 0.125 Q1.5312 0.125 0.8906 -1 Q0.3594 -1.9375 0.3594 -3.2656 ZM1.3125 -3.1562 Q1.3125 -1.7812 1.6562 -0.9219 Q1.9375 -0.1875 2.4844 -0.1875 Q2.75 -0.1875 3.0312 -0.4297 Q3.3125 -0.6719 3.4688 -1.2188 Q3.6875 -2.0625 3.6875 -3.5938 Q3.6875 -4.7188 3.4531 -5.4844 Q3.2812 -6.0469 3 -6.2812 Q2.7969 -6.4375 2.5156 -6.4375 Q2.1875 -6.4375 1.9219 -6.1406 Q1.5781 -5.7344 1.4453 -4.8672 Q1.3125 -4 1.3125 -3.1562 Z\"></path><path d=\"M0.1875 -0.0469 L0.1875 -0.0469 Q0.1875 -0.0156 0.1562 0 Q0.1562 0 0.1406 0 Q0.1094 0 0.0938 -0.0312 Q0.0938 -0.0469 0.0938 -0.0469 Q0.0938 -0.0938 0.1094 -0.0938 Q0.125 -0.1094 0.1406 -0.1094 Q0.1719 -0.1094 0.1875 -0.0781 Q0.1875 -0.0625 0.1875 -0.0469 Z\" transform=\"scale(10,10) translate(0.5041,0)\"></path></g><g transform=\"matrix(20,0,0,20,0,0) translate(10.903,1.9014) scale(0.1,0.1)\"><path d=\"M4.5781 -1.2812 L4.125 0 L0.2188 0 L0.2188 -0.1875 Q1.9375 -1.75 2.6406 -2.75 Q3.3438 -3.75 3.3438 -4.5781 Q3.3438 -5.2031 2.9609 -5.6094 Q2.5781 -6.0156 2.0312 -6.0156 Q1.5469 -6.0156 1.1562 -5.7266 Q0.7656 -5.4375 0.5938 -4.8906 L0.4062 -4.8906 Q0.5312 -5.7969 1.0312 -6.2812 Q1.5312 -6.7656 2.2969 -6.7656 Q3.0938 -6.7656 3.6406 -6.2422 Q4.1875 -5.7188 4.1875 -5.0156 Q4.1875 -4.5156 3.9531 -4.0156 Q3.5781 -3.2188 2.7812 -2.3438 Q1.5625 -1.0156 1.25 -0.7344 L2.9844 -0.7344 Q3.5156 -0.7344 3.7266 -0.7734 Q3.9375 -0.8125 4.1094 -0.9375 Q4.2812 -1.0625 4.4062 -1.2812 L4.5781 -1.2812 ZM9.4844 -6.7656 L9.4844 -6.5781 Q8.8438 -6.5156 8.4297 -6.3203 Q8.0156 -6.125 7.625 -5.7344 Q7.2344 -5.3438 6.9688 -4.8516 Q6.7031 -4.3594 6.5312 -3.7031 Q7.2344 -4.1875 7.9375 -4.1875 Q8.625 -4.1875 9.1172 -3.6406 Q9.6094 -3.0938 9.6094 -2.2344 Q9.6094 -1.3906 9.1094 -0.7188 Q8.5 0.125 7.5156 0.125 Q6.8281 0.125 6.3594 -0.3281 Q5.4375 -1.2031 5.4375 -2.5938 Q5.4375 -3.4844 5.7891 -4.2891 Q6.1406 -5.0938 6.8047 -5.7109 Q7.4688 -6.3281 8.0703 -6.5469 Q8.6719 -6.7656 9.2031 -6.7656 L9.4844 -6.7656 ZM6.4531 -3.3438 Q6.3594 -2.6875 6.3594 -2.2812 Q6.3594 -1.8125 6.5312 -1.2578 Q6.7031 -0.7031 7.0469 -0.3906 Q7.2969 -0.1562 7.6562 -0.1562 Q8.0781 -0.1562 8.4141 -0.5547 Q8.75 -0.9531 8.75 -1.7031 Q8.75 -2.5312 8.4141 -3.1406 Q8.0781 -3.75 7.4688 -3.75 Q7.2812 -3.75 7.0703 -3.6719 Q6.8594 -3.5938 6.4531 -3.3438 ZM14.6562 -2.4375 L14.6562 -1.75 L13.7656 -1.75 L13.7656 0 L12.9531 0 L12.9531 -1.75 L10.1562 -1.75 L10.1562 -2.375 L13.2344 -6.7656 L13.7656 -6.7656 L13.7656 -2.4375 L14.6562 -2.4375 ZM12.9531 -2.4375 L12.9531 -5.7344 L10.6406 -2.4375 L12.9531 -2.4375 ZM19.3438 -6.625 L18.9531 -5.7969 L16.9688 -5.7969 L16.5312 -4.9062 Q17.8281 -4.7188 18.5781 -3.9375 Q19.2344 -3.2812 19.2344 -2.375 Q19.2344 -1.8594 19.0234 -1.4141 Q18.8125 -0.9688 18.4922 -0.6562 Q18.1719 -0.3438 17.7656 -0.1562 Q17.2031 0.125 16.6094 0.125 Q16.0156 0.125 15.75 -0.0781 Q15.4844 -0.2812 15.4844 -0.5312 Q15.4844 -0.6719 15.5938 -0.7734 Q15.7031 -0.875 15.875 -0.875 Q16 -0.875 16.0938 -0.8359 Q16.1875 -0.7969 16.4219 -0.6406 Q16.7812 -0.3906 17.1562 -0.3906 Q17.7344 -0.3906 18.1641 -0.8203 Q18.5938 -1.25 18.5938 -1.875 Q18.5938 -2.4688 18.2109 -2.9922 Q17.8281 -3.5156 17.1562 -3.7969 Q16.6094 -4.0156 15.7031 -4.0469 L16.9688 -6.625 L19.3438 -6.625 Z\"></path><path d=\"M0.1875 -0.0469 L0.1875 -0.0469 Q0.1875 -0.0156 0.1562 0 Q0.1562 0 0.1406 0 Q0.1094 0 0.0938 -0.0312 Q0.0938 -0.0469 0.0938 -0.0469 Q0.0938 -0.0938 0.1094 -0.0938 Q0.125 -0.1094 0.1406 -0.1094 Q0.1719 -0.1094 0.1875 -0.0781 Q0.1875 -0.0625 0.1875 -0.0469 Z\" transform=\"scale(10,10) translate(1.9744,0)\"></path></g></g></svg>&nbsp;</span></b> </p><p>在<i>最差</i>情况下，归并排序的比较次数比快速排序在<i>平均</i>情况下的比较次数少39%。就移动次数而言，归并排序的最坏情况复杂度是O(<i>n</i>&nbsp;log&nbsp;<i>n)</i>—与quicksort的最佳情况下的复杂度相同，归并排序的最佳情况需要的迭代次数大约是最差情况的一半。<sup class=\"noprint Template-Fact\">[来源请求]</sup> </p><p>对于某些类型的列表，如果待排序的数据只能按顺序有效访问，归并排序比快速排序更有效，因此在一些语言中很流行，如Lisp，其中顺序访问的数据结构非常常见。与快速排序的一些(高效)实现不同，归并排序是一种稳定的排序。</p><p>归并排序最常见的实现并非在原列表中偏序；<sup><a href=\"#quote_5\" class=\"kx_ref\">[5]</a></sup> 因此，必须为存储有序序列输出分配内存(只需<i>n</i>/2的额外空间的版本见下文)。</p>","pics":[{"originalUrl":"https://web.archive.org/web/20221025122000/https://img02.sogoucdn.com/app/a/200698/sogou_science_2273?w=300&h=289&titlename=%E4%B8%80%E7%A7%8D%E9%80%92%E5%BD%92%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%EF%BC%8C%E7%94%A8%E4%BA%8E%E5%AF%B97%E4%B8%AA%E6%95%B4%E6%95%B0%E7%BB%84%E6%88%90%E7%9A%84%E6%95%B0%E7%BB%84%E8%BF%9B%E8%A1%8C%E6%8E%92%E5%BA%8F%E3%80%82%E8%BF%99%E5%BC%A0%E5%9B%BE%E8%A1%A8%E7%A4%BA%E4%BA%BA%E4%B8%BA%E6%A8%A1%E6%8B%9F%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F%EF%BC%88%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%EF%BC%89%E7%9A%84%E6%AD%A5%E9%AA%A4%E3%80%82","url":"https://web.archive.org/web/20221025122000/https://img02.sogoucdn.com/app/a/200698/sogou_science_2273","rw":300,"rh":289,"title":"一种递归归并排序算法，用于对7个整数组成的数组进行排序。这张图表示人为模拟归并排序（自顶向下）的步骤。","alt":null,"width":0,"height":0}],"card":null,"references":[],"versionCount":0},{"paragraphId":"14996252613673474","title":"变体","versionId":"53986263941832463","lemmaId":11025,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":82859321,"name":"━╋独特","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1599474320,"comment":null,"dependVersionId":0,"contentType":1,"content":"<p>归并排序的变体主要关注降低空间复杂性和复制成本。</p><p>将空间开销减少到<i>n</i>/2的简单替代方案是维护<i>左右</i> 节点作为组合结构，仅将m的<i>左侧</i>部分复制到临时存储空间，引导<i>归并</i> 过程使其将归并输出放入<i>m</i>。在这个版本中，最好将临时空间分配给<i>归并</i>过程，因此只需要一次分配。前面提到的过度复制也得到缓解，因为<i>回送结果</i> 语句(函数<i>merge </i>在上面的伪代码中)变得多余。</p><p>当在数组上实现时，归并排序的一个缺点是需要<span><i>O</i>(<i>n</i>)</span>的运行空间。几个原地算法变体已被提出:</p><p>\n <ul>\n  <li>Katajainen等人提出一种需要恒定工作内存的算法:用足够的存储空间来容纳输入数组中的一个元素，以及额外的空间来容纳<span><i>O</i>(1)</span>空间复杂度的输入数组中的指针。他们实现了<span><i>O</i>(<i>n</i> log <i>n</i>)</span> 带有小常数的时间复杂度，但是他们的算法并不稳定。<sup><a href=\"#quote_6\" class=\"kx_ref\">[6]</a></sup></li>\n  <li>创造可以与标准(自上而下或自下而上)归并排序相结合，以产生原地归并排序算法的<i>原地归并</i>算法已经有了许多尝试。在这种情况下，“原地”的概念可以放宽到意味着“占用对数堆栈空间”，因为标准的归并排序需要为其自己的堆栈使用留出一定的空间。格弗特等人表示，使用恒定的暂存空间的情况下，在<span><i>O</i>(<i>n</i> log <i>n</i>)</span>时间复杂度内的稳定原地归并算法是可能的，但是它们的算法很复杂，并且具有很高的常数因子:归并长度分别为<span>n</span>和<span>m</span>的数组将进行 <span>5<i>n</i> + 12<i>m</i> + <i>o</i>(<i>m</i>)</span> 次移动。这种高常数因子和复杂的原地算法变得更简单、更容易理解。<sup><a href=\"#quote_7\" class=\"kx_ref\">[7]</a></sup> Bing-Chao Huang和Michael A. Langston<sup><a href=\"#quote_8\" class=\"kx_ref\">[8]</a></sup>提出了一种简单的线性时间算法，<i>实际原地归并</i> 算法，使用固定数量的额外空间归并排序列表。他们都使用了克朗罗德和其他人的作品。它融入线性时间和恒定的额外空间。该算法比标准的归并排序算法花费的平均时间少一点，可以自由利用0(n)个临时额外存储单元，不到原空间的2倍。虽然该算法在实际应用中要快得多，但对于某些列表来说也是不稳定的。但是使用类似的概念，他们已经能够解决这个问题。其他原地算法包括符号归并，它总共花费<span><i>O</i>((<i>n</i> + <i>m</i>) log (<i>n</i> + <i>m</i>))</span> 的总时间，并且是稳定的。<sup><a href=\"#quote_9\" class=\"kx_ref\">[9]</a></sup> 将这样的算法插入归并排序增加了非线性的复杂度，但仍然是拟线性的，复杂度为<span><i>O</i>(<i>n</i> (log <i>n</i>)<sup>2</sup>)</span>。</li>\n  <li>现代稳定的线性原地归并是块归并排序。</li>\n </ul></p><p>减少复制到多个列表的另一种方法是将新的信息字段与每个键(<i>m</i>中的元素被称为键)。此字段将用于在排序列表中将键和任何相关信息链接在一起(键及其相关信息称为记录)。然后，通过改变链接值来进行排序列表的归并；根本不需要移动任何记录。仅包含一个链接的字段通常会小于整个记录，因此也将使用更少的空间。这是一种标准排序技术，不限于归并排序。</p>","pics":null,"card":null,"references":[],"versionCount":0},{"paragraphId":"14996252613673475","title":"与磁带机一起使用","versionId":"53986263941832464","lemmaId":11025,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":82859321,"name":"━╋独特","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1599474320,"comment":null,"dependVersionId":0,"contentType":1,"content":"<p><img alt=\"\" class=\"fileimage kx_img ed_imgfloat_right\" img_height=\"225\" img_width=\"300\" titlename=\"归并排序类型的算法允许在现代标准下具有小容量随机存储器的早期计算机上对大量数据进行排序。记录存储在磁带上并在磁带驱动器组上处理，例如图中的IBM 729.\" data-src=\"https://img02.sogoucdn.com/app/a/200698/sogou_science_4045\"> </p><p>当要排序的数据太大而无法容纳时，在光盘或者磁带驱动器上进行外部归并排序非常实用。 外部排序解释如何用磁盘驱动器实现归并排序。典型的磁带机类型使用四个磁带机。所有的输入/输出都是顺序的(除了每一遍结束时的倒带)。一个最小的实现只需要两个记录缓冲区和几个程序变量就可以完成。</p><p>将四个磁带机命名为A、B、C、D，原始数据在A上，并且只使用两个记录缓冲区，算法类似于 ，使用成对的磁带机而非内存中的阵列。基本算法可以描述如下:</p><p>\n </p><ol>\n  <li>合并A中的记录对；交替向C和D写入两个记录的子列表</li>\n  <li>将两个记录的子列表从C和D合并成四个记录的子列表；把这些交替写入A和B</li>\n  <li>将A和B的四个记录子列表合并为八个记录子列表；交替地把这些写入C和D</li>\n  <li>重复以上步骤，直到您有一个包含所有数据的列表，在log<sub>2</sub>(<i>n</i>)遍中就可以完成排序。</li>\n </ol><p></p><p>通常情况下，外部排序使用混合算法而不是从非常短的运行步骤开始，初始过程将把许多记录读入内存，进行内部排序以创建一个长运行步骤，然后将这些长运行步骤分配到输出集。这一步避免了许多遍早期归并。例如，一个1024条记录的内部排序将保存9个归并过程。内部排序通常很大，因为它这样的好处。事实上，有些技术可以使初始运行步骤的长度大小高于可用内存。<sup><a href=\"#quote_10\" class=\"kx_ref\">[10]</a></sup> </p><p>有了更高级的算法，上述算法可以修改为使用三个磁带。使用两个队列，或一个栈和一个队列，或三个栈也可以达到<i>O</i>（<i>n</i> log <i>n</i>)的运行时间。另一方面，使用k（k&gt;2）个磁带(内存中有<i>O(k</i>)个项)，利用k/2路归并，我们可以将磁带操作数量减少到<i>O</i>(log <i>k</i>)次。</p><p>优化磁带(和磁盘)驱动器使用的更复杂的归并排序是多相归并排序。</p>","pics":[{"originalUrl":"https://web.archive.org/web/20221025122000/https://img02.sogoucdn.com/app/a/200698/sogou_science_4045?h=225&titlename=%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F%E7%B1%BB%E5%9E%8B%E7%9A%84%E7%AE%97%E6%B3%95%E5%85%81%E8%AE%B8%E5%9C%A8%E7%8E%B0%E4%BB%A3%E6%A0%87%E5%87%86%E4%B8%8B%E5%85%B7%E6%9C%89%E5%B0%8F%E5%AE%B9%E9%87%8F%E9%9A%8F%E6%9C%BA%E5%AD%98%E5%82%A8%E5%99%A8%E7%9A%84%E6%97%A9%E6%9C%9F%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%8A%E5%AF%B9%E5%A4%A7%E9%87%8F%E6%95%B0%E6%8D%AE%E8%BF%9B%E8%A1%8C%E6%8E%92%E5%BA%8F%E3%80%82%E8%AE%B0%E5%BD%95%E5%AD%98%E5%82%A8%E5%9C%A8%E7%A3%81%E5%B8%A6%E4%B8%8A%E5%B9%B6%E5%9C%A8%E7%A3%81%E5%B8%A6%E9%A9%B1%E5%8A%A8%E5%99%A8%E7%BB%84%E4%B8%8A%E5%A4%84%E7%90%86%EF%BC%8C%E4%BE%8B%E5%A6%82%E5%9B%BE%E4%B8%AD%E7%9A%84IBM%20729.&w=300","url":"https://web.archive.org/web/20221025122000/https://img02.sogoucdn.com/app/a/200698/sogou_science_4045","rw":300,"rh":225,"title":"归并排序类型的算法允许在现代标准下具有小容量随机存储器的早期计算机上对大量数据进行排序。记录存储在磁带上并在磁带驱动器组上处理，例如图中的IBM 729.","alt":null,"width":0,"height":0}],"card":null,"references":[],"versionCount":0},{"paragraphId":"14996252613673476","title":"优化归并排序","versionId":"53986263941832465","lemmaId":11025,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":82859321,"name":"━╋独特","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1599474320,"comment":null,"dependVersionId":0,"contentType":1,"content":"<p><img alt=\"\" class=\"fileimage kx_img ed_imgfloat_right\" img_height=\"237\" img_width=\"280\" titlename=\"在随机整数数组上进行的平铺归并排序。横轴表示数组索引，纵轴表示数组中的整数。\" data-src=\"https://img01.sogoucdn.com/app/a/200698/sogou_science_4044\"> </p><p>在现代计算机上， 参考点在 软件优化方面至关重要，因为使用了多级内存层次结构。利用高速缓存的归并排序算法已被提出，该算法明确选择最小化存储器高速缓存中页面调入调出的移动次数。例如，<b>平铺归并排序</b>算法在子阵列达到大小为S时停止划分子阵列，其中S是适合于中央处理器高速缓存的数据项的数量。这些子阵列中的每一个都用原地排序算法进行排序，例如插入排序，以避免内存交换，然后以标准递归方式完成普通的归并排序。该算法在受益于缓存优化的机器上表现出了更好的性能<sup class=\"noprint Inline-Template\">[示例请求]</sup>。 （）</p><p>提出了归并排序的替代版本，该版本使用恒定的额外空间。这个算法后来被改进了。（）</p><p>此外，许多外部排序的应用使用归并排序的形式，其中输入被分割成更多数量的子列表，理想情况下，这是数量满足归并后仍能使当前处理的页的集合适配主存储器。</p>","pics":[{"originalUrl":"https://web.archive.org/web/20221025122000/https://img01.sogoucdn.com/app/a/200698/sogou_science_4044?h=237&titlename=%E5%9C%A8%E9%9A%8F%E6%9C%BA%E6%95%B4%E6%95%B0%E6%95%B0%E7%BB%84%E4%B8%8A%E8%BF%9B%E8%A1%8C%E7%9A%84%E5%B9%B3%E9%93%BA%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F%E3%80%82%E6%A8%AA%E8%BD%B4%E8%A1%A8%E7%A4%BA%E6%95%B0%E7%BB%84%E7%B4%A2%E5%BC%95%EF%BC%8C%E7%BA%B5%E8%BD%B4%E8%A1%A8%E7%A4%BA%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%95%B4%E6%95%B0%E3%80%82&w=280","url":"https://web.archive.org/web/20221025122000/https://img01.sogoucdn.com/app/a/200698/sogou_science_4044","rw":280,"rh":237,"title":"在随机整数数组上进行的平铺归并排序。横轴表示数组索引，纵轴表示数组中的整数。","alt":null,"width":0,"height":0}],"card":null,"references":[],"versionCount":0},{"paragraphId":"14996252613673477","title":"并行归并排序","versionId":"53986263941832466","lemmaId":11025,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":82859321,"name":"━╋独特","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1599474320,"comment":null,"dependVersionId":0,"contentType":1,"content":"<p>由于使用了分治法，归并排序并行性很好。 科曼、莱瑟森、瑞文斯特和斯坦的第三版<i>算法导论</i>讨论了几个平行的变体。<sup><a href=\"#quote_11\" class=\"kx_ref\">[11]</a></sup> 其中的第一个可以很容易地用伪代码表达分支合并关键词:</p><p><pre class=\"kx_code\">// <i>Sort elements lo through hi (exclusive) of array A.</i><b>algorithm</b> mergesort(A, lo, hi) <b>is</b>\n    <b>if</b> lo+1 &lt; hi <b>then</b>  // <i>Two or more elements.</i>\n        mid = ⌊(lo + hi) / 2⌋        <b>fork</b> mergesort(A, lo, mid)\n        mergesort(A, mid, hi)        <b>join</b>\n        merge(A, lo, mid, hi)</pre></p><p>这个算法是对串行版本的一个微不足道的修改，它的加速并不令人印象深刻:当在无限数量的处理器上执行时，它运行的时间复杂度为<span>Θ(<i>n</i>)</span>，这只是一个<span>Θ(log <i>n</i>)</span> 串行版本的改进。使用并行归并算法可以获得更好的结果，这给出了并行下 <span>Θ(<i>n</i> / (log <i>n</i>)<sup>2</sup>)</span>的时间复杂度，这意味着如果有足够的处理器可用的时间，这种类型的并行归并排序运行的复杂度为</p><p><span class=\"kx_formula\" alt=\"{\\displaystyle \\Theta \\left((n\\log n)\\cdot {\\frac {(\\log n)^{2}}{n}}\\right)=\\Theta ((\\log n)^{3})}\"> \n &nbsp;<svg xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"fill-opacity:1; color-rendering:auto; color-interpolation:auto; text-rendering:auto; stroke:black; stroke-linecap:square; stroke-miterlimit:10; shape-rendering:auto; stroke-opacity:1; fill:black; stroke-dasharray:none; font-weight:normal; stroke-width:1; font-family:'Dialog'; font-style:normal; stroke-linejoin:miter; font-size:12px; stroke-dashoffset:0; image-rendering:auto;\" width=\"320\" height=\"56\" xmlns=\"http://www.w3.org/2000/svg\" class=\"transfer_formula\"><!--Generated by the Batik Graphics2D SVG Generator--><defs id=\"genericDefs\"></defs><g><g transform=\"scale(20,20) translate(0,1.663)\"><path d=\"M0.7188 -0.3438 Q0.7188 -0.1875 0.625 -0.0781 Q0.5312 0.0156 0.4062 0.0156 L0.3906 0.0156 Q0.2656 0.0156 0.1562 -0.0781 Q0.0625 -0.1719 0.0625 -0.3281 L0.0625 -0.3438 Q0.0625 -0.4844 0.1562 -0.5938 Q0.25 -0.7031 0.375 -0.7031 L0.3906 -0.7031 Q0.5156 -0.7031 0.6094 -0.6094 Q0.7188 -0.5 0.7188 -0.3594 L0.7188 -0.3438 ZM0.3906 0 Q0.4688 0 0.5312 -0.0625 Q0.625 -0.1562 0.625 -0.3438 Q0.625 -0.5469 0.5156 -0.6406 Q0.4531 -0.6875 0.3906 -0.6875 Q0.2969 -0.6875 0.2344 -0.6094 L0.2344 -0.6094 Q0.1562 -0.5156 0.1562 -0.3438 Q0.1562 -0.125 0.2656 -0.0469 Q0.3281 0 0.3906 0 ZM0.5625 -0.4062 L0.5625 -0.2656 L0.5469 -0.2656 L0.5469 -0.2969 L0.2344 -0.2969 L0.2344 -0.2656 L0.2031 -0.2656 L0.2031 -0.4062 L0.2344 -0.4062 L0.2344 -0.375 L0.5469 -0.375 L0.5469 -0.4062 L0.5625 -0.4062 Z\"></path></g><g transform=\"matrix(20,0,0,20,0,0) translate(0.9444,0.253)\"><path d=\"M0.6562 2.3594 Q0.5469 2.25 0.4531 2.1094 Q0.3594 1.9688 0.3047 1.8125 Q0.25 1.6562 0.2266 1.4922 Q0.2031 1.3281 0.2031 1.1562 Q0.2031 0.9844 0.2266 0.8203 Q0.25 0.6562 0.3047 0.5 Q0.3594 0.3438 0.4531 0.2109 Q0.5469 0.0781 0.6562 -0.0312 Q0.6562 -0.0469 0.6719 -0.0469 L0.6875 -0.0469 Q0.7031 -0.0469 0.7031 -0.0391 Q0.7031 -0.0312 0.7031 -0.0312 Q0.7031 -0.0312 0.7031 -0.0312 Q0.5781 0.0938 0.5 0.2266 Q0.4219 0.3594 0.375 0.5156 Q0.3281 0.6719 0.3125 0.8359 Q0.2969 1 0.2969 1.1562 Q0.2969 1.3281 0.3125 1.4844 Q0.3281 1.6406 0.375 1.7969 Q0.4219 1.9531 0.5078 2.0938 Q0.5938 2.2344 0.7031 2.3438 Q0.7031 2.3438 0.7031 2.3438 Q0.7031 2.3594 0.7031 2.3594 Q0.7031 2.3594 0.6875 2.3594 L0.6719 2.3594 Q0.6562 2.3594 0.6562 2.3594 Z\"></path></g><g transform=\"matrix(20,0,0,20,0,0) translate(1.6806,1.663)\"><path d=\"M0.3281 0.2344 L0.3281 0.2344 Q0.3281 0.25 0.3281 0.25 Q0.3125 0.25 0.2656 0.2031 Q0.2031 0.1406 0.1719 0.0625 Q0.0938 -0.0781 0.0938 -0.25 Q0.0938 -0.4219 0.1562 -0.5625 Q0.2188 -0.6719 0.2969 -0.7344 Q0.3125 -0.75 0.3281 -0.75 Q0.3281 -0.75 0.3281 -0.7344 Q0.3281 -0.7344 0.3125 -0.7188 Q0.1562 -0.5625 0.1562 -0.25 Q0.1562 0.0625 0.3125 0.2188 Q0.3281 0.2344 0.3281 0.2344 Z\"></path></g><g transform=\"matrix(20,0,0,20,0,0) translate(2.0695,1.663) scale(0.1,0.1)\"><path d=\"M1.6094 -3.6562 Q2.4062 -4.6094 3.1094 -4.6094 Q3.4844 -4.6094 3.75 -4.4219 Q4.0156 -4.2344 4.1719 -3.8125 Q4.2656 -3.5312 4.2656 -2.9219 L4.2656 -1.0156 Q4.2656 -0.5938 4.3438 -0.4375 Q4.3906 -0.3125 4.5156 -0.2422 Q4.6406 -0.1719 4.9531 -0.1719 L4.9531 0 L2.75 0 L2.75 -0.1719 L2.8438 -0.1719 Q3.1562 -0.1719 3.2812 -0.2656 Q3.4062 -0.3594 3.4531 -0.5469 Q3.4688 -0.625 3.4688 -1.0156 L3.4688 -2.8438 Q3.4688 -3.4531 3.3125 -3.7266 Q3.1562 -4 2.7812 -4 Q2.1875 -4 1.6094 -3.375 L1.6094 -1.0156 Q1.6094 -0.5625 1.6719 -0.4531 Q1.7344 -0.3125 1.8594 -0.2422 Q1.9844 -0.1719 2.3438 -0.1719 L2.3438 0 L0.125 0 L0.125 -0.1719 L0.2344 -0.1719 Q0.5781 -0.1719 0.6953 -0.3438 Q0.8125 -0.5156 0.8125 -1.0156 L0.8125 -2.6719 Q0.8125 -3.4844 0.7734 -3.6562 Q0.7344 -3.8281 0.6641 -3.8906 Q0.5938 -3.9531 0.4531 -3.9531 Q0.3281 -3.9531 0.125 -3.875 L0.0625 -4.0625 L1.4062 -4.6094 L1.6094 -4.6094 L1.6094 -3.6562 Z\"></path><path d=\"M0.1719 -0.6875 L0.1719 -0.0781 Q0.1719 -0.0469 0.1875 -0.0312 Q0.2031 -0.0312 0.25 -0.0312 L0.25 0 L0.1406 0 Q0.125 0 0.0312 0 L0.0312 -0.0312 Q0.0938 -0.0312 0.1094 -0.0469 L0.1094 -0.0469 Q0.1094 -0.0469 0.1094 -0.0781 L0.1094 -0.5938 Q0.1094 -0.6406 0.0938 -0.6406 L0.0938 -0.6406 Q0.0781 -0.6562 0.0625 -0.6562 L0.0312 -0.6562 L0.0312 -0.6875 L0.1719 -0.6875 Z\" transform=\"scale(10,10) translate(0.702,0)\"></path></g><g transform=\"matrix(20,0,0,20,0,0) translate(3.0492,1.663)\"><path d=\"M0.4688 -0.2188 L0.4688 -0.2188 Q0.4688 -0.1094 0.3906 -0.0469 Q0.3281 0.0156 0.25 0.0156 Q0.1562 0.0156 0.0938 -0.0625 Q0.0312 -0.125 0.0312 -0.2188 Q0.0312 -0.3125 0.0938 -0.3906 Q0.1562 -0.4531 0.25 -0.4531 Q0.3438 -0.4531 0.4062 -0.375 Q0.4688 -0.2969 0.4688 -0.2188 ZM0.25 -0.0156 L0.25 -0.0156 Q0.3125 -0.0156 0.3594 -0.0625 L0.3594 -0.0938 Q0.3906 -0.125 0.3906 -0.2188 Q0.3906 -0.3125 0.3594 -0.3594 Q0.3125 -0.4219 0.25 -0.4219 Q0.1875 -0.4219 0.1406 -0.375 Q0.1406 -0.375 0.1406 -0.3594 Q0.1094 -0.3125 0.1094 -0.2188 Q0.1094 -0.125 0.1406 -0.0781 Q0.1719 -0.0156 0.25 -0.0156 Z\"></path></g><g transform=\"matrix(20,0,0,20,0,0) translate(3.5492,1.663)\"><path d=\"M0.2188 -0.1719 Q0.2656 -0.1719 0.2969 -0.2188 Q0.3125 -0.2344 0.3125 -0.2969 Q0.3125 -0.4219 0.2188 -0.4219 Q0.1719 -0.4219 0.1562 -0.375 Q0.1406 -0.3594 0.1406 -0.2969 Q0.1406 -0.1719 0.2188 -0.1719 ZM0.125 -0.1875 Q0.1094 -0.1562 0.1094 -0.1406 Q0.1094 -0.0938 0.1406 -0.0781 Q0.1406 -0.0625 0.1562 -0.0625 Q0.1719 -0.0625 0.2344 -0.0625 Q0.3438 -0.0625 0.3906 -0.0469 Q0.3906 -0.0469 0.4062 -0.0312 Q0.4688 0 0.4688 0.0781 Q0.4688 0.1406 0.3906 0.1719 Q0.3281 0.2031 0.25 0.2031 Q0.1406 0.2031 0.0625 0.1562 Q0.0312 0.125 0.0312 0.0781 Q0.0312 0.0312 0.0781 0 Q0.0938 -0.0156 0.125 -0.0156 Q0.0781 -0.0469 0.0781 -0.1094 Q0.0781 -0.1562 0.1094 -0.1875 Q0.0625 -0.2344 0.0625 -0.2969 Q0.0625 -0.3594 0.125 -0.4062 Q0.1562 -0.4375 0.2188 -0.4375 Q0.2812 -0.4375 0.3281 -0.4062 Q0.375 -0.4531 0.4375 -0.4531 Q0.4688 -0.4531 0.4844 -0.4219 Q0.4844 -0.4062 0.4844 -0.4062 Q0.4844 -0.375 0.4531 -0.375 Q0.4375 -0.375 0.4219 -0.3906 Q0.4219 -0.4062 0.4219 -0.4062 Q0.4219 -0.4219 0.4375 -0.4375 Q0.4375 -0.4375 0.4375 -0.4375 Q0.3906 -0.4375 0.3438 -0.3906 Q0.3906 -0.3594 0.3906 -0.2969 Q0.3906 -0.2188 0.3281 -0.1875 Q0.2812 -0.1562 0.2188 -0.1562 Q0.1719 -0.1562 0.125 -0.1875 ZM0.25 0.1875 L0.25 0.1875 Q0.3438 0.1875 0.3906 0.1406 Q0.4219 0.1094 0.4219 0.0781 Q0.4219 0 0.2969 0 L0.2969 0 L0.2969 0 Q0.2812 0 0.2188 0 L0.1562 0 Q0.1094 0 0.0938 0.0312 Q0.0781 0.0625 0.0781 0.0781 Q0.0781 0.125 0.1406 0.1562 Q0.1875 0.1875 0.25 0.1875 Z\"></path></g><g transform=\"matrix(20,0,0,20,0,0) translate(4.2159,1.663) scale(0.1,0.1)\"><path d=\"M1.6094 -3.6562 Q2.4062 -4.6094 3.1094 -4.6094 Q3.4844 -4.6094 3.75 -4.4219 Q4.0156 -4.2344 4.1719 -3.8125 Q4.2656 -3.5312 4.2656 -2.9219 L4.2656 -1.0156 Q4.2656 -0.5938 4.3438 -0.4375 Q4.3906 -0.3125 4.5156 -0.2422 Q4.6406 -0.1719 4.9531 -0.1719 L4.9531 0 L2.75 0 L2.75 -0.1719 L2.8438 -0.1719 Q3.1562 -0.1719 3.2812 -0.2656 Q3.4062 -0.3594 3.4531 -0.5469 Q3.4688 -0.625 3.4688 -1.0156 L3.4688 -2.8438 Q3.4688 -3.4531 3.3125 -3.7266 Q3.1562 -4 2.7812 -4 Q2.1875 -4 1.6094 -3.375 L1.6094 -1.0156 Q1.6094 -0.5625 1.6719 -0.4531 Q1.7344 -0.3125 1.8594 -0.2422 Q1.9844 -0.1719 2.3438 -0.1719 L2.3438 0 L0.125 0 L0.125 -0.1719 L0.2344 -0.1719 Q0.5781 -0.1719 0.6953 -0.3438 Q0.8125 -0.5156 0.8125 -1.0156 L0.8125 -2.6719 Q0.8125 -3.4844 0.7734 -3.6562 Q0.7344 -3.8281 0.6641 -3.8906 Q0.5938 -3.9531 0.4531 -3.9531 Q0.3281 -3.9531 0.125 -3.875 L0.0625 -4.0625 L1.4062 -4.6094 L1.6094 -4.6094 L1.6094 -3.6562 Z\"></path><path d=\"M0.2812 -0.25 L0.2812 -0.25 Q0.2812 -0.0781 0.2188 0.0625 Q0.1719 0.1719 0.0938 0.2344 Q0.0781 0.25 0.0625 0.25 Q0.0625 0.25 0.0625 0.2344 Q0.0625 0.2344 0.0625 0.2188 Q0.2344 0.0625 0.2344 -0.25 Q0.2344 -0.5625 0.0781 -0.7188 L0.0781 -0.7188 Q0.0625 -0.7344 0.0625 -0.7344 Q0.0625 -0.75 0.0625 -0.75 Q0.0781 -0.75 0.125 -0.7031 Q0.1875 -0.6406 0.2188 -0.5625 Q0.2812 -0.4219 0.2812 -0.25 Z\" transform=\"scale(10,10) translate(0.5353,0)\"></path></g><g transform=\"matrix(20,0,0,20,0,0) translate(5.3623,1.663)\"><path d=\"M0.1875 -0.25 Q0.1875 -0.2188 0.1562 -0.2031 Q0.1562 -0.2031 0.1406 -0.2031 Q0.1094 -0.2031 0.0938 -0.2344 Q0.0938 -0.2344 0.0938 -0.25 Q0.0938 -0.2812 0.1094 -0.2969 Q0.125 -0.2969 0.1406 -0.2969 Q0.1719 -0.2969 0.1875 -0.2656 Q0.1875 -0.2656 0.1875 -0.25 Z\"></path></g><g transform=\"matrix(20,0,0,20,0,0) translate(5.9823,0.9865)\"><path d=\"M0.3281 0.2344 L0.3281 0.2344 Q0.3281 0.25 0.3281 0.25 Q0.3125 0.25 0.2656 0.2031 Q0.2031 0.1406 0.1719 0.0625 Q0.0938 -0.0781 0.0938 -0.25 Q0.0938 -0.4219 0.1562 -0.5625 Q0.2188 -0.6719 0.2969 -0.7344 Q0.3125 -0.75 0.3281 -0.75 Q0.3281 -0.75 0.3281 -0.7344 Q0.3281 -0.7344 0.3125 -0.7188 Q0.1562 -0.5625 0.1562 -0.25 Q0.1562 0.0625 0.3125 0.2188 Q0.3281 0.2344 0.3281 0.2344 Z\"></path></g><g transform=\"matrix(20,0,0,20,0,0) translate(6.3712,0.9865)\"><path d=\"M0.1719 -0.6875 L0.1719 -0.0781 Q0.1719 -0.0469 0.1875 -0.0312 Q0.2031 -0.0312 0.25 -0.0312 L0.25 0 L0.1406 0 Q0.125 0 0.0312 0 L0.0312 -0.0312 Q0.0938 -0.0312 0.1094 -0.0469 L0.1094 -0.0469 Q0.1094 -0.0469 0.1094 -0.0781 L0.1094 -0.5938 Q0.1094 -0.6406 0.0938 -0.6406 L0.0938 -0.6406 Q0.0781 -0.6562 0.0625 -0.6562 L0.0312 -0.6562 L0.0312 -0.6875 L0.1719 -0.6875 Z\"></path></g><g transform=\"matrix(20,0,0,20,0,0) translate(6.649,0.9865)\"><path d=\"M0.4688 -0.2188 L0.4688 -0.2188 Q0.4688 -0.1094 0.3906 -0.0469 Q0.3281 0.0156 0.25 0.0156 Q0.1562 0.0156 0.0938 -0.0625 Q0.0312 -0.125 0.0312 -0.2188 Q0.0312 -0.3125 0.0938 -0.3906 Q0.1562 -0.4531 0.25 -0.4531 Q0.3438 -0.4531 0.4062 -0.375 Q0.4688 -0.2969 0.4688 -0.2188 ZM0.25 -0.0156 L0.25 -0.0156 Q0.3125 -0.0156 0.3594 -0.0625 L0.3594 -0.0938 Q0.3906 -0.125 0.3906 -0.2188 Q0.3906 -0.3125 0.3594 -0.3594 Q0.3125 -0.4219 0.25 -0.4219 Q0.1875 -0.4219 0.1406 -0.375 Q0.1406 -0.375 0.1406 -0.3594 Q0.1094 -0.3125 0.1094 -0.2188 Q0.1094 -0.125 0.1406 -0.0781 Q0.1719 -0.0156 0.25 -0.0156 Z\"></path></g><g transform=\"matrix(20,0,0,20,0,0) translate(7.149,0.9865)\"><path d=\"M0.2188 -0.1719 Q0.2656 -0.1719 0.2969 -0.2188 Q0.3125 -0.2344 0.3125 -0.2969 Q0.3125 -0.4219 0.2188 -0.4219 Q0.1719 -0.4219 0.1562 -0.375 Q0.1406 -0.3594 0.1406 -0.2969 Q0.1406 -0.1719 0.2188 -0.1719 ZM0.125 -0.1875 Q0.1094 -0.1562 0.1094 -0.1406 Q0.1094 -0.0938 0.1406 -0.0781 Q0.1406 -0.0625 0.1562 -0.0625 Q0.1719 -0.0625 0.2344 -0.0625 Q0.3438 -0.0625 0.3906 -0.0469 Q0.3906 -0.0469 0.4062 -0.0312 Q0.4688 0 0.4688 0.0781 Q0.4688 0.1406 0.3906 0.1719 Q0.3281 0.2031 0.25 0.2031 Q0.1406 0.2031 0.0625 0.1562 Q0.0312 0.125 0.0312 0.0781 Q0.0312 0.0312 0.0781 0 Q0.0938 -0.0156 0.125 -0.0156 Q0.0781 -0.0469 0.0781 -0.1094 Q0.0781 -0.1562 0.1094 -0.1875 Q0.0625 -0.2344 0.0625 -0.2969 Q0.0625 -0.3594 0.125 -0.4062 Q0.1562 -0.4375 0.2188 -0.4375 Q0.2812 -0.4375 0.3281 -0.4062 Q0.375 -0.4531 0.4375 -0.4531 Q0.4688 -0.4531 0.4844 -0.4219 Q0.4844 -0.4062 0.4844 -0.4062 Q0.4844 -0.375 0.4531 -0.375 Q0.4375 -0.375 0.4219 -0.3906 Q0.4219 -0.4062 0.4219 -0.4062 Q0.4219 -0.4219 0.4375 -0.4375 Q0.4375 -0.4375 0.4375 -0.4375 Q0.3906 -0.4375 0.3438 -0.3906 Q0.3906 -0.3594 0.3906 -0.2969 Q0.3906 -0.2188 0.3281 -0.1875 Q0.2812 -0.1562 0.2188 -0.1562 Q0.1719 -0.1562 0.125 -0.1875 ZM0.25 0.1875 L0.25 0.1875 Q0.3438 0.1875 0.3906 0.1406 Q0.4219 0.1094 0.4219 0.0781 Q0.4219 0 0.2969 0 L0.2969 0 L0.2969 0 Q0.2812 0 0.2188 0 L0.1562 0 Q0.1094 0 0.0938 0.0312 Q0.0781 0.0625 0.0781 0.0781 Q0.0781 0.125 0.1406 0.1562 Q0.1875 0.1875 0.25 0.1875 Z\"></path></g><g transform=\"matrix(20,0,0,20,0,0) translate(7.8156,0.9865) scale(0.1,0.1)\"><path d=\"M1.6094 -3.6562 Q2.4062 -4.6094 3.1094 -4.6094 Q3.4844 -4.6094 3.75 -4.4219 Q4.0156 -4.2344 4.1719 -3.8125 Q4.2656 -3.5312 4.2656 -2.9219 L4.2656 -1.0156 Q4.2656 -0.5938 4.3438 -0.4375 Q4.3906 -0.3125 4.5156 -0.2422 Q4.6406 -0.1719 4.9531 -0.1719 L4.9531 0 L2.75 0 L2.75 -0.1719 L2.8438 -0.1719 Q3.1562 -0.1719 3.2812 -0.2656 Q3.4062 -0.3594 3.4531 -0.5469 Q3.4688 -0.625 3.4688 -1.0156 L3.4688 -2.8438 Q3.4688 -3.4531 3.3125 -3.7266 Q3.1562 -4 2.7812 -4 Q2.1875 -4 1.6094 -3.375 L1.6094 -1.0156 Q1.6094 -0.5625 1.6719 -0.4531 Q1.7344 -0.3125 1.8594 -0.2422 Q1.9844 -0.1719 2.3438 -0.1719 L2.3438 0 L0.125 0 L0.125 -0.1719 L0.2344 -0.1719 Q0.5781 -0.1719 0.6953 -0.3438 Q0.8125 -0.5156 0.8125 -1.0156 L0.8125 -2.6719 Q0.8125 -3.4844 0.7734 -3.6562 Q0.7344 -3.8281 0.6641 -3.8906 Q0.5938 -3.9531 0.4531 -3.9531 Q0.3281 -3.9531 0.125 -3.875 L0.0625 -4.0625 L1.4062 -4.6094 L1.6094 -4.6094 L1.6094 -3.6562 Z\"></path><path d=\"M0.2812 -0.25 L0.2812 -0.25 Q0.2812 -0.0781 0.2188 0.0625 Q0.1719 0.1719 0.0938 0.2344 Q0.0781 0.25 0.0625 0.25 Q0.0625 0.25 0.0625 0.2344 Q0.0625 0.2344 0.0625 0.2188 Q0.2344 0.0625 0.2344 -0.25 Q0.2344 -0.5625 0.0781 -0.7188 L0.0781 -0.7188 Q0.0625 -0.7344 0.0625 -0.7344 Q0.0625 -0.75 0.0625 -0.75 Q0.0781 -0.75 0.125 -0.7031 Q0.1875 -0.6406 0.2188 -0.5625 Q0.2812 -0.4219 0.2812 -0.25 Z\" transform=\"scale(10,10) translate(0.5353,0)\"></path></g><g transform=\"matrix(20,0,0,20,0,0) translate(8.7399,0.6236) scale(0.07,0.07)\"><path d=\"M4.5781 -1.2812 L4.125 0 L0.2188 0 L0.2188 -0.1875 Q1.9375 -1.75 2.6406 -2.75 Q3.3438 -3.75 3.3438 -4.5781 Q3.3438 -5.2031 2.9609 -5.6094 Q2.5781 -6.0156 2.0312 -6.0156 Q1.5469 -6.0156 1.1562 -5.7266 Q0.7656 -5.4375 0.5938 -4.8906 L0.4062 -4.8906 Q0.5312 -5.7969 1.0312 -6.2812 Q1.5312 -6.7656 2.2969 -6.7656 Q3.0938 -6.7656 3.6406 -6.2422 Q4.1875 -5.7188 4.1875 -5.0156 Q4.1875 -4.5156 3.9531 -4.0156 Q3.5781 -3.2188 2.7812 -2.3438 Q1.5625 -1.0156 1.25 -0.7344 L2.9844 -0.7344 Q3.5156 -0.7344 3.7266 -0.7734 Q3.9375 -0.8125 4.1094 -0.9375 Q4.2812 -1.0625 4.4062 -1.2812 L4.5781 -1.2812 Z\"></path><rect x=\"5.9823\" y=\"1.393\" transform=\"scale(14.2857,14.2857) translate(-8.7399,-0.6236)\" width=\"3.131\" height=\"0.04\"></rect><path d=\"M1.6094 -3.6562 Q2.4062 -4.6094 3.1094 -4.6094 Q3.4844 -4.6094 3.75 -4.4219 Q4.0156 -4.2344 4.1719 -3.8125 Q4.2656 -3.5312 4.2656 -2.9219 L4.2656 -1.0156 Q4.2656 -0.5938 4.3438 -0.4375 Q4.3906 -0.3125 4.5156 -0.2422 Q4.6406 -0.1719 4.9531 -0.1719 L4.9531 0 L2.75 0 L2.75 -0.1719 L2.8438 -0.1719 Q3.1562 -0.1719 3.2812 -0.2656 Q3.4062 -0.3594 3.4531 -0.5469 Q3.4688 -0.625 3.4688 -1.0156 L3.4688 -2.8438 Q3.4688 -3.4531 3.3125 -3.7266 Q3.1562 -4 2.7812 -4 Q2.1875 -4 1.6094 -3.375 L1.6094 -1.0156 Q1.6094 -0.5625 1.6719 -0.4531 Q1.7344 -0.3125 1.8594 -0.2422 Q1.9844 -0.1719 2.3438 -0.1719 L2.3438 0 L0.125 0 L0.125 -0.1719 L0.2344 -0.1719 Q0.5781 -0.1719 0.6953 -0.3438 Q0.8125 -0.5156 0.8125 -1.0156 L0.8125 -2.6719 Q0.8125 -3.4844 0.7734 -3.6562 Q0.7344 -3.8281 0.6641 -3.8906 Q0.5938 -3.9531 0.4531 -3.9531 Q0.3281 -3.9531 0.125 -3.875 L0.0625 -4.0625 L1.4062 -4.6094 L1.6094 -4.6094 L1.6094 -3.6562 Z\" transform=\"scale(14.2857,14.2857) translate(-1.4597,1.7254) scale(0.1,0.1)\"></path><path d=\"M0.0469 2.3594 Q0.0312 2.3594 0.0312 2.3438 Q0.0312 2.3438 0.0312 2.3438 Q0.1562 2.2344 0.2344 2.0938 Q0.3125 1.9531 0.3594 1.8047 Q0.4062 1.6562 0.4219 1.4922 Q0.4375 1.3281 0.4375 1.1562 Q0.4375 0.9844 0.4219 0.8281 Q0.4062 0.6719 0.3594 0.5156 Q0.3125 0.3594 0.2344 0.2266 Q0.1562 0.0938 0.0312 -0.0312 Q0.0312 -0.0312 0.0312 -0.0312 Q0.0312 -0.0469 0.0469 -0.0469 L0.0625 -0.0469 Q0.0781 -0.0469 0.0781 -0.0312 Q0.2031 0.0781 0.2891 0.2109 Q0.375 0.3438 0.4297 0.5 Q0.4844 0.6562 0.5078 0.8203 Q0.5312 0.9844 0.5312 1.1562 Q0.5312 1.3281 0.5078 1.4922 Q0.4844 1.6562 0.4297 1.8125 Q0.375 1.9688 0.2891 2.1094 Q0.2031 2.25 0.0781 2.3594 Q0.0781 2.3594 0.0625 2.3594 L0.0469 2.3594 Z\" transform=\"scale(14.2857,14.2857) translate(0.4935,-0.3706)\"></path></g><g transform=\"matrix(20,0,0,20,0,0) translate(10.2472,1.663)\"><path d=\"M0.6875 -0.3281 L0.0938 -0.3281 Q0.0625 -0.3281 0.0625 -0.3438 Q0.0625 -0.3594 0.0938 -0.3594 L0.6875 -0.3594 Q0.7188 -0.3594 0.7188 -0.3438 Q0.7188 -0.3281 0.6875 -0.3281 ZM0.6875 -0.1406 L0.0938 -0.1406 Q0.0625 -0.1406 0.0625 -0.1562 Q0.0625 -0.1719 0.0938 -0.1719 L0.6875 -0.1719 Q0.7188 -0.1719 0.7188 -0.1562 Q0.7188 -0.1406 0.6875 -0.1406 Z\"></path></g><g transform=\"matrix(20,0,0,20,0,0) translate(11.3028,1.663)\"><path d=\"M0.7188 -0.3438 Q0.7188 -0.1875 0.625 -0.0781 Q0.5312 0.0156 0.4062 0.0156 L0.3906 0.0156 Q0.2656 0.0156 0.1562 -0.0781 Q0.0625 -0.1719 0.0625 -0.3281 L0.0625 -0.3438 Q0.0625 -0.4844 0.1562 -0.5938 Q0.25 -0.7031 0.375 -0.7031 L0.3906 -0.7031 Q0.5156 -0.7031 0.6094 -0.6094 Q0.7188 -0.5 0.7188 -0.3594 L0.7188 -0.3438 ZM0.3906 0 Q0.4688 0 0.5312 -0.0625 Q0.625 -0.1562 0.625 -0.3438 Q0.625 -0.5469 0.5156 -0.6406 Q0.4531 -0.6875 0.3906 -0.6875 Q0.2969 -0.6875 0.2344 -0.6094 L0.2344 -0.6094 Q0.1562 -0.5156 0.1562 -0.3438 Q0.1562 -0.125 0.2656 -0.0469 Q0.3281 0 0.3906 0 ZM0.5625 -0.4062 L0.5625 -0.2656 L0.5469 -0.2656 L0.5469 -0.2969 L0.2344 -0.2969 L0.2344 -0.2656 L0.2031 -0.2656 L0.2031 -0.4062 L0.2344 -0.4062 L0.2344 -0.375 L0.5469 -0.375 L0.5469 -0.4062 L0.5625 -0.4062 Z\"></path></g><g transform=\"matrix(20,0,0,20,0,0) translate(12.0806,1.663)\"><path d=\"M0.3281 0.2344 L0.3281 0.2344 Q0.3281 0.25 0.3281 0.25 Q0.3125 0.25 0.2656 0.2031 Q0.2031 0.1406 0.1719 0.0625 Q0.0938 -0.0781 0.0938 -0.25 Q0.0938 -0.4219 0.1562 -0.5625 Q0.2188 -0.6719 0.2969 -0.7344 Q0.3125 -0.75 0.3281 -0.75 Q0.3281 -0.75 0.3281 -0.7344 Q0.3281 -0.7344 0.3125 -0.7188 Q0.1562 -0.5625 0.1562 -0.25 Q0.1562 0.0625 0.3125 0.2188 Q0.3281 0.2344 0.3281 0.2344 Z\"></path></g><g transform=\"matrix(20,0,0,20,0,0) translate(12.4694,1.663)\"><path d=\"M0.3281 0.2344 L0.3281 0.2344 Q0.3281 0.25 0.3281 0.25 Q0.3125 0.25 0.2656 0.2031 Q0.2031 0.1406 0.1719 0.0625 Q0.0938 -0.0781 0.0938 -0.25 Q0.0938 -0.4219 0.1562 -0.5625 Q0.2188 -0.6719 0.2969 -0.7344 Q0.3125 -0.75 0.3281 -0.75 Q0.3281 -0.75 0.3281 -0.7344 Q0.3281 -0.7344 0.3125 -0.7188 Q0.1562 -0.5625 0.1562 -0.25 Q0.1562 0.0625 0.3125 0.2188 Q0.3281 0.2344 0.3281 0.2344 Z\"></path></g><g transform=\"matrix(20,0,0,20,0,0) translate(12.8583,1.663)\"><path d=\"M0.1719 -0.6875 L0.1719 -0.0781 Q0.1719 -0.0469 0.1875 -0.0312 Q0.2031 -0.0312 0.25 -0.0312 L0.25 0 L0.1406 0 Q0.125 0 0.0312 0 L0.0312 -0.0312 Q0.0938 -0.0312 0.1094 -0.0469 L0.1094 -0.0469 Q0.1094 -0.0469 0.1094 -0.0781 L0.1094 -0.5938 Q0.1094 -0.6406 0.0938 -0.6406 L0.0938 -0.6406 Q0.0781 -0.6562 0.0625 -0.6562 L0.0312 -0.6562 L0.0312 -0.6875 L0.1719 -0.6875 Z\"></path></g><g transform=\"matrix(20,0,0,20,0,0) translate(13.1361,1.663)\"><path d=\"M0.4688 -0.2188 L0.4688 -0.2188 Q0.4688 -0.1094 0.3906 -0.0469 Q0.3281 0.0156 0.25 0.0156 Q0.1562 0.0156 0.0938 -0.0625 Q0.0312 -0.125 0.0312 -0.2188 Q0.0312 -0.3125 0.0938 -0.3906 Q0.1562 -0.4531 0.25 -0.4531 Q0.3438 -0.4531 0.4062 -0.375 Q0.4688 -0.2969 0.4688 -0.2188 ZM0.25 -0.0156 L0.25 -0.0156 Q0.3125 -0.0156 0.3594 -0.0625 L0.3594 -0.0938 Q0.3906 -0.125 0.3906 -0.2188 Q0.3906 -0.3125 0.3594 -0.3594 Q0.3125 -0.4219 0.25 -0.4219 Q0.1875 -0.4219 0.1406 -0.375 Q0.1406 -0.375 0.1406 -0.3594 Q0.1094 -0.3125 0.1094 -0.2188 Q0.1094 -0.125 0.1406 -0.0781 Q0.1719 -0.0156 0.25 -0.0156 Z\"></path></g><g transform=\"matrix(20,0,0,20,0,0) translate(13.6361,1.663)\"><path d=\"M0.2188 -0.1719 Q0.2656 -0.1719 0.2969 -0.2188 Q0.3125 -0.2344 0.3125 -0.2969 Q0.3125 -0.4219 0.2188 -0.4219 Q0.1719 -0.4219 0.1562 -0.375 Q0.1406 -0.3594 0.1406 -0.2969 Q0.1406 -0.1719 0.2188 -0.1719 ZM0.125 -0.1875 Q0.1094 -0.1562 0.1094 -0.1406 Q0.1094 -0.0938 0.1406 -0.0781 Q0.1406 -0.0625 0.1562 -0.0625 Q0.1719 -0.0625 0.2344 -0.0625 Q0.3438 -0.0625 0.3906 -0.0469 Q0.3906 -0.0469 0.4062 -0.0312 Q0.4688 0 0.4688 0.0781 Q0.4688 0.1406 0.3906 0.1719 Q0.3281 0.2031 0.25 0.2031 Q0.1406 0.2031 0.0625 0.1562 Q0.0312 0.125 0.0312 0.0781 Q0.0312 0.0312 0.0781 0 Q0.0938 -0.0156 0.125 -0.0156 Q0.0781 -0.0469 0.0781 -0.1094 Q0.0781 -0.1562 0.1094 -0.1875 Q0.0625 -0.2344 0.0625 -0.2969 Q0.0625 -0.3594 0.125 -0.4062 Q0.1562 -0.4375 0.2188 -0.4375 Q0.2812 -0.4375 0.3281 -0.4062 Q0.375 -0.4531 0.4375 -0.4531 Q0.4688 -0.4531 0.4844 -0.4219 Q0.4844 -0.4062 0.4844 -0.4062 Q0.4844 -0.375 0.4531 -0.375 Q0.4375 -0.375 0.4219 -0.3906 Q0.4219 -0.4062 0.4219 -0.4062 Q0.4219 -0.4219 0.4375 -0.4375 Q0.4375 -0.4375 0.4375 -0.4375 Q0.3906 -0.4375 0.3438 -0.3906 Q0.3906 -0.3594 0.3906 -0.2969 Q0.3906 -0.2188 0.3281 -0.1875 Q0.2812 -0.1562 0.2188 -0.1562 Q0.1719 -0.1562 0.125 -0.1875 ZM0.25 0.1875 L0.25 0.1875 Q0.3438 0.1875 0.3906 0.1406 Q0.4219 0.1094 0.4219 0.0781 Q0.4219 0 0.2969 0 L0.2969 0 L0.2969 0 Q0.2812 0 0.2188 0 L0.1562 0 Q0.1094 0 0.0938 0.0312 Q0.0781 0.0625 0.0781 0.0781 Q0.0781 0.125 0.1406 0.1562 Q0.1875 0.1875 0.25 0.1875 Z\"></path></g><g transform=\"matrix(20,0,0,20,0,0) translate(14.3028,1.663) scale(0.1,0.1)\"><path d=\"M1.6094 -3.6562 Q2.4062 -4.6094 3.1094 -4.6094 Q3.4844 -4.6094 3.75 -4.4219 Q4.0156 -4.2344 4.1719 -3.8125 Q4.2656 -3.5312 4.2656 -2.9219 L4.2656 -1.0156 Q4.2656 -0.5938 4.3438 -0.4375 Q4.3906 -0.3125 4.5156 -0.2422 Q4.6406 -0.1719 4.9531 -0.1719 L4.9531 0 L2.75 0 L2.75 -0.1719 L2.8438 -0.1719 Q3.1562 -0.1719 3.2812 -0.2656 Q3.4062 -0.3594 3.4531 -0.5469 Q3.4688 -0.625 3.4688 -1.0156 L3.4688 -2.8438 Q3.4688 -3.4531 3.3125 -3.7266 Q3.1562 -4 2.7812 -4 Q2.1875 -4 1.6094 -3.375 L1.6094 -1.0156 Q1.6094 -0.5625 1.6719 -0.4531 Q1.7344 -0.3125 1.8594 -0.2422 Q1.9844 -0.1719 2.3438 -0.1719 L2.3438 0 L0.125 0 L0.125 -0.1719 L0.2344 -0.1719 Q0.5781 -0.1719 0.6953 -0.3438 Q0.8125 -0.5156 0.8125 -1.0156 L0.8125 -2.6719 Q0.8125 -3.4844 0.7734 -3.6562 Q0.7344 -3.8281 0.6641 -3.8906 Q0.5938 -3.9531 0.4531 -3.9531 Q0.3281 -3.9531 0.125 -3.875 L0.0625 -4.0625 L1.4062 -4.6094 L1.6094 -4.6094 L1.6094 -3.6562 Z\"></path><path d=\"M0.2812 -0.25 L0.2812 -0.25 Q0.2812 -0.0781 0.2188 0.0625 Q0.1719 0.1719 0.0938 0.2344 Q0.0781 0.25 0.0625 0.25 Q0.0625 0.25 0.0625 0.2344 Q0.0625 0.2344 0.0625 0.2188 Q0.2344 0.0625 0.2344 -0.25 Q0.2344 -0.5625 0.0781 -0.7188 L0.0781 -0.7188 Q0.0625 -0.7344 0.0625 -0.7344 Q0.0625 -0.75 0.0625 -0.75 Q0.0781 -0.75 0.125 -0.7031 Q0.1875 -0.6406 0.2188 -0.5625 Q0.2812 -0.4219 0.2812 -0.25 Z\" transform=\"scale(10,10) translate(0.5353,0)\"></path></g><g transform=\"matrix(20,0,0,20,0,0) translate(15.227,1.2501) scale(0.07,0.07)\"><path d=\"M0.5156 -5.3594 Q0.7969 -6.0312 1.2266 -6.3984 Q1.6562 -6.7656 2.2969 -6.7656 Q3.0938 -6.7656 3.5156 -6.2344 Q3.8438 -5.8594 3.8438 -5.4219 Q3.8438 -4.6875 2.9375 -3.9219 Q3.5469 -3.6875 3.8594 -3.2422 Q4.1719 -2.7969 4.1719 -2.1875 Q4.1719 -1.3281 3.625 -0.7031 Q2.9062 0.125 1.5625 0.125 Q0.8906 0.125 0.6484 -0.0469 Q0.4062 -0.2188 0.4062 -0.4062 Q0.4062 -0.5469 0.5234 -0.6562 Q0.6406 -0.7656 0.7969 -0.7656 Q0.9219 -0.7656 1.0469 -0.7188 Q1.125 -0.7031 1.4219 -0.5469 Q1.7188 -0.3906 1.8281 -0.3594 Q2 -0.3125 2.2188 -0.3125 Q2.7031 -0.3125 3.0781 -0.6953 Q3.4531 -1.0781 3.4531 -1.6094 Q3.4531 -2 3.2812 -2.3594 Q3.1562 -2.625 3 -2.7812 Q2.7812 -2.9688 2.4219 -3.125 Q2.0625 -3.2812 1.6719 -3.2812 L1.5156 -3.2812 L1.5156 -3.4375 Q1.9062 -3.4844 2.2969 -3.7109 Q2.6875 -3.9375 2.8594 -4.2578 Q3.0312 -4.5781 3.0312 -4.9688 Q3.0312 -5.4688 2.7188 -5.7812 Q2.4062 -6.0938 1.9375 -6.0938 Q1.1719 -6.0938 0.6719 -5.2812 L0.5156 -5.3594 Z\"></path><path d=\"M0.2812 -0.25 L0.2812 -0.25 Q0.2812 -0.0781 0.2188 0.0625 Q0.1719 0.1719 0.0938 0.2344 Q0.0781 0.25 0.0625 0.25 Q0.0625 0.25 0.0625 0.2344 Q0.0625 0.2344 0.0625 0.2188 Q0.2344 0.0625 0.2344 -0.25 Q0.2344 -0.5625 0.0781 -0.7188 L0.0781 -0.7188 Q0.0625 -0.7344 0.0625 -0.7344 Q0.0625 -0.75 0.0625 -0.75 Q0.0781 -0.75 0.125 -0.7031 Q0.1875 -0.6406 0.2188 -0.5625 Q0.2812 -0.4219 0.2812 -0.25 Z\" transform=\"scale(14.2857,14.2857) translate(0.345,0.4129)\"></path></g></g></svg>&nbsp;</span></p><p>。<sup><a href=\"#quote_11\" class=\"kx_ref\">[11]</a></sup> 当与快速稳定的顺序排序相结合时，这种排序在实践中可以表现良好，例如插入排序和快速顺序归并作为归并小阵列的基本情况。<sup><a href=\"#quote_12\" class=\"kx_ref\">[12]</a></sup> </p><p>归并排序是最早实现的最佳速度的排序算法之一，理查德·科尔使用巧妙的二次采样算法来确保<span><i>O</i>(1)</span>归并。<sup><a href=\"#quote_13\" class=\"kx_ref\">[13]</a></sup> 其他复杂度的并行排序算法可以在较低的常数时间内实现相同或更好的时间界限。例如，在1991年，大卫·鲍尔斯描述了一个并行化的快速排序(和一个相关的基数排序)可以在具有<i>n个处理器的</i>CRCW并行随机存取机（PRAM）上通过隐式执行分区在<i>O</i>(log <i>n</i>)时间复杂度内运行。<sup><a href=\"#quote_14\" class=\"kx_ref\">[14]</a></sup>鲍尔斯<sup><a href=\"#quote_15\" class=\"kx_ref\">[15]</a></sup>还展示了一个在蝴蝶排序网络上时间复杂度为<i>O</i>((log <i>n</i>)<sup>2</sup>)的Batcher的双调归并排序算法，比起在PRAM上运行的<i>O</i>(log <i>n</i>)复杂度，它实际上更快，他详细讨论了比较、基数和并行排序中隐藏的开销。</p>","pics":null,"card":null,"references":[],"versionCount":0},{"paragraphId":"14996252613673478","title":"与其他排序算法的比较","versionId":"53986263941832467","lemmaId":11025,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":82859321,"name":"━╋独特","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1599474320,"comment":null,"dependVersionId":0,"contentType":1,"content":"<p>尽管堆排序与归并排序有相同的时间限制，它只需要θ(1)的辅助空间而非归并排序的θ(<i>n</i>)。在典型的现代架构上，高效的快速排序在对基于内存的数组进行排序时，实现通常优于归并排序。另一方面，归并排序是一种稳定的排序，在处理访问缓慢的顺序介质时效率更高。归并排序通常是排序链表的最佳方式：在这种情况下，以只需要θ(1)额外空间的方式实现归并排序相对容易，并且链表的缓慢随机访问性能使得一些其他算法(例如快速排序)性能较差，而另一些算法(例如堆排序)完全不可能。</p><p>截至 Perl 5.8，归并排序是它的默认排序算法(它在早期版本的Perl中是快速排序)。在Java中，Arrays.sort() 方法根据数据类型使用归并排序或优化的快速排序，并且为了高效实现，当排序的数组元素少于7个时切换为插入排序。<sup><a href=\"#quote_16\" class=\"kx_ref\">[16]</a></sup> Linux内核对其链表使用归并排序。<sup><a href=\"#quote_17\" class=\"kx_ref\">[17]</a></sup> Python使用Timsort，这是归并排序和插入排序的另一种优化混合，已成为 Java SE 7（对于非基元类型的数组）<sup><a href=\"#quote_18\" class=\"kx_ref\">[18]</a></sup>， 安卓平台<sup><a href=\"#quote_19\" class=\"kx_ref\">[19]</a></sup> 和 GNU Octave<sup><a href=\"#quote_20\" class=\"kx_ref\">[20]</a></sup>中的标准排序算法。</p>","pics":null,"card":null,"references":[],"versionCount":0},{"paragraphId":"14996252630450702","title":"笔记","versionId":"53986263941832468","lemmaId":11025,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":82859321,"name":"━╋独特","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1599474320,"comment":null,"dependVersionId":0,"contentType":1,"content":"<p>\n <ol>\n  <li id=\"cite-ref-2\">， p.&nbsp;122）</li>\n  <li id=\"cite-ref-4\">， p.&nbsp;158）</li>\n  <li id=\"cite-ref-6\">Katajainen, Jyrki; Träff, Jesper Larsson (March 1997). \"A meticulous analysis of mergesort programs\" (PDF). <i>Proceedings of the 3rd Italian Conference on Algorithms and Complexity</i>. Italian Conference on Algorithms and Complexity. Rome. pp.&nbsp;217–228. CiteSeerX&nbsp;10.1.1.86.3154. doi:10.1007/3-540-62592-5_74.</li>\n  <li id=\"cite-ref-8\">Powers, David M. W. and McMahon Graham B. (1983), \"A compendium of interesting prolog programs\", DCS Technical Report 8313, Department of Computer Science, University of New South Wales.</li>\n  <li id=\"cite-ref-10\">The worst case number given here does not agree with that given in Knuth's <i>Art of Computer Programming, Vol 3</i>. The discrepancy is due to Knuth analyzing a variant implementation of merge sort that is slightly sub-optimal</li>\n  <li id=\"cite-ref-12\">Cormen; Leiserson; Rivest; Stein. <i>Introduction to Algorithms</i>. p.&nbsp;151. ISBN&nbsp;978-0-262-03384-8.</li>\n  <li id=\"cite-ref-14\">Katajainen, Jyrki; Pasanen, Tomi; Teuhola, Jukka (1996). \"Practical in-place mergesort\". <i>Nordic J. Computing</i>. <b>3</b> (1): 27–40. CiteSeerX&nbsp;10.1.1.22.8523.</li>\n  <li id=\"cite-ref-16\">Geffert, Viliam; Katajainen, Jyrki; Pasanen, Tomi (2000). \"Asymptotically efficient in-place merging\". <i>Theoretical Computer Science</i>. <b>237</b>: 159–181. doi:10.1016/S0304-3975(98)00162-5.</li>\n  <li id=\"cite-ref-18\">Huang, Bing-Chao; Langston, Michael A. (March 1988). \"Practical In-Place Merging\". <i>Communications of the ACM</i>. <b>31</b> (3): 348–352. doi:10.1145/42392.42403.</li>\n  <li id=\"cite-ref-20\">Kim, Pok-Son; Kutzner, Arne (2004). <i>Stable Minimum Storage Merging by Symmetric Comparisons</i>. European Symp. Algorithms. Lecture Notes in Computer Science. <b>3221</b>. pp.&nbsp;714–723. CiteSeerX&nbsp;10.1.1.102.4612. doi:10.1007/978-3-540-30140-0_63. ISBN&nbsp;978-3-540-23025-0.</li>\n  <li id=\"cite-ref-22\">Selection sort. Knuth's snowplow. Natural merge.</li>\n  <li id=\"cite-ref-24\">，第797–805页</li>\n  <li id=\"cite-ref-26\">Victor J. Duvanenko \"Parallel Merge Sort\" Dr. Dobb's Journal &amp; blog[1] and GitHub repo C++ implementation [2]</li>\n  <li id=\"cite-ref-28\">Cole, Richard (August 1988). \"Parallel merge sort\". <i>SIAM J. Comput</i>. <b>17</b> (4): 770–785. CiteSeerX&nbsp;10.1.1.464.7118. doi:10.1137/0217049</li>\n  <li id=\"cite-ref-30\">Powers, David M. W. Parallelized Quicksort and Radixsort with Optimal Speedup, <i>Proceedings of International Conference on Parallel Computing Technologies</i>. Novosibirsk. 1991.</li>\n  <li id=\"cite-ref-32\">David M. W. Powers, Parallel Unification: Practical Complexity, Australasian Computer Architecture Workshop, Flinders University, January 1995</li>\n  <li id=\"cite-ref-34\">OpenJDK src/java.base/share/classes/java/util/Arrays.java @ 53904:9c3fe09f69bc</li>\n  <li id=\"cite-ref-36\">linux kernel /lib/list_sort.c</li>\n  <li id=\"cite-ref-38\">jjb. \"Commit 6804124: Replace \"modified mergesort\" in java.util.Arrays.sort with timsort\". <i>Java Development Kit 7 Hg repo</i>. Archived from the original on 2018-01-26. Retrieved 24 Feb 2011.</li>\n  <li id=\"cite-ref-40\">\"Class: java.util.TimSort&lt;T&gt;\". <i>Android JDK Documentation</i>. Archived from the original on January 20, 2015. Retrieved 19 Jan 2015.</li>\n  <li id=\"cite-ref-42\">\"liboctave/util/oct-sort.cc\". <i>Mercurial repository of Octave source code</i>. Lines 23-25 of the initial comment block. Retrieved 18 Feb 2013. Code stolen in large part from Python's, listobject.c, which itself had no license header. However, thanks to Tim Peters for the parts of the code I ripped-off.</li>\n </ol></p>","pics":null,"card":null,"references":[],"versionCount":0}],"references":[{"id":1,"type":"book","title":"Knuth（1998， p. 158）","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":2,"type":"book","title":"Katajainen, Jyrki; Träff, Jesper Larsson (March 1997). \"A meticulous analysis of mergesort programs\" (PDF). Proceedings of the 3rd Italian Conference on Algorithms and Complexity. Italian Conference on Algorithms and Complexity. Rome. pp. 217–228. CiteSeerX 10.1.1.86.3154. doi:10.1007/3-540-62592-5_74.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":3,"type":"book","title":"Powers, David M. W. and McMahon Graham B. (1983), \"A compendium of interesting prolog programs\", DCS Technical Report 8313, Department of Computer Science, University of New South Wales.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":4,"type":"book","title":"The worst case number given here does not agree with that given in Knuth's Art of Computer Programming, Vol 3. The discrepancy is due to Knuth analyzing a variant implementation of merge sort that is slightly sub-optimal","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":5,"type":"book","title":"Cormen; Leiserson; Rivest; Stein. Introduction to Algorithms. p. 151. ISBN 978-0-262-03384-8.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":6,"type":"book","title":"Katajainen, Jyrki; Pasanen, Tomi; Teuhola, Jukka (1996). \"Practical in-place mergesort\". Nordic J. Computing. 3 (1): 27–40. CiteSeerX 10.1.1.22.8523.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":7,"type":"book","title":"Geffert, Viliam; Katajainen, Jyrki; Pasanen, Tomi (2000). \"Asymptotically efficient in-place merging\". Theoretical Computer Science. 237: 159–181. doi:10.1016/S0304-3975(98)00162-5.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":8,"type":"book","title":"Huang, Bing-Chao; Langston, Michael A. (March 1988). \"Practical In-Place Merging\". Communications of the ACM. 31 (3): 348–352. doi:10.1145/42392.42403.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":9,"type":"book","title":"Kim, Pok-Son; Kutzner, Arne (2004). Stable Minimum Storage Merging by Symmetric Comparisons. European Symp. Algorithms. Lecture Notes in Computer Science. 3221. pp. 714–723. CiteSeerX 10.1.1.102.4612. doi:10.1007/978-3-540-30140-0_63. ISBN 978-3-540-23025-0.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":10,"type":"book","title":"Selection sort. Knuth's snowplow. Natural merge.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":11,"type":"book","title":"Cormen 等人 2009，第797–805页","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":12,"type":"book","title":"Victor J. Duvanenko \"Parallel Merge Sort\" Dr. Dobb's Journal & blog[1] and GitHub repo C++ implementation [2]","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":13,"type":"book","title":"Cole, Richard (August 1988). \"Parallel merge sort\". SIAM J. Comput. 17 (4): 770–785. CiteSeerX 10.1.1.464.7118. doi:10.1137/0217049","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":14,"type":"book","title":"Powers, David M. W. Parallelized Quicksort and Radixsort with Optimal Speedup, Proceedings of International Conference on Parallel Computing Technologies. Novosibirsk. 1991.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":15,"type":"book","title":"David M. W. Powers, Parallel Unification: Practical Complexity, Australasian Computer Architecture Workshop, Flinders University, January 1995","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":16,"type":"book","title":"OpenJDK src/java.base/share/classes/java/util/Arrays.java @ 53904:9c3fe09f69bc","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":17,"type":"book","title":"linux kernel /lib/list_sort.c","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":18,"type":"book","title":"jjb. \"Commit 6804124: Replace \"modified mergesort\" in java.util.Arrays.sort with timsort\". Java Development Kit 7 Hg repo. Archived from the original on 2018-01-26. Retrieved 24 Feb 2011.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":19,"type":"book","title":"\"Class: java.util.TimSort<T>\". Android JDK Documentation. Archived from the original on January 20, 2015. Retrieved 19 Jan 2015.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":20,"type":"book","title":"\"liboctave/util/oct-sort.cc\". Mercurial repository of Octave source code. Lines 23-25 of the initial comment block. Retrieved 18 Feb 2013. Code stolen in large part from Python's, listobject.c, which itself had no license header. However, thanks to Tim Peters for the parts of the code I ripped-off.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false}],"recommendReferences":null,"auditState":2,"lemmaLevel":1,"origin":0,"originEnTitle":null,"originZhTitle":null,"pv":828,"auditType":0,"synonyms":null,"showEditTime":"2019.12.13 18:54","auditors":[{"uid":0,"name":"Ki.κe","pic":"https://web.archive.org/web/20221025122000/https://wx.qlogo.cn/mmopen/vi_32/y67kfr32Doib4wg71Jiau7jVWvharic3nRKgdRRQSl6koeQJCo0GQs2Krw0vwdFRsOWnHIQOwAZsSg5lIkIrFCOcQ/132","introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":"","jobBrief":"","role":0,"roleName":null,"title":"","professionalTitle":null,"phoneNo":null,"editable":true,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false}],"hasZhishiNav":false,"auditInfos":{},"isHistory":false};</script><script crossorigin="anonymous" src="./1025.合并排序 - 搜狗科学百科_files/aegis.min.js.download"></script><script crossorigin="anonymous" src="./1025.合并排序 - 搜狗科学百科_files/main_2020092401.js.download"></script><script crossorigin="anonymous" src="./1025.合并排序 - 搜狗科学百科_files/react.production.min.js.download"></script><script crossorigin="anonymous" src="./1025.合并排序 - 搜狗科学百科_files/react-dom.production.min.js.download"></script><script crossorigin="anonymous" src="./1025.合并排序 - 搜狗科学百科_files/jquery-1.11.1.min.js.download"></script><script crossorigin="anonymous" src="./1025.合并排序 - 搜狗科学百科_files/main_2022062701.js.download"></script><script crossorigin="anonymous" src="./1025.合并排序 - 搜狗科学百科_files/main_66bbe21.js.download"></script><script crossorigin="anonymous" src="./1025.合并排序 - 搜狗科学百科_files/react.production.min.js.download"></script><script crossorigin="anonymous" src="./1025.合并排序 - 搜狗科学百科_files/react-dom.production.min.js.download"></script><script crossorigin="anonymous" src="./1025.合并排序 - 搜狗科学百科_files/main_edf0f08.js.download"></script><div id="popControl"><div class="pop-control-mask" style="display: none;"><div class="pop-container"><i class="close-icon"></i><div class="stop-title">搜狗科学百科停止服务运营公告</div><div class="stop-user">亲爱的用户：</div><div class="stop-content">因业务方向调整，搜狗科学百科将于2022年11月11日正式停止服务与运营。届时产品内所有数据将依据相关法律进行删除并关闭服务器，您将无法登录及使用搜狗科学百科，相关内容在平台下线后将无法找回。</div><div class="stop-content">搜狗科学百科是由搜狗推出的科学领域专业百科产品，与搜狗百科为两个独立产品，本次停止服务与运营仅对搜狗科学百科，并不影响搜狗百科产品正常使用，敬请知悉。</div><div class="stop-content">由此给您带来的不便我们深表歉意，敬请谅解。再次感谢您一直以来的陪伴与支持！</div><div class="stop-team">搜狗科学百科产品&amp;运营团队</div><div class="stop-time">2022年10月11日</div></div></div></div>
+</body></html>

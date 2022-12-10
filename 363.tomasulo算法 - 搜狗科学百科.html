@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)https://web.archive.org/web/20221028224442/https://baike.sogou.com/kexue/d10363.htm -->
+<html class="" data-reactroot=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./363.tomasulo算法 - 搜狗科学百科_files/analytics.js.download" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app228.us.archive.org';v.server_ms=170;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="./363.tomasulo算法 - 搜狗科学百科_files/bundle-playback.js.download" charset="utf-8"></script>
+<script type="text/javascript" src="./363.tomasulo算法 - 搜狗科学百科_files/wombat.js.download" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://baike.sogou.com/kexue/d10363.htm","20221028224442","https://web.archive.org/","web","/_static/",
+	      "1666997082");
+</script>
+<link rel="stylesheet" type="text/css" href="./363.tomasulo算法 - 搜狗科学百科_files/banner-styles.css">
+<link rel="stylesheet" type="text/css" href="./363.tomasulo算法 - 搜狗科学百科_files/iconochive.css">
+<!-- End Wayback Rewrite JS Include -->
+<meta name="save" content="history"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="baidu-site-verification" content="VWGb6TyYx8"><meta content="tomasulo算法 - 搜狗科学百科" name="keywords"><meta content="搜狗科学百科是一部有着平等、协作、分享、自由理念的网络科学全书，为每一个互联网用户创造一个涵盖所有领域知识、服务的中文知识性平台。" name="description"><meta http-equiv="x-dns-prefetch-control" content="on"><meta name="server" baike="235" ip="210" env="online"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028224442/https://cache.soso.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028224442/https://hhy.sogoucdn.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028224442/https://pic.baike.soso.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028224442/https://ugc.qpic.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028224442/https://xui.ptlogin2.qq.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028224442/https://q1.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028224442/https://q2.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028224442/https://q3.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028224442/https://q4.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028224442/https://q.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028224442/https://img01.sogoucdn.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028224442/https://img02.sogoucdn.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028224442/https://img03.sogoucdn.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028224442/https://img04.sogoucdn.com/"><link rel="Shortcut Icon" href="https://web.archive.org/web/20221028224442im_/https://www.sogou.com/images/logo/new/favicon.ico?v=4"><link rel="Bookmark" href="https://www.sogou.com/images/logo/new/favicon.ico?v=4"><link href="./363.tomasulo算法 - 搜狗科学百科_files/base_b849887.css" rel="stylesheet"><link href="./363.tomasulo算法 - 搜狗科学百科_files/detail_378aed5.css" rel="stylesheet"><link href="./363.tomasulo算法 - 搜狗科学百科_files/inviteAudit_7894507.css" rel="stylesheet"><link rel="stylesheet" href="./363.tomasulo算法 - 搜狗科学百科_files/highlight.min.css"><title>tomasulo算法 - 搜狗科学百科</title><style>.onekey-close {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	width: 24px;
+	height: 24px;
+	background: url(//web.archive.org/web/20221028205211/https://hhy.sogoucdn.com/js/common/hhy/sprite_wap_baike_37443f3.png) no-repeat;
+	text-indent: -999em;
+	background-size: 84px;
+	background-position: -63px 0;
+}
+
+.onekey-login {
+	position: absolute;
+	top: 16.4%;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+
+/* .onekey-login-img {
+    width: 75px;
+    height: 75px;
+    background: url("https://web.archive.org/web/20221028224442/https://baike.sogou.com/kexue/images/sprite_wap_baike.png") no-repeat;
+    background-size: 100px 91px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+} */
+
+.onekey-login-title {
+	text-align: center;
+	padding-bottom: 3px;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 30px;
+	color: #000;
+}
+
+.onekey-login-txt {
+	text-align: center;
+	font-family: PingFangSC;
+	font-size: 14px;
+	line-height: 20px;
+	color: #8f8f8f;
+}
+
+.onekey-login-qq,
+.onekey-login-wx,
+.onekey-login-phone {
+	display: block;
+	width: 245px;
+	height: 54px;
+	border-radius: 45px;
+	text-align: center;
+
+	margin: 0 auto;
+	font-size: 17px;
+	line-height: 24px;
+	color: #000;
+	/* padding: 16px 77px; */
+	border-radius: 12px;
+	border: solid 1px #e0e0e0;
+}
+.onekey-qq-content,
+.onekey-vx-content,
+.onekey-phone-content {
+	display: inline-block;
+	margin-top: 16px;
+}
+.onekey-qq-content {
+	padding: 0 5px;
+}
+
+.onekey-login-qq {
+	margin-top: 48px;
+	margin-bottom: 24px;
+}
+
+.onekey-login-qq:before {
+	display: inline-block;
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: url(//web.archive.org/web/20221028205211/https://hhy.sogoucdn.com/js/common/hhy/sprite_wap_baike_37443f3.png) no-repeat;
+	background-size: 80px;
+	background-position: -20px 0;
+	vertical-align: top;
+	margin: 17px 8px 0 0;
+}
+
+.onekey-login-wx {
+	margin-bottom: 24px;
+}
+
+.onekey-login-wx:before {
+	display: inline-block;
+	content: "";
+	width: 21px;
+	height: 21px;
+	background: url(//web.archive.org/web/20221028205211/https://hhy.sogoucdn.com/js/common/hhy/sprite_wap_baike_37443f3.png) no-repeat;
+	background-size: 84px;
+	background-position: 0 0;
+	vertical-align: top;
+	margin: 17px 10px 0 0;
+}
+
+.onekey-login-phone {
+}
+
+.onekey-login-phone:before {
+	display: inline-block;
+	content: "";
+	width: 21px;
+	height: 21px;
+	background: url(//web.archive.org/web/20221028205211/https://hhy.sogoucdn.com/js/common/hhy/sprite_wap_baike_37443f3.png) no-repeat;
+	background-size: 84px;
+	background-position: -42px 0;
+	vertical-align: top;
+	margin: 17px 10px 0 0;
+}
+
+.onekey-fixed {
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	width: 100%;
+	height: 100%;
+}
+
+.onekey-fixed.forbid {
+	z-index: 100;
+	position: fixed;
+	top: auto;
+	bottom: 68px;
+	left: 9%;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	width: 82%;
+	height: 43px;
+	border-radius: 25px;
+	color: #ffffff;
+}
+.onekey-login-title.forbid {
+	text-align: center;
+	padding-bottom: 3px;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 30px;
+	color: white;
+}
+</style><style>#login_mask {
+  background: #000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  position: fixed;
+  /*fixed好像在哪个IE上有BUG，先用用*/
+  left: 0;
+  top: 0;
+  z-index: 999;
+  height: 100%;
+}
+
+#login_iframe_container {
+  position: fixed;
+  width: 550px;
+  height: 360px;
+  z-index: 1020;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 828px) {
+  #login_iframe_container {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+  }
+}
+
+#login_iframe_container.new-login {
+  width: 550px;
+  height: 360px;
+  background-image: url(//web.archive.org/web/20221028205211/https://hhy.sogoucdn.com/js/common/hhy/background_2a4a8a6.png);
+}
+
+#login_iframe_container.new-login.no-bg {
+  background: #fff;
+}
+
+#login_iframe_container.new-login .login-title {
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 0.19px;
+  color: #ffffff;
+  margin-top: 62px;
+}
+#login_iframe_container.new-login .forbid-title {
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 0.19px;
+  color: #333333;
+  margin-top: 150px;
+}
+
+#login_iframe_container.new-login.no-bg .login-title {
+  color: #333333;
+}
+
+#login_iframe_container.new-login .login-subtitle {
+  width: 100%;
+  height: 18px;
+  line-height: 18px;
+  font-size: 13px;
+  letter-spacing: 0.08px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 9px;
+  margin-bottom: 43px;
+}
+
+#login_iframe_container.new-login.no-bg .login-subtitle {
+  color: #999999;
+}
+
+#login_iframe_container.new-login .login-subtitle::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  background-color: #ffffff;
+  position: relative;
+  top: -4px;
+  left: -5px;
+}
+
+#login_iframe_container.new-login .login-subtitle::after {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  background-color: #ffffff;
+  position: relative;
+  top: -4px;
+  left: 5px;
+}
+
+#login_iframe_container.new-login.no-bg .login-subtitle::before {
+  background-color: #999999;
+}
+
+#login_iframe_container.new-login.no-bg .login-subtitle::after {
+  background-color: #999999;
+}
+
+#login_iframe_container.new-login .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 12px;
+  height: 12px;
+  background: url(//web.archive.org/web/20221028205211/https://hhy.sogoucdn.com/js/common/hhy/login-sprites_e3853e5.png) -59px -10px;
+  background-size: 81px 91px;
+  cursor: pointer;
+}
+
+#login_iframe_container.new-login .login-btn {
+  width: 220px;
+  height: 47px;
+  border-radius: 24px;
+  border: solid 1px #dddddd;
+  background-color: #ffffff;
+  margin: 0 auto;
+  margin-top: 28px;
+  position: relative;
+  display: block;
+}
+
+#login_iframe_container.new-login .login-btn .login-icon {
+  position: absolute;
+}
+
+#login_iframe_container.new-login .login-btn .login-text {
+  width: 61px;
+  height: 47px;
+  line-height: 47px;
+  vertical-align: middle;
+  font-size: 15px;
+  letter-spacing: 0.1px;
+  color: #666666;
+  position: absolute;
+  right: 62px;
+}
+
+#login_iframe_container.new-login .login-btn.qq-btn .login-icon {
+  width: 22px;
+  height: 27px;
+  top: 10px;
+  left: 67px;
+  background: url(//web.archive.org/web/20221028205211/https://hhy.sogoucdn.com/js/common/hhy/login-sprites_e3853e5.png) -10px -54px;
+  background-size: 81px 91px;
+}
+
+#login_iframe_container.new-login .login-btn.qq-btn .login-text {
+  right: 59px;
+}
+
+#login_iframe_container.new-login .login-btn.wechat-btn .login-icon {
+  width: 29px;
+  height: 24px;
+  top: 12px;
+  left: 62px;
+  background: url(//web.archive.org/web/20221028205211/https://hhy.sogoucdn.com/js/common/hhy/login-sprites_e3853e5.png) -10px -10px;
+  background-size: 81px 91px;
+}</style><style>/* -- container -- */
+.rodal,
+.rodal-mask {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.rodal {
+    position: fixed;
+}
+
+/* -- mask -- */
+.rodal-mask {
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+}
+
+/* -- dialog -- */
+.rodal-dialog {
+    position: absolute;
+    z-index: 101;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.rodal-center {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.rodal-bottom {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.rodal-top {
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}
+
+.rodal-left {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.rodal-right {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* -- close button -- */
+.rodal-close {
+    position: absolute;
+    cursor: pointer;
+    top: 16px;
+    right: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.rodal-close:before,
+.rodal-close:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: #999;
+    border-radius: 100%;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+}
+
+.rodal-close:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.rodal-close:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.rodal-close:hover:before,
+.rodal-close:hover:after {
+    background: #333;
+}
+
+/* -- fade -- */
+/* @-webkit-keyframes rodal-fade-enter {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes rodal-fade-enter {
+    from {
+        opacity: 0;
+    }
+}
+
+.rodal-fade-enter {
+    -webkit-animation: rodal-fade-enter both ease-in;
+    animation: rodal-fade-enter both ease-in;
+} */
+
+@-webkit-keyframes rodal-fade-leave {
+    to {
+        opacity: 0
+    }
+}
+
+@keyframes rodal-fade-leave {
+    to {
+        opacity: 0
+    }
+}
+
+.rodal-fade-leave {
+    -webkit-animation: rodal-fade-leave both ease-out;
+    animation: rodal-fade-leave both ease-out;
+}
+
+/* -- zoom -- */
+@-webkit-keyframes rodal-zoom-enter {
+    from {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-zoom-enter {
+    from {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-zoom-enter {
+    -webkit-animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-zoom-leave {
+    to {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-zoom-leave {
+    to {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-zoom-leave {
+    -webkit-animation: rodal-zoom-leave both;
+    animation: rodal-zoom-leave both;
+}
+
+/* -- slideDown -- */
+@-webkit-keyframes rodal-slideDown-enter {
+    from {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+@keyframes rodal-slideDown-enter {
+    from {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+.rodal-slideDown-enter {
+    -webkit-animation: rodal-slideDown-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideDown-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideDown-leave {
+    to {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+@keyframes rodal-slideDown-leave {
+    to {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+.rodal-slideDown-leave {
+    -webkit-animation: rodal-slideDown-leave both;
+    animation: rodal-slideDown-leave both;
+}
+
+/* -- slideLeft -- */
+@-webkit-keyframes rodal-slideLeft-enter {
+    from {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideLeft-enter {
+    from {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+.rodal-slideLeft-enter {
+    -webkit-animation: rodal-slideLeft-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideLeft-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideLeft-leave {
+    to {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideLeft-leave {
+    to {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+.rodal-slideLeft-leave {
+    -webkit-animation: rodal-slideLeft-leave both;
+    animation: rodal-slideLeft-leave both;
+}
+
+/* -- slideRight -- */
+@-webkit-keyframes rodal-slideRight-enter {
+    from {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideRight-enter {
+    from {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+.rodal-slideRight-enter {
+    -webkit-animation: rodal-slideRight-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideRight-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideRight-leave {
+    to {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideRight-leave {
+    to {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+.rodal-slideRight-leave {
+    -webkit-animation: rodal-slideRight-leave both;
+    animation: rodal-slideRight-leave both;
+}
+
+/* -- slideUp -- */
+@-webkit-keyframes rodal-slideUp-enter {
+    from {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+@keyframes rodal-slideUp-enter {
+    from {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+.rodal-slideUp-enter {
+    -webkit-animation: rodal-slideUp-enter both cubic-bezier(0.23, 1, 0.32, 1);
+    animation: rodal-slideUp-enter both cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@-webkit-keyframes rodal-slideUp-leave {
+    to {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+@keyframes rodal-slideUp-leave {
+    to {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+.rodal-slideUp-leave {
+    -webkit-animation: rodal-slideUp-leave both;
+    animation: rodal-slideUp-leave both;
+}
+
+/* -- flip -- */
+@-webkit-keyframes rodal-flip-enter {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+@keyframes rodal-flip-enter {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+.rodal-flip-enter {
+    -webkit-animation: rodal-flip-enter both ease-in;
+    animation: rodal-flip-enter both ease-in;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+}
+
+@-webkit-keyframes rodal-flip-leave {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+    }
+}
+
+@keyframes rodal-flip-leave {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+    }
+}
+
+.rodal-flip-leave {
+    -webkit-animation: rodal-flip-leave both;
+    animation: rodal-flip-leave both;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+}
+
+/* -- rotate -- */
+@-webkit-keyframes rodal-rotate-enter {
+    from {
+        -webkit-transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-rotate-enter {
+    from {
+        -webkit-transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-rotate-enter {
+    -webkit-animation: rodal-rotate-enter both;
+    animation: rodal-rotate-enter both;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+@-webkit-keyframes rodal-rotate-leave {
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-rotate-leave {
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-rotate-leave {
+    -webkit-animation: rodal-rotate-leave both;
+    animation: rodal-rotate-leave both;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+/* -- door -- */
+@-webkit-keyframes rodal-door-enter {
+    from {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+}
+
+@keyframes rodal-door-enter {
+    from {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+}
+
+.rodal-door-enter {
+    -webkit-animation: rodal-door-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-door-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-door-leave {
+    60% {
+        -webkit-transform: scale3d(.01, 1, 1);
+        transform: scale3d(.01, 1, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(0, 1, .1);
+        transform: scale3d(0, 1, .1);
+    }
+}
+
+@keyframes rodal-door-leave {
+    60% {
+        -webkit-transform: scale3d(.01, 1, 1);
+        transform: scale3d(.01, 1, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(0, 1, .1);
+        transform: scale3d(0, 1, .1);
+    }
+}
+
+.rodal-door-leave {
+    -webkit-animation: rodal-door-leave both;
+    animation: rodal-door-leave both;
+}</style><style>/* -- container -- */
+.rodal,
+.rodal-mask {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.rodal {
+    position: fixed;
+}
+
+/* -- mask -- */
+.rodal-mask {
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+}
+
+/* -- dialog -- */
+.rodal-dialog {
+    position: absolute;
+    z-index: 101;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.rodal-center {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.rodal-bottom {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.rodal-top {
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}
+
+.rodal-left {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.rodal-right {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* -- close button -- */
+.rodal-close {
+    position: absolute;
+    cursor: pointer;
+    top: 16px;
+    right: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.rodal-close:before,
+.rodal-close:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: #999;
+    border-radius: 100%;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+}
+
+.rodal-close:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.rodal-close:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.rodal-close:hover:before,
+.rodal-close:hover:after {
+    background: #333;
+}
+
+/* -- fade -- */
+/* @-webkit-keyframes rodal-fade-enter {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes rodal-fade-enter {
+    from {
+        opacity: 0;
+    }
+}
+
+.rodal-fade-enter {
+    -webkit-animation: rodal-fade-enter both ease-in;
+    animation: rodal-fade-enter both ease-in;
+} */
+
+@-webkit-keyframes rodal-fade-leave {
+    to {
+        opacity: 0
+    }
+}
+
+@keyframes rodal-fade-leave {
+    to {
+        opacity: 0
+    }
+}
+
+.rodal-fade-leave {
+    -webkit-animation: rodal-fade-leave both ease-out;
+    animation: rodal-fade-leave both ease-out;
+}
+
+/* -- zoom -- */
+@-webkit-keyframes rodal-zoom-enter {
+    from {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-zoom-enter {
+    from {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-zoom-enter {
+    -webkit-animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-zoom-leave {
+    to {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-zoom-leave {
+    to {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-zoom-leave {
+    -webkit-animation: rodal-zoom-leave both;
+    animation: rodal-zoom-leave both;
+}
+
+/* -- slideDown -- */
+@-webkit-keyframes rodal-slideDown-enter {
+    from {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+@keyframes rodal-slideDown-enter {
+    from {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+.rodal-slideDown-enter {
+    -webkit-animation: rodal-slideDown-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideDown-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideDown-leave {
+    to {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+@keyframes rodal-slideDown-leave {
+    to {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+.rodal-slideDown-leave {
+    -webkit-animation: rodal-slideDown-leave both;
+    animation: rodal-slideDown-leave both;
+}
+
+/* -- slideLeft -- */
+@-webkit-keyframes rodal-slideLeft-enter {
+    from {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideLeft-enter {
+    from {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+.rodal-slideLeft-enter {
+    -webkit-animation: rodal-slideLeft-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideLeft-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideLeft-leave {
+    to {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideLeft-leave {
+    to {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+.rodal-slideLeft-leave {
+    -webkit-animation: rodal-slideLeft-leave both;
+    animation: rodal-slideLeft-leave both;
+}
+
+/* -- slideRight -- */
+@-webkit-keyframes rodal-slideRight-enter {
+    from {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideRight-enter {
+    from {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+.rodal-slideRight-enter {
+    -webkit-animation: rodal-slideRight-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideRight-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideRight-leave {
+    to {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideRight-leave {
+    to {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+.rodal-slideRight-leave {
+    -webkit-animation: rodal-slideRight-leave both;
+    animation: rodal-slideRight-leave both;
+}
+
+/* -- slideUp -- */
+@-webkit-keyframes rodal-slideUp-enter {
+    from {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+@keyframes rodal-slideUp-enter {
+    from {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+.rodal-slideUp-enter {
+    -webkit-animation: rodal-slideUp-enter both cubic-bezier(0.23, 1, 0.32, 1);
+    animation: rodal-slideUp-enter both cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@-webkit-keyframes rodal-slideUp-leave {
+    to {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+@keyframes rodal-slideUp-leave {
+    to {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+.rodal-slideUp-leave {
+    -webkit-animation: rodal-slideUp-leave both;
+    animation: rodal-slideUp-leave both;
+}
+
+/* -- flip -- */
+@-webkit-keyframes rodal-flip-enter {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+@keyframes rodal-flip-enter {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+.rodal-flip-enter {
+    -webkit-animation: rodal-flip-enter both ease-in;
+    animation: rodal-flip-enter both ease-in;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+}
+
+@-webkit-keyframes rodal-flip-leave {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+    }
+}
+
+@keyframes rodal-flip-leave {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+    }
+}
+
+.rodal-flip-leave {
+    -webkit-animation: rodal-flip-leave both;
+    animation: rodal-flip-leave both;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+}
+
+/* -- rotate -- */
+@-webkit-keyframes rodal-rotate-enter {
+    from {
+        -webkit-transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-rotate-enter {
+    from {
+        -webkit-transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-rotate-enter {
+    -webkit-animation: rodal-rotate-enter both;
+    animation: rodal-rotate-enter both;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+@-webkit-keyframes rodal-rotate-leave {
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-rotate-leave {
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-rotate-leave {
+    -webkit-animation: rodal-rotate-leave both;
+    animation: rodal-rotate-leave both;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+/* -- door -- */
+@-webkit-keyframes rodal-door-enter {
+    from {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+}
+
+@keyframes rodal-door-enter {
+    from {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+}
+
+.rodal-door-enter {
+    -webkit-animation: rodal-door-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-door-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-door-leave {
+    60% {
+        -webkit-transform: scale3d(.01, 1, 1);
+        transform: scale3d(.01, 1, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(0, 1, .1);
+        transform: scale3d(0, 1, .1);
+    }
+}
+
+@keyframes rodal-door-leave {
+    60% {
+        -webkit-transform: scale3d(.01, 1, 1);
+        transform: scale3d(.01, 1, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(0, 1, .1);
+        transform: scale3d(0, 1, .1);
+    }
+}
+
+.rodal-door-leave {
+    -webkit-animation: rodal-door-leave both;
+    animation: rodal-door-leave both;
+}</style></head><body class=""><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+</style>
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display: block; direction: ltr;">
+</div><div id="wm-ipp-print">The Wayback Machine - https://web.archive.org/web/20221028224442/https://baike.sogou.com/kexue/d10363.htm</div>
+<script type="text/javascript">//<![CDATA[
+__wm.bt(675,27,25,2,"web","https://baike.sogou.com/kexue/d10363.htm","20221028224442",1996,"/_static/",["/_static/css/banner-styles.css?v=S1zqJCYt","/_static/css/iconochive.css?v=qtvMKcIJ"], false);
+  __wm.rw(1);
+//]]></script>
+<!-- END WAYBACK TOOLBAR INSERT --><script>window._gtag=window._gtag||{};window._gtag.shouldGrayed = false;if ('1240294a05a541a7bc5da363c19ad4c6') window._gtag.traceId = '1240294a05a541a7bc5da363c19ad4c6';if ({"illegality":true}) window.userInfo = {"illegality":true};</script><div class="topnavbox"><ul class="topnav"><li><a href="https://web.archive.org/web/20221028224442/https://www.sogou.com/web?query=">网页</a></li><li><a href="https://web.archive.org/web/20221028224442/https://weixin.sogou.com/weixin?p=75351201">微信</a></li><li><a href="https://web.archive.org/web/20221028224442/https://zhihu.sogou.com/zhihu?p=75351218">知乎</a></li><li><a href="https://web.archive.org/web/20221028224442/https://pic.sogou.com/pics?query=">图片</a></li><li><a href="https://web.archive.org/web/20221028224442/https://v.sogou.com/v?query=">视频</a></li><li><a href="https://web.archive.org/web/20221028224442/https://mingyi.sogou.com/">医疗</a></li><li class="cur"><strong>科学</strong></li><li><a href="https://web.archive.org/web/20221028224442/https://hanyu.sogou.com/">汉语</a></li><li><a href="https://web.archive.org/web/20221028224442/https://wenwen.sogou.com/">问问</a></li><li><a href="https://web.archive.org/web/20221028224442/https://www.sogou.com/docs/more.htm">更多<span class="topraquo">»</span></a></li></ul></div><div id="header"><div class="header-wrap"><a class="header-logo" href="https://web.archive.org/web/20221028224442/https://baike.sogou.com/kexue"></a><div class="header-search"><div class="querybox" id="suggBox"><form><input id="searchInput" class="query" type="text" placeholder="搜科学领域专业百科词条" name="query" autocomplete="off" value=""><a href="javascript:;" class="query-search"></a></form></div></div><div class="header-rgt"><span class="btn-header-rgt btn-edit" id="editLemma">创建</span><div class="header-user no-login"></div></div></div></div><div class="fixed-placeholder" style="visibility:none"></div><div id="container" class=""><div class="content lemma-level1"><div class="detail-title" id="abstract-title"><h1>tomasulo算法</h1><a href="https://web.archive.org/web/20221028224442/https://baike.sogou.com/kexue/d10363.htm#!" class="detail-edit">编辑</a></div><div class="section_content" data-id="54572356336673282"><div><p>Tomasulo算法是一种用于指令动态调度的计算机体系结构硬件算法，它允许无序执行，并能够更有效地使用多个执行单元。它由IBM的罗伯特·托马苏洛（Robert Tomasulo）于1967开发，并首次在IBM System/360 Model 91的浮点单元中实现。</p>
+<p>托马苏洛算法的主要创新包括硬件中的寄存器重命名、所有执行单元的保留站以及公共数据总线（CDB），在公共数据总线上，计算值广播到所有可能需要它们的保留站。这些发展允许改进指令的并行执行，否则在使用记分板或其他早期算法时，这些指令会停止。</p>
+<p>罗伯特·托马苏洛因其在算法方面的工作于1997年获得埃克特-莫齐利奖。<sup><a href="https://web.archive.org/web/20221028224442/https://baike.sogou.com/kexue/d10363.htm#quote_1" class="kx_ref">[1]</a></sup> </p></div></div><div id="catalog"><h2 class="title2">目录<a href="javascript:" class="detail-edit">编辑</a></h2><div class="catalog_wrap" style=""><ul class="catalog_list col2"><li><span class="order">1</span><a href="javascript:" data-level="1" data-id="14995095388422412">实施概念</a></li><li class="secondary_catalog"><span>1.1 </span><a href="javascript:" data-id="14995095388422412">公共数据总线</a></li><li class="secondary_catalog"><span>1.2 </span><a href="javascript:" data-id="14995095388422412">指令顺序</a></li><li class="secondary_catalog"><span>1.3 </span><a href="javascript:" data-id="14995095388422412">寄存器重命名</a></li><li class="secondary_catalog"><span>1.4 </span><a href="javascript:" data-id="14995095388422412">例外</a></li><li><span class="order">2</span><a href="javascript:" data-level="1" data-id="14995095405199616">指令生命周期</a></li><li class="secondary_catalog"><span>2.1 </span><a href="javascript:" data-id="14995095405199616">注册图例</a></li></ul><ul class="catalog_list col2"><li class="secondary_catalog"><span>2.2 </span><a href="javascript:" data-id="14995095405199616">第一阶段：问题</a></li><li class="secondary_catalog"><span>2.3 </span><a href="javascript:" data-id="14995095405199616">阶段2：执行</a></li><li class="secondary_catalog"><span>2.4 </span><a href="javascript:" data-id="14995095405199616">阶段3：写结果</a></li><li><span class="order">3</span><a href="javascript:" data-level="1" data-id="14995095405199617">算法改进</a></li><li><span class="order">4</span><a href="javascript:" data-level="1" data-id="14995095405199618">应用程序和遗留</a></li><li><span class="order">5</span><a href="javascript:" data-level="1" data-id="references">参考文献</a></li></ul></div></div><div id="paragraphs"><div><div id="par_14995095388422412"><h2 class="title">1 实施概念<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><p></p><div class="text_img ed_imgfloat_embedmiddle">
+            <a class="ed_image_link" data-src="https://img02.sogoucdn.com/app/a/200698/sogou_science_11500" data-bigsrc="" title="点击查看大图" href="javascript:">
+                <img alt="" class="ed_imgfloat_embedmiddle" img_height="450" img_width="700" titlename="托马苏洛算法的浮点单元" data-align="embedmiddle" width="480" data-src="https://img02.sogoucdn.com/app/a/200698/sogou_science_11500" src="./363.tomasulo算法 - 搜狗科学百科_files/sogou_science_11500" data-observer="true">
+            </a>
+            <div class="text_img_title" style="text-align: center;">托马苏洛算法的浮点单元</div>
+        </div> <p></p><p>以下是实施托马苏洛算法所必需的概念：</p><p></p><h3>1.1 <span>公共数据总线</span></h3><p></p><p>公共数据总线（CDB）将保留站直接连接到功能单元。托马苏洛认为，它“在鼓励并发的同时保持优先级”。 这有两个重要影响：</p><p>1、功能单元可以在不涉及浮点寄存器的情况下访问任何操作的结果，从而允许等待结果的多个单元继续进行，而无需等待解决对寄存器文件读取端口的访问争用。</p><p>2、危险检测和控制执行是分布式的。保留站控制指令何时可以执行，而不是单个专用的危险单元去控制。</p><p></p><h3>1.2 <span>指令顺序</span></h3><p></p><p>指令按顺序发布，因此指令序列的效果（例如由这些指令引发的异常）与它们在有序处理器上的效果按照相同的顺序发生，而不管它们是无序（即非顺序）执行的事实。</p><p></p><h3>1.3 <span>寄存器重命名</span></h3><p></p><p>托马苏洛算法使用寄存器重命名来正确执行无序执行。所有通用寄存器和保留站寄存器要么保存一个实值，要么保存一个占位符值。如果实际值在发布阶段对目标寄存器不可用，则最初使用占位符值。占位符值是指示哪个保留站将产生真实值的标签。当设备完成并在CDB广播结果时，占位符将被替换为真实值。</p><p>每个功能单元都有一个保留站。保留站保存执行单个指令所需的信息，包括操作和操作数。当它空闲时，以及一条指令所需的所有源操作数都为真实值时，功能单元开始处理。</p><p></p><h3>1.4 <span>例外</span></h3><p></p><p>实际上，有些异常可能没有足够的异常状态信息，在这种情况下，处理器可能会引发一个特殊的异常，称为“不精确”异常。非OoOE实现中不能出现不精确的异常，因为处理器状态只按程序顺序改变（参见RISC流水线异常）。</p><p>经历“精确”异常的程序可以在异常点重新启动或重新执行，同时可以确定引起异常的特定指令。然而，那些经历“不精确”异常的程序通常不能重启或重新执行，因为系统不能确定引起异常的特定指令。</p></div></div><div id="par_14995095405199616"><h2 class="title">2 指令生命周期<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><p>下面列出的三个阶段是每个指令从发出到执行完成所经过的阶段。</p><p></p><h3>2.1 <span>注册图例</span></h3><p></p><p>
+ </p><ul>
+  <li>Op -表示对操作数执行的操作</li>
+  <li>Qj，Qk -将产生相关源操作数的保留站（0表示值为Vj，Vk）</li>
+  <li>Vj，Vk -源操作数的值</li>
+  <li>A &nbsp; -用于保存加载或存储的内存地址信息</li>
+  <li>Busy - 1（如果已占用），0（如果未占用）</li>
+  <li>Qi -（仅寄存器单元）其结果应存储在该寄存器中的保留站（如果为空或0，则没有值指定给该寄存器）</li>
+ </ul><p></p><p></p><h3>2.2 <span>第一阶段：问题</span></h3><p></p><p>在发布阶段，如果所有操作数和保留站都准备好了，或者它们被停止，则发布指令以供执行。在此步骤中，寄存器被重命名，消除了WAR和WAW危险。</p><p>
+ </p><ul>
+  <li>从指令队列的头部检索下一条指令。如果指令操作数当前在寄存器中，则</li>
+  <li>如果有匹配的功能单元，发出指令。</li>
+  <li>否则，由于没有可用的功能单元，暂停指令，直到一个站或缓冲器空闲。</li>
+  <li>否则，我们可以假设操作数不在寄存器中，因此使用虚拟值。功能单元必须计算实值，以跟踪产生操作数的功能单元。</li>
+ </ul><p></p><p>
+ </p><table class="wikitable">
+  <caption>
+   Pseudocode &nbsp; 
+  </caption>
+  <tbody>
+   <tr>
+    <th>Instruction state</th>
+    <th>Wait until</th>
+    <th>Action or bookkeeping</th>
+   </tr>
+   <tr>
+    <td>Issue</td>
+    <td>Station r empty</td>
+    <td><pre class="kx_code"><code class="c">if (RegisterStat[rs].Qi¦0) {
+		RS[r].Qj ← RegisterStat[rs].Qi
+}
+else {
+	RS[r].Vj ← Regs[rs];
+	RS[r].Qj ← 0;
+}
+if (RegisterStat[rt].Qi¦0) { 
+	RS[r].Qk ← RegisterStat[rt].Qi;
+}
+else {
+	RS[r].Vk ← Regs[rt]; RS[r].Qk ← 0;
+}
+RS[r].Busy ← yes;
+RegisterStat[rd].Q ← r;</code></pre></td>
+   </tr>
+   <tr>
+    <td>Load or Store</td>
+    <td>Buffer r empty</td>
+    <td><pre class="kx_code"><code class="c">if (RegisterStat[rs].Qi¦0) {
+	RS[r].Qj ← RegisterStat[rs].Qi;
+}
+else {
+	RS[r].Vj ← Regs[rs];
+	RS[r].Qj ← 0;
+}
+RS[r].A ← imm;
+RS[r].Busy ← yes;</code></pre></td>
+   </tr>
+   <tr>
+    <td>Load only</td>
+    <td></td>
+    <td><pre class="kx_code"><code class="c">RegisterStat[rt].Qi ← r;</code></pre></td>
+   </tr>
+   <tr>
+    <td>Store only</td>
+    <td></td>
+    <td><pre class="kx_code"><code class="c">if (RegisterStat[rt].Qi¦0) {
+	RS[r].Qk ← RegisterStat[rt].Qi;
+}
+else {
+	RS[r].Vk ← Regs[rt];
+	RS[r].Qk ← 0
+};</code></pre></td>
+   </tr>
+  </tbody>
+ </table><p></p><p></p><div class="text_img ed_imgfloat_embedmiddle">
+            <a class="ed_image_link" data-src="https://img03.sogoucdn.com/app/a/200698/sogou_science_11501" data-bigsrc="" title="点击查看大图" href="javascript:">
+                <img alt="" class="ed_imgfloat_embedmiddle" img_height="270" img_width="300" titlename="托马苏洛算法的例子[2]" data-align="embedmiddle" width="300" data-src="https://img03.sogoucdn.com/app/a/200698/sogou_science_11501" src="./363.tomasulo算法 - 搜狗科学百科_files/sogou_science_11501" data-observer="true">
+            </a>
+            <div class="text_img_title" style="text-align: center;">托马苏洛算法的例子[2]</div>
+        </div> <p></p><p></p><h3>2.3 <span>阶段2：执行</span></h3><p></p><p>在执行阶段，执行指令操作。在这个步骤中，指令被延迟，直到它们的所有操作数都可用，消除了RAW危险。通过有效的地址计算来保持程序的正确性，以防止内存中的危险。</p><p>
+ </p><ul>
+  <li>如果一个或多个操作数尚不可用，则：等待操作数在CDB上可用。</li>
+  <li>当所有操作数都可用时，那么：如果指令是加载或存储
+   <ul>
+    <li>当基本寄存器可用时，计算有效地址，并将其放入加载/存储缓冲区
+     <ul>
+      <li>如果指令是加载指令，那么：一旦内存单元可用，就执行</li>
+      <li>否则，如果指令是一个存储指令，那么：在将该值发送到内存单元之前，等待该值被存储</li>
+     </ul></li>
+   </ul></li>
+  <li>否则，该指令是算术逻辑单元操作，然后：在相应的功能单元执行该指令</li>
+ </ul><p></p><p>
+ </p><table class="wikitable">
+  <caption>
+   Pseudocode &nbsp; 
+  </caption>
+  <tbody>
+   <tr>
+    <th>Instruction state</th>
+    <th>Wait until</th>
+    <th>Action or bookkeeping</th>
+   </tr>
+   <tr>
+    <td>FP operation</td>
+    <td><pre class="kx_code"><code class="c">(RS[r].Qj = 0) and (RS[r].Qk = 0)</code></pre></td>
+    <td><p>Compute result： operands are in Vj and Vk</p></td>
+   </tr>
+   <tr>
+    <td>Load/store step 1</td>
+    <td><code>RS[r].Qj = 0</code> &amp; r is head of load-store queue</td>
+    <td><pre class="kx_code"><code class="c">RS[r].A ← RS[r].Vj + RS[r].A;</code></pre></td>
+   </tr>
+   <tr>
+    <td>Load step 2</td>
+    <td>Load step 1 complete</td>
+    <td><p>Read from <code>Mem[RS[r].A]</code> </p></td>
+   </tr>
+  </tbody>
+ </table><p></p><p></p><h3>2.4 <span>阶段3：写结果</span></h3><p></p><p>在写结果阶段，算术逻辑单元操作结果被写回寄存器，存储操作被写回内存。</p><p>
+ </p><ul>
+  <li>如果指令是算术逻辑单元操作
+   <ul>
+    <li>如果结果是可用的，那么：把它写在CDB，然后从那里写入寄存器和任何等待这个结果的保留站</li>
+   </ul></li>
+  <li>否则，如果指令是一个存储指令，那么：在这个步骤中将数据写入内存</li>
+ </ul><p></p><p>
+ </p><table class="wikitable">
+  <caption>
+   Pseudocode &nbsp; 
+  </caption>
+  <tbody>
+   <tr>
+    <th>Instruction state</th>
+    <th>Wait until</th>
+    <th>Action or bookkeeping</th>
+   </tr>
+   <tr>
+    <td>FP operation or load</td>
+    <td>Execution complete at r &amp; CDB available</td>
+    <td><pre class="kx_code"><code class="c">	∀x(if (RegisterStat[x].Qi = r) {
+		regs[x] ← result;
+		RegisterStat[x].Qi = 0
+	});
+	∀x(if (RS[x].Qj = r) {
+		RS[x].Vj ← result;
+		RS[x].Qj ← 0; 
+	});
+	∀x(if (RS[x].Qk = r) {
+		RS[x].Vk ← result;
+		RS[x].Qk ← 0;
+	});
+	RS[r].Busy ← no;</code></pre></td>
+   </tr>
+   <tr>
+    <td>Store</td>
+    <td>Execution complete at r &amp; RS[r].Qk = 0</td>
+    <td><pre class="kx_code"><code class="c">	Mem[RS[r].A] ← RS[r].Vk;
+	RS[r].Busy ← no;</code></pre></td>
+   </tr>
+  </tbody>
+ </table><p></p></div></div><div id="par_14995095405199617"><h2 class="title">3 算法改进<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><p>托马苏洛算法中的保留站、寄存器重命名和公共数据总线的概念为高性能计算机的设计带来了显著的进步。</p><p>保留站负责在存在数据依赖性和其他不一致（如改变存储访问时间和电路速度）的情况下等待操作数，从而释放功能单元。这种改进克服了长浮点延迟和访问内存。特别是，该算法对缓存未命中的容忍度更高。此外，程序员不用实现优化的代码。这是公共数据总线和保留站共同努力，以保持依赖性以及鼓励并发性的结果。<sup><a href="https://web.archive.org/web/20221028224442/https://baike.sogou.com/kexue/d10363.htm#quote_2" class="kx_ref">[2]</a></sup> </p><p>通过跟踪保留站中指令的操作数和硬件中的寄存器重命名，该算法最小化了写后读（RAW），消除了写后写（WAW）和读后写（WAR）计算机体系结构的危险。这通过减少等待所需的浪费时间来提高性能。<sup><a href="https://web.archive.org/web/20221028224442/https://baike.sogou.com/kexue/d10363.htm#quote_2" class="kx_ref">[2]</a></sup> </p><p>算法中同样重要的改进是设计不限于特定的管道结构。这种改进使得该算法被多版本处理器更广泛地采用。此外，该算法易于扩展以支持分支推测。<sup><a href="https://web.archive.org/web/20221028224442/https://baike.sogou.com/kexue/d10363.htm#quote_2" class="kx_ref">[2]</a></sup> </p></div></div><div id="par_14995095405199618"><h2 class="title">4 应用程序和遗留<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><p>托马苏洛的算法，在System/360&nbsp; Model 91架构中实现后，有好几年未被使用（除了IBM）。然而，在20世纪90年代，它的使用量大幅增加，原因有三：</p><p>
+ </p><ol>
+  <li>一旦缓存变得普遍，托马苏洛算法在缓存未命中导致的不可预测的加载时间内保持并发性的能力在处理器中变得有价值。</li>
+  <li>随着处理器发出越来越多的指令，动态调度和算法支持的分支推测有助于提高性能。</li>
+  <li>大众市场软件的激增意味着程序员不想为特定的管道结构进行编译。该算法可以适用于任何流水线架构，因此软件只需要很少的特定于架构的修改。<sup><a href="https://web.archive.org/web/20221028224442/https://baike.sogou.com/kexue/d10363.htm#quote_2" class="kx_ref">[2]</a></sup> </li>
+ </ol><p></p><p>许多现代处理器实施动态调度方案，这些方案源自托马苏洛的原始算法，包括流行的英特尔x86-64芯片。<sup><a href="https://web.archive.org/web/20221028224442/https://baike.sogou.com/kexue/d10363.htm#quote_2" class="kx_ref">[2]</a></sup><sup><a href="https://web.archive.org/web/20221028224442/https://baike.sogou.com/kexue/d10363.htm#quote_3" class="kx_ref">[3]</a></sup> </p></div></div></div></div><div id="references"><h2 class="title" id="par_references">参考文献</h2><ul class="references"><li id="quote_1"><span class="references-num">[1]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">"Robert Tomasulo – Award Winner". ACM Awards. ACM. Retrieved 8 December 2014..</span></p></li><li id="quote_2"><span class="references-num">[2]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Tomasulo, Robert Marco (Jan 1967). "An Efficient Algorithm for Exploiting Multiple Arithmetic Units". IBM Journal of Research and Development. IBM. 11 (1): 25–33. doi:10.1147/rd.111.0025. ISSN 0018-8646..</span></p></li><li id="quote_3"><span class="references-num">[3]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Yoga, Adarsh. "Differences between Tomasulo's algorithm and dynamic scheduling in Intel Core microarchitecture". The boozier. Retrieved 4 April 2016..</span></p></li></ul></div><div class="read-num">阅读 <!-- -->209</div></div><div class="right-side" id="rightSide"><div class="side" id="lemma-side"><div class="side-title">版本记录</div><ul class="side-lst"><li><p class="side-lst-txt">暂无</p></li></ul><div class="user-card userCard"></div></div><div class="side"><div class="side-event"></div></div></div></div><div class="footer-box"><div id="footer"><div class="footer-logo-wrap"><div class="footer-logo"></div><div class="footer-logo-text">知识·传播·科普</div></div><div class="footer-info">本网站内容采用<a target="_blank" href="https://web.archive.org/web/20221028224442/https://creativecommons.org/licenses/by-sa/3.0/deed.zh?tdsourcetag=s_pctim_aiomsg">CC-BY-SA 3.0</a>授权</div><div class="footer-btn-wrap"><a target="_blank" href="https://web.archive.org/web/20221028224442/https://baike.sogou.com/help/#user_protocol">用户协议</a><a target="_blank" href="https://web.archive.org/web/20221028224442/http://www.sogou.com/docs/terms.htm?v=1">免责声明</a><a target="_blank" href="https://web.archive.org/web/20221028224442/http://corp.sogou.com/private.html">隐私政策</a><a target="_blank" href="https://web.archive.org/web/20221028224442/https://baike.sogou.com/kexue/intro.htm">关于我们</a></div></div></div><script>window.lemmaInfo ={"lemmaId":"10363","versionId":"54572356303118862","title":"tomasulo算法","subtitle":"","abstracts":{"paragraphId":"54572356336673282","title":"摘要","versionId":"54572356303118863","lemmaId":10363,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":82815118,"name":"iscience","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1599823659,"comment":null,"dependVersionId":0,"contentType":2,"content":"<p>Tomasulo算法是一种用于指令动态调度的计算机体系结构硬件算法，它允许无序执行，并能够更有效地使用多个执行单元。它由IBM的罗伯特·托马苏洛（Robert Tomasulo）于1967开发，并首次在IBM System/360 Model 91的浮点单元中实现。</p>\n<p>托马苏洛算法的主要创新包括硬件中的寄存器重命名、所有执行单元的保留站以及公共数据总线（CDB），在公共数据总线上，计算值广播到所有可能需要它们的保留站。这些发展允许改进指令的并行执行，否则在使用记分板或其他早期算法时，这些指令会停止。</p>\n<p>罗伯特·托马苏洛因其在算法方面的工作于1997年获得埃克特-莫齐利奖。<sup><a href=\"#quote_1\" class=\"kx_ref\">[1]</a></sup> </p>","pics":null,"card":null,"references":[],"versionCount":0},"card":{"paragraphId":"0","title":"","versionId":"0","lemmaId":0,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":0,"comment":null,"dependVersionId":0,"contentType":0,"content":"","pics":null,"card":null,"references":null,"versionCount":0},"categories":[{"id":1,"name":"计算机","parents":[]}],"creator":{"uid":59383140,"name":"尘桦","pic":"https://web.archive.org/web/20221028224442/https://cache.soso.com/qlogo/g?b=oidb&k=zP0s7kWEv0L8icXib6eMCZug&s=100&t=1555089042","introduction":null,"educations":[{"schoolName":"中国科学技术大学","major":"","degree":"硕士","universityId":66,"universityLogo":"https://web.archive.org/web/20221028224442/https://img01.sogoucdn.com/app/a/200943/d76be9ee-6011-11e9-bbbc-fc4dd4f70029","majorLevel1":null,"majorLevel2":null,"majorLevel3":null,"majorLevel1Id":0,"majorLevel2Id":0,"majorLevel3Id":0,"state":null,"lab":null,"researchField":null}],"jobs":null,"works":null,"educationBrief":"中国科学技术大学","jobBrief":"","role":0,"roleName":null,"title":"中国科学技术大学 · 硕士","professionalTitle":null,"phoneNo":null,"editable":true,"partnerId":82,"partnerIdCreateTime":1594286510,"partnerIdPoped":false},"createTime":1568622557,"editor":{"uid":16230788,"name":"forscut","pic":"https://web.archive.org/web/20221028224442/https://cache.soso.com/qlogo/g?b=oidb&k=KOIYC1kIOZX4BPRtdrhcZQ&s=100&t=1597157712","introduction":"正道的光","educations":[{"schoolName":"暨南大学","major":"","degree":"硕士","universityId":86,"universityLogo":"https://web.archive.org/web/20221028224442/https://img01.sogoucdn.com/app/a/200943/ce419c6e-6012-11e9-b4a8-fc4dd4f70029","majorLevel1":"工学","majorLevel2":"计算机科学与技术","majorLevel3":"计算机应用技术","majorLevel1Id":353,"majorLevel2Id":578,"majorLevel3Id":604,"state":"在读","lab":"220","researchField":"后端开发 机器学习"}],"jobs":null,"works":null,"educationBrief":"暨南大学","jobBrief":"","role":0,"roleName":null,"title":"暨南大学 · 计算机科学与技术硕士","professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":150,"partnerIdCreateTime":1595844882,"partnerIdPoped":true},"editTime":1576233902,"state":1,"versionCount":4,"upNum":0,"downNum":0,"pics":[{"originalUrl":"https://web.archive.org/web/20221028224442/https://img02.sogoucdn.com/app/a/200698/sogou_science_11500?w=700&h=450&titlename=%E6%89%98%E9%A9%AC%E8%8B%8F%E6%B4%9B%E7%AE%97%E6%B3%95%E7%9A%84%E6%B5%AE%E7%82%B9%E5%8D%95%E5%85%83","url":"https://web.archive.org/web/20221028224442/https://img02.sogoucdn.com/app/a/200698/sogou_science_11500","rw":700,"rh":450,"title":"托马苏洛算法的浮点单元","alt":null,"width":0,"height":0},{"originalUrl":"https://web.archive.org/web/20221028224442/https://img03.sogoucdn.com/app/a/200698/sogou_science_11501?w=300&h=270&titlename=%E6%89%98%E9%A9%AC%E8%8B%8F%E6%B4%9B%E7%AE%97%E6%B3%95%E7%9A%84%E4%BE%8B%E5%AD%90%5B2%5D","url":"https://web.archive.org/web/20221028224442/https://img03.sogoucdn.com/app/a/200698/sogou_science_11501","rw":300,"rh":270,"title":"托马苏洛算法的例子[2]","alt":null,"width":0,"height":0}],"catalogs":[{"level":1,"title":"实施概念","paragraphId":"14995095388422412","subCatalogs":[{"level":2,"title":"公共数据总线","paragraphId":"14995095388422412","subCatalogs":null},{"level":2,"title":"指令顺序","paragraphId":"14995095388422412","subCatalogs":null},{"level":2,"title":"寄存器重命名","paragraphId":"14995095388422412","subCatalogs":null},{"level":2,"title":"例外","paragraphId":"14995095388422412","subCatalogs":null}]},{"level":1,"title":"指令生命周期","paragraphId":"14995095405199616","subCatalogs":[{"level":2,"title":"注册图例","paragraphId":"14995095405199616","subCatalogs":null},{"level":2,"title":"第一阶段：问题","paragraphId":"14995095405199616","subCatalogs":null},{"level":2,"title":"阶段2：执行","paragraphId":"14995095405199616","subCatalogs":null},{"level":2,"title":"阶段3：写结果","paragraphId":"14995095405199616","subCatalogs":null}]},{"level":1,"title":"算法改进","paragraphId":"14995095405199617","subCatalogs":null},{"level":1,"title":"应用程序和遗留","paragraphId":"14995095405199618","subCatalogs":null},{"level":1,"title":"参考文献","paragraphId":"-1","subCatalogs":null}],"paragraphs":[{"paragraphId":"14995095388422412","title":"实施概念","versionId":"54572356303118864","lemmaId":10363,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":82815118,"name":"iscience","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1599823659,"comment":null,"dependVersionId":0,"contentType":1,"content":"<p><img alt=\"\" class=\"ed_imgfloat_embedmiddle\" img_height=\"450\" img_width=\"700\" titlename=\"托马苏洛算法的浮点单元\" data-align=\"embedmiddle\" width=\"480\" data-src=\"https://img02.sogoucdn.com/app/a/200698/sogou_science_11500\"> </p><p>以下是实施托马苏洛算法所必需的概念：</p><p></p><h3>公共数据总线</h3><p></p><p>公共数据总线（CDB）将保留站直接连接到功能单元。托马苏洛认为，它“在鼓励并发的同时保持优先级”。 这有两个重要影响：</p><p>1、功能单元可以在不涉及浮点寄存器的情况下访问任何操作的结果，从而允许等待结果的多个单元继续进行，而无需等待解决对寄存器文件读取端口的访问争用。</p><p>2、危险检测和控制执行是分布式的。保留站控制指令何时可以执行，而不是单个专用的危险单元去控制。</p><p></p><h3>指令顺序</h3><p></p><p>指令按顺序发布，因此指令序列的效果（例如由这些指令引发的异常）与它们在有序处理器上的效果按照相同的顺序发生，而不管它们是无序（即非顺序）执行的事实。</p><p></p><h3>寄存器重命名</h3><p></p><p>托马苏洛算法使用寄存器重命名来正确执行无序执行。所有通用寄存器和保留站寄存器要么保存一个实值，要么保存一个占位符值。如果实际值在发布阶段对目标寄存器不可用，则最初使用占位符值。占位符值是指示哪个保留站将产生真实值的标签。当设备完成并在CDB广播结果时，占位符将被替换为真实值。</p><p>每个功能单元都有一个保留站。保留站保存执行单个指令所需的信息，包括操作和操作数。当它空闲时，以及一条指令所需的所有源操作数都为真实值时，功能单元开始处理。</p><p></p><h3>例外</h3><p></p><p>实际上，有些异常可能没有足够的异常状态信息，在这种情况下，处理器可能会引发一个特殊的异常，称为“不精确”异常。非OoOE实现中不能出现不精确的异常，因为处理器状态只按程序顺序改变（参见RISC流水线异常）。</p><p>经历“精确”异常的程序可以在异常点重新启动或重新执行，同时可以确定引起异常的特定指令。然而，那些经历“不精确”异常的程序通常不能重启或重新执行，因为系统不能确定引起异常的特定指令。</p>","pics":[{"originalUrl":"https://web.archive.org/web/20221028224442/https://img02.sogoucdn.com/app/a/200698/sogou_science_11500?w=700&h=450&titlename=%E6%89%98%E9%A9%AC%E8%8B%8F%E6%B4%9B%E7%AE%97%E6%B3%95%E7%9A%84%E6%B5%AE%E7%82%B9%E5%8D%95%E5%85%83","url":"https://web.archive.org/web/20221028224442/https://img02.sogoucdn.com/app/a/200698/sogou_science_11500","rw":700,"rh":450,"title":"托马苏洛算法的浮点单元","alt":null,"width":0,"height":0}],"card":null,"references":[],"versionCount":0},{"paragraphId":"14995095405199616","title":"指令生命周期","versionId":"54572356303118865","lemmaId":10363,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":82815118,"name":"iscience","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1599823659,"comment":null,"dependVersionId":0,"contentType":1,"content":"<p>下面列出的三个阶段是每个指令从发出到执行完成所经过的阶段。</p><p></p><h3>注册图例</h3><p></p><p>\n </p><ul>\n  <li>Op -表示对操作数执行的操作</li>\n  <li>Qj，Qk -将产生相关源操作数的保留站（0表示值为Vj，Vk）</li>\n  <li>Vj，Vk -源操作数的值</li>\n  <li>A &nbsp; -用于保存加载或存储的内存地址信息</li>\n  <li>Busy - 1（如果已占用），0（如果未占用）</li>\n  <li>Qi -（仅寄存器单元）其结果应存储在该寄存器中的保留站（如果为空或0，则没有值指定给该寄存器）</li>\n </ul><p></p><p></p><h3>第一阶段：问题</h3><p></p><p>在发布阶段，如果所有操作数和保留站都准备好了，或者它们被停止，则发布指令以供执行。在此步骤中，寄存器被重命名，消除了WAR和WAW危险。</p><p>\n </p><ul>\n  <li>从指令队列的头部检索下一条指令。如果指令操作数当前在寄存器中，则</li>\n  <li>如果有匹配的功能单元，发出指令。</li>\n  <li>否则，由于没有可用的功能单元，暂停指令，直到一个站或缓冲器空闲。</li>\n  <li>否则，我们可以假设操作数不在寄存器中，因此使用虚拟值。功能单元必须计算实值，以跟踪产生操作数的功能单元。</li>\n </ul><p></p><p>\n </p><table class=\"wikitable\">\n  <caption>\n   Pseudocode &nbsp; \n  </caption>\n  <tbody>\n   <tr>\n    <th>Instruction state</th>\n    <th>Wait until</th>\n    <th>Action or bookkeeping</th>\n   </tr>\n   <tr>\n    <td>Issue</td>\n    <td>Station r empty</td>\n    <td><pre class=\"kx_code\"><code class=\"c\">if (RegisterStat[rs].Qi¦0) {\n\t\tRS[r].Qj ← RegisterStat[rs].Qi\n}\nelse {\n\tRS[r].Vj ← Regs[rs];\n\tRS[r].Qj ← 0;\n}\nif (RegisterStat[rt].Qi¦0) { \n\tRS[r].Qk ← RegisterStat[rt].Qi;\n}\nelse {\n\tRS[r].Vk ← Regs[rt]; RS[r].Qk ← 0;\n}\nRS[r].Busy ← yes;\nRegisterStat[rd].Q ← r;</code></pre></td>\n   </tr>\n   <tr>\n    <td>Load or Store</td>\n    <td>Buffer r empty</td>\n    <td><pre class=\"kx_code\"><code class=\"c\">if (RegisterStat[rs].Qi¦0) {\n\tRS[r].Qj ← RegisterStat[rs].Qi;\n}\nelse {\n\tRS[r].Vj ← Regs[rs];\n\tRS[r].Qj ← 0;\n}\nRS[r].A ← imm;\nRS[r].Busy ← yes;</code></pre></td>\n   </tr>\n   <tr>\n    <td>Load only</td>\n    <td></td>\n    <td><pre class=\"kx_code\"><code class=\"c\">RegisterStat[rt].Qi ← r;</code></pre></td>\n   </tr>\n   <tr>\n    <td>Store only</td>\n    <td></td>\n    <td><pre class=\"kx_code\"><code class=\"c\">if (RegisterStat[rt].Qi¦0) {\n\tRS[r].Qk ← RegisterStat[rt].Qi;\n}\nelse {\n\tRS[r].Vk ← Regs[rt];\n\tRS[r].Qk ← 0\n};</code></pre></td>\n   </tr>\n  </tbody>\n </table><p></p><p><img alt=\"\" class=\"ed_imgfloat_embedmiddle\" img_height=\"270\" img_width=\"300\" titlename=\"托马苏洛算法的例子[2]\" data-align=\"embedmiddle\" width=\"300\" data-src=\"https://img03.sogoucdn.com/app/a/200698/sogou_science_11501\"> </p><p></p><h3>阶段2：执行</h3><p></p><p>在执行阶段，执行指令操作。在这个步骤中，指令被延迟，直到它们的所有操作数都可用，消除了RAW危险。通过有效的地址计算来保持程序的正确性，以防止内存中的危险。</p><p>\n </p><ul>\n  <li>如果一个或多个操作数尚不可用，则：等待操作数在CDB上可用。</li>\n  <li>当所有操作数都可用时，那么：如果指令是加载或存储\n   <ul>\n    <li>当基本寄存器可用时，计算有效地址，并将其放入加载/存储缓冲区\n     <ul>\n      <li>如果指令是加载指令，那么：一旦内存单元可用，就执行</li>\n      <li>否则，如果指令是一个存储指令，那么：在将该值发送到内存单元之前，等待该值被存储</li>\n     </ul></li>\n   </ul></li>\n  <li>否则，该指令是算术逻辑单元操作，然后：在相应的功能单元执行该指令</li>\n </ul><p></p><p>\n </p><table class=\"wikitable\">\n  <caption>\n   Pseudocode &nbsp; \n  </caption>\n  <tbody>\n   <tr>\n    <th>Instruction state</th>\n    <th>Wait until</th>\n    <th>Action or bookkeeping</th>\n   </tr>\n   <tr>\n    <td>FP operation</td>\n    <td><pre class=\"kx_code\"><code class=\"c\">(RS[r].Qj = 0) and (RS[r].Qk = 0)</code></pre></td>\n    <td><p>Compute result： operands are in Vj and Vk</p></td>\n   </tr>\n   <tr>\n    <td>Load/store step 1</td>\n    <td><code>RS[r].Qj = 0</code> &amp; r is head of load-store queue</td>\n    <td><pre class=\"kx_code\"><code class=\"c\">RS[r].A ← RS[r].Vj + RS[r].A;</code></pre></td>\n   </tr>\n   <tr>\n    <td>Load step 2</td>\n    <td>Load step 1 complete</td>\n    <td><p>Read from <code>Mem[RS[r].A]</code> </p></td>\n   </tr>\n  </tbody>\n </table><p></p><p></p><h3>阶段3：写结果</h3><p></p><p>在写结果阶段，算术逻辑单元操作结果被写回寄存器，存储操作被写回内存。</p><p>\n </p><ul>\n  <li>如果指令是算术逻辑单元操作\n   <ul>\n    <li>如果结果是可用的，那么：把它写在CDB，然后从那里写入寄存器和任何等待这个结果的保留站</li>\n   </ul></li>\n  <li>否则，如果指令是一个存储指令，那么：在这个步骤中将数据写入内存</li>\n </ul><p></p><p>\n </p><table class=\"wikitable\">\n  <caption>\n   Pseudocode &nbsp; \n  </caption>\n  <tbody>\n   <tr>\n    <th>Instruction state</th>\n    <th>Wait until</th>\n    <th>Action or bookkeeping</th>\n   </tr>\n   <tr>\n    <td>FP operation or load</td>\n    <td>Execution complete at r &amp; CDB available</td>\n    <td><pre class=\"kx_code\"><code class=\"c\">\t∀x(if (RegisterStat[x].Qi = r) {\n\t\tregs[x] ← result;\n\t\tRegisterStat[x].Qi = 0\n\t});\n\t∀x(if (RS[x].Qj = r) {\n\t\tRS[x].Vj ← result;\n\t\tRS[x].Qj ← 0; \n\t});\n\t∀x(if (RS[x].Qk = r) {\n\t\tRS[x].Vk ← result;\n\t\tRS[x].Qk ← 0;\n\t});\n\tRS[r].Busy ← no;</code></pre></td>\n   </tr>\n   <tr>\n    <td>Store</td>\n    <td>Execution complete at r &amp; RS[r].Qk = 0</td>\n    <td><pre class=\"kx_code\"><code class=\"c\">\tMem[RS[r].A] ← RS[r].Vk;\n\tRS[r].Busy ← no;</code></pre></td>\n   </tr>\n  </tbody>\n </table><p></p>","pics":[{"originalUrl":"https://web.archive.org/web/20221028224442/https://img03.sogoucdn.com/app/a/200698/sogou_science_11501?w=300&h=270&titlename=%E6%89%98%E9%A9%AC%E8%8B%8F%E6%B4%9B%E7%AE%97%E6%B3%95%E7%9A%84%E4%BE%8B%E5%AD%90%5B2%5D","url":"https://web.archive.org/web/20221028224442/https://img03.sogoucdn.com/app/a/200698/sogou_science_11501","rw":300,"rh":270,"title":"托马苏洛算法的例子[2]","alt":null,"width":0,"height":0}],"card":null,"references":[],"versionCount":0},{"paragraphId":"14995095405199617","title":"算法改进","versionId":"54572356303118866","lemmaId":10363,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":82815118,"name":"iscience","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1599823659,"comment":null,"dependVersionId":0,"contentType":1,"content":"<p>托马苏洛算法中的保留站、寄存器重命名和公共数据总线的概念为高性能计算机的设计带来了显著的进步。</p><p>保留站负责在存在数据依赖性和其他不一致（如改变存储访问时间和电路速度）的情况下等待操作数，从而释放功能单元。这种改进克服了长浮点延迟和访问内存。特别是，该算法对缓存未命中的容忍度更高。此外，程序员不用实现优化的代码。这是公共数据总线和保留站共同努力，以保持依赖性以及鼓励并发性的结果。<sup><a href=\"#quote_2\" class=\"kx_ref\">[2]</a></sup> </p><p>通过跟踪保留站中指令的操作数和硬件中的寄存器重命名，该算法最小化了写后读（RAW），消除了写后写（WAW）和读后写（WAR）计算机体系结构的危险。这通过减少等待所需的浪费时间来提高性能。<sup><a href=\"#quote_2\" class=\"kx_ref\">[2]</a></sup> </p><p>算法中同样重要的改进是设计不限于特定的管道结构。这种改进使得该算法被多版本处理器更广泛地采用。此外，该算法易于扩展以支持分支推测。<sup><a href=\"#quote_2\" class=\"kx_ref\">[2]</a></sup> </p>","pics":null,"card":null,"references":[],"versionCount":0},{"paragraphId":"14995095405199618","title":"应用程序和遗留","versionId":"54572356303118867","lemmaId":10363,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":82815118,"name":"iscience","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1599823659,"comment":null,"dependVersionId":0,"contentType":1,"content":"<p>托马苏洛的算法，在System/360&nbsp; Model 91架构中实现后，有好几年未被使用（除了IBM）。然而，在20世纪90年代，它的使用量大幅增加，原因有三：</p><p>\n <ol>\n  <li>一旦缓存变得普遍，托马苏洛算法在缓存未命中导致的不可预测的加载时间内保持并发性的能力在处理器中变得有价值。</li>\n  <li>随着处理器发出越来越多的指令，动态调度和算法支持的分支推测有助于提高性能。</li>\n  <li>大众市场软件的激增意味着程序员不想为特定的管道结构进行编译。该算法可以适用于任何流水线架构，因此软件只需要很少的特定于架构的修改。<sup><a href=\"#quote_2\" class=\"kx_ref\">[2]</a></sup> </li>\n </ol></p><p>许多现代处理器实施动态调度方案，这些方案源自托马苏洛的原始算法，包括流行的英特尔x86-64芯片。<sup><a href=\"#quote_2\" class=\"kx_ref\">[2]</a></sup><sup><a href=\"#quote_3\" class=\"kx_ref\">[3]</a></sup> </p>","pics":null,"card":null,"references":[],"versionCount":0}],"references":[{"id":1,"type":"book","title":"\"Robert Tomasulo – Award Winner\". ACM Awards. ACM. Retrieved 8 December 2014.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":2,"type":"book","title":"Tomasulo, Robert Marco (Jan 1967). \"An Efficient Algorithm for Exploiting Multiple Arithmetic Units\". IBM Journal of Research and Development. IBM. 11 (1): 25–33. doi:10.1147/rd.111.0025. ISSN 0018-8646.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":3,"type":"book","title":"Yoga, Adarsh. \"Differences between Tomasulo's algorithm and dynamic scheduling in Intel Core microarchitecture\". The boozier. Retrieved 4 April 2016.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false}],"recommendReferences":null,"auditState":2,"lemmaLevel":1,"origin":0,"originEnTitle":null,"originZhTitle":null,"pv":209,"auditType":0,"synonyms":null,"showEditTime":"2019.12.13 18:45","auditors":[{"uid":0,"name":"Ki.κe","pic":"https://web.archive.org/web/20221028224442/https://wx.qlogo.cn/mmopen/vi_32/y67kfr32Doib4wg71Jiau7jVWvharic3nRKgdRRQSl6koeQJCo0GQs2Krw0vwdFRsOWnHIQOwAZsSg5lIkIrFCOcQ/132","introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":"","jobBrief":"","role":0,"roleName":null,"title":"","professionalTitle":null,"phoneNo":null,"editable":true,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false}],"hasZhishiNav":false,"auditInfos":{},"isHistory":false};</script><script crossorigin="anonymous" src="./363.tomasulo算法 - 搜狗科学百科_files/aegis.min.js.download"></script><script crossorigin="anonymous" src="./363.tomasulo算法 - 搜狗科学百科_files/main_2020092401.js.download"></script><script crossorigin="anonymous" src="./363.tomasulo算法 - 搜狗科学百科_files/react.production.min.js.download"></script><script crossorigin="anonymous" src="./363.tomasulo算法 - 搜狗科学百科_files/react-dom.production.min.js.download"></script><script crossorigin="anonymous" src="./363.tomasulo算法 - 搜狗科学百科_files/jquery-1.11.1.min.js.download"></script><script crossorigin="anonymous" src="./363.tomasulo算法 - 搜狗科学百科_files/main_2022062701.js.download"></script><script crossorigin="anonymous" src="./363.tomasulo算法 - 搜狗科学百科_files/main_66bbe21.js.download"></script><script crossorigin="anonymous" src="./363.tomasulo算法 - 搜狗科学百科_files/react.production.min.js.download"></script><script crossorigin="anonymous" src="./363.tomasulo算法 - 搜狗科学百科_files/react-dom.production.min.js.download"></script><script crossorigin="anonymous" src="./363.tomasulo算法 - 搜狗科学百科_files/main_edf0f08.js.download"></script><div id="popControl"><div class="pop-control-mask" style="display: none;"><div class="pop-container"><i class="close-icon"></i><div class="stop-title">搜狗科学百科停止服务运营公告</div><div class="stop-user">亲爱的用户：</div><div class="stop-content">因业务方向调整，搜狗科学百科将于2022年11月11日正式停止服务与运营。届时产品内所有数据将依据相关法律进行删除并关闭服务器，您将无法登录及使用搜狗科学百科，相关内容在平台下线后将无法找回。</div><div class="stop-content">搜狗科学百科是由搜狗推出的科学领域专业百科产品，与搜狗百科为两个独立产品，本次停止服务与运营仅对搜狗科学百科，并不影响搜狗百科产品正常使用，敬请知悉。</div><div class="stop-content">由此给您带来的不便我们深表歉意，敬请谅解。再次感谢您一直以来的陪伴与支持！</div><div class="stop-team">搜狗科学百科产品&amp;运营团队</div><div class="stop-time">2022年10月11日</div></div></div></div>
+</body></html>

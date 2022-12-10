@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)https://web.archive.org/web/20221025170302/https://baike.sogou.com/kexue/d11020.htm -->
+<html class="" data-reactroot=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./1020.二叉搜索树 - 搜狗科学百科_files/analytics.js.download" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app224.us.archive.org';v.server_ms=213;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="./1020.二叉搜索树 - 搜狗科学百科_files/bundle-playback.js.download" charset="utf-8"></script>
+<script type="text/javascript" src="./1020.二叉搜索树 - 搜狗科学百科_files/wombat.js.download" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://baike.sogou.com/kexue/d11020.htm","20221025170302","https://web.archive.org/","web","/_static/",
+	      "1666717382");
+</script>
+<link rel="stylesheet" type="text/css" href="./1020.二叉搜索树 - 搜狗科学百科_files/banner-styles.css">
+<link rel="stylesheet" type="text/css" href="./1020.二叉搜索树 - 搜狗科学百科_files/iconochive.css">
+<!-- End Wayback Rewrite JS Include -->
+<meta name="save" content="history"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="baidu-site-verification" content="VWGb6TyYx8"><meta content="二叉搜索树 - 搜狗科学百科" name="keywords"><meta content="搜狗科学百科是一部有着平等、协作、分享、自由理念的网络科学全书，为每一个互联网用户创造一个涵盖所有领域知识、服务的中文知识性平台。" name="description"><meta http-equiv="x-dns-prefetch-control" content="on"><meta name="server" baike="235" ip="210" env="online"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025170302/https://cache.soso.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025170302/https://hhy.sogoucdn.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025170302/https://pic.baike.soso.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025170302/https://ugc.qpic.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025170302/https://xui.ptlogin2.qq.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025170302/https://q1.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025170302/https://q2.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025170302/https://q3.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025170302/https://q4.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025170302/https://q.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025170302/https://img01.sogoucdn.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025170302/https://img02.sogoucdn.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025170302/https://img03.sogoucdn.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221025170302/https://img04.sogoucdn.com/"><link rel="Shortcut Icon" href="https://web.archive.org/web/20221025170302im_/https://www.sogou.com/images/logo/new/favicon.ico?v=4"><link rel="Bookmark" href="https://www.sogou.com/images/logo/new/favicon.ico?v=4"><link href="./1020.二叉搜索树 - 搜狗科学百科_files/base_b849887.css" rel="stylesheet"><link href="./1020.二叉搜索树 - 搜狗科学百科_files/detail_378aed5.css" rel="stylesheet"><link href="./1020.二叉搜索树 - 搜狗科学百科_files/inviteAudit_7894507.css" rel="stylesheet"><link rel="stylesheet" href="./1020.二叉搜索树 - 搜狗科学百科_files/highlight.min.css"><title>二叉搜索树 - 搜狗科学百科</title><style>.onekey-close {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	width: 24px;
+	height: 24px;
+	background: url(//web.archive.org/web/20221025193758/https://hhy.sogoucdn.com/js/common/hhy/sprite_wap_baike_37443f3.png) no-repeat;
+	text-indent: -999em;
+	background-size: 84px;
+	background-position: -63px 0;
+}
+
+.onekey-login {
+	position: absolute;
+	top: 16.4%;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+
+/* .onekey-login-img {
+    width: 75px;
+    height: 75px;
+    background: url("https://web.archive.org/web/20221025170302/https://baike.sogou.com/kexue/images/sprite_wap_baike.png") no-repeat;
+    background-size: 100px 91px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+} */
+
+.onekey-login-title {
+	text-align: center;
+	padding-bottom: 3px;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 30px;
+	color: #000;
+}
+
+.onekey-login-txt {
+	text-align: center;
+	font-family: PingFangSC;
+	font-size: 14px;
+	line-height: 20px;
+	color: #8f8f8f;
+}
+
+.onekey-login-qq,
+.onekey-login-wx,
+.onekey-login-phone {
+	display: block;
+	width: 245px;
+	height: 54px;
+	border-radius: 45px;
+	text-align: center;
+
+	margin: 0 auto;
+	font-size: 17px;
+	line-height: 24px;
+	color: #000;
+	/* padding: 16px 77px; */
+	border-radius: 12px;
+	border: solid 1px #e0e0e0;
+}
+.onekey-qq-content,
+.onekey-vx-content,
+.onekey-phone-content {
+	display: inline-block;
+	margin-top: 16px;
+}
+.onekey-qq-content {
+	padding: 0 5px;
+}
+
+.onekey-login-qq {
+	margin-top: 48px;
+	margin-bottom: 24px;
+}
+
+.onekey-login-qq:before {
+	display: inline-block;
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: url(//web.archive.org/web/20221025193758/https://hhy.sogoucdn.com/js/common/hhy/sprite_wap_baike_37443f3.png) no-repeat;
+	background-size: 80px;
+	background-position: -20px 0;
+	vertical-align: top;
+	margin: 17px 8px 0 0;
+}
+
+.onekey-login-wx {
+	margin-bottom: 24px;
+}
+
+.onekey-login-wx:before {
+	display: inline-block;
+	content: "";
+	width: 21px;
+	height: 21px;
+	background: url(//web.archive.org/web/20221025193758/https://hhy.sogoucdn.com/js/common/hhy/sprite_wap_baike_37443f3.png) no-repeat;
+	background-size: 84px;
+	background-position: 0 0;
+	vertical-align: top;
+	margin: 17px 10px 0 0;
+}
+
+.onekey-login-phone {
+}
+
+.onekey-login-phone:before {
+	display: inline-block;
+	content: "";
+	width: 21px;
+	height: 21px;
+	background: url(//web.archive.org/web/20221025193758/https://hhy.sogoucdn.com/js/common/hhy/sprite_wap_baike_37443f3.png) no-repeat;
+	background-size: 84px;
+	background-position: -42px 0;
+	vertical-align: top;
+	margin: 17px 10px 0 0;
+}
+
+.onekey-fixed {
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	width: 100%;
+	height: 100%;
+}
+
+.onekey-fixed.forbid {
+	z-index: 100;
+	position: fixed;
+	top: auto;
+	bottom: 68px;
+	left: 9%;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	width: 82%;
+	height: 43px;
+	border-radius: 25px;
+	color: #ffffff;
+}
+.onekey-login-title.forbid {
+	text-align: center;
+	padding-bottom: 3px;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 30px;
+	color: white;
+}
+</style><style>#login_mask {
+  background: #000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  position: fixed;
+  /*fixed好像在哪个IE上有BUG，先用用*/
+  left: 0;
+  top: 0;
+  z-index: 999;
+  height: 100%;
+}
+
+#login_iframe_container {
+  position: fixed;
+  width: 550px;
+  height: 360px;
+  z-index: 1020;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 828px) {
+  #login_iframe_container {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+  }
+}
+
+#login_iframe_container.new-login {
+  width: 550px;
+  height: 360px;
+  background-image: url(//web.archive.org/web/20221025193758/https://hhy.sogoucdn.com/js/common/hhy/background_2a4a8a6.png);
+}
+
+#login_iframe_container.new-login.no-bg {
+  background: #fff;
+}
+
+#login_iframe_container.new-login .login-title {
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 0.19px;
+  color: #ffffff;
+  margin-top: 62px;
+}
+#login_iframe_container.new-login .forbid-title {
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 0.19px;
+  color: #333333;
+  margin-top: 150px;
+}
+
+#login_iframe_container.new-login.no-bg .login-title {
+  color: #333333;
+}
+
+#login_iframe_container.new-login .login-subtitle {
+  width: 100%;
+  height: 18px;
+  line-height: 18px;
+  font-size: 13px;
+  letter-spacing: 0.08px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 9px;
+  margin-bottom: 43px;
+}
+
+#login_iframe_container.new-login.no-bg .login-subtitle {
+  color: #999999;
+}
+
+#login_iframe_container.new-login .login-subtitle::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  background-color: #ffffff;
+  position: relative;
+  top: -4px;
+  left: -5px;
+}
+
+#login_iframe_container.new-login .login-subtitle::after {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  background-color: #ffffff;
+  position: relative;
+  top: -4px;
+  left: 5px;
+}
+
+#login_iframe_container.new-login.no-bg .login-subtitle::before {
+  background-color: #999999;
+}
+
+#login_iframe_container.new-login.no-bg .login-subtitle::after {
+  background-color: #999999;
+}
+
+#login_iframe_container.new-login .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 12px;
+  height: 12px;
+  background: url(//web.archive.org/web/20221025193758/https://hhy.sogoucdn.com/js/common/hhy/login-sprites_e3853e5.png) -59px -10px;
+  background-size: 81px 91px;
+  cursor: pointer;
+}
+
+#login_iframe_container.new-login .login-btn {
+  width: 220px;
+  height: 47px;
+  border-radius: 24px;
+  border: solid 1px #dddddd;
+  background-color: #ffffff;
+  margin: 0 auto;
+  margin-top: 28px;
+  position: relative;
+  display: block;
+}
+
+#login_iframe_container.new-login .login-btn .login-icon {
+  position: absolute;
+}
+
+#login_iframe_container.new-login .login-btn .login-text {
+  width: 61px;
+  height: 47px;
+  line-height: 47px;
+  vertical-align: middle;
+  font-size: 15px;
+  letter-spacing: 0.1px;
+  color: #666666;
+  position: absolute;
+  right: 62px;
+}
+
+#login_iframe_container.new-login .login-btn.qq-btn .login-icon {
+  width: 22px;
+  height: 27px;
+  top: 10px;
+  left: 67px;
+  background: url(//web.archive.org/web/20221025193758/https://hhy.sogoucdn.com/js/common/hhy/login-sprites_e3853e5.png) -10px -54px;
+  background-size: 81px 91px;
+}
+
+#login_iframe_container.new-login .login-btn.qq-btn .login-text {
+  right: 59px;
+}
+
+#login_iframe_container.new-login .login-btn.wechat-btn .login-icon {
+  width: 29px;
+  height: 24px;
+  top: 12px;
+  left: 62px;
+  background: url(//web.archive.org/web/20221025193758/https://hhy.sogoucdn.com/js/common/hhy/login-sprites_e3853e5.png) -10px -10px;
+  background-size: 81px 91px;
+}</style><style>/* -- container -- */
+.rodal,
+.rodal-mask {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.rodal {
+    position: fixed;
+}
+
+/* -- mask -- */
+.rodal-mask {
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+}
+
+/* -- dialog -- */
+.rodal-dialog {
+    position: absolute;
+    z-index: 101;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.rodal-center {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.rodal-bottom {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.rodal-top {
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}
+
+.rodal-left {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.rodal-right {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* -- close button -- */
+.rodal-close {
+    position: absolute;
+    cursor: pointer;
+    top: 16px;
+    right: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.rodal-close:before,
+.rodal-close:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: #999;
+    border-radius: 100%;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+}
+
+.rodal-close:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.rodal-close:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.rodal-close:hover:before,
+.rodal-close:hover:after {
+    background: #333;
+}
+
+/* -- fade -- */
+/* @-webkit-keyframes rodal-fade-enter {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes rodal-fade-enter {
+    from {
+        opacity: 0;
+    }
+}
+
+.rodal-fade-enter {
+    -webkit-animation: rodal-fade-enter both ease-in;
+    animation: rodal-fade-enter both ease-in;
+} */
+
+@-webkit-keyframes rodal-fade-leave {
+    to {
+        opacity: 0
+    }
+}
+
+@keyframes rodal-fade-leave {
+    to {
+        opacity: 0
+    }
+}
+
+.rodal-fade-leave {
+    -webkit-animation: rodal-fade-leave both ease-out;
+    animation: rodal-fade-leave both ease-out;
+}
+
+/* -- zoom -- */
+@-webkit-keyframes rodal-zoom-enter {
+    from {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-zoom-enter {
+    from {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-zoom-enter {
+    -webkit-animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-zoom-leave {
+    to {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-zoom-leave {
+    to {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-zoom-leave {
+    -webkit-animation: rodal-zoom-leave both;
+    animation: rodal-zoom-leave both;
+}
+
+/* -- slideDown -- */
+@-webkit-keyframes rodal-slideDown-enter {
+    from {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+@keyframes rodal-slideDown-enter {
+    from {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+.rodal-slideDown-enter {
+    -webkit-animation: rodal-slideDown-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideDown-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideDown-leave {
+    to {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+@keyframes rodal-slideDown-leave {
+    to {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+.rodal-slideDown-leave {
+    -webkit-animation: rodal-slideDown-leave both;
+    animation: rodal-slideDown-leave both;
+}
+
+/* -- slideLeft -- */
+@-webkit-keyframes rodal-slideLeft-enter {
+    from {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideLeft-enter {
+    from {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+.rodal-slideLeft-enter {
+    -webkit-animation: rodal-slideLeft-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideLeft-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideLeft-leave {
+    to {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideLeft-leave {
+    to {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+.rodal-slideLeft-leave {
+    -webkit-animation: rodal-slideLeft-leave both;
+    animation: rodal-slideLeft-leave both;
+}
+
+/* -- slideRight -- */
+@-webkit-keyframes rodal-slideRight-enter {
+    from {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideRight-enter {
+    from {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+.rodal-slideRight-enter {
+    -webkit-animation: rodal-slideRight-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideRight-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideRight-leave {
+    to {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideRight-leave {
+    to {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+.rodal-slideRight-leave {
+    -webkit-animation: rodal-slideRight-leave both;
+    animation: rodal-slideRight-leave both;
+}
+
+/* -- slideUp -- */
+@-webkit-keyframes rodal-slideUp-enter {
+    from {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+@keyframes rodal-slideUp-enter {
+    from {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+.rodal-slideUp-enter {
+    -webkit-animation: rodal-slideUp-enter both cubic-bezier(0.23, 1, 0.32, 1);
+    animation: rodal-slideUp-enter both cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@-webkit-keyframes rodal-slideUp-leave {
+    to {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+@keyframes rodal-slideUp-leave {
+    to {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+.rodal-slideUp-leave {
+    -webkit-animation: rodal-slideUp-leave both;
+    animation: rodal-slideUp-leave both;
+}
+
+/* -- flip -- */
+@-webkit-keyframes rodal-flip-enter {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+@keyframes rodal-flip-enter {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+.rodal-flip-enter {
+    -webkit-animation: rodal-flip-enter both ease-in;
+    animation: rodal-flip-enter both ease-in;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+}
+
+@-webkit-keyframes rodal-flip-leave {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+    }
+}
+
+@keyframes rodal-flip-leave {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+    }
+}
+
+.rodal-flip-leave {
+    -webkit-animation: rodal-flip-leave both;
+    animation: rodal-flip-leave both;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+}
+
+/* -- rotate -- */
+@-webkit-keyframes rodal-rotate-enter {
+    from {
+        -webkit-transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-rotate-enter {
+    from {
+        -webkit-transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-rotate-enter {
+    -webkit-animation: rodal-rotate-enter both;
+    animation: rodal-rotate-enter both;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+@-webkit-keyframes rodal-rotate-leave {
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-rotate-leave {
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-rotate-leave {
+    -webkit-animation: rodal-rotate-leave both;
+    animation: rodal-rotate-leave both;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+/* -- door -- */
+@-webkit-keyframes rodal-door-enter {
+    from {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+}
+
+@keyframes rodal-door-enter {
+    from {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+}
+
+.rodal-door-enter {
+    -webkit-animation: rodal-door-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-door-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-door-leave {
+    60% {
+        -webkit-transform: scale3d(.01, 1, 1);
+        transform: scale3d(.01, 1, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(0, 1, .1);
+        transform: scale3d(0, 1, .1);
+    }
+}
+
+@keyframes rodal-door-leave {
+    60% {
+        -webkit-transform: scale3d(.01, 1, 1);
+        transform: scale3d(.01, 1, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(0, 1, .1);
+        transform: scale3d(0, 1, .1);
+    }
+}
+
+.rodal-door-leave {
+    -webkit-animation: rodal-door-leave both;
+    animation: rodal-door-leave both;
+}</style><style>/* -- container -- */
+.rodal,
+.rodal-mask {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.rodal {
+    position: fixed;
+}
+
+/* -- mask -- */
+.rodal-mask {
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+}
+
+/* -- dialog -- */
+.rodal-dialog {
+    position: absolute;
+    z-index: 101;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.rodal-center {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.rodal-bottom {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.rodal-top {
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}
+
+.rodal-left {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.rodal-right {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* -- close button -- */
+.rodal-close {
+    position: absolute;
+    cursor: pointer;
+    top: 16px;
+    right: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.rodal-close:before,
+.rodal-close:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: #999;
+    border-radius: 100%;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+}
+
+.rodal-close:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.rodal-close:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.rodal-close:hover:before,
+.rodal-close:hover:after {
+    background: #333;
+}
+
+/* -- fade -- */
+/* @-webkit-keyframes rodal-fade-enter {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes rodal-fade-enter {
+    from {
+        opacity: 0;
+    }
+}
+
+.rodal-fade-enter {
+    -webkit-animation: rodal-fade-enter both ease-in;
+    animation: rodal-fade-enter both ease-in;
+} */
+
+@-webkit-keyframes rodal-fade-leave {
+    to {
+        opacity: 0
+    }
+}
+
+@keyframes rodal-fade-leave {
+    to {
+        opacity: 0
+    }
+}
+
+.rodal-fade-leave {
+    -webkit-animation: rodal-fade-leave both ease-out;
+    animation: rodal-fade-leave both ease-out;
+}
+
+/* -- zoom -- */
+@-webkit-keyframes rodal-zoom-enter {
+    from {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-zoom-enter {
+    from {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-zoom-enter {
+    -webkit-animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-zoom-leave {
+    to {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-zoom-leave {
+    to {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-zoom-leave {
+    -webkit-animation: rodal-zoom-leave both;
+    animation: rodal-zoom-leave both;
+}
+
+/* -- slideDown -- */
+@-webkit-keyframes rodal-slideDown-enter {
+    from {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+@keyframes rodal-slideDown-enter {
+    from {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+.rodal-slideDown-enter {
+    -webkit-animation: rodal-slideDown-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideDown-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideDown-leave {
+    to {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+@keyframes rodal-slideDown-leave {
+    to {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+.rodal-slideDown-leave {
+    -webkit-animation: rodal-slideDown-leave both;
+    animation: rodal-slideDown-leave both;
+}
+
+/* -- slideLeft -- */
+@-webkit-keyframes rodal-slideLeft-enter {
+    from {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideLeft-enter {
+    from {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+.rodal-slideLeft-enter {
+    -webkit-animation: rodal-slideLeft-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideLeft-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideLeft-leave {
+    to {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideLeft-leave {
+    to {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+.rodal-slideLeft-leave {
+    -webkit-animation: rodal-slideLeft-leave both;
+    animation: rodal-slideLeft-leave both;
+}
+
+/* -- slideRight -- */
+@-webkit-keyframes rodal-slideRight-enter {
+    from {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideRight-enter {
+    from {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+.rodal-slideRight-enter {
+    -webkit-animation: rodal-slideRight-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideRight-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideRight-leave {
+    to {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideRight-leave {
+    to {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+.rodal-slideRight-leave {
+    -webkit-animation: rodal-slideRight-leave both;
+    animation: rodal-slideRight-leave both;
+}
+
+/* -- slideUp -- */
+@-webkit-keyframes rodal-slideUp-enter {
+    from {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+@keyframes rodal-slideUp-enter {
+    from {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+.rodal-slideUp-enter {
+    -webkit-animation: rodal-slideUp-enter both cubic-bezier(0.23, 1, 0.32, 1);
+    animation: rodal-slideUp-enter both cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@-webkit-keyframes rodal-slideUp-leave {
+    to {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+@keyframes rodal-slideUp-leave {
+    to {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+.rodal-slideUp-leave {
+    -webkit-animation: rodal-slideUp-leave both;
+    animation: rodal-slideUp-leave both;
+}
+
+/* -- flip -- */
+@-webkit-keyframes rodal-flip-enter {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+@keyframes rodal-flip-enter {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+.rodal-flip-enter {
+    -webkit-animation: rodal-flip-enter both ease-in;
+    animation: rodal-flip-enter both ease-in;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+}
+
+@-webkit-keyframes rodal-flip-leave {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+    }
+}
+
+@keyframes rodal-flip-leave {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+    }
+}
+
+.rodal-flip-leave {
+    -webkit-animation: rodal-flip-leave both;
+    animation: rodal-flip-leave both;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+}
+
+/* -- rotate -- */
+@-webkit-keyframes rodal-rotate-enter {
+    from {
+        -webkit-transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-rotate-enter {
+    from {
+        -webkit-transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-rotate-enter {
+    -webkit-animation: rodal-rotate-enter both;
+    animation: rodal-rotate-enter both;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+@-webkit-keyframes rodal-rotate-leave {
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-rotate-leave {
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-rotate-leave {
+    -webkit-animation: rodal-rotate-leave both;
+    animation: rodal-rotate-leave both;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+/* -- door -- */
+@-webkit-keyframes rodal-door-enter {
+    from {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+}
+
+@keyframes rodal-door-enter {
+    from {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+}
+
+.rodal-door-enter {
+    -webkit-animation: rodal-door-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-door-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-door-leave {
+    60% {
+        -webkit-transform: scale3d(.01, 1, 1);
+        transform: scale3d(.01, 1, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(0, 1, .1);
+        transform: scale3d(0, 1, .1);
+    }
+}
+
+@keyframes rodal-door-leave {
+    60% {
+        -webkit-transform: scale3d(.01, 1, 1);
+        transform: scale3d(.01, 1, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(0, 1, .1);
+        transform: scale3d(0, 1, .1);
+    }
+}
+
+.rodal-door-leave {
+    -webkit-animation: rodal-door-leave both;
+    animation: rodal-door-leave both;
+}</style></head><body class=""><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+</style>
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display: block; direction: ltr;">
+</div><div id="wm-ipp-print">The Wayback Machine - https://web.archive.org/web/20221025170302/https://baike.sogou.com/kexue/d11020.htm</div>
+<script type="text/javascript">//<![CDATA[
+__wm.bt(675,27,25,2,"web","https://baike.sogou.com/kexue/d11020.htm","20221025170302",1996,"/_static/",["/_static/css/banner-styles.css?v=S1zqJCYt","/_static/css/iconochive.css?v=qtvMKcIJ"], false);
+  __wm.rw(1);
+//]]></script>
+<!-- END WAYBACK TOOLBAR INSERT --><script>window._gtag=window._gtag||{};window._gtag.shouldGrayed = false;if ('8b340963df6f4c8fb77a46eb65e2a93a') window._gtag.traceId = '8b340963df6f4c8fb77a46eb65e2a93a';if ({"illegality":true}) window.userInfo = {"illegality":true};</script><div class="topnavbox"><ul class="topnav"><li><a href="https://web.archive.org/web/20221025170302/https://www.sogou.com/web?query=">网页</a></li><li><a href="https://web.archive.org/web/20221025170302/https://weixin.sogou.com/weixin?p=75351201">微信</a></li><li><a href="https://web.archive.org/web/20221025170302/https://zhihu.sogou.com/zhihu?p=75351218">知乎</a></li><li><a href="https://web.archive.org/web/20221025170302/https://pic.sogou.com/pics?query=">图片</a></li><li><a href="https://web.archive.org/web/20221025170302/https://v.sogou.com/v?query=">视频</a></li><li><a href="https://web.archive.org/web/20221025170302/https://mingyi.sogou.com/">医疗</a></li><li class="cur"><strong>科学</strong></li><li><a href="https://web.archive.org/web/20221025170302/https://hanyu.sogou.com/">汉语</a></li><li><a href="https://web.archive.org/web/20221025170302/https://wenwen.sogou.com/">问问</a></li><li><a href="https://web.archive.org/web/20221025170302/https://www.sogou.com/docs/more.htm">更多<span class="topraquo">»</span></a></li></ul></div><div id="header"><div class="header-wrap"><a class="header-logo" href="https://web.archive.org/web/20221025170302/https://baike.sogou.com/kexue"></a><div class="header-search"><div class="querybox" id="suggBox"><form><input id="searchInput" class="query" type="text" placeholder="搜科学领域专业百科词条" name="query" autocomplete="off" value=""><a href="javascript:;" class="query-search"></a></form></div></div><div class="header-rgt"><span class="btn-header-rgt btn-edit" id="editLemma">创建</span><div class="header-user no-login"></div></div></div></div><div class="fixed-placeholder" style="visibility:none"></div><div id="container" class=""><div class="content lemma-level1"><div class="detail-title" id="abstract-title"><h1>二叉搜索树</h1><a href="https://web.archive.org/web/20221025170302/https://baike.sogou.com/kexue/d11020.htm#!" class="detail-edit">编辑</a></div><div class="section_content" data-id="14996247429513484"><div class="text_img ed_imgfloat_right"><a class="ed_image_link" data-src="https://img04.sogoucdn.com/app/a/200698/sogou_science_475" data-bigsrc="https://img04.sogoucdn.com/app/a/200698/sogou_science_475?w=200&amp;h=167&amp;titlename=%E4%B8%80%E4%B8%AA%E5%A4%A7%E5%B0%8F%E4%B8%BA9%EF%BC%8C%E6%B7%B1%E5%BA%A6%E4%B8%BA3%E7%9A%84%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%EF%BC%8C8%E4%B8%BA%E6%A0%B9%E7%BB%93%E7%82%B9%E3%80%82%20%E5%8F%B6%E5%AD%90%E6%B2%A1%E6%9C%89%E7%BB%98%E5%88%B6%E3%80%82" title="点击查看大图" data-w="200" data-h="167" style="background-image:url(https://web.archive.org/web/20221025170302im_/https://img04.sogoucdn.com/app/a/200698/sogou_science_475)" href="https://web.archive.org/web/20221025170302/https://baike.sogou.com/kexue/d11020.htm#!"></a><div class="text_img_title">一个大小为9，深度为3的二叉搜索树，8为根结点。 叶子没有绘制。</div></div><div><p></p> 
+<p>在 计算机科学中, <b>二叉搜索树</b>(<b>BST</b>)，有时也被称为<b>二叉排序树</b>，是一种特殊类型的容器: 在内存中存储“项目”（例如数字，名称等）的数据结构。它们允许快速查找、添加和删除项目，并且可以用于实现动态项目集，或者允许通过其关键字查找项目的查找表(例如，通过名称查找人员的电话号码)。 </p>
+<p>二叉排序树有序保存它们的关键字，以便查找和其他操作可以使用 二分的原则:当在树中寻找关键字(或插入新关键字的位置)时，他们从根到叶遍历树，与存储在树结点中的关键字进行比较，并根据比较结果决定继续在左或右子树中搜索。平均而言，这意味着每次比较都允许操作跳过树的大约一半结点，因此每次查找、插入或删除都需要存储在树中的项目数的对数级别的时间复杂度。这比在(未排序的)数组中按关键字查找项目需要的线性时间复杂的好多了 ，但比哈希表上的相应操作要慢。 </p>
+<p>计算机科学出现了二叉排序树的几种变体；本文主要讨论基本类型，并在适当的时候引用更高级的类型。 </p></div></div><div id="catalog"><h2 class="title2">目录<a href="javascript:" class="detail-edit">编辑</a></h2><div class="catalog_wrap" style=""><ul class="catalog_list col3"><li><span class="order">1</span><a href="javascript:" data-level="1" data-id="14996247429513486">定义</a></li><li class="secondary_catalog"><span>1.1 </span><a href="javascript:" data-id="14996247429513486">顺序关系</a></li><li><span class="order">2</span><a href="javascript:" data-level="1" data-id="14996247446290698">操作</a></li><li class="secondary_catalog"><span>2.1 </span><a href="javascript:" data-id="14996247446290698">搜索</a></li><li class="secondary_catalog"><span>2.2 </span><a href="javascript:" data-id="14996247446290698">插入</a></li><li class="secondary_catalog"><span>2.3 </span><a href="javascript:" data-id="14996247446290698">删除</a></li></ul><ul class="catalog_list col3"><li class="secondary_catalog"><span>2.4 </span><a href="javascript:" data-id="14996247446290698">遍历</a></li><li class="secondary_catalog"><span>2.5 </span><a href="javascript:" data-id="14996247446290698">确认</a></li><li><span class="order">3</span><a href="javascript:" data-level="1" data-id="14996247446290699">应用示例</a></li><li class="secondary_catalog"><span>3.1 </span><a href="javascript:" data-id="14996247446290699">分类</a></li><li class="secondary_catalog"><span>3.2 </span><a href="javascript:" data-id="14996247446290699">优先级队列操作</a></li><li><span class="order">4</span><a href="javascript:" data-level="1" data-id="14996247446290700">类型</a></li></ul><ul class="catalog_list col3"><li class="secondary_catalog"><span>4.1 </span><a href="javascript:" data-id="14996247446290700">性能比较</a></li><li class="secondary_catalog"><span>4.2 </span><a href="javascript:" data-id="14996247446290700">最佳二叉排序树</a></li><li><span class="order">5</span><a href="javascript:" data-level="1" data-id="14996247446290701">笔记</a></li><li><span class="order">6</span><a href="javascript:" data-level="1" data-id="references">参考文献</a></li></ul></div></div><div id="paragraphs"><div><div id="par_14996247429513486"><h2 class="title">1 定义<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><p>二叉排序树是带根结点的二叉树，其内部结点各自存储一个关键字(以及可选的相关值),并且各自具有两个可区分的子树，通常表示为左和右。该树还拥有二分搜索的属性，该属性声明每个结点中的关键字必须大于或等于左子树中存储的任何关键字，并且小于或等于右子树中存储的任何关键字。<sup><a href="https://web.archive.org/web/20221025170302/https://baike.sogou.com/kexue/d11020.htm#quote_1" class="kx_ref">[1]</a></sup> 树的叶子(最终结点)不包含关键字，也没有结构来区分它们。 </p>
+<p>通常，每个结点代表的信息是一条记录，而不是一个数据元素。 然而，出于排序的目的，结点是根据它们的关键字而不是它们相关记录的任何部分进行比较的。二叉排序树相对于其他数据结构的主要优势是在分类算法和 搜索算法比如有序遍历中非常有效；它们也很容易编码。 </p>
+<p>二叉搜索树是用于构造更抽象的数据结构（如集合，多集合和关联数组）的基础数据结构。. </p> 
+<ul>
+ <li>当在二叉排序树中插入或搜索元素时，必须将每个被访问结点的关键字与要插入或找到的元素的关键字进行比较。</li> 
+ <li>二叉排序树的形状完全取决于插入和删除的顺序，并且可能退化。</li> 
+ <li>在长时间随机插入和删除的混合序列之后，树的预期高度接近关键字数量的平方根 <span class="texhtml">√<i>n</i></span>，它的增长速度比 <span class="texhtml">log <i>n</i></span>快得多。</li> 
+ <li>已经有许多研究来防止树的退化，这种退化导致最坏情况下的时间复杂度 <span class="texhtml">O(<i>n</i>)</span> (有关详细信息，请参见部分)。</li>
+</ul> 
+<h3>1.1 <span>顺序关系</span></h3> 
+<p>顺序关系二元搜索需要一种顺序关系，通过该顺序关系，每个元素（项）可以与总先序状态下的其他元素进行比较。 在比较中有效发生的元素部分称为其关键字。 是否允许在树中允许重复，即具有相同关键字的不同元素，不依赖于顺序关系，而是仅依赖于应用程序。在二分搜索树的上下文中，通过三向比较子例程最灵活地实现总先序。 </p></div></div><div id="par_14996247446290698"><h2 class="title">2 操作<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><p>二叉排序树支持三种主要操作:插入元素、删除元素和查找(检查关键字是否存在)。 </p> 
+<h3>2.1 <span>搜索</span></h3> 
+<p>可以对在二叉排序树中搜索特定关键字进行递归或者迭代地编程。 </p>
+<p>我们从检查根结点开始。如果树是<i>空的</i>，树中不存在我们正在搜索的关键字。否则，如果关键字等于根关键字，搜索成功，我们返回结点。如果键小于根的关键字，我们搜索左边的子树。类似地，如果关键字大于根的关键字，我们搜索右边的子树。重复这个过程，直到找到关键字或剩余的子树为<i>空</i>。如果在到达<i>空</i> 子树之后，未找到该关键字，则关键字不在树中。这很容易表达为递归算法(在python中实现): </p> 
+<p></p><pre class="kx_code"><code class="c">1 def search_recursively(key, node):
+2     if node is None or node.key == key:
+3         return node
+4     if key &lt; node.key:
+5         return search_recursively(key, node.left)
+6     # key &gt; node.key
+7     return search_recursively(key, node.right)
+</code></pre><p></p> 
+<p>相同的算法可以迭代实现: </p> 
+<p></p><pre class="kx_code"><code class="c"> 1 def search_iteratively(key, node): 
+ 2     current_node = node
+ 3     while current_node is not None:
+ 4         if key == current_node.key:
+ 5             return current_node
+ 6         if key &lt; current_node.key:
+ 7             current_node = current_node.left
+ 8         else: # key &gt; current_node.key:
+ 9             current_node = current_node.right
+10     return current_node
+</code></pre><p></p> 
+<p>这两个例子依赖于顺序关系是一个总先序。 </p>
+<p>如果顺序关系只是一个总先序，功能的合理扩展如下: 同样在向用户指定的方向向下搜索叶子的情况下。 配备有这种比较功能的二叉树排序变得稳定。 </p>
+<p>因为在最坏的情况下，该算法必须从树根搜索到离树根最远的叶子，所以搜索操作需要的时间与树的高度成正比(参见树术语)。平均而言，二叉排序树具有 <span class="texhtml"><i>n</i></span> 结点具有 <span class="texhtml">O(log <i>n</i>)</span> 高度。<sup class="reference"></sup> 然而，在最坏的情况下，不平衡的树类似链表(退化树)，二叉排序树可能有 <span class="texhtml">O(<i>n</i>)</span> 高度。 </p> 
+<h3>2.2 <span>插入</span></h3> 
+<p>插入从搜索开始时开始；如果关键字不等于根的关键字，我们像以前一样搜索左或右子树。最终，我们将到达一个外部结点，根据结点的关键字，将新的键值对(这里编码为记录“新结点”)添加为它的右子结点或左子结点。换句话说，我们检查根，如果它的键小于根的键，我们递归地将新结点插入左子树，如果它的键大于或等于根，我们递归地插入右子树。 </p>
+<p>以下是如何在C ++中的二叉树中执行典型的二叉搜索树插入： </p> 
+<p></p><pre class="kx_code"><code class="c">void insert(Node*&amp; root, int key, int value) {
+  if (!root) 
+    root = new Node(key, value);
+  else if (key == root-&gt;key)
+    root-&gt;value = value;
+  else if (key &lt; root-&gt;key)
+    insert(root-&gt;left, key, value);
+  else  // key &gt; root-&gt;key
+    insert(root-&gt;right, key, value);
+}
+</code></pre><p></p> 
+<p>或者，可以像这样实现非递归版本。 使用指向指针的指针来跟踪我们来自哪里让代码避免显式检查和处理需要在树根处插入结点的情况[2]： </p> 
+<p></p><pre class="kx_code"><code class="c">void insert(Node** root, int key, int value) {
+  Node **walk = root;
+  while (*walk) { 
+    int curkey = (*walk)-&gt;key;
+    if (curkey == key) {
+      (*walk)-&gt;value = value;
+      return;
+    }
+    if (key &gt; curkey) 
+      walk = &amp;(*walk)-&gt;right;
+    else 
+      walk = &amp;(*walk)-&gt;left;
+  }
+  *walk = new Node(key, value);
+}
+</code></pre><p></p> 
+<p>上述破坏性程序变体修改了树。 它仅使用常量堆空间（并且迭代版本也使用常量堆栈空间），但树的先前版本将丢失。 或者，如下面的Python示例所示，我们可以重建插入结点的所有祖先; 对原始树根的任何引用仍然有效，使树成为永久的数据结构： </p> 
+<p></p><pre class="kx_code"><code class="c">def binary_tree_insert(node, key, value):
+   if node is None:
+       return NodeTree(None, key, value, None)
+   if key == node.key:
+       return NodeTree(node.left, key, value, node.right)
+   if key &lt; node.key:
+       return NodeTree(binary_tree_insert(node.left, key, value), node.key, node.value, node.right)
+   return NodeTree(node.left, node.key, node.value, binary_tree_insert(node.right, key, value))
+</code></pre><p></p> 
+<p>重建的部分在平均情况下使用<span class="texhtml">O(log <i>n</i>)</span>空间，在最坏的情况下使用 <span class="texhtml">O(<i>n</i>)</span>。在任一版本中，此操作需要与最坏情况下树的高度成比例的时间，即在所有树的平均情况下为<span class="texhtml">O(log <i>n</i>)</span>时间，但在最坏情况下为<span class="texhtml">O(<i>n</i>)</span>时间。解释插入的另一种方法是，为了在树中插入新结点，首先将其键与根的键进行比较。如果其键小于根，则将其与根的左子树的键进行比较。如果它的键更大，则将它与根结点的右子树进行比较。此过程继续，直到将新结点与叶结点进行比较，然后将其添加为此结点的右子结点或左子结点，具体取决于其键：如果键小于叶子的键，则将其作为叶子插入左孩子，否则作为叶子的右孩子。 </p>
+<p>还有其他方法可以将结点插入到二叉树中，但这是在叶子处插入结点并同时保留BST结构的唯一方法。 </p> 
+<h3>2.3 <span>删除</span></h3> 
+<p>从二叉搜索树中删除结点时，必须维护结点的有序序列。 有很多可能性来做到这一点。 然而，T.Hibbard在1962年提出的以下方法[3]保证了主题子树的高度至多改变了一个。 有三种可能的情况需要考虑：。 </p> 
+<ul>
+ <li>删除没有子结点的结点：只需从树中删除结点即可。</li> 
+ <li>删除带有一个子结点的结点:删除该结点并用其结结点替换它。</li> 
+ <li>删除具有两个子结点的结点：调用要删除的结点D.不要删除D.而是选择其先序遍历的前结点或其后序遍历的后继结点作为替换结点E（s图）。 将E的使用值复制到D. [注2]如果E没有孩子，只需从其前双亲结点G中删除E.如果E有一个孩子，比如说F，它是一个右孩子。 在E的双亲结点下用F替换E.</li>
+</ul> 
+<p></p><p></p><div class="text_img ed_imgfloat_right">
+            <a class="ed_image_link lazyLoad" data-src="https://img03.sogoucdn.com/app/a/200698/sogou_science_474" data-bigsrc="" title="点击查看大图" href="javascript:" data-observer="true"></a>
+            <div class="text_img_title">从二叉搜索树中删除具有两个子节点的节点。 首先，识别右子树中最左边的节点，即先序后继节点E. 其值被复制到要删除的节点D. 然后可以轻松删除后序继承者，因为它最多只有一个孩子。 相同的方法可以对称地用与先序遍历的前驱C。</div>   
+        </div> <p></p><p></p> 
+<p>在所有情况下，当D恰好是根时，再次使替换结点为根结点。 </p>
+<p>从广义上讲，有孩子的结点更难删除。 与所有二叉树一样，结点的先序后继是其右子树的最左边的子结点，结点的先序前驱是左子树的最右边的子结点。 在其他情况下，该结点将只有一个或根本没有孩子。 根据上述两个简单案例中的一个删除它。 </p>
+<p>对于两子案例的每个实例一致地使用先序后继或先序前驱可能导致出现不平衡树，因此选择不同实现所需时间也不同。 </p>
+<p>运行时间分析：虽然此操作并不总是将树遍历到叶子，但这始终是可能的; 因此，在最坏的情况下，它需要与树的高度成比例的时间。 即使结点有两个子结点，它也不需要更多时间，因为它仍然遵循单个路径并且不会访问任何结点两次。 </p> 
+<p></p><pre class="kx_code"><code class="c">def find_min(self):   # Gets minimum node in a subtree
+    current_node = self
+    while current_node.left_child:
+        current_node = current_node.left_child
+    return current_node
+
+def replace_node_in_parent(self, new_value=None):
+    if self.parent:
+        if self == self.parent.left_child:
+            self.parent.left_child = new_value
+        else:
+            self.parent.right_child = new_value
+    if new_value:
+        new_value.parent = self.parent
+
+def binary_tree_delete(self, key):
+    if key &lt; self.key:
+        self.left_child.binary_tree_delete(key)
+        return
+    if key &gt; self.key:
+        self.right_child.binary_tree_delete(key)
+        return
+    # delete the key here
+    if self.left_child and self.right_child: # if both children are present
+        successor = self.right_child.find_min()
+        self.key = successor.key
+        successor.binary_tree_delete(successor.key)
+    elif self.left_child:   # if the node has only a *left* child
+        self.replace_node_in_parent(self.left_child)
+    elif self.right_child:  # if the node has only a *right* child
+        self.replace_node_in_parent(self.right_child)
+    else:
+        self.replace_node_in_parent(None) # this node has no children
+</code></pre><p></p> 
+<h3>2.4 <span>遍历</span></h3> 
+<p>一旦创建了二叉搜索树，就可以通过递归遍历根节点的左子树，访问节点本身，然后递归遍历节点的右子树，继续使用每个节点的模式来按顺序检索其元素。 这个树是递归访问的。 与所有二叉树一样，可以进行先序遍历或后序遍历，但两者都不可能对二叉搜索树有用。 二叉搜索树的先序遍历将始终产生节点项（数字，字符串或其他类似项）的有序列表。 </p>
+<p>下面给出了Python中先序遍历的代码。 它将调用树中每个节点的回调（程序员希望调用节点值的一些函数，例如打印到屏幕上）。 </p> 
+<p></p><pre class="kx_code"><code class="c">def traverse_binary_tree(node, callback):
+    if node is None:
+        return
+    traverse_binary_tree(node.leftChild, callback)
+    callback(node.value)
+    traverse_binary_tree(node.rightChild, callback)
+</code></pre><p></p> 
+<p>遍历需要O（n）时间，因为它必须访问每个节点。 该算法也是O（n），因此它是渐近最优的。 </p>
+<p>遍历也可以迭代实现。 对于某些应用，例如 更大的等效搜索，近似搜索，单步（迭代）遍历的操作可能非常有用。 当然，这是在没有回调构造的情况下实现的，并且平均花费O（1）和在最坏的情况下O（log n）的时间复杂度。 </p> 
+<h3>2.5 <span>确认</span></h3> 
+<p>有时我们已经有了一棵二叉树，我们需要确定它是否是一个二叉排序树。这个问题有一个简单的递归解决方案。 </p>
+<p>二叉排序树属性—右子树上的每个节点必须大于当前节点，并且左子树上的每个节点必须小于当前节点 - 是确定树是否是BST的关键。 贪婪算法—简单地遍历树，在每个节点检查节点是否包含大于左子节点的值并且小于右子节点上的值 - 对于所有情况不一定都起作用。 考虑以下树： </p> 
+<pre class="kx_code">     20岁
+    /  \
+  10    30岁
+       /  \
+      5    40岁
+</pre> 
+<p>在上面的树中，每个结点都满足这样的条件，即该结点包含的值大于其左孩子，小于其右孩子，但它不是BST:值5位于包含20的结点的右子树上，这不符了二叉排序树属性。 </p>
+<p>我们也需要从父结点流下来的信息，而不是仅仅基于结点及其子结点的值做出决策。在上面的树的例子中，如果我们能记住包含值20的结点，我们会看到值5的结点违反了二叉排序树属性条件。 </p>
+<p>因此，我们需要在每个结点检查的条件是: </p> 
+<ul>
+ <li>如果结点是其父结点的左子结点，则它必须小于(或等于)父结点，并且必须将值从其父结点传递到其右子树，以确保该子树中没有任何结点大于父结点</li> 
+ <li>如果结点是其父结点的右子结点，那么它必须大于父结点，并且必须将值从其父结点传递到其左子树，以确保该子树中没有任何结点小于父结点。</li>
+</ul> 
+<p>C++中的递归解决方案可以进一步解释这一点: </p> 
+<p></p><pre class="kx_code"><code class="c">struct TreeNode {
+    int key;
+    int value;
+    struct TreeNode *left;
+    struct TreeNode *right;
+};
+
+bool isBST(struct TreeNode *node, int minKey, int maxKey) {
+    if (node == NULL) return true;
+    if (node-&gt;key &lt; minKey || node-&gt;key &gt; maxKey) return false;
+    
+    return isBST(node-&gt;left, minKey, node-&gt;key-1) &amp;&amp; isBST(node-&gt;right, node-&gt;key+1, maxKey);
+}
+</code></pre><p></p> 
+<p><code>node-&gt;key+1</code> 和 <code>node-&gt;key-1</code> 只允许BST中不同的元素。 </p>
+<p>如果我们希望同样的元素也存在，那么我们只能在两个地方使用 <code>node-&gt;key</code>。 </p>
+<p>对该函数的初始调用可以是这样的: </p> 
+<p></p><pre class="kx_code"><code class="c">if (isBST(root, INT_MIN, INT_MAX)) {
+    puts("This is a BST.");
+} else {
+    puts("This is NOT a BST!");
+}
+</code></pre><p></p> 
+<p>本质上，我们一直在创建一个有效的范围(从[最小值开始，最大值开始)，并在递归下降时不断缩小每个结点的范围。 </p>
+<p>正如#Traversal部分所指出的，二叉搜索树的先序遍历返回已排序的结点。 因此，我们只需要在遍历树时保留上一个被访问结点，并检查其关键字与当前关键字相比是否更小（或更小/相等，如果树中允许重复）。 </p></div></div><div id="par_14996247446290699"><h2 class="title">3 应用示例<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><h3>3.1 <span>分类</span></h3> 
+<p>二叉排序树可以用来实现一个简单的 分类算法。类似于堆排序，我们将希望排序的所有值插入到新的有序数据结构中——在本例中是二叉排序树——然后按顺序遍历它。 </p>
+<p><code>build_binary_tree</code> 的最坏的情况是<span class="texhtml">O(<i>n</i><sup>2</sup>)</span>—如果您向它提供一个排序的值列表，它会将它们链到一个没有左子树链表。例如， <code>build_binary_tree([1, 2, 3, 4, 5])</code> 出产树 <code>(1 (2 (3 (4 (5)))))</code>。 </p>
+<p>有几种方案可以用简单的二叉树克服这个缺陷；最常见的是自平衡二叉排序树。如果使用这样的树完成相同的过程，则总体最坏情况时间是O（n log n），这对于比较排序是渐近最优的。 实际上，基于树的排序（特别是节点分配）在时间和空间上增加的开销会使其不如其他渐近最优的排序，例如静态列表排序的堆。 另一方面，它是增量排序的最有效方法之一，随着时间的推移将项添加到列表中，同时始终对列表进行排序。 </p> 
+<h3>3.2 <span>优先级队列操作</span></h3> 
+<p>二叉排序树可以用来实现优先级队列: 允许插入任意键以及查找和删除最小(或最大)键的结构。插入操作如前所述。 <i>查找最小值的方法是</i>沿着树走，尽可能地跟随左边的指针，但不要碰到叶子: </p> 
+<pre class="kx_code"><i>//前提条件:它不是叶子</i>
+<b>功能</b> find-min(T):
+    <b>正在…</b> 左侧(T):
+        t。左(右)
+    <b>返回</b> 键(T)
+</pre> 
+<p>找最大值也是类似的：尽可能沿着往右的指针。 删除最小值(最大值)可以简单地看作查找最小值(最大值)，然后将其删除。 这样，插入和删除都采用对数时间，就像它们在二分的堆中一样，但与二分制堆和大多数其他优先级队列实现不同，单个树可以同时支持所有查找最小值，查找最大值，删除最小值和删除最大值，使二叉搜索树适合作为双端优先级队列。<sup><a href="https://web.archive.org/web/20221025170302/https://baike.sogou.com/kexue/d11020.htm#quote_2" class="kx_ref">[2]</a></sup> </p></div></div><div id="par_14996247446290700"><h2 class="title">4 类型<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><p>有许多类型的二叉搜索树。 AVL树和红黑树都是 自平衡二叉排序树的形式。伸展树是一个二叉搜索树，可以自动移动更靠近根的频繁访问的元素。 在treap（树堆）中，每个节点还拥有（随机选择的）优先级，父节点的优先级高于其子节点。 探戈树是为快速搜索而优化的树。 T树是经过优化可以减少存储空间开销的二叉搜索树，广泛用于内存数据库。 </p>
+<p>退化树是一棵满足对于每个父节点，只有一个关联的子节点的树。 它是不平衡的，在最坏的情况下，性能会降低到链表的性能。 如果您的添加节点功能不能处理重新平衡，那么您可以通过向已经排序的数据提供退化树来轻松地构建退化树。 这意味着在性能测量中，树的行为基本上类似于链表数据结构。 </p> 
+<h3>4.1 <span>性能比较</span></h3> 
+<p>D.A. Heger (2004年)<sup><a href="https://web.archive.org/web/20221025170302/https://baike.sogou.com/kexue/d11020.htm#quote_3" class="kx_ref">[3]</a></sup> 介绍了二叉排序树的性能比较。 Treap 被发现具有最好的平均性能，而发现红黑树的性能变化最小。 </p> 
+<h3>4.2 <span>最佳二叉排序树</span></h3> 
+<p></p><p></p><div class="text_img ed_imgfloat_right">
+            <a class="ed_image_link lazyLoad" data-src="https://img01.sogoucdn.com/app/a/200698/sogou_science_3137" data-bigsrc="" title="点击查看大图" href="javascript:" data-observer="true"></a>
+            <div class="text_img_title">树旋转是二叉树中非常常见的内部操作，以保持树中完美或接近完美的内部平衡。</div>   
+        </div> <p></p><p></p> 
+<p>如果我们不打算修改搜索树，并且我们确切地知道每个项目被访问的频率，我们可以构造<sup><a href="https://web.archive.org/web/20221025170302/https://baike.sogou.com/kexue/d11020.htm#quote_4" class="kx_ref">[4]</a></sup> 一 <i>最佳二叉排序树</i>，首先它是一棵搜索树，其查找项目的平均成本(即 <i>预期搜索成本</i>)最小。 </p>
+<p>即使我们只对搜索成本进行估算，这样的系统也可以大大加快查找速度。例如，如果您在拼写检查程序中使用了英语单词的BST，则可以根据文本语料库中的单词频率平衡树，将单词(如the)放置在词根附近，并将单词（如agerasia）放在叶子附近。可以将这样的树与霍夫曼树进行比较，霍夫曼树类似地寻求在根部附近放置经常使用的项以便产生密集的信息编码;但是，霍夫曼树仅在叶子中存储数据元素，并且不需要对这些元素进行排序。 </p>
+<p>如果我们不知道预先访问树中元素的顺序，我们可以使用与我们可以为任何特定查找操作序列构造的任何静态搜索树渐近一样的伸展树。 </p>
+<p>字母树是具有额外约束顺序的霍夫曼树，或者等效地搜索具有所有元素存储在叶子中的修改的树。存在用于最佳字母二叉树（OABT）的更快算法。。 </p></div></div><div id="par_14996247446290701"><h2 class="title">5 笔记<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><ol> 
+ <li id="cite-ref-2"> The notion of an average BST is made precise as follows. Let a random BST be one built using only insertions out of a sequence of unique elements in random order (all permutations equally likely); then the expected height of the tree is <span class="texhtml">O(log <i>n</i>)</span>. If deletions are allowed as well as insertions, "little is known about the average height of a binary search tree".<sup><a href="https://web.archive.org/web/20221025170302/https://baike.sogou.com/kexue/d11020.htm#quote_1" class="kx_ref">[1]</a></sup> </li> 
+</ol></div></div></div></div><div id="references"><h2 class="title" id="par_references">参考文献</h2><ul class="references"><li id="quote_1"><span class="references-num">[1]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Cormen, Thomas H. （英语：Thomas H. Cormen）; Leiserson, Charles E. ; Rivest, Ronald L.; Stein, Clifford (2009) [1990]. Introduction to Algorithms (3rd ed.). MIT Press and McGraw-Hill. ISBN 0-262-03384-4.CS1 maint: Multiple names: authors list (link).</span></p></li><li id="quote_2"><span class="references-num">[2]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Mehlhorn, Kurt; Sanders, Peter (2008). Algorithms and Data Structures: The Basic Toolbox (PDF). Springer..</span></p></li><li id="quote_3"><span class="references-num">[3]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Heger, Dominique A. (2004), "A Disquisition on The Performance Behavior of Binary Search Tree Data Structures" (PDF), European Journal for the Informatics Professional, 5 (5): 67–75.</span></p></li><li id="quote_4"><span class="references-num">[4]</span><p><a class="ref-back-btn">^</a><span data-url="" class="">Gonnet, Gaston. "Optimal Binary Search Trees". Scientific Computation. ETH Zürich. Archived from the original on 12 October 2014. Retrieved 1 December 2013..</span></p></li></ul></div><div class="read-num">阅读 <!-- -->1.1<!-- -->w</div></div><div class="right-side" id="rightSide"><div class="side" id="lemma-side"><div class="side-title">版本记录</div><ul class="side-lst"><li><p class="side-lst-txt">暂无</p></li></ul><div class="user-card userCard"></div></div><div class="side"><div class="side-event"></div></div></div></div><div class="footer-box"><div id="footer"><div class="footer-logo-wrap"><div class="footer-logo"></div><div class="footer-logo-text">知识·传播·科普</div></div><div class="footer-info">本网站内容采用<a target="_blank" href="https://web.archive.org/web/20221025170302/https://creativecommons.org/licenses/by-sa/3.0/deed.zh?tdsourcetag=s_pctim_aiomsg">CC-BY-SA 3.0</a>授权</div><div class="footer-btn-wrap"><a target="_blank" href="https://web.archive.org/web/20221025170302/https://baike.sogou.com/help/#user_protocol">用户协议</a><a target="_blank" href="https://web.archive.org/web/20221025170302/http://www.sogou.com/docs/terms.htm?v=1">免责声明</a><a target="_blank" href="https://web.archive.org/web/20221025170302/http://corp.sogou.com/private.html">隐私政策</a><a target="_blank" href="https://web.archive.org/web/20221025170302/https://baike.sogou.com/kexue/intro.htm">关于我们</a></div></div></div><script>window.lemmaInfo ={"lemmaId":"11020","versionId":"14996247429513476","title":"二叉搜索树","subtitle":"","abstracts":{"paragraphId":"14996247429513484","title":"简介","versionId":"14996247429513477","lemmaId":11020,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":16230788,"name":"forscut","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1576234459,"comment":null,"dependVersionId":0,"contentType":2,"content":"<p></p> \n<p>在 计算机科学中, <b>二叉搜索树</b>(<b>BST</b>)，有时也被称为<b>二叉排序树</b>，是一种特殊类型的容器: 在内存中存储“项目”（例如数字，名称等）的数据结构。它们允许快速查找、添加和删除项目，并且可以用于实现动态项目集，或者允许通过其关键字查找项目的查找表(例如，通过名称查找人员的电话号码)。 </p>\n<p>二叉排序树有序保存它们的关键字，以便查找和其他操作可以使用 二分的原则:当在树中寻找关键字(或插入新关键字的位置)时，他们从根到叶遍历树，与存储在树结点中的关键字进行比较，并根据比较结果决定继续在左或右子树中搜索。平均而言，这意味着每次比较都允许操作跳过树的大约一半结点，因此每次查找、插入或删除都需要存储在树中的项目数的对数级别的时间复杂度。这比在(未排序的)数组中按关键字查找项目需要的线性时间复杂的好多了 ，但比哈希表上的相应操作要慢。 </p>\n<p>计算机科学出现了二叉排序树的几种变体；本文主要讨论基本类型，并在适当的时候引用更高级的类型。 </p>","pics":[{"originalUrl":"https://web.archive.org/web/20221025170302/https://img04.sogoucdn.com/app/a/200698/sogou_science_475?w=200&h=167&titlename=%E4%B8%80%E4%B8%AA%E5%A4%A7%E5%B0%8F%E4%B8%BA9%EF%BC%8C%E6%B7%B1%E5%BA%A6%E4%B8%BA3%E7%9A%84%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%EF%BC%8C8%E4%B8%BA%E6%A0%B9%E7%BB%93%E7%82%B9%E3%80%82%20%E5%8F%B6%E5%AD%90%E6%B2%A1%E6%9C%89%E7%BB%98%E5%88%B6%E3%80%82","url":"https://web.archive.org/web/20221025170302/https://img04.sogoucdn.com/app/a/200698/sogou_science_475","rw":200,"rh":167,"title":"一个大小为9，深度为3的二叉搜索树，8为根结点。 叶子没有绘制。","alt":null,"width":0,"height":0}],"card":null,"references":[],"versionCount":0},"card":{"paragraphId":"14996247429513485","title":"基本信息","versionId":"14996247429513478","lemmaId":0,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":16230788,"name":"forscut","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1576234459,"comment":null,"dependVersionId":0,"contentType":3,"content":"","pics":null,"card":{"cardItems":[{"key":"类型","value":"tree"},{"key":"发明时间","value":"1960"},{"key":"发明者","value":"P.F. Windley, A.D. Booth, A.J.T. Colin, and T.N. Hibbard"}]},"references":[],"versionCount":0},"categories":[{"id":1,"name":"计算机","parents":[]}],"creator":{"uid":16230788,"name":"forscut","pic":"https://web.archive.org/web/20221025170302/https://cache.soso.com/qlogo/g?b=oidb&k=KOIYC1kIOZX4BPRtdrhcZQ&s=100&t=1597157712","introduction":"正道的光","educations":[{"schoolName":"暨南大学","major":"","degree":"硕士","universityId":86,"universityLogo":"https://web.archive.org/web/20221025170302/https://img01.sogoucdn.com/app/a/200943/ce419c6e-6012-11e9-b4a8-fc4dd4f70029","majorLevel1":"工学","majorLevel2":"计算机科学与技术","majorLevel3":"计算机应用技术","majorLevel1Id":353,"majorLevel2Id":578,"majorLevel3Id":604,"state":"在读","lab":"220","researchField":"后端开发 机器学习"}],"jobs":null,"works":null,"educationBrief":"暨南大学","jobBrief":"","role":0,"roleName":null,"title":"暨南大学 · 计算机科学与技术硕士","professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":150,"partnerIdCreateTime":1595844882,"partnerIdPoped":true},"createTime":1571038426,"editor":{"uid":16230788,"name":"forscut","pic":"https://web.archive.org/web/20221025170302/https://cache.soso.com/qlogo/g?b=oidb&k=KOIYC1kIOZX4BPRtdrhcZQ&s=100&t=1597157712","introduction":"正道的光","educations":[{"schoolName":"暨南大学","major":"","degree":"硕士","universityId":86,"universityLogo":"https://web.archive.org/web/20221025170302/https://img01.sogoucdn.com/app/a/200943/ce419c6e-6012-11e9-b4a8-fc4dd4f70029","majorLevel1":"工学","majorLevel2":"计算机科学与技术","majorLevel3":"计算机应用技术","majorLevel1Id":353,"majorLevel2Id":578,"majorLevel3Id":604,"state":"在读","lab":"220","researchField":"后端开发 机器学习"}],"jobs":null,"works":null,"educationBrief":"暨南大学","jobBrief":"","role":0,"roleName":null,"title":"暨南大学 · 计算机科学与技术硕士","professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":150,"partnerIdCreateTime":1595844882,"partnerIdPoped":true},"editTime":1576234459,"state":1,"versionCount":1,"upNum":3,"downNum":0,"pics":[{"originalUrl":"https://web.archive.org/web/20221025170302/https://img04.sogoucdn.com/app/a/200698/sogou_science_475?w=200&h=167&titlename=%E4%B8%80%E4%B8%AA%E5%A4%A7%E5%B0%8F%E4%B8%BA9%EF%BC%8C%E6%B7%B1%E5%BA%A6%E4%B8%BA3%E7%9A%84%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%EF%BC%8C8%E4%B8%BA%E6%A0%B9%E7%BB%93%E7%82%B9%E3%80%82%20%E5%8F%B6%E5%AD%90%E6%B2%A1%E6%9C%89%E7%BB%98%E5%88%B6%E3%80%82","url":"https://web.archive.org/web/20221025170302/https://img04.sogoucdn.com/app/a/200698/sogou_science_475","rw":200,"rh":167,"title":"一个大小为9，深度为3的二叉搜索树，8为根结点。 叶子没有绘制。","alt":null,"width":0,"height":0},{"originalUrl":"https://web.archive.org/web/20221025170302/https://img03.sogoucdn.com/app/a/200698/sogou_science_474?w=500&h=134&titlename=%E4%BB%8E%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%AD%E5%88%A0%E9%99%A4%E5%85%B7%E6%9C%89%E4%B8%A4%E4%B8%AA%E5%AD%90%E8%8A%82%E7%82%B9%E7%9A%84%E8%8A%82%E7%82%B9%E3%80%82%20%E9%A6%96%E5%85%88%EF%BC%8C%E8%AF%86%E5%88%AB%E5%8F%B3%E5%AD%90%E6%A0%91%E4%B8%AD%E6%9C%80%E5%B7%A6%E8%BE%B9%E7%9A%84%E8%8A%82%E7%82%B9%EF%BC%8C%E5%8D%B3%E5%85%88%E5%BA%8F%E5%90%8E%E7%BB%A7%E8%8A%82%E7%82%B9E.%20%E5%85%B6%E5%80%BC%E8%A2%AB%E5%A4%8D%E5%88%B6%E5%88%B0%E8%A6%81%E5%88%A0%E9%99%A4%E7%9A%84%E8%8A%82%E7%82%B9D.%20%E7%84%B6%E5%90%8E%E5%8F%AF%E4%BB%A5%E8%BD%BB%E6%9D%BE%E5%88%A0%E9%99%A4%E5%90%8E%E5%BA%8F%E7%BB%A7%E6%89%BF%E8%80%85%EF%BC%8C%E5%9B%A0%E4%B8%BA%E5%AE%83%E6%9C%80%E5%A4%9A%E5%8F%AA%E6%9C%89%E4%B8%80%E4%B8%AA%E5%AD%A9%E5%AD%90%E3%80%82%20%E7%9B%B8%E5%90%8C%E7%9A%84%E6%96%B9%E6%B3%95%E5%8F%AF%E4%BB%A5%E5%AF%B9%E7%A7%B0%E5%9C%B0%E7%94%A8%E4%B8%8E%E5%85%88%E5%BA%8F%E9%81%8D%E5%8E%86%E7%9A%84%E5%89%8D%E9%A9%B1C%E3%80%82","url":"https://web.archive.org/web/20221025170302/https://img03.sogoucdn.com/app/a/200698/sogou_science_474","rw":500,"rh":134,"title":"从二叉搜索树中删除具有两个子节点的节点。 首先，识别右子树中最左边的节点，即先序后继节点E. 其值被复制到要删除的节点D. 然后可以轻松删除后序继承者，因为它最多只有一个孩子。 相同的方法可以对称地用与先序遍历的前驱C。","alt":null,"width":0,"height":0},{"originalUrl":"https://web.archive.org/web/20221025170302/https://img01.sogoucdn.com/app/a/200698/sogou_science_3137?w=300&h=166&titlename=%E6%A0%91%E6%97%8B%E8%BD%AC%E6%98%AF%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E9%9D%9E%E5%B8%B8%E5%B8%B8%E8%A7%81%E7%9A%84%E5%86%85%E9%83%A8%E6%93%8D%E4%BD%9C%EF%BC%8C%E4%BB%A5%E4%BF%9D%E6%8C%81%E6%A0%91%E4%B8%AD%E5%AE%8C%E7%BE%8E%E6%88%96%E6%8E%A5%E8%BF%91%E5%AE%8C%E7%BE%8E%E7%9A%84%E5%86%85%E9%83%A8%E5%B9%B3%E8%A1%A1%E3%80%82","url":"https://web.archive.org/web/20221025170302/https://img01.sogoucdn.com/app/a/200698/sogou_science_3137","rw":300,"rh":166,"title":"树旋转是二叉树中非常常见的内部操作，以保持树中完美或接近完美的内部平衡。","alt":null,"width":0,"height":0}],"catalogs":[{"level":1,"title":"定义","paragraphId":"14996247429513486","subCatalogs":[{"level":2,"title":"顺序关系","paragraphId":"14996247429513486","subCatalogs":null}]},{"level":1,"title":"操作","paragraphId":"14996247446290698","subCatalogs":[{"level":2,"title":"搜索","paragraphId":"14996247446290698","subCatalogs":null},{"level":2,"title":"插入","paragraphId":"14996247446290698","subCatalogs":null},{"level":2,"title":"删除","paragraphId":"14996247446290698","subCatalogs":null},{"level":2,"title":"遍历","paragraphId":"14996247446290698","subCatalogs":null},{"level":2,"title":"确认","paragraphId":"14996247446290698","subCatalogs":null}]},{"level":1,"title":"应用示例","paragraphId":"14996247446290699","subCatalogs":[{"level":2,"title":"分类","paragraphId":"14996247446290699","subCatalogs":null},{"level":2,"title":"优先级队列操作","paragraphId":"14996247446290699","subCatalogs":null}]},{"level":1,"title":"类型","paragraphId":"14996247446290700","subCatalogs":[{"level":2,"title":"性能比较","paragraphId":"14996247446290700","subCatalogs":null},{"level":2,"title":"最佳二叉排序树","paragraphId":"14996247446290700","subCatalogs":null}]},{"level":1,"title":"笔记","paragraphId":"14996247446290701","subCatalogs":null},{"level":1,"title":"参考文献","paragraphId":"-1","subCatalogs":null}],"paragraphs":[{"paragraphId":"14996247429513486","title":"定义","versionId":"14996247429513479","lemmaId":11020,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":16230788,"name":"forscut","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1576234459,"comment":null,"dependVersionId":0,"contentType":1,"content":"<p>二叉排序树是带根结点的二叉树，其内部结点各自存储一个关键字(以及可选的相关值),并且各自具有两个可区分的子树，通常表示为左和右。该树还拥有二分搜索的属性，该属性声明每个结点中的关键字必须大于或等于左子树中存储的任何关键字，并且小于或等于右子树中存储的任何关键字。<sup><a href=\"#quote_1\" class=\"kx_ref\">[1]</a></sup> 树的叶子(最终结点)不包含关键字，也没有结构来区分它们。 </p>\n<p>通常，每个结点代表的信息是一条记录，而不是一个数据元素。 然而，出于排序的目的，结点是根据它们的关键字而不是它们相关记录的任何部分进行比较的。二叉排序树相对于其他数据结构的主要优势是在分类算法和 搜索算法比如有序遍历中非常有效；它们也很容易编码。 </p>\n<p>二叉搜索树是用于构造更抽象的数据结构（如集合，多集合和关联数组）的基础数据结构。. </p> \n<ul>\n <li>当在二叉排序树中插入或搜索元素时，必须将每个被访问结点的关键字与要插入或找到的元素的关键字进行比较。</li> \n <li>二叉排序树的形状完全取决于插入和删除的顺序，并且可能退化。</li> \n <li>在长时间随机插入和删除的混合序列之后，树的预期高度接近关键字数量的平方根 <span class=\"texhtml\">√<i>n</i></span>，它的增长速度比 <span class=\"texhtml\">log <i>n</i></span>快得多。</li> \n <li>已经有许多研究来防止树的退化，这种退化导致最坏情况下的时间复杂度 <span class=\"texhtml\">O(<i>n</i>)</span> (有关详细信息，请参见部分)。</li>\n</ul> \n<h3>顺序关系</h3> \n<p>顺序关系二元搜索需要一种顺序关系，通过该顺序关系，每个元素（项）可以与总先序状态下的其他元素进行比较。 在比较中有效发生的元素部分称为其关键字。 是否允许在树中允许重复，即具有相同关键字的不同元素，不依赖于顺序关系，而是仅依赖于应用程序。在二分搜索树的上下文中，通过三向比较子例程最灵活地实现总先序。 </p>","pics":null,"card":null,"references":[],"versionCount":0},{"paragraphId":"14996247446290698","title":"操作","versionId":"14996247429513480","lemmaId":11020,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":16230788,"name":"forscut","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1576234459,"comment":null,"dependVersionId":0,"contentType":1,"content":"<p>二叉排序树支持三种主要操作:插入元素、删除元素和查找(检查关键字是否存在)。 </p> \n<h3>搜索</h3> \n<p>可以对在二叉排序树中搜索特定关键字进行递归或者迭代地编程。 </p>\n<p>我们从检查根结点开始。如果树是<i>空的</i>，树中不存在我们正在搜索的关键字。否则，如果关键字等于根关键字，搜索成功，我们返回结点。如果键小于根的关键字，我们搜索左边的子树。类似地，如果关键字大于根的关键字，我们搜索右边的子树。重复这个过程，直到找到关键字或剩余的子树为<i>空</i>。如果在到达<i>空</i> 子树之后，未找到该关键字，则关键字不在树中。这很容易表达为递归算法(在python中实现): </p> \n<p></p><pre class=\"kx_code\"><code class=\"c\">1 def search_recursively(key, node):\n2     if node is None or node.key == key:\n3         return node\n4     if key &lt; node.key:\n5         return search_recursively(key, node.left)\n6     # key &gt; node.key\n7     return search_recursively(key, node.right)\n</code></pre><p></p> \n<p>相同的算法可以迭代实现: </p> \n<p></p><pre class=\"kx_code\"><code class=\"c\"> 1 def search_iteratively(key, node): \n 2     current_node = node\n 3     while current_node is not None:\n 4         if key == current_node.key:\n 5             return current_node\n 6         if key &lt; current_node.key:\n 7             current_node = current_node.left\n 8         else: # key &gt; current_node.key:\n 9             current_node = current_node.right\n10     return current_node\n</code></pre><p></p> \n<p>这两个例子依赖于顺序关系是一个总先序。 </p>\n<p>如果顺序关系只是一个总先序，功能的合理扩展如下: 同样在向用户指定的方向向下搜索叶子的情况下。 配备有这种比较功能的二叉树排序变得稳定。 </p>\n<p>因为在最坏的情况下，该算法必须从树根搜索到离树根最远的叶子，所以搜索操作需要的时间与树的高度成正比(参见树术语)。平均而言，二叉排序树具有 <span class=\"texhtml\"><i>n</i></span> 结点具有 <span class=\"texhtml\">O(log <i>n</i>)</span> 高度。<sup class=\"reference\"></sup> 然而，在最坏的情况下，不平衡的树类似链表(退化树)，二叉排序树可能有 <span class=\"texhtml\">O(<i>n</i>)</span> 高度。 </p> \n<h3>插入</h3> \n<p>插入从搜索开始时开始；如果关键字不等于根的关键字，我们像以前一样搜索左或右子树。最终，我们将到达一个外部结点，根据结点的关键字，将新的键值对(这里编码为记录“新结点”)添加为它的右子结点或左子结点。换句话说，我们检查根，如果它的键小于根的键，我们递归地将新结点插入左子树，如果它的键大于或等于根，我们递归地插入右子树。 </p>\n<p>以下是如何在C ++中的二叉树中执行典型的二叉搜索树插入： </p> \n<p></p><pre class=\"kx_code\"><code class=\"c\">void insert(Node*&amp; root, int key, int value) {\n  if (!root) \n    root = new Node(key, value);\n  else if (key == root-&gt;key)\n    root-&gt;value = value;\n  else if (key &lt; root-&gt;key)\n    insert(root-&gt;left, key, value);\n  else  // key &gt; root-&gt;key\n    insert(root-&gt;right, key, value);\n}\n</code></pre><p></p> \n<p>或者，可以像这样实现非递归版本。 使用指向指针的指针来跟踪我们来自哪里让代码避免显式检查和处理需要在树根处插入结点的情况[2]： </p> \n<p></p><pre class=\"kx_code\"><code class=\"c\">void insert(Node** root, int key, int value) {\n  Node **walk = root;\n  while (*walk) { \n    int curkey = (*walk)-&gt;key;\n    if (curkey == key) {\n      (*walk)-&gt;value = value;\n      return;\n    }\n    if (key &gt; curkey) \n      walk = &amp;(*walk)-&gt;right;\n    else \n      walk = &amp;(*walk)-&gt;left;\n  }\n  *walk = new Node(key, value);\n}\n</code></pre><p></p> \n<p>上述破坏性程序变体修改了树。 它仅使用常量堆空间（并且迭代版本也使用常量堆栈空间），但树的先前版本将丢失。 或者，如下面的Python示例所示，我们可以重建插入结点的所有祖先; 对原始树根的任何引用仍然有效，使树成为永久的数据结构： </p> \n<p></p><pre class=\"kx_code\"><code class=\"c\">def binary_tree_insert(node, key, value):\n   if node is None:\n       return NodeTree(None, key, value, None)\n   if key == node.key:\n       return NodeTree(node.left, key, value, node.right)\n   if key &lt; node.key:\n       return NodeTree(binary_tree_insert(node.left, key, value), node.key, node.value, node.right)\n   return NodeTree(node.left, node.key, node.value, binary_tree_insert(node.right, key, value))\n</code></pre><p></p> \n<p>重建的部分在平均情况下使用<span class=\"texhtml\">O(log <i>n</i>)</span>空间，在最坏的情况下使用 <span class=\"texhtml\">O(<i>n</i>)</span>。在任一版本中，此操作需要与最坏情况下树的高度成比例的时间，即在所有树的平均情况下为<span class=\"texhtml\">O(log <i>n</i>)</span>时间，但在最坏情况下为<span class=\"texhtml\">O(<i>n</i>)</span>时间。解释插入的另一种方法是，为了在树中插入新结点，首先将其键与根的键进行比较。如果其键小于根，则将其与根的左子树的键进行比较。如果它的键更大，则将它与根结点的右子树进行比较。此过程继续，直到将新结点与叶结点进行比较，然后将其添加为此结点的右子结点或左子结点，具体取决于其键：如果键小于叶子的键，则将其作为叶子插入左孩子，否则作为叶子的右孩子。 </p>\n<p>还有其他方法可以将结点插入到二叉树中，但这是在叶子处插入结点并同时保留BST结构的唯一方法。 </p> \n<h3>删除</h3> \n<p>从二叉搜索树中删除结点时，必须维护结点的有序序列。 有很多可能性来做到这一点。 然而，T.Hibbard在1962年提出的以下方法[3]保证了主题子树的高度至多改变了一个。 有三种可能的情况需要考虑：。 </p> \n<ul>\n <li>删除没有子结点的结点：只需从树中删除结点即可。</li> \n <li>删除带有一个子结点的结点:删除该结点并用其结结点替换它。</li> \n <li>删除具有两个子结点的结点：调用要删除的结点D.不要删除D.而是选择其先序遍历的前结点或其后序遍历的后继结点作为替换结点E（s图）。 将E的使用值复制到D. [注2]如果E没有孩子，只需从其前双亲结点G中删除E.如果E有一个孩子，比如说F，它是一个右孩子。 在E的双亲结点下用F替换E.</li>\n</ul> \n<p></p><p><img alt=\"\" class=\"fileimage kx_img ed_imgfloat_right\" img_height=\"134\" img_width=\"500\" titlename=\"从二叉搜索树中删除具有两个子节点的节点。 首先，识别右子树中最左边的节点，即先序后继节点E. 其值被复制到要删除的节点D. 然后可以轻松删除后序继承者，因为它最多只有一个孩子。 相同的方法可以对称地用与先序遍历的前驱C。\" data-src=\"https://img03.sogoucdn.com/app/a/200698/sogou_science_474\"> </p><p></p> \n<p>在所有情况下，当D恰好是根时，再次使替换结点为根结点。 </p>\n<p>从广义上讲，有孩子的结点更难删除。 与所有二叉树一样，结点的先序后继是其右子树的最左边的子结点，结点的先序前驱是左子树的最右边的子结点。 在其他情况下，该结点将只有一个或根本没有孩子。 根据上述两个简单案例中的一个删除它。 </p>\n<p>对于两子案例的每个实例一致地使用先序后继或先序前驱可能导致出现不平衡树，因此选择不同实现所需时间也不同。 </p>\n<p>运行时间分析：虽然此操作并不总是将树遍历到叶子，但这始终是可能的; 因此，在最坏的情况下，它需要与树的高度成比例的时间。 即使结点有两个子结点，它也不需要更多时间，因为它仍然遵循单个路径并且不会访问任何结点两次。 </p> \n<p></p><pre class=\"kx_code\"><code class=\"c\">def find_min(self):   # Gets minimum node in a subtree\n    current_node = self\n    while current_node.left_child:\n        current_node = current_node.left_child\n    return current_node\n\ndef replace_node_in_parent(self, new_value=None):\n    if self.parent:\n        if self == self.parent.left_child:\n            self.parent.left_child = new_value\n        else:\n            self.parent.right_child = new_value\n    if new_value:\n        new_value.parent = self.parent\n\ndef binary_tree_delete(self, key):\n    if key &lt; self.key:\n        self.left_child.binary_tree_delete(key)\n        return\n    if key &gt; self.key:\n        self.right_child.binary_tree_delete(key)\n        return\n    # delete the key here\n    if self.left_child and self.right_child: # if both children are present\n        successor = self.right_child.find_min()\n        self.key = successor.key\n        successor.binary_tree_delete(successor.key)\n    elif self.left_child:   # if the node has only a *left* child\n        self.replace_node_in_parent(self.left_child)\n    elif self.right_child:  # if the node has only a *right* child\n        self.replace_node_in_parent(self.right_child)\n    else:\n        self.replace_node_in_parent(None) # this node has no children\n</code></pre><p></p> \n<h3>遍历</h3> \n<p>一旦创建了二叉搜索树，就可以通过递归遍历根节点的左子树，访问节点本身，然后递归遍历节点的右子树，继续使用每个节点的模式来按顺序检索其元素。 这个树是递归访问的。 与所有二叉树一样，可以进行先序遍历或后序遍历，但两者都不可能对二叉搜索树有用。 二叉搜索树的先序遍历将始终产生节点项（数字，字符串或其他类似项）的有序列表。 </p>\n<p>下面给出了Python中先序遍历的代码。 它将调用树中每个节点的回调（程序员希望调用节点值的一些函数，例如打印到屏幕上）。 </p> \n<p></p><pre class=\"kx_code\"><code class=\"c\">def traverse_binary_tree(node, callback):\n    if node is None:\n        return\n    traverse_binary_tree(node.leftChild, callback)\n    callback(node.value)\n    traverse_binary_tree(node.rightChild, callback)\n</code></pre><p></p> \n<p>遍历需要O（n）时间，因为它必须访问每个节点。 该算法也是O（n），因此它是渐近最优的。 </p>\n<p>遍历也可以迭代实现。 对于某些应用，例如 更大的等效搜索，近似搜索，单步（迭代）遍历的操作可能非常有用。 当然，这是在没有回调构造的情况下实现的，并且平均花费O（1）和在最坏的情况下O（log n）的时间复杂度。 </p> \n<h3>确认</h3> \n<p>有时我们已经有了一棵二叉树，我们需要确定它是否是一个二叉排序树。这个问题有一个简单的递归解决方案。 </p>\n<p>二叉排序树属性—右子树上的每个节点必须大于当前节点，并且左子树上的每个节点必须小于当前节点 - 是确定树是否是BST的关键。 贪婪算法—简单地遍历树，在每个节点检查节点是否包含大于左子节点的值并且小于右子节点上的值 - 对于所有情况不一定都起作用。 考虑以下树： </p> \n<pre class=\"kx_code\">     20岁\n    /  \\\n  10    30岁\n       /  \\\n      5    40岁\n</pre> \n<p>在上面的树中，每个结点都满足这样的条件，即该结点包含的值大于其左孩子，小于其右孩子，但它不是BST:值5位于包含20的结点的右子树上，这不符了二叉排序树属性。 </p>\n<p>我们也需要从父结点流下来的信息，而不是仅仅基于结点及其子结点的值做出决策。在上面的树的例子中，如果我们能记住包含值20的结点，我们会看到值5的结点违反了二叉排序树属性条件。 </p>\n<p>因此，我们需要在每个结点检查的条件是: </p> \n<ul>\n <li>如果结点是其父结点的左子结点，则它必须小于(或等于)父结点，并且必须将值从其父结点传递到其右子树，以确保该子树中没有任何结点大于父结点</li> \n <li>如果结点是其父结点的右子结点，那么它必须大于父结点，并且必须将值从其父结点传递到其左子树，以确保该子树中没有任何结点小于父结点。</li>\n</ul> \n<p>C++中的递归解决方案可以进一步解释这一点: </p> \n<p></p><pre class=\"kx_code\"><code class=\"c\">struct TreeNode {\n    int key;\n    int value;\n    struct TreeNode *left;\n    struct TreeNode *right;\n};\n\nbool isBST(struct TreeNode *node, int minKey, int maxKey) {\n    if (node == NULL) return true;\n    if (node-&gt;key &lt; minKey || node-&gt;key &gt; maxKey) return false;\n    \n    return isBST(node-&gt;left, minKey, node-&gt;key-1) &amp;&amp; isBST(node-&gt;right, node-&gt;key+1, maxKey);\n}\n</code></pre><p></p> \n<p><code>node-&gt;key+1</code> 和 <code>node-&gt;key-1</code> 只允许BST中不同的元素。 </p>\n<p>如果我们希望同样的元素也存在，那么我们只能在两个地方使用 <code>node-&gt;key</code>。 </p>\n<p>对该函数的初始调用可以是这样的: </p> \n<p></p><pre class=\"kx_code\"><code class=\"c\">if (isBST(root, INT_MIN, INT_MAX)) {\n    puts(\"This is a BST.\");\n} else {\n    puts(\"This is NOT a BST!\");\n}\n</code></pre><p></p> \n<p>本质上，我们一直在创建一个有效的范围(从[最小值开始，最大值开始)，并在递归下降时不断缩小每个结点的范围。 </p>\n<p>正如#Traversal部分所指出的，二叉搜索树的先序遍历返回已排序的结点。 因此，我们只需要在遍历树时保留上一个被访问结点，并检查其关键字与当前关键字相比是否更小（或更小/相等，如果树中允许重复）。 </p>","pics":[{"originalUrl":"https://web.archive.org/web/20221025170302/https://img03.sogoucdn.com/app/a/200698/sogou_science_474?w=500&h=134&titlename=%E4%BB%8E%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%AD%E5%88%A0%E9%99%A4%E5%85%B7%E6%9C%89%E4%B8%A4%E4%B8%AA%E5%AD%90%E8%8A%82%E7%82%B9%E7%9A%84%E8%8A%82%E7%82%B9%E3%80%82%20%E9%A6%96%E5%85%88%EF%BC%8C%E8%AF%86%E5%88%AB%E5%8F%B3%E5%AD%90%E6%A0%91%E4%B8%AD%E6%9C%80%E5%B7%A6%E8%BE%B9%E7%9A%84%E8%8A%82%E7%82%B9%EF%BC%8C%E5%8D%B3%E5%85%88%E5%BA%8F%E5%90%8E%E7%BB%A7%E8%8A%82%E7%82%B9E.%20%E5%85%B6%E5%80%BC%E8%A2%AB%E5%A4%8D%E5%88%B6%E5%88%B0%E8%A6%81%E5%88%A0%E9%99%A4%E7%9A%84%E8%8A%82%E7%82%B9D.%20%E7%84%B6%E5%90%8E%E5%8F%AF%E4%BB%A5%E8%BD%BB%E6%9D%BE%E5%88%A0%E9%99%A4%E5%90%8E%E5%BA%8F%E7%BB%A7%E6%89%BF%E8%80%85%EF%BC%8C%E5%9B%A0%E4%B8%BA%E5%AE%83%E6%9C%80%E5%A4%9A%E5%8F%AA%E6%9C%89%E4%B8%80%E4%B8%AA%E5%AD%A9%E5%AD%90%E3%80%82%20%E7%9B%B8%E5%90%8C%E7%9A%84%E6%96%B9%E6%B3%95%E5%8F%AF%E4%BB%A5%E5%AF%B9%E7%A7%B0%E5%9C%B0%E7%94%A8%E4%B8%8E%E5%85%88%E5%BA%8F%E9%81%8D%E5%8E%86%E7%9A%84%E5%89%8D%E9%A9%B1C%E3%80%82","url":"https://web.archive.org/web/20221025170302/https://img03.sogoucdn.com/app/a/200698/sogou_science_474","rw":500,"rh":134,"title":"从二叉搜索树中删除具有两个子节点的节点。 首先，识别右子树中最左边的节点，即先序后继节点E. 其值被复制到要删除的节点D. 然后可以轻松删除后序继承者，因为它最多只有一个孩子。 相同的方法可以对称地用与先序遍历的前驱C。","alt":null,"width":0,"height":0}],"card":null,"references":[],"versionCount":0},{"paragraphId":"14996247446290699","title":"应用示例","versionId":"14996247429513481","lemmaId":11020,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":16230788,"name":"forscut","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1576234459,"comment":null,"dependVersionId":0,"contentType":1,"content":"<h3>分类</h3> \n<p>二叉排序树可以用来实现一个简单的 分类算法。类似于堆排序，我们将希望排序的所有值插入到新的有序数据结构中——在本例中是二叉排序树——然后按顺序遍历它。 </p>\n<p><code>build_binary_tree</code> 的最坏的情况是<span class=\"texhtml\">O(<i>n</i><sup>2</sup>)</span>—如果您向它提供一个排序的值列表，它会将它们链到一个没有左子树链表。例如， <code>build_binary_tree([1, 2, 3, 4, 5])</code> 出产树 <code>(1 (2 (3 (4 (5)))))</code>。 </p>\n<p>有几种方案可以用简单的二叉树克服这个缺陷；最常见的是自平衡二叉排序树。如果使用这样的树完成相同的过程，则总体最坏情况时间是O（n log n），这对于比较排序是渐近最优的。 实际上，基于树的排序（特别是节点分配）在时间和空间上增加的开销会使其不如其他渐近最优的排序，例如静态列表排序的堆。 另一方面，它是增量排序的最有效方法之一，随着时间的推移将项添加到列表中，同时始终对列表进行排序。 </p> \n<h3>优先级队列操作</h3> \n<p>二叉排序树可以用来实现优先级队列: 允许插入任意键以及查找和删除最小(或最大)键的结构。插入操作如前所述。 <i>查找最小值的方法是</i>沿着树走，尽可能地跟随左边的指针，但不要碰到叶子: </p> \n<pre class=\"kx_code\"><i>//前提条件:它不是叶子</i>\n<b>功能</b> find-min(T):\n    <b>正在…</b> 左侧(T):\n        t。左(右)\n    <b>返回</b> 键(T)\n</pre> \n<p>找最大值也是类似的：尽可能沿着往右的指针。 删除最小值(最大值)可以简单地看作查找最小值(最大值)，然后将其删除。 这样，插入和删除都采用对数时间，就像它们在二分的堆中一样，但与二分制堆和大多数其他优先级队列实现不同，单个树可以同时支持所有查找最小值，查找最大值，删除最小值和删除最大值，使二叉搜索树适合作为双端优先级队列。<sup><a href=\"#quote_2\" class=\"kx_ref\">[2]</a></sup> </p>","pics":null,"card":null,"references":[],"versionCount":0},{"paragraphId":"14996247446290700","title":"类型","versionId":"14996247429513482","lemmaId":11020,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":16230788,"name":"forscut","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1576234459,"comment":null,"dependVersionId":0,"contentType":1,"content":"<p>有许多类型的二叉搜索树。 AVL树和红黑树都是 自平衡二叉排序树的形式。伸展树是一个二叉搜索树，可以自动移动更靠近根的频繁访问的元素。 在treap（树堆）中，每个节点还拥有（随机选择的）优先级，父节点的优先级高于其子节点。 探戈树是为快速搜索而优化的树。 T树是经过优化可以减少存储空间开销的二叉搜索树，广泛用于内存数据库。 </p>\n<p>退化树是一棵满足对于每个父节点，只有一个关联的子节点的树。 它是不平衡的，在最坏的情况下，性能会降低到链表的性能。 如果您的添加节点功能不能处理重新平衡，那么您可以通过向已经排序的数据提供退化树来轻松地构建退化树。 这意味着在性能测量中，树的行为基本上类似于链表数据结构。 </p> \n<h3>性能比较</h3> \n<p>D.A. Heger (2004年)<sup><a href=\"#quote_3\" class=\"kx_ref\">[3]</a></sup> 介绍了二叉排序树的性能比较。 Treap 被发现具有最好的平均性能，而发现红黑树的性能变化最小。 </p> \n<h3>最佳二叉排序树</h3> \n<p></p><p><img alt=\"\" class=\"fileimage kx_img ed_imgfloat_right\" img_height=\"166\" img_width=\"300\" titlename=\"树旋转是二叉树中非常常见的内部操作，以保持树中完美或接近完美的内部平衡。\" data-src=\"https://img01.sogoucdn.com/app/a/200698/sogou_science_3137\"> </p><p></p> \n<p>如果我们不打算修改搜索树，并且我们确切地知道每个项目被访问的频率，我们可以构造<sup><a href=\"#quote_4\" class=\"kx_ref\">[4]</a></sup> 一 <i>最佳二叉排序树</i>，首先它是一棵搜索树，其查找项目的平均成本(即 <i>预期搜索成本</i>)最小。 </p>\n<p>即使我们只对搜索成本进行估算，这样的系统也可以大大加快查找速度。例如，如果您在拼写检查程序中使用了英语单词的BST，则可以根据文本语料库中的单词频率平衡树，将单词(如the)放置在词根附近，并将单词（如agerasia）放在叶子附近。可以将这样的树与霍夫曼树进行比较，霍夫曼树类似地寻求在根部附近放置经常使用的项以便产生密集的信息编码;但是，霍夫曼树仅在叶子中存储数据元素，并且不需要对这些元素进行排序。 </p>\n<p>如果我们不知道预先访问树中元素的顺序，我们可以使用与我们可以为任何特定查找操作序列构造的任何静态搜索树渐近一样的伸展树。 </p>\n<p>字母树是具有额外约束顺序的霍夫曼树，或者等效地搜索具有所有元素存储在叶子中的修改的树。存在用于最佳字母二叉树（OABT）的更快算法。。 </p>","pics":[{"originalUrl":"https://web.archive.org/web/20221025170302/https://img01.sogoucdn.com/app/a/200698/sogou_science_3137?w=300&h=166&titlename=%E6%A0%91%E6%97%8B%E8%BD%AC%E6%98%AF%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E9%9D%9E%E5%B8%B8%E5%B8%B8%E8%A7%81%E7%9A%84%E5%86%85%E9%83%A8%E6%93%8D%E4%BD%9C%EF%BC%8C%E4%BB%A5%E4%BF%9D%E6%8C%81%E6%A0%91%E4%B8%AD%E5%AE%8C%E7%BE%8E%E6%88%96%E6%8E%A5%E8%BF%91%E5%AE%8C%E7%BE%8E%E7%9A%84%E5%86%85%E9%83%A8%E5%B9%B3%E8%A1%A1%E3%80%82","url":"https://web.archive.org/web/20221025170302/https://img01.sogoucdn.com/app/a/200698/sogou_science_3137","rw":300,"rh":166,"title":"树旋转是二叉树中非常常见的内部操作，以保持树中完美或接近完美的内部平衡。","alt":null,"width":0,"height":0}],"card":null,"references":[],"versionCount":0},{"paragraphId":"14996247446290701","title":"笔记","versionId":"14996247429513483","lemmaId":11020,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":16230788,"name":"forscut","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1576234459,"comment":null,"dependVersionId":0,"contentType":1,"content":"<ol> \n <li id=\"cite-ref-2\"> The notion of an average BST is made precise as follows. Let a random BST be one built using only insertions out of a sequence of unique elements in random order (all permutations equally likely); then the expected height of the tree is <span class=\"texhtml\">O(log <i>n</i>)</span>. If deletions are allowed as well as insertions, &#34;little is known about the average height of a binary search tree&#34;.<sup><a href=\"#quote_1\" class=\"kx_ref\">[1]</a></sup> </li> \n</ol>","pics":null,"card":null,"references":[],"versionCount":0}],"references":[{"id":1,"type":"book","title":"Cormen, Thomas H. （英语：Thomas H. Cormen）; Leiserson, Charles E. ; Rivest, Ronald L.; Stein, Clifford (2009) [1990]. Introduction to Algorithms (3rd ed.). MIT Press and McGraw-Hill. ISBN 0-262-03384-4.CS1 maint: Multiple names: authors list (link)","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":2,"type":"book","title":"Mehlhorn, Kurt; Sanders, Peter (2008). Algorithms and Data Structures: The Basic Toolbox (PDF). Springer.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":3,"type":"book","title":"Heger, Dominique A. (2004), \"A Disquisition on The Performance Behavior of Binary Search Tree Data Structures\" (PDF), European Journal for the Informatics Professional, 5 (5): 67–75","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false},{"id":4,"type":"book","title":"Gonnet, Gaston. \"Optimal Binary Search Trees\". Scientific Computation. ETH Zürich. Archived from the original on 12 October 2014. Retrieved 1 December 2013.","site":"","url":"","journalName":null,"author":"","press":"","publishYear":"","publishTime":null,"publishPlace":"","page":"","volume":"","quoteTime":null,"quoted":false}],"recommendReferences":null,"auditState":2,"lemmaLevel":1,"origin":0,"originEnTitle":null,"originZhTitle":null,"pv":11152,"auditType":0,"synonyms":["二元搜寻树","二叉查找树","排序二叉树","Binary Sort Tree","二叉树搜索树"],"showEditTime":"2019.12.13 18:54","auditors":[{"uid":0,"name":"Ki.κe","pic":"https://web.archive.org/web/20221025170302/https://wx.qlogo.cn/mmopen/vi_32/y67kfr32Doib4wg71Jiau7jVWvharic3nRKgdRRQSl6koeQJCo0GQs2Krw0vwdFRsOWnHIQOwAZsSg5lIkIrFCOcQ/132","introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":"","jobBrief":"","role":0,"roleName":null,"title":"","professionalTitle":null,"phoneNo":null,"editable":true,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false}],"hasZhishiNav":false,"auditInfos":{},"isHistory":false};</script><script crossorigin="anonymous" src="./1020.二叉搜索树 - 搜狗科学百科_files/aegis.min.js.download"></script><script crossorigin="anonymous" src="./1020.二叉搜索树 - 搜狗科学百科_files/main_2020092401.js.download"></script><script crossorigin="anonymous" src="./1020.二叉搜索树 - 搜狗科学百科_files/react.production.min.js.download"></script><script crossorigin="anonymous" src="./1020.二叉搜索树 - 搜狗科学百科_files/react-dom.production.min.js.download"></script><script crossorigin="anonymous" src="./1020.二叉搜索树 - 搜狗科学百科_files/jquery-1.11.1.min.js.download"></script><script crossorigin="anonymous" src="./1020.二叉搜索树 - 搜狗科学百科_files/main_2022062701.js.download"></script><script crossorigin="anonymous" src="./1020.二叉搜索树 - 搜狗科学百科_files/main_66bbe21.js.download"></script><script crossorigin="anonymous" src="./1020.二叉搜索树 - 搜狗科学百科_files/react.production.min.js.download"></script><script crossorigin="anonymous" src="./1020.二叉搜索树 - 搜狗科学百科_files/react-dom.production.min.js.download"></script><script crossorigin="anonymous" src="./1020.二叉搜索树 - 搜狗科学百科_files/main_edf0f08.js.download"></script><div id="popControl"><div class="pop-control-mask" style="display: none;"><div class="pop-container"><i class="close-icon"></i><div class="stop-title">搜狗科学百科停止服务运营公告</div><div class="stop-user">亲爱的用户：</div><div class="stop-content">因业务方向调整，搜狗科学百科将于2022年11月11日正式停止服务与运营。届时产品内所有数据将依据相关法律进行删除并关闭服务器，您将无法登录及使用搜狗科学百科，相关内容在平台下线后将无法找回。</div><div class="stop-content">搜狗科学百科是由搜狗推出的科学领域专业百科产品，与搜狗百科为两个独立产品，本次停止服务与运营仅对搜狗科学百科，并不影响搜狗百科产品正常使用，敬请知悉。</div><div class="stop-content">由此给您带来的不便我们深表歉意，敬请谅解。再次感谢您一直以来的陪伴与支持！</div><div class="stop-team">搜狗科学百科产品&amp;运营团队</div><div class="stop-time">2022年10月11日</div></div></div></div>
+</body></html>

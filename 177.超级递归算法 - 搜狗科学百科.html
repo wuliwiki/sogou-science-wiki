@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)https://web.archive.org/web/20221028225825/https://baike.sogou.com/kexue/d10177.htm -->
+<html class="" data-reactroot=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./177.超级递归算法 - 搜狗科学百科_files/analytics.js.download" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app218.us.archive.org';v.server_ms=286;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="./177.超级递归算法 - 搜狗科学百科_files/bundle-playback.js.download" charset="utf-8"></script>
+<script type="text/javascript" src="./177.超级递归算法 - 搜狗科学百科_files/wombat.js.download" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://baike.sogou.com/kexue/d10177.htm","20221028225825","https://web.archive.org/","web","/_static/",
+	      "1666997905");
+</script>
+<link rel="stylesheet" type="text/css" href="./177.超级递归算法 - 搜狗科学百科_files/banner-styles.css">
+<link rel="stylesheet" type="text/css" href="./177.超级递归算法 - 搜狗科学百科_files/iconochive.css">
+<!-- End Wayback Rewrite JS Include -->
+<meta name="save" content="history"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="baidu-site-verification" content="VWGb6TyYx8"><meta content="超级递归算法 - 搜狗科学百科" name="keywords"><meta content="搜狗科学百科是一部有着平等、协作、分享、自由理念的网络科学全书，为每一个互联网用户创造一个涵盖所有领域知识、服务的中文知识性平台。" name="description"><meta http-equiv="x-dns-prefetch-control" content="on"><meta name="server" baike="235" ip="210" env="online"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028225825/https://cache.soso.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028225825/https://hhy.sogoucdn.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028225825/https://pic.baike.soso.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028225825/https://ugc.qpic.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028225825/https://xui.ptlogin2.qq.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028225825/https://q1.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028225825/https://q2.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028225825/https://q3.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028225825/https://q4.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028225825/https://q.qlogo.cn/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028225825/https://img01.sogoucdn.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028225825/https://img02.sogoucdn.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028225825/https://img03.sogoucdn.com/"><link rel="dns-prefetch" href="https://web.archive.org/web/20221028225825/https://img04.sogoucdn.com/"><link rel="Shortcut Icon" href="https://web.archive.org/web/20221028225825im_/https://www.sogou.com/images/logo/new/favicon.ico?v=4"><link rel="Bookmark" href="https://www.sogou.com/images/logo/new/favicon.ico?v=4"><link href="./177.超级递归算法 - 搜狗科学百科_files/base_b849887.css" rel="stylesheet"><link href="./177.超级递归算法 - 搜狗科学百科_files/detail_378aed5.css" rel="stylesheet"><link href="./177.超级递归算法 - 搜狗科学百科_files/inviteAudit_7894507.css" rel="stylesheet"><link rel="stylesheet" href="./177.超级递归算法 - 搜狗科学百科_files/highlight.min.css"><title>超级递归算法 - 搜狗科学百科</title><style>.onekey-close {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	width: 24px;
+	height: 24px;
+	background: url(//web.archive.org/web/20221028205211/https://hhy.sogoucdn.com/js/common/hhy/sprite_wap_baike_37443f3.png) no-repeat;
+	text-indent: -999em;
+	background-size: 84px;
+	background-position: -63px 0;
+}
+
+.onekey-login {
+	position: absolute;
+	top: 16.4%;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+
+/* .onekey-login-img {
+    width: 75px;
+    height: 75px;
+    background: url("https://web.archive.org/web/20221028225825/https://baike.sogou.com/kexue/images/sprite_wap_baike.png") no-repeat;
+    background-size: 100px 91px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+} */
+
+.onekey-login-title {
+	text-align: center;
+	padding-bottom: 3px;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 30px;
+	color: #000;
+}
+
+.onekey-login-txt {
+	text-align: center;
+	font-family: PingFangSC;
+	font-size: 14px;
+	line-height: 20px;
+	color: #8f8f8f;
+}
+
+.onekey-login-qq,
+.onekey-login-wx,
+.onekey-login-phone {
+	display: block;
+	width: 245px;
+	height: 54px;
+	border-radius: 45px;
+	text-align: center;
+
+	margin: 0 auto;
+	font-size: 17px;
+	line-height: 24px;
+	color: #000;
+	/* padding: 16px 77px; */
+	border-radius: 12px;
+	border: solid 1px #e0e0e0;
+}
+.onekey-qq-content,
+.onekey-vx-content,
+.onekey-phone-content {
+	display: inline-block;
+	margin-top: 16px;
+}
+.onekey-qq-content {
+	padding: 0 5px;
+}
+
+.onekey-login-qq {
+	margin-top: 48px;
+	margin-bottom: 24px;
+}
+
+.onekey-login-qq:before {
+	display: inline-block;
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: url(//web.archive.org/web/20221028205211/https://hhy.sogoucdn.com/js/common/hhy/sprite_wap_baike_37443f3.png) no-repeat;
+	background-size: 80px;
+	background-position: -20px 0;
+	vertical-align: top;
+	margin: 17px 8px 0 0;
+}
+
+.onekey-login-wx {
+	margin-bottom: 24px;
+}
+
+.onekey-login-wx:before {
+	display: inline-block;
+	content: "";
+	width: 21px;
+	height: 21px;
+	background: url(//web.archive.org/web/20221028205211/https://hhy.sogoucdn.com/js/common/hhy/sprite_wap_baike_37443f3.png) no-repeat;
+	background-size: 84px;
+	background-position: 0 0;
+	vertical-align: top;
+	margin: 17px 10px 0 0;
+}
+
+.onekey-login-phone {
+}
+
+.onekey-login-phone:before {
+	display: inline-block;
+	content: "";
+	width: 21px;
+	height: 21px;
+	background: url(//web.archive.org/web/20221028205211/https://hhy.sogoucdn.com/js/common/hhy/sprite_wap_baike_37443f3.png) no-repeat;
+	background-size: 84px;
+	background-position: -42px 0;
+	vertical-align: top;
+	margin: 17px 10px 0 0;
+}
+
+.onekey-fixed {
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	width: 100%;
+	height: 100%;
+}
+
+.onekey-fixed.forbid {
+	z-index: 100;
+	position: fixed;
+	top: auto;
+	bottom: 68px;
+	left: 9%;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	width: 82%;
+	height: 43px;
+	border-radius: 25px;
+	color: #ffffff;
+}
+.onekey-login-title.forbid {
+	text-align: center;
+	padding-bottom: 3px;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 30px;
+	color: white;
+}
+</style><style>#login_mask {
+  background: #000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  position: fixed;
+  /*fixed好像在哪个IE上有BUG，先用用*/
+  left: 0;
+  top: 0;
+  z-index: 999;
+  height: 100%;
+}
+
+#login_iframe_container {
+  position: fixed;
+  width: 550px;
+  height: 360px;
+  z-index: 1020;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 828px) {
+  #login_iframe_container {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+  }
+}
+
+#login_iframe_container.new-login {
+  width: 550px;
+  height: 360px;
+  background-image: url(//web.archive.org/web/20221028205211/https://hhy.sogoucdn.com/js/common/hhy/background_2a4a8a6.png);
+}
+
+#login_iframe_container.new-login.no-bg {
+  background: #fff;
+}
+
+#login_iframe_container.new-login .login-title {
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 0.19px;
+  color: #ffffff;
+  margin-top: 62px;
+}
+#login_iframe_container.new-login .forbid-title {
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 0.19px;
+  color: #333333;
+  margin-top: 150px;
+}
+
+#login_iframe_container.new-login.no-bg .login-title {
+  color: #333333;
+}
+
+#login_iframe_container.new-login .login-subtitle {
+  width: 100%;
+  height: 18px;
+  line-height: 18px;
+  font-size: 13px;
+  letter-spacing: 0.08px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 9px;
+  margin-bottom: 43px;
+}
+
+#login_iframe_container.new-login.no-bg .login-subtitle {
+  color: #999999;
+}
+
+#login_iframe_container.new-login .login-subtitle::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  background-color: #ffffff;
+  position: relative;
+  top: -4px;
+  left: -5px;
+}
+
+#login_iframe_container.new-login .login-subtitle::after {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  background-color: #ffffff;
+  position: relative;
+  top: -4px;
+  left: 5px;
+}
+
+#login_iframe_container.new-login.no-bg .login-subtitle::before {
+  background-color: #999999;
+}
+
+#login_iframe_container.new-login.no-bg .login-subtitle::after {
+  background-color: #999999;
+}
+
+#login_iframe_container.new-login .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 12px;
+  height: 12px;
+  background: url(//web.archive.org/web/20221028205211/https://hhy.sogoucdn.com/js/common/hhy/login-sprites_e3853e5.png) -59px -10px;
+  background-size: 81px 91px;
+  cursor: pointer;
+}
+
+#login_iframe_container.new-login .login-btn {
+  width: 220px;
+  height: 47px;
+  border-radius: 24px;
+  border: solid 1px #dddddd;
+  background-color: #ffffff;
+  margin: 0 auto;
+  margin-top: 28px;
+  position: relative;
+  display: block;
+}
+
+#login_iframe_container.new-login .login-btn .login-icon {
+  position: absolute;
+}
+
+#login_iframe_container.new-login .login-btn .login-text {
+  width: 61px;
+  height: 47px;
+  line-height: 47px;
+  vertical-align: middle;
+  font-size: 15px;
+  letter-spacing: 0.1px;
+  color: #666666;
+  position: absolute;
+  right: 62px;
+}
+
+#login_iframe_container.new-login .login-btn.qq-btn .login-icon {
+  width: 22px;
+  height: 27px;
+  top: 10px;
+  left: 67px;
+  background: url(//web.archive.org/web/20221028205211/https://hhy.sogoucdn.com/js/common/hhy/login-sprites_e3853e5.png) -10px -54px;
+  background-size: 81px 91px;
+}
+
+#login_iframe_container.new-login .login-btn.qq-btn .login-text {
+  right: 59px;
+}
+
+#login_iframe_container.new-login .login-btn.wechat-btn .login-icon {
+  width: 29px;
+  height: 24px;
+  top: 12px;
+  left: 62px;
+  background: url(//web.archive.org/web/20221028205211/https://hhy.sogoucdn.com/js/common/hhy/login-sprites_e3853e5.png) -10px -10px;
+  background-size: 81px 91px;
+}</style><style>/* -- container -- */
+.rodal,
+.rodal-mask {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.rodal {
+    position: fixed;
+}
+
+/* -- mask -- */
+.rodal-mask {
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+}
+
+/* -- dialog -- */
+.rodal-dialog {
+    position: absolute;
+    z-index: 101;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.rodal-center {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.rodal-bottom {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.rodal-top {
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}
+
+.rodal-left {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.rodal-right {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* -- close button -- */
+.rodal-close {
+    position: absolute;
+    cursor: pointer;
+    top: 16px;
+    right: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.rodal-close:before,
+.rodal-close:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: #999;
+    border-radius: 100%;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+}
+
+.rodal-close:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.rodal-close:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.rodal-close:hover:before,
+.rodal-close:hover:after {
+    background: #333;
+}
+
+/* -- fade -- */
+/* @-webkit-keyframes rodal-fade-enter {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes rodal-fade-enter {
+    from {
+        opacity: 0;
+    }
+}
+
+.rodal-fade-enter {
+    -webkit-animation: rodal-fade-enter both ease-in;
+    animation: rodal-fade-enter both ease-in;
+} */
+
+@-webkit-keyframes rodal-fade-leave {
+    to {
+        opacity: 0
+    }
+}
+
+@keyframes rodal-fade-leave {
+    to {
+        opacity: 0
+    }
+}
+
+.rodal-fade-leave {
+    -webkit-animation: rodal-fade-leave both ease-out;
+    animation: rodal-fade-leave both ease-out;
+}
+
+/* -- zoom -- */
+@-webkit-keyframes rodal-zoom-enter {
+    from {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-zoom-enter {
+    from {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-zoom-enter {
+    -webkit-animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-zoom-leave {
+    to {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-zoom-leave {
+    to {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-zoom-leave {
+    -webkit-animation: rodal-zoom-leave both;
+    animation: rodal-zoom-leave both;
+}
+
+/* -- slideDown -- */
+@-webkit-keyframes rodal-slideDown-enter {
+    from {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+@keyframes rodal-slideDown-enter {
+    from {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+.rodal-slideDown-enter {
+    -webkit-animation: rodal-slideDown-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideDown-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideDown-leave {
+    to {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+@keyframes rodal-slideDown-leave {
+    to {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+.rodal-slideDown-leave {
+    -webkit-animation: rodal-slideDown-leave both;
+    animation: rodal-slideDown-leave both;
+}
+
+/* -- slideLeft -- */
+@-webkit-keyframes rodal-slideLeft-enter {
+    from {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideLeft-enter {
+    from {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+.rodal-slideLeft-enter {
+    -webkit-animation: rodal-slideLeft-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideLeft-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideLeft-leave {
+    to {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideLeft-leave {
+    to {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+.rodal-slideLeft-leave {
+    -webkit-animation: rodal-slideLeft-leave both;
+    animation: rodal-slideLeft-leave both;
+}
+
+/* -- slideRight -- */
+@-webkit-keyframes rodal-slideRight-enter {
+    from {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideRight-enter {
+    from {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+.rodal-slideRight-enter {
+    -webkit-animation: rodal-slideRight-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideRight-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideRight-leave {
+    to {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideRight-leave {
+    to {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+.rodal-slideRight-leave {
+    -webkit-animation: rodal-slideRight-leave both;
+    animation: rodal-slideRight-leave both;
+}
+
+/* -- slideUp -- */
+@-webkit-keyframes rodal-slideUp-enter {
+    from {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+@keyframes rodal-slideUp-enter {
+    from {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+.rodal-slideUp-enter {
+    -webkit-animation: rodal-slideUp-enter both cubic-bezier(0.23, 1, 0.32, 1);
+    animation: rodal-slideUp-enter both cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@-webkit-keyframes rodal-slideUp-leave {
+    to {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+@keyframes rodal-slideUp-leave {
+    to {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+.rodal-slideUp-leave {
+    -webkit-animation: rodal-slideUp-leave both;
+    animation: rodal-slideUp-leave both;
+}
+
+/* -- flip -- */
+@-webkit-keyframes rodal-flip-enter {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+@keyframes rodal-flip-enter {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+.rodal-flip-enter {
+    -webkit-animation: rodal-flip-enter both ease-in;
+    animation: rodal-flip-enter both ease-in;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+}
+
+@-webkit-keyframes rodal-flip-leave {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+    }
+}
+
+@keyframes rodal-flip-leave {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+    }
+}
+
+.rodal-flip-leave {
+    -webkit-animation: rodal-flip-leave both;
+    animation: rodal-flip-leave both;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+}
+
+/* -- rotate -- */
+@-webkit-keyframes rodal-rotate-enter {
+    from {
+        -webkit-transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-rotate-enter {
+    from {
+        -webkit-transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-rotate-enter {
+    -webkit-animation: rodal-rotate-enter both;
+    animation: rodal-rotate-enter both;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+@-webkit-keyframes rodal-rotate-leave {
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-rotate-leave {
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-rotate-leave {
+    -webkit-animation: rodal-rotate-leave both;
+    animation: rodal-rotate-leave both;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+/* -- door -- */
+@-webkit-keyframes rodal-door-enter {
+    from {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+}
+
+@keyframes rodal-door-enter {
+    from {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+}
+
+.rodal-door-enter {
+    -webkit-animation: rodal-door-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-door-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-door-leave {
+    60% {
+        -webkit-transform: scale3d(.01, 1, 1);
+        transform: scale3d(.01, 1, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(0, 1, .1);
+        transform: scale3d(0, 1, .1);
+    }
+}
+
+@keyframes rodal-door-leave {
+    60% {
+        -webkit-transform: scale3d(.01, 1, 1);
+        transform: scale3d(.01, 1, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(0, 1, .1);
+        transform: scale3d(0, 1, .1);
+    }
+}
+
+.rodal-door-leave {
+    -webkit-animation: rodal-door-leave both;
+    animation: rodal-door-leave both;
+}</style><style>/* -- container -- */
+.rodal,
+.rodal-mask {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.rodal {
+    position: fixed;
+}
+
+/* -- mask -- */
+.rodal-mask {
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+}
+
+/* -- dialog -- */
+.rodal-dialog {
+    position: absolute;
+    z-index: 101;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.rodal-center {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.rodal-bottom {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.rodal-top {
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}
+
+.rodal-left {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.rodal-right {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* -- close button -- */
+.rodal-close {
+    position: absolute;
+    cursor: pointer;
+    top: 16px;
+    right: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.rodal-close:before,
+.rodal-close:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: #999;
+    border-radius: 100%;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+}
+
+.rodal-close:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.rodal-close:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.rodal-close:hover:before,
+.rodal-close:hover:after {
+    background: #333;
+}
+
+/* -- fade -- */
+/* @-webkit-keyframes rodal-fade-enter {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes rodal-fade-enter {
+    from {
+        opacity: 0;
+    }
+}
+
+.rodal-fade-enter {
+    -webkit-animation: rodal-fade-enter both ease-in;
+    animation: rodal-fade-enter both ease-in;
+} */
+
+@-webkit-keyframes rodal-fade-leave {
+    to {
+        opacity: 0
+    }
+}
+
+@keyframes rodal-fade-leave {
+    to {
+        opacity: 0
+    }
+}
+
+.rodal-fade-leave {
+    -webkit-animation: rodal-fade-leave both ease-out;
+    animation: rodal-fade-leave both ease-out;
+}
+
+/* -- zoom -- */
+@-webkit-keyframes rodal-zoom-enter {
+    from {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-zoom-enter {
+    from {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-zoom-enter {
+    -webkit-animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-zoom-leave {
+    to {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-zoom-leave {
+    to {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-zoom-leave {
+    -webkit-animation: rodal-zoom-leave both;
+    animation: rodal-zoom-leave both;
+}
+
+/* -- slideDown -- */
+@-webkit-keyframes rodal-slideDown-enter {
+    from {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+@keyframes rodal-slideDown-enter {
+    from {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+.rodal-slideDown-enter {
+    -webkit-animation: rodal-slideDown-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideDown-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideDown-leave {
+    to {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+@keyframes rodal-slideDown-leave {
+    to {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+.rodal-slideDown-leave {
+    -webkit-animation: rodal-slideDown-leave both;
+    animation: rodal-slideDown-leave both;
+}
+
+/* -- slideLeft -- */
+@-webkit-keyframes rodal-slideLeft-enter {
+    from {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideLeft-enter {
+    from {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+.rodal-slideLeft-enter {
+    -webkit-animation: rodal-slideLeft-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideLeft-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideLeft-leave {
+    to {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideLeft-leave {
+    to {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+.rodal-slideLeft-leave {
+    -webkit-animation: rodal-slideLeft-leave both;
+    animation: rodal-slideLeft-leave both;
+}
+
+/* -- slideRight -- */
+@-webkit-keyframes rodal-slideRight-enter {
+    from {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideRight-enter {
+    from {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+.rodal-slideRight-enter {
+    -webkit-animation: rodal-slideRight-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-slideRight-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-slideRight-leave {
+    to {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+@keyframes rodal-slideRight-leave {
+    to {
+        -webkit-transform: translate3d(150px, 0, 0);
+        transform: translate3d(150px, 0, 0);
+    }
+}
+
+.rodal-slideRight-leave {
+    -webkit-animation: rodal-slideRight-leave both;
+    animation: rodal-slideRight-leave both;
+}
+
+/* -- slideUp -- */
+@-webkit-keyframes rodal-slideUp-enter {
+    from {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+@keyframes rodal-slideUp-enter {
+    from {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+.rodal-slideUp-enter {
+    -webkit-animation: rodal-slideUp-enter both cubic-bezier(0.23, 1, 0.32, 1);
+    animation: rodal-slideUp-enter both cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@-webkit-keyframes rodal-slideUp-leave {
+    to {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+@keyframes rodal-slideUp-leave {
+    to {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+.rodal-slideUp-leave {
+    -webkit-animation: rodal-slideUp-leave both;
+    animation: rodal-slideUp-leave both;
+}
+
+/* -- flip -- */
+@-webkit-keyframes rodal-flip-enter {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+@keyframes rodal-flip-enter {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+.rodal-flip-enter {
+    -webkit-animation: rodal-flip-enter both ease-in;
+    animation: rodal-flip-enter both ease-in;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+}
+
+@-webkit-keyframes rodal-flip-leave {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+    }
+}
+
+@keyframes rodal-flip-leave {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+    }
+}
+
+.rodal-flip-leave {
+    -webkit-animation: rodal-flip-leave both;
+    animation: rodal-flip-leave both;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+}
+
+/* -- rotate -- */
+@-webkit-keyframes rodal-rotate-enter {
+    from {
+        -webkit-transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-rotate-enter {
+    from {
+        -webkit-transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-rotate-enter {
+    -webkit-animation: rodal-rotate-enter both;
+    animation: rodal-rotate-enter both;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+@-webkit-keyframes rodal-rotate-leave {
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes rodal-rotate-leave {
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+        transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+    }
+}
+
+.rodal-rotate-leave {
+    -webkit-animation: rodal-rotate-leave both;
+    animation: rodal-rotate-leave both;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+/* -- door -- */
+@-webkit-keyframes rodal-door-enter {
+    from {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+}
+
+@keyframes rodal-door-enter {
+    from {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+}
+
+.rodal-door-enter {
+    -webkit-animation: rodal-door-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-door-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes rodal-door-leave {
+    60% {
+        -webkit-transform: scale3d(.01, 1, 1);
+        transform: scale3d(.01, 1, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(0, 1, .1);
+        transform: scale3d(0, 1, .1);
+    }
+}
+
+@keyframes rodal-door-leave {
+    60% {
+        -webkit-transform: scale3d(.01, 1, 1);
+        transform: scale3d(.01, 1, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(0, 1, .1);
+        transform: scale3d(0, 1, .1);
+    }
+}
+
+.rodal-door-leave {
+    -webkit-animation: rodal-door-leave both;
+    animation: rodal-door-leave both;
+}</style></head><body class=""><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+</style>
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display: block; direction: ltr;">
+</div><div id="wm-ipp-print">The Wayback Machine - https://web.archive.org/web/20221028225825/https://baike.sogou.com/kexue/d10177.htm</div>
+<script type="text/javascript">//<![CDATA[
+__wm.bt(675,27,25,2,"web","https://baike.sogou.com/kexue/d10177.htm","20221028225825",1996,"/_static/",["/_static/css/banner-styles.css?v=S1zqJCYt","/_static/css/iconochive.css?v=qtvMKcIJ"], false);
+  __wm.rw(1);
+//]]></script>
+<!-- END WAYBACK TOOLBAR INSERT --><script>window._gtag=window._gtag||{};window._gtag.shouldGrayed = false;if ('272cbac7bcc04d5c91b5f8731ff6caee') window._gtag.traceId = '272cbac7bcc04d5c91b5f8731ff6caee';if ({"illegality":true}) window.userInfo = {"illegality":true};</script><div class="topnavbox"><ul class="topnav"><li><a href="https://web.archive.org/web/20221028225825/https://www.sogou.com/web?query=">网页</a></li><li><a href="https://web.archive.org/web/20221028225825/https://weixin.sogou.com/weixin?p=75351201">微信</a></li><li><a href="https://web.archive.org/web/20221028225825/https://zhihu.sogou.com/zhihu?p=75351218">知乎</a></li><li><a href="https://web.archive.org/web/20221028225825/https://pic.sogou.com/pics?query=">图片</a></li><li><a href="https://web.archive.org/web/20221028225825/https://v.sogou.com/v?query=">视频</a></li><li><a href="https://web.archive.org/web/20221028225825/https://mingyi.sogou.com/">医疗</a></li><li class="cur"><strong>科学</strong></li><li><a href="https://web.archive.org/web/20221028225825/https://hanyu.sogou.com/">汉语</a></li><li><a href="https://web.archive.org/web/20221028225825/https://wenwen.sogou.com/">问问</a></li><li><a href="https://web.archive.org/web/20221028225825/https://www.sogou.com/docs/more.htm">更多<span class="topraquo">»</span></a></li></ul></div><div id="header"><div class="header-wrap"><a class="header-logo" href="https://web.archive.org/web/20221028225825/https://baike.sogou.com/kexue"></a><div class="header-search"><div class="querybox" id="suggBox"><form><input id="searchInput" class="query" type="text" placeholder="搜科学领域专业百科词条" name="query" autocomplete="off" value=""><a href="javascript:;" class="query-search"></a></form></div></div><div class="header-rgt"><span class="btn-header-rgt btn-edit" id="editLemma">创建</span><div class="header-user no-login"></div></div></div></div><div class="fixed-placeholder" style="visibility:none"></div><div id="container" class=""><div class="content lemma-level1"><div class="detail-title" id="abstract-title"><h1>超级递归算法</h1><a href="https://web.archive.org/web/20221028225825/https://baike.sogou.com/kexue/d10177.htm#!" class="detail-edit">编辑</a></div><div class="section_content" data-id="14994953033744910"><div><p>在可计算性理论中，<b>超递归算法</b>是具有比图灵机更强大计算能力的普通算法的推广。这个术语由马克·布尔金（Mark Burgin）提出，他的著作《超递归算法》发展了该理论并提出了几个数学模型。图灵机和其他传统算法的数学模型允许研究人员找到递归算法及其计算的属性。类似地，超递归算法的数学模型，例如归纳图灵机，允许研究人员找到超递归算法及其计算的性质。 </p>
+<p>Burgin，以及包括Selim Akl、Eugene Eberbach、Peter Kugel、Jan van Leeuwen、hava siegelmann、Peter Wegner和jiříwiederman在内的其他研究超递归算法并为之做出贡献的研究人员，都认为超递归算法可以用于证伪丘奇-图灵论题，但这一观点在数学界受到了批评，并没有被广泛接受。 </p></div></div><div id="catalog"><h2 class="title2">目录<a href="javascript:" class="detail-edit">编辑</a></h2><div class="catalog_wrap" style=""><ul class="catalog_list col1"><li><span class="order">1</span><a href="javascript:" data-level="1" data-id="14994953033744911">定义</a></li><li><span class="order">2</span><a href="javascript:" data-level="1" data-id="14994953033744912">例子</a></li><li><span class="order">3</span><a href="javascript:" data-level="1" data-id="14994953033744913">归纳图灵机</a></li><li><span class="order">4</span><a href="javascript:" data-level="1" data-id="14994953033744914">施密休伯的广义图灵机</a></li><li><span class="order">5</span><a href="javascript:" data-level="1" data-id="14994953050522113">与丘奇-图灵论题的关系</a></li></ul></div></div><div id="paragraphs"><div><div id="par_14994953033744911"><h2 class="title">1 定义<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><p>布尔金(2005: 13)使用“<b>递归算法</b>”这个术语来表示可以在图灵机上实现的算法，并且在更一般意义上使用了“算法”这个词。那么“<b>超递归类算法</b>”就是“一类无法在图灵机上实现的函数计算算法”(布尔金2005: 107)。 </p>
+<p>超递归算法与超计算密切相关，其关系类似于普通计算和普通算法。计算是一个过程，而算法是对该过程的有限构造描述。因此，超递归算法定义了“递归算法无法实现的计算过程(包括输入和输出过程)”(布尔金2005: 108)。更严格的定义要求超计算解决超问题。 </p>
+<p>超递归算法也与<b>算法方案</b>相关，算法方案比超递归算法更通用。布尔金认为(2005: 115)有必要明确区分超递归算法和那些非算法的算法方案。在这种区别下，某些种类的超计算是通过超递归算法获得的，例如归纳图灵机，而其他类型的超计算是由算法模式引导的，例如无限时间图灵机。这解释了超递归算法与超计算的关系，反之亦然。基于该论点，超递归算法只是定义超计算过程的一种方式。 </p></div></div><div id="par_14994953033744912"><h2 class="title">2 例子<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><p>超递归算法的例子包括(布尔金2005: 132)： </p> 
+<ul>
+ <li>限制递归函数和限制部分递归函数(E.M. Gold 1965)</li> 
+ <li>试错判断(希拉里·普特南1965)</li> 
+ <li>归纳推理机(卡尔·史密斯)</li> 
+ <li>归纳图灵机，它执行类似图灵机的计算，并在有限的步骤后产生结果(马克·布尔金)</li> 
+ <li>极限图灵机，它执行类似图灵机的计算，但是它们的最终结果是它们中间结果的极限(马克·布尔金)</li> 
+ <li>试错机(Ja。Hintikka和A. Mutanen，1998年)</li> 
+ <li>通用图灵机</li> 
+ <li>互联网机(van Leeuwen，j .和Wiedermann，j .)</li> 
+ <li>进化计算机，使用DNA计算函数的值(达科·罗格利奇)</li> 
+ <li>模糊计算(jiríwiederman 2004)</li> 
+ <li>进化图灵机(尤金·埃伯巴赫2005)</li>
+</ul> 
+<p>算法方案的例子包括： </p> 
+<ul>
+ <li>带有任意预言的图灵机(艾伦·图灵)</li> 
+ <li>跨递归算子(博罗迪亚斯基和布尔金)</li> 
+ <li>用实数计算的机器(L. Blum，F. Cucker，M. Shub和S. Smale，1998)</li> 
+ <li>基于实数的神经网络(Hava Siegelmann 1999)</li>
+</ul></div></div><div id="par_14994953033744913"><h2 class="title">3 归纳图灵机<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><p><b>归纳图灵机</b>实现了一类重要的超递归算法。归纳图灵机是能完成特定任务的确定指令列表，当给定一个初始状态时，它将经过一系列明确定义的连续状态，最终给出最终结果。归纳图灵机和普通图灵机的区别在于，普通图灵机在获得结果时必须停止，而在某些情况下，归纳图灵机可以在获得结果后继续计算，而不会停止。克莱尼用“计算程序”或“算法”以描述永远运行的程序(克莱尼1952:137)。克莱尼还要求这样的算法最终必须展示“某个对象”(克莱尼1952:137)。布尔金认为归纳图灵机满足这一条件，因为它们的结果在有限的步骤后显示出来。归纳图灵机在最终输出产生时不能被指令停止的原因是，在某些情况下，归纳图灵机可能不知道在哪个步骤获得了结果。 </p>
+<p>简单归纳图灵机等价于其他计算模型，例如施密休伯的一般图灵机、希拉里·普特南的试错判断、戈尔德的限制部分递归函数、欣蒂卡和穆坦的试错机(1998)。更先进的归纳图灵机更强大。归纳图灵机的层次结构可以决定算术层次结构中任意集合的成员 (布尔金2005)。与其他等效计算模型相比，简单归纳图灵机和一般图灵机给出了完全基于物理机的计算自动机的直接构造。相比之下，试错判断、限制递归函数和限制部分递归函数仅表示符号的语法系统及其操作的形式规则。简单归纳图灵机和一般图灵机与限制部分递归函数和试错判断有关，正如图灵机与部分递归函数和演算有关。 </p>
+<p>归纳图灵机的非停止计算不应与无限时间计算混淆。首先，一些归纳图灵机的计算确实停止了。与传统图灵机的情况一样，一些停止的计算给出了结果，而另一些则没有。即使它不停止，归纳图灵机也会不时地产生输出。如果该输出停止变化，则被视为计算结果。 </p>
+<p>普通图灵机和简单归纳图灵机有两个主要区别。第一个区别是，即使是简单的归纳图灵机，相比传统图灵机具有更高的性能。第二个区别是，传统的图灵机将总是能确定(通过进入最终状态)何时获得结果，而简单的归纳图灵机在某些情况下(例如当“计算”普通图灵机不能计算的任务时)，将不能确定输出结果的时间。 </p></div></div><div id="par_14994953033744914"><h2 class="title">4 施密休伯的广义图灵机<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><p>如果一个通用图灵机上有一个有限的、可能不停机的程序递增地输出一个符号序列的每一个符号，那么这个符号序列是可计算的。这包括π的并矢展开，但仍然排除了大多数实数，因为大多数实数不能用有限程序来描述。传统带有只读输出带的图灵机，不能编辑它们以前的输出；根据Jürgen Schmidhuber，广义图灵机可以编辑它们的输出带和工作带。他将可构造描述的符号序列定义为在广义图灵机上运行有限的、非停止的程序的符号序列，使得任何输出符号最终收敛，即在某个有限的初始时间间隔之后不再改变。Schmidhuber (2000，2002)使用这种方法来定义一组形式上可描述或可构造计算的通用规则或万物构造理论。广义图灵机和简单归纳图灵机是最接近递归算法的两类超递归算法(Schmidhuber 2000)。 </p></div></div><div id="par_14994953050522113"><h2 class="title">5 与丘奇-图灵论题的关系<a href="javascript:" class="detail-edit">编辑</a></h2><div class="section_content"><p>递归理论中的丘奇-图灵论题依赖于术语“算法”的特定定义。基于比递归理论中常用的定义更一般的定义，布尔金认为超递归算法，例如归纳图灵机，否定了丘奇-图灵理论。他进一步证明了超递归算法理论上可以提供比使用量子算法更大的效率增益。 </p>
+<p>布尔金对超递归算法的解释在数学界遭到了反对。其中一位反对者是逻辑学家马丁·戴维斯，他认为布尔金的主张已经被很好地理解了“几十年”。戴维斯说， </p>
+<p>“目前的批评不是关于这些问题的数学讨论，而是关于当前和未来物理系统的误导性主张。”(戴维斯2006: 128) </p>
+<p>戴维斯反驳了布尔金的说法，即设定在算术等级的第二级可以称为可计算的，他说 </p>
+<p>“一般认为，要使计算结果有用，必须至少能够认识到它确实是所寻求的结果。”(戴维斯2006: 128) </p></div></div></div></div><div class="read-num">阅读 <!-- -->76</div></div><div class="right-side" id="rightSide"><div class="side" id="lemma-side"><div class="side-title">版本记录</div><ul class="side-lst"><li><p class="side-lst-txt">暂无</p></li></ul><div class="user-card userCard"></div></div><div class="side"><div class="side-event"></div></div></div></div><div class="footer-box"><div id="footer"><div class="footer-logo-wrap"><div class="footer-logo"></div><div class="footer-logo-text">知识·传播·科普</div></div><div class="footer-info">本网站内容采用<a target="_blank" href="https://web.archive.org/web/20221028225825/https://creativecommons.org/licenses/by-sa/3.0/deed.zh?tdsourcetag=s_pctim_aiomsg">CC-BY-SA 3.0</a>授权</div><div class="footer-btn-wrap"><a target="_blank" href="https://web.archive.org/web/20221028225825/https://baike.sogou.com/help/#user_protocol">用户协议</a><a target="_blank" href="https://web.archive.org/web/20221028225825/http://www.sogou.com/docs/terms.htm?v=1">免责声明</a><a target="_blank" href="https://web.archive.org/web/20221028225825/http://corp.sogou.com/private.html">隐私政策</a><a target="_blank" href="https://web.archive.org/web/20221028225825/https://baike.sogou.com/kexue/intro.htm">关于我们</a></div></div></div><script>window.lemmaInfo ={"lemmaId":"10177","versionId":"14994953016967683","title":"超级递归算法","subtitle":"","abstracts":{"paragraphId":"14994953033744910","title":"简介","versionId":"14994953016967684","lemmaId":10177,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":10145103,"name":"科学百科编辑组","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1576233687,"comment":null,"dependVersionId":0,"contentType":2,"content":"<p>在可计算性理论中，<b>超递归算法</b>是具有比图灵机更强大计算能力的普通算法的推广。这个术语由马克·布尔金（Mark Burgin）提出，他的著作《超递归算法》发展了该理论并提出了几个数学模型。图灵机和其他传统算法的数学模型允许研究人员找到递归算法及其计算的属性。类似地，超递归算法的数学模型，例如归纳图灵机，允许研究人员找到超递归算法及其计算的性质。 </p>\n<p>Burgin，以及包括Selim Akl、Eugene Eberbach、Peter Kugel、Jan van Leeuwen、hava siegelmann、Peter Wegner和jiříwiederman在内的其他研究超递归算法并为之做出贡献的研究人员，都认为超递归算法可以用于证伪丘奇-图灵论题，但这一观点在数学界受到了批评，并没有被广泛接受。 </p>","pics":null,"card":null,"references":[],"versionCount":0},"card":{"paragraphId":"0","title":null,"versionId":"0","lemmaId":0,"createType":0,"creator":null,"createTime":0,"versionEditor":null,"editTime":0,"comment":null,"dependVersionId":0,"contentType":0,"content":null,"pics":null,"card":null,"references":null,"versionCount":0},"categories":[{"id":1,"name":"计算机","parents":[]}],"creator":{"uid":10145103,"name":"柚子otto","pic":"https://web.archive.org/web/20221028225825/https://img02.sogoucdn.com/app/a/200698/1152_1152_1864088_20200427232849-1518843971.png","introduction":"","educations":[{"schoolName":"中国地质大学（北京）","major":"","degree":"本科","universityId":22,"universityLogo":"https://web.archive.org/web/20221028225825/https://img01.sogoucdn.com/app/a/200943/d3465c1c-6011-11e9-b353-fc4dd4f70029","majorLevel1":"理学","majorLevel2":"地理学","majorLevel3":"地图学与地理信息系统","majorLevel1Id":1,"majorLevel2Id":103,"majorLevel3Id":109,"state":"毕业","lab":"","researchField":""}],"jobs":[{"company":"搜狗","title":"产品经理"}],"works":null,"educationBrief":"中国地质大学（北京）","jobBrief":"产品经理","role":0,"roleName":null,"title":"中国地质大学（北京） · 地理学本科","professionalTitle":null,"phoneNo":null,"editable":true,"partnerId":139,"partnerIdCreateTime":1595844881,"partnerIdPoped":true},"createTime":1571038226,"editor":{"uid":10145103,"name":"柚子otto","pic":"https://web.archive.org/web/20221028225825/https://img02.sogoucdn.com/app/a/200698/1152_1152_1864088_20200427232849-1518843971.png","introduction":"","educations":[{"schoolName":"中国地质大学（北京）","major":"","degree":"本科","universityId":22,"universityLogo":"https://web.archive.org/web/20221028225825/https://img01.sogoucdn.com/app/a/200943/d3465c1c-6011-11e9-b353-fc4dd4f70029","majorLevel1":"理学","majorLevel2":"地理学","majorLevel3":"地图学与地理信息系统","majorLevel1Id":1,"majorLevel2Id":103,"majorLevel3Id":109,"state":"毕业","lab":"","researchField":""}],"jobs":[{"company":"搜狗","title":"产品经理"}],"works":null,"educationBrief":"中国地质大学（北京）","jobBrief":"产品经理","role":0,"roleName":null,"title":"中国地质大学（北京） · 地理学本科","professionalTitle":null,"phoneNo":null,"editable":true,"partnerId":139,"partnerIdCreateTime":1595844881,"partnerIdPoped":true},"editTime":1576233687,"state":1,"versionCount":1,"upNum":4,"downNum":0,"pics":[],"catalogs":[{"level":1,"title":"定义","paragraphId":"14994953033744911","subCatalogs":null},{"level":1,"title":"例子","paragraphId":"14994953033744912","subCatalogs":null},{"level":1,"title":"归纳图灵机","paragraphId":"14994953033744913","subCatalogs":null},{"level":1,"title":"施密休伯的广义图灵机","paragraphId":"14994953033744914","subCatalogs":null},{"level":1,"title":"与丘奇-图灵论题的关系","paragraphId":"14994953050522113","subCatalogs":null}],"paragraphs":[{"paragraphId":"14994953033744911","title":"定义","versionId":"14994953016967685","lemmaId":10177,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":10145103,"name":"科学百科编辑组","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1576233687,"comment":null,"dependVersionId":0,"contentType":1,"content":"<p>布尔金(2005: 13)使用“<b>递归算法</b>”这个术语来表示可以在图灵机上实现的算法，并且在更一般意义上使用了“算法”这个词。那么“<b>超递归类算法</b>”就是“一类无法在图灵机上实现的函数计算算法”(布尔金2005: 107)。 </p>\n<p>超递归算法与超计算密切相关，其关系类似于普通计算和普通算法。计算是一个过程，而算法是对该过程的有限构造描述。因此，超递归算法定义了“递归算法无法实现的计算过程(包括输入和输出过程)”(布尔金2005: 108)。更严格的定义要求超计算解决超问题。 </p>\n<p>超递归算法也与<b>算法方案</b>相关，算法方案比超递归算法更通用。布尔金认为(2005: 115)有必要明确区分超递归算法和那些非算法的算法方案。在这种区别下，某些种类的超计算是通过超递归算法获得的，例如归纳图灵机，而其他类型的超计算是由算法模式引导的，例如无限时间图灵机。这解释了超递归算法与超计算的关系，反之亦然。基于该论点，超递归算法只是定义超计算过程的一种方式。 </p>","pics":null,"card":null,"references":[],"versionCount":0},{"paragraphId":"14994953033744912","title":"例子","versionId":"14994953016967686","lemmaId":10177,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":10145103,"name":"科学百科编辑组","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1576233687,"comment":null,"dependVersionId":0,"contentType":1,"content":"<p>超递归算法的例子包括(布尔金2005: 132)： </p> \n<ul>\n <li>限制递归函数和限制部分递归函数(E.M. Gold 1965)</li> \n <li>试错判断(希拉里·普特南1965)</li> \n <li>归纳推理机(卡尔·史密斯)</li> \n <li>归纳图灵机，它执行类似图灵机的计算，并在有限的步骤后产生结果(马克·布尔金)</li> \n <li>极限图灵机，它执行类似图灵机的计算，但是它们的最终结果是它们中间结果的极限(马克·布尔金)</li> \n <li>试错机(Ja。Hintikka和A. Mutanen，1998年)</li> \n <li>通用图灵机</li> \n <li>互联网机(van Leeuwen，j .和Wiedermann，j .)</li> \n <li>进化计算机，使用DNA计算函数的值(达科·罗格利奇)</li> \n <li>模糊计算(jiríwiederman 2004)</li> \n <li>进化图灵机(尤金·埃伯巴赫2005)</li>\n</ul> \n<p>算法方案的例子包括： </p> \n<ul>\n <li>带有任意预言的图灵机(艾伦·图灵)</li> \n <li>跨递归算子(博罗迪亚斯基和布尔金)</li> \n <li>用实数计算的机器(L. Blum，F. Cucker，M. Shub和S. Smale，1998)</li> \n <li>基于实数的神经网络(Hava Siegelmann 1999)</li>\n</ul>","pics":null,"card":null,"references":[],"versionCount":0},{"paragraphId":"14994953033744913","title":"归纳图灵机","versionId":"14994953016967687","lemmaId":10177,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":10145103,"name":"科学百科编辑组","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1576233687,"comment":null,"dependVersionId":0,"contentType":1,"content":"<p><b>归纳图灵机</b>实现了一类重要的超递归算法。归纳图灵机是能完成特定任务的确定指令列表，当给定一个初始状态时，它将经过一系列明确定义的连续状态，最终给出最终结果。归纳图灵机和普通图灵机的区别在于，普通图灵机在获得结果时必须停止，而在某些情况下，归纳图灵机可以在获得结果后继续计算，而不会停止。克莱尼用“计算程序”或“算法”以描述永远运行的程序(克莱尼1952:137)。克莱尼还要求这样的算法最终必须展示“某个对象”(克莱尼1952:137)。布尔金认为归纳图灵机满足这一条件，因为它们的结果在有限的步骤后显示出来。归纳图灵机在最终输出产生时不能被指令停止的原因是，在某些情况下，归纳图灵机可能不知道在哪个步骤获得了结果。 </p>\n<p>简单归纳图灵机等价于其他计算模型，例如施密休伯的一般图灵机、希拉里·普特南的试错判断、戈尔德的限制部分递归函数、欣蒂卡和穆坦的试错机(1998)。更先进的归纳图灵机更强大。归纳图灵机的层次结构可以决定算术层次结构中任意集合的成员 (布尔金2005)。与其他等效计算模型相比，简单归纳图灵机和一般图灵机给出了完全基于物理机的计算自动机的直接构造。相比之下，试错判断、限制递归函数和限制部分递归函数仅表示符号的语法系统及其操作的形式规则。简单归纳图灵机和一般图灵机与限制部分递归函数和试错判断有关，正如图灵机与部分递归函数和演算有关。 </p>\n<p>归纳图灵机的非停止计算不应与无限时间计算混淆。首先，一些归纳图灵机的计算确实停止了。与传统图灵机的情况一样，一些停止的计算给出了结果，而另一些则没有。即使它不停止，归纳图灵机也会不时地产生输出。如果该输出停止变化，则被视为计算结果。 </p>\n<p>普通图灵机和简单归纳图灵机有两个主要区别。第一个区别是，即使是简单的归纳图灵机，相比传统图灵机具有更高的性能。第二个区别是，传统的图灵机将总是能确定(通过进入最终状态)何时获得结果，而简单的归纳图灵机在某些情况下(例如当“计算”普通图灵机不能计算的任务时)，将不能确定输出结果的时间。 </p>","pics":null,"card":null,"references":[],"versionCount":0},{"paragraphId":"14994953033744914","title":"施密休伯的广义图灵机","versionId":"14994953016967688","lemmaId":10177,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":10145103,"name":"科学百科编辑组","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1576233687,"comment":null,"dependVersionId":0,"contentType":1,"content":"<p>如果一个通用图灵机上有一个有限的、可能不停机的程序递增地输出一个符号序列的每一个符号，那么这个符号序列是可计算的。这包括π的并矢展开，但仍然排除了大多数实数，因为大多数实数不能用有限程序来描述。传统带有只读输出带的图灵机，不能编辑它们以前的输出；根据Jürgen Schmidhuber，广义图灵机可以编辑它们的输出带和工作带。他将可构造描述的符号序列定义为在广义图灵机上运行有限的、非停止的程序的符号序列，使得任何输出符号最终收敛，即在某个有限的初始时间间隔之后不再改变。Schmidhuber (2000，2002)使用这种方法来定义一组形式上可描述或可构造计算的通用规则或万物构造理论。广义图灵机和简单归纳图灵机是最接近递归算法的两类超递归算法(Schmidhuber 2000)。 </p>","pics":null,"card":null,"references":[],"versionCount":0},{"paragraphId":"14994953050522113","title":"与丘奇-图灵论题的关系","versionId":"14994953016967689","lemmaId":10177,"createType":0,"creator":{"uid":0,"name":null,"pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"createTime":0,"versionEditor":{"uid":10145103,"name":"科学百科编辑组","pic":null,"introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":null,"jobBrief":null,"role":0,"roleName":null,"title":null,"professionalTitle":null,"phoneNo":null,"editable":false,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false},"editTime":1576233687,"comment":null,"dependVersionId":0,"contentType":1,"content":"<p>递归理论中的丘奇-图灵论题依赖于术语“算法”的特定定义。基于比递归理论中常用的定义更一般的定义，布尔金认为超递归算法，例如归纳图灵机，否定了丘奇-图灵理论。他进一步证明了超递归算法理论上可以提供比使用量子算法更大的效率增益。 </p>\n<p>布尔金对超递归算法的解释在数学界遭到了反对。其中一位反对者是逻辑学家马丁·戴维斯，他认为布尔金的主张已经被很好地理解了“几十年”。戴维斯说， </p>\n<p>“目前的批评不是关于这些问题的数学讨论，而是关于当前和未来物理系统的误导性主张。”(戴维斯2006: 128) </p>\n<p>戴维斯反驳了布尔金的说法，即设定在算术等级的第二级可以称为可计算的，他说 </p>\n<p>“一般认为，要使计算结果有用，必须至少能够认识到它确实是所寻求的结果。”(戴维斯2006: 128) </p>","pics":null,"card":null,"references":[],"versionCount":0}],"references":[],"recommendReferences":null,"auditState":2,"lemmaLevel":1,"origin":0,"originEnTitle":null,"originZhTitle":null,"pv":76,"auditType":0,"synonyms":null,"showEditTime":"2019.12.13 18:41","auditors":[{"uid":0,"name":"Ki.κe","pic":"https://web.archive.org/web/20221028225825/https://wx.qlogo.cn/mmopen/vi_32/y67kfr32Doib4wg71Jiau7jVWvharic3nRKgdRRQSl6koeQJCo0GQs2Krw0vwdFRsOWnHIQOwAZsSg5lIkIrFCOcQ/132","introduction":null,"educations":null,"jobs":null,"works":null,"educationBrief":"","jobBrief":"","role":0,"roleName":null,"title":"","professionalTitle":null,"phoneNo":null,"editable":true,"partnerId":0,"partnerIdCreateTime":0,"partnerIdPoped":false}],"hasZhishiNav":false,"auditInfos":{},"isHistory":false};</script><script crossorigin="anonymous" src="./177.超级递归算法 - 搜狗科学百科_files/aegis.min.js.download"></script><script crossorigin="anonymous" src="./177.超级递归算法 - 搜狗科学百科_files/main_2020092401.js.download"></script><script crossorigin="anonymous" src="./177.超级递归算法 - 搜狗科学百科_files/react.production.min.js.download"></script><script crossorigin="anonymous" src="./177.超级递归算法 - 搜狗科学百科_files/react-dom.production.min.js.download"></script><script crossorigin="anonymous" src="./177.超级递归算法 - 搜狗科学百科_files/jquery-1.11.1.min.js.download"></script><script crossorigin="anonymous" src="./177.超级递归算法 - 搜狗科学百科_files/main_2022062701.js.download"></script><script crossorigin="anonymous" src="./177.超级递归算法 - 搜狗科学百科_files/main_66bbe21.js.download"></script><script crossorigin="anonymous" src="./177.超级递归算法 - 搜狗科学百科_files/react.production.min.js.download"></script><script crossorigin="anonymous" src="./177.超级递归算法 - 搜狗科学百科_files/react-dom.production.min.js.download"></script><script crossorigin="anonymous" src="./177.超级递归算法 - 搜狗科学百科_files/main_edf0f08.js.download"></script><div id="popControl"><div class="pop-control-mask" style="display: none;"><div class="pop-container"><i class="close-icon"></i><div class="stop-title">搜狗科学百科停止服务运营公告</div><div class="stop-user">亲爱的用户：</div><div class="stop-content">因业务方向调整，搜狗科学百科将于2022年11月11日正式停止服务与运营。届时产品内所有数据将依据相关法律进行删除并关闭服务器，您将无法登录及使用搜狗科学百科，相关内容在平台下线后将无法找回。</div><div class="stop-content">搜狗科学百科是由搜狗推出的科学领域专业百科产品，与搜狗百科为两个独立产品，本次停止服务与运营仅对搜狗科学百科，并不影响搜狗百科产品正常使用，敬请知悉。</div><div class="stop-content">由此给您带来的不便我们深表歉意，敬请谅解。再次感谢您一直以来的陪伴与支持！</div><div class="stop-team">搜狗科学百科产品&amp;运营团队</div><div class="stop-time">2022年10月11日</div></div></div></div>
+</body></html>
